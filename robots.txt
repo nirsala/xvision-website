@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /accessibility.html
+
+Sitemap: https://xvision.co.il/sitemap.xml

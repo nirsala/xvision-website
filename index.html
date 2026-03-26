@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pixel | מסכי לד לעסקים, שילוט דיגיטלי ושלטי חוצות</title>
+<meta name="description" content="מסכי לד לעסקים, שלטי חוצות דיגיטליים ומסכי פרסום — Pixel. פתרונות שילוט דיגיטלי לחנויות, מסעדות, קניונים ואירועים. מסך לד לפרסום עם התקנה ותמיכה מלאה."/>
+<meta name="keywords" content="מסכי לד, מסך לד לעסקים, מסך לד לפרסום, שילוט דיגיטלי, שלטי חוצות, שלטי חוצות דיגיטליים, מסכי פרסום, שלטים דיגיטליים, שלטי לד, שלטי לד לעסקים, שלט לעסק, שילוט לעסקים, מסכי לד לחנויות, מסכי לד גדולים, שלטים מוארים, שלט דיגיטלי"/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://xvision.co.il/"/>
+<meta property="og:title" content="Pixel | מסכי לד לעסקים ושילוט דיגיטלי"/>
+<meta property="og:description" content="פתרונות מסכי לד, שלטי חוצות דיגיטליים ומסכי פרסום לעסקים. Pixel — ייבוא, התקנה ותמיכה."/>
+<meta property="og:image" content="https://xvision.co.il/assets/images/portfolio-w2.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="675"/>
+<meta property="og:locale" content="he_IL"/>
+<meta property="og:site_name" content="Pixel by Keshet"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Pixel | מסכי לד לעסקים ושילוט דיגיטלי"/>
+<meta name="twitter:description" content="פתרונות מסכי לד, שלטי חוצות דיגיטליים ומסכי פרסום לעסקים. Pixel — ייבוא, התקנה ותמיכה."/>
+<meta name="twitter:image" content="https://xvision.co.il/assets/images/portfolio-w2.jpg"/>
+<!-- Geo / Local SEO -->
+<meta name="geo.region" content="IL"/>
+<meta name="geo.placename" content="פתח תקווה"/>
+<link rel="canonical" href="https://xvision.co.il/"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Pixel by Keshet",
+  "description": "מסכי לד לעסקים, שלטי חוצות דיגיטליים ומסכי פרסום. פתרונות שילוט דיגיטלי לחנויות, מסעדות ואירועים.",
+  "url": "https://xvision.co.il",
+  "logo": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png",
+  "image": "https://xvision.co.il/assets/images/portfolio-w2.jpg",
+  "telephone": "*9555",
+  "email": "info@pixel.co.il",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "מודיעין 44",
+    "addressLocality": "פתח תקווה",
+    "addressCountry": "IL"
+  },
+  "areaServed": "IL",
+  "serviceType": ["מסכי לד לעסקים","שלטי חוצות דיגיטליים","מסכי פרסום","שילוט דיגיטלי","שלטים דיגיטליים לעסקים","מסכי לד לחנויות"],
+  "sameAs": []
+}
+</script>
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/a11y-cookie.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:    #1A1A1A;
+  --bg2:   #222222;
+  --bg3:   #2C2C2C;
+  --card:  #303030;
+  --line:  rgba(255,255,255,0.07);
+  --white: #FFFFFF;
+  --muted: rgba(255,255,255,0.42);
+  --blue:  #0099FF;
+  --blue2: #00AAFF;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Heebo','Inter',sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  overflow-x:hidden;
+  direction:rtl;
+}
+a{color:inherit;text-decoration:none}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;right:0;left:0;z-index:300;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 56px;height:68px;
+  background:rgba(26,26,26,0.88);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+  transition:background .3s;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  text-decoration:none;
+}
+.nav-logo img{
+  transition:filter .35s ease;
+  transform-origin:top right;
+}
+.nav-logo:hover img{
+  filter:brightness(1.22) drop-shadow(0 0 22px rgba(0,153,255,.75));
+  animation:logo-pop 2s cubic-bezier(.22,1,.36,1) 1 normal none;
+}
+@keyframes logo-pop{
+  0%  {transform:scale(1)   rotate(0deg)}
+  15% {transform:scale(4.3) rotate(-4deg)}
+  32% {transform:scale(3.8) rotate(3deg)}
+  52% {transform:scale(4.1) rotate(0deg)}
+  70% {transform:scale(1.12) rotate(1deg)}
+  85% {transform:scale(0.96)}
+  100%{transform:scale(1)   rotate(0deg)}
+}
+.nav-logo-icon{
+  width:32px;height:32px;
+  background:var(--blue);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.nav-logo-text{
+  font-size:15px;font-weight:900;letter-spacing:2px;
+  text-transform:uppercase;color:var(--white);
+}
+.nav-logo-sub{
+  font-size:8px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--muted);display:block;margin-top:-2px;
+}
+nav ul{
+  display:flex;gap:36px;list-style:none;
+  align-items:center;
+}
+nav ul a{
+  font-size:12px;color:var(--muted);
+  letter-spacing:.5px;font-weight:500;
+  padding-bottom:3px;
+  background-image:linear-gradient(var(--blue),var(--blue));
+  background-repeat:no-repeat;
+  background-size:0 2px;
+  background-position:right bottom;
+  transition:color .2s,background-size .22s ease;
+}
+nav ul a:hover,nav ul a.active{
+  color:var(--white);
+  background-size:60% 2px;
+  animation:nav-run .6s ease-in-out infinite alternate, nav-link-pop .45s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes nav-link-pop{
+  0%  {transform:scale(1) rotate(0deg)}
+  35% {transform:scale(1.55) rotate(-3deg)}
+  65% {transform:scale(1.45) rotate(2deg)}
+  100%{transform:scale(1.5) rotate(0deg)}
+}
+@keyframes nav-run{
+  from{background-position:right bottom}
+  to{background-position:left bottom}
+}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{
+  font-size:12px;color:var(--muted);letter-spacing:.5px;
+  direction:ltr;display:inline-block;
+  transition:color .2s,transform .2s;
+  cursor:default;
+}
+.nav-phone:hover{
+  color:var(--white);
+  animation:phone-pop .45s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes phone-pop{
+  0%  {transform:scale(1)}
+  35% {transform:scale(1.55) rotate(-4deg)}
+  65% {transform:scale(1.45) rotate(3deg)}
+  100%{transform:scale(1.5) rotate(0deg)}
+}
+.nav-cta{
+  padding:10px 22px;border-radius:5px;
+  background:var(--blue);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;text-decoration:none;
+  transition:box-shadow .2s,transform .2s;white-space:nowrap;
+}
+.nav-cta:hover{
+  animation:cta-pop .45s cubic-bezier(.22,1,.36,1) forwards;
+  box-shadow:0 0 18px rgba(0,153,255,.55);
+}
+@keyframes cta-pop{
+  0%  {transform:scale(1)}
+  35% {transform:scale(1.55) rotate(-2deg)}
+  65% {transform:scale(1.45) rotate(1.5deg)}
+  100%{transform:scale(1.5) rotate(0deg)}
+}
+.nav-wa{
+  display:flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(37,211,102,.12);
+  border:1px solid rgba(37,211,102,.3);
+  transition:background .2s,box-shadow .2s;
+  flex-shrink:0;
+}
+.nav-wa:hover{
+  background:rgba(37,211,102,.25);
+  box-shadow:0 0 14px rgba(37,211,102,.5);
+  animation:wa-pop .45s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes wa-pop{
+  0%  {transform:scale(1)}
+  35% {transform:scale(1.55) rotate(4deg)}
+  65% {transform:scale(1.45) rotate(-3deg)}
+  100%{transform:scale(1.5) rotate(0deg)}
+}
+.nav-mobile-btn{
+  display:none;background:none;border:none;
+  color:var(--white);cursor:pointer;padding:4px;
+}
+
+/* ── HERO ── */
+#hero{
+  min-height:100vh;
+  display:flex;align-items:flex-end;
+  padding:0 56px 88px;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  overflow:hidden;
+}
+.hero-bg iframe{
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:177.78vh; /* 16/9 * 100vh */
+  height:100vh;
+  min-width:100%;
+  min-height:56.25vw; /* 9/16 * 100vw */
+  pointer-events:none;
+  border:none;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(26,26,26,0.45) 0%,
+    rgba(26,26,26,0.2) 30%,
+    rgba(26,26,26,0.6) 65%,
+    rgba(26,26,26,0.97) 100%
+  );
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:900px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 16px;border-radius:100px;
+  border:1px solid rgba(0,153,255,.3);
+  background:rgba(0,153,255,.1);
+  font-size:10px;letter-spacing:3px;
+  color:var(--blue);text-transform:uppercase;
+  margin-bottom:28px;
+}
+.hero-tag-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--blue);
+  animation:blink 1.8s infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.hero-h1{
+  font-size:clamp(44px,7vw,96px);
+  font-weight:900;
+  letter-spacing:-2px;
+  line-height:.95;
+  margin-bottom:28px;
+}
+.hero-h1 em{font-style:normal;color:var(--blue)}
+.hero-bottom{
+  display:flex;align-items:flex-end;
+  justify-content:space-between;gap:60px;
+  border-top:1px solid rgba(255,255,255,.15);
+  padding-top:28px;margin-top:28px;
+}
+.hero-desc{
+  font-size:16px;color:rgba(255,255,255,.75);
+  line-height:1.75;max-width:440px;font-weight:300;
+}
+.hero-btns{
+  display:flex;gap:12px;align-items:center;
+  flex-shrink:0;
+}
+.btn-primary{
+  padding:14px 30px;border-radius:5px;
+  background:var(--blue);color:#fff;
+  font-size:12px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  transition:all .2s;white-space:nowrap;
+  box-shadow:0 8px 24px rgba(0,153,255,.3);
+}
+.btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+.btn-outline{
+  padding:14px 28px;border-radius:5px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.2);
+  color:#fff;font-size:12px;font-weight:600;
+  white-space:nowrap;transition:all .2s;
+}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+.hero-scroll{
+  position:absolute;bottom:88px;left:56px;
+  display:flex;align-items:center;gap:10px;
+  font-size:9px;letter-spacing:3px;
+  color:rgba(255,255,255,.35);text-transform:uppercase;
+}
+.hero-scroll-line{
+  width:40px;height:1px;background:rgba(255,255,255,.35);
+  position:relative;overflow:hidden;
+}
+.hero-scroll-line::after{
+  content:'';position:absolute;top:0;right:-100%;
+  width:100%;height:100%;background:var(--white);
+  animation:slide 2s ease-in-out infinite;
+}
+@keyframes slide{0%{right:-100%}50%{right:0}100%{right:100%}}
+
+/* ── STATS BAR ── */
+#stats{
+  background:var(--bg2);
+  border-bottom:1px solid var(--line);
+  padding:0 56px;
+}
+.stats-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:2px solid var(--blue);
+}
+.stat-item{
+  padding:36px 28px;
+  border-left:1px solid var(--line);
+  transition:background .25s;
+}
+.stat-item:last-child{border-left:none}
+.stat-item:hover{background:rgba(0,153,255,.04)}
+.stat-num{
+  font-size:40px;font-weight:900;letter-spacing:-2px;
+  color:var(--blue);line-height:1;margin-bottom:6px;
+}
+.stat-label{
+  font-size:11px;color:var(--muted);
+  letter-spacing:.5px;font-weight:400;
+}
+
+/* ── SECTION BASE ── */
+.section{
+  padding:100px 56px;
+  border-bottom:1px solid var(--line);
+}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-kicker{
+  display:flex;align-items:center;gap:10px;
+  font-size:10px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--blue);margin-bottom:16px;font-weight:700;
+}
+.section-kicker::before{
+  content:'';width:24px;height:2px;
+  background:var(--blue);flex-shrink:0;
+}
+.section-h2{
+  font-size:clamp(34px,5vw,60px);
+  font-weight:900;letter-spacing:-2px;line-height:1;
+  margin-bottom:16px;
+}
+.section-h2 em{font-style:normal;color:var(--blue)}
+.section-desc{
+  font-size:15px;color:var(--muted);
+  line-height:1.75;max-width:500px;
+  margin-bottom:64px;
+}
+
+/* ── SERVICES ── */
+#services{background:var(--bg2)}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3px;margin-top:64px;
+}
+/* ── SERVICE CARDS ── */
+.service-card{
+  background:var(--bg3);
+  padding:44px 36px 36px;
+  border-radius:16px;
+  position:relative;overflow:hidden;
+  cursor:default;
+  transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease,border-color .35s;
+  border:1px solid rgba(255,255,255,.06);
+}
+/* shine sweep */
+.service-card::before{
+  content:'';position:absolute;
+  top:0;bottom:0;left:-120%;width:55%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);
+  transform:skewX(-18deg);z-index:5;pointer-events:none;
+}
+/* blue glow corner */
+.service-card::after{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:220px;
+  background:linear-gradient(155deg,rgba(0,80,200,0) 40%,rgba(0,30,130,.55) 100%);
+  opacity:0;z-index:2;pointer-events:none;
+  transition:opacity .4s ease;
+}
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 0 1.5px rgba(0,153,255,.5),0 28px 60px rgba(0,20,90,.55);
+  border-color:rgba(0,153,255,.22);
+}
+.service-card:hover::before{left:160%;transition:left .85s ease}
+.service-card:hover::after{opacity:1}
+/* image */
+.svc-img-wrap{
+  display:block;
+  width:calc(100% + 72px);
+  height:220px;
+  margin:-44px -36px 0;
+  position:relative;overflow:hidden;
+}
+.svc-img-wrap::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(8,14,24,0) 25%,rgba(8,14,24,.92) 100%);
+  z-index:1;transition:background .4s ease;pointer-events:none;
+}
+.svc-img-wrap img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s cubic-bezier(.22,1,.36,1),filter .45s ease;
+  filter:saturate(.72) brightness(.78);
+}
+.service-card:hover .svc-img-wrap::after{
+  background:linear-gradient(to bottom,rgba(0,50,160,.18) 0%,rgba(0,12,80,.88) 100%);
+}
+.service-card:hover .svc-img-wrap img{
+  transform:scale(1.09);
+  filter:saturate(1.08) brightness(.88);
+}
+/* icon — floats on image/card boundary */
+.service-icon{
+  width:54px;height:54px;border-radius:14px;
+  background:linear-gradient(135deg,#0078ff,#003cb3);
+  border:1.5px solid rgba(255,255,255,.22);
+  box-shadow:0 6px 22px rgba(0,100,255,.5);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:6;
+  margin-top:-20px;margin-bottom:18px;
+  transition:transform .35s ease,box-shadow .35s ease;
+}
+.service-card:hover .service-icon{
+  transform:scale(1.15) rotate(-4deg);
+  box-shadow:0 10px 32px rgba(0,120,255,.7);
+}
+.service-icon svg{
+  width:24px;height:24px;stroke:#fff;
+  fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.service-num{
+  font-size:9px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--blue);font-weight:700;margin-bottom:12px;
+  position:relative;z-index:4;
+}
+.service-title{
+  font-size:18px;font-weight:700;margin-bottom:10px;
+  position:relative;z-index:4;
+}
+.service-text{
+  font-size:13px;color:var(--muted);line-height:1.7;
+  position:relative;z-index:4;
+}
+
+/* ── PORTFOLIO ── */
+#works{background:var(--bg)}
+.works-header{
+  display:flex;align-items:flex-end;
+  justify-content:space-between;
+  margin-bottom:48px;
+}
+.works-cta-link{
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--blue);border-bottom:1px solid rgba(0,153,255,.3);
+  padding-bottom:2px;transition:border-color .2s;
+}
+.works-cta-link:hover{border-color:var(--blue)}
+.works-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:4px;
+  grid-auto-flow:dense;
+}
+/* Wide cinematic cards — every 5th */
+.work-card:nth-child(5n+1){grid-column:span 2;aspect-ratio:21/9}
+/* Slightly taller break cards */
+.work-card:nth-child(7n+3){aspect-ratio:4/3}
+.work-card{
+  position:relative;overflow:hidden;
+  aspect-ratio:16/9;border-radius:8px;
+  cursor:pointer;background:var(--bg3);
+  transition:transform .5s cubic-bezier(.22,1,.36,1),filter .5s ease,box-shadow .4s ease;
+}
+/* Shine sweep */
+.work-card::before{
+  content:'';position:absolute;
+  top:0;bottom:0;left:-120%;width:55%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);
+  transform:skewX(-18deg);z-index:5;pointer-events:none;transition:none;
+}
+/* Blue tint overlay */
+.work-card::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(155deg,rgba(0,80,200,0) 30%,rgba(0,30,120,.65) 100%);
+  opacity:0;z-index:3;pointer-events:none;transition:opacity .45s ease;
+}
+/* Spotlight: dim everything */
+.works-grid:has(.work-card:hover) .work-card{
+  filter:brightness(.38) saturate(.25);
+  transform:scale(.972);
+}
+/* Spotlight: illuminate hovered card */
+.works-grid:has(.work-card:hover) .work-card:hover{
+  filter:brightness(1.08) saturate(1.12);
+  transform:scale(1.025);
+  box-shadow:0 0 0 2px rgba(0,153,255,.9),0 24px 64px rgba(0,30,100,.55),0 4px 24px rgba(0,0,0,.5);
+  z-index:10;border-radius:10px;
+}
+/* Trigger shine on hovered */
+.works-grid:has(.work-card:hover) .work-card:hover::before{
+  left:160%;transition:left .75s ease;
+}
+.works-grid:has(.work-card:hover) .work-card:hover::after{opacity:1}
+.work-card picture{display:block;width:100%;height:100%}
+.work-card img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s cubic-bezier(.22,1,.36,1),filter .5s ease;
+  filter:saturate(.78) brightness(.92);
+}
+.works-grid:has(.work-card:hover) .work-card:hover img{
+  transform:scale(1.09);filter:saturate(1.1) brightness(1.0);
+}
+
+/* ── HOW WE WORK ── */
+#process{background:var(--bg2)}
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:3px;margin-top:64px;
+}
+.process-step{
+  background:var(--bg3);padding:36px 28px;
+  border-radius:6px;position:relative;
+}
+.process-num{
+  font-size:52px;font-weight:900;letter-spacing:-3px;
+  color:rgba(0,153,255,.1);line-height:1;
+  margin-bottom:20px;
+}
+.process-title{font-size:16px;font-weight:700;margin-bottom:10px}
+.process-text{font-size:13px;color:var(--muted);line-height:1.65}
+.process-arrow{
+  position:absolute;top:50%;right:-16px;
+  transform:translateY(-50%);
+  width:32px;height:32px;
+  background:var(--bg2);border:1px solid var(--line);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;z-index:2;
+}
+.process-step:last-child .process-arrow{display:none}
+
+/* ── WHY US ── */
+#why{background:var(--bg)}
+.why-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:center;
+}
+.why-visual{
+  position:relative;
+}
+.why-img-main{
+  width:100%;border-radius:10px;
+  overflow:hidden;aspect-ratio:4/3;
+  border:1px solid var(--line);
+}
+.why-img-main img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.why-img-badge{
+  position:absolute;bottom:-20px;left:-20px;
+  background:var(--bg3);
+  border:1px solid rgba(0,153,255,.2);
+  border-radius:12px;padding:16px 20px;
+  display:flex;align-items:center;gap:14px;
+  box-shadow:0 20px 48px rgba(0,0,0,.5);
+}
+.why-badge-icon{
+  width:40px;height:40px;border-radius:8px;
+  background:rgba(0,153,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.why-badge-icon svg{
+  width:20px;height:20px;stroke:var(--blue);
+  fill:none;stroke-width:1.8;
+}
+.why-badge-num{font-size:18px;font-weight:800;letter-spacing:-1px}
+.why-badge-label{font-size:10px;color:var(--muted);margin-top:1px;letter-spacing:.3px}
+.why-list{
+  list-style:none;margin-top:40px;
+  display:flex;flex-direction:column;gap:20px;
+}
+.why-item{
+  display:flex;gap:16px;align-items:flex-start;
+}
+.why-item-dot{
+  width:32px;height:32px;border-radius:8px;
+  background:rgba(0,153,255,.1);
+  border:1px solid rgba(0,153,255,.18);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+  font-size:12px;font-weight:700;color:var(--blue);
+}
+.why-item-title{font-size:15px;font-weight:700;margin-bottom:4px}
+.why-item-text{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* ── CLIENTS TICKER ── */
+#clients{background:var(--bg2);padding:56px 0}
+.clients-label{
+  font-size:10px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:40px;text-align:center;
+}
+.clients-ticker-wrap{
+  overflow:hidden;
+  position:relative;
+  direction:ltr;
+  /* fade edges */
+  mask-image:linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image:linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.clients-ticker-wrap:hover .clients-ticker{animation-play-state:paused}
+.clients-ticker{
+  display:flex;align-items:center;
+  gap:56px;
+  width:max-content;
+  animation:clients-scroll 36s linear infinite;
+  direction:ltr;
+}
+@keyframes clients-scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.client-logo{
+  flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  height:60px;
+  padding:0 12px;
+}
+.client-logo img{
+  height:48px;width:auto;
+  max-width:160px;
+  object-fit:contain;
+  filter:grayscale(100%) brightness(1.8) opacity(0.4);
+  transition:filter .5s ease,transform .25s;
+  display:block;
+}
+.client-logo.lit img,
+.client-logo:hover img{
+  filter:grayscale(0%) brightness(1) opacity(1);
+  transform:scale(1.06);
+}
+
+/* ── CONTACT ── */
+#contact{background:var(--bg)}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;
+}
+.contact-info{}
+.contact-info-item{
+  display:flex;align-items:flex-start;gap:14px;
+  margin-bottom:28px;
+}
+.contact-info-icon{
+  width:40px;height:40px;border-radius:8px;
+  background:rgba(0,153,255,.1);
+  border:1px solid rgba(0,153,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.contact-info-icon svg{
+  width:18px;height:18px;stroke:var(--blue);
+  fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+}
+.contact-info-label{
+  font-size:9px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--blue);font-weight:700;margin-bottom:4px;
+}
+.contact-info-val{
+  font-size:15px;font-weight:600;direction:ltr;text-align:right;
+}
+.contact-form{}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-field{margin-bottom:0}
+.form-field.full{grid-column:span 2;margin-bottom:12px}
+.form-label{
+  font-size:9px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:8px;display:block;font-weight:600;
+}
+.form-input,
+.form-textarea{
+  width:100%;padding:14px 16px;border-radius:6px;
+  background:var(--bg3);
+  border:1px solid var(--line);
+  color:#fff;font-size:13px;
+  font-family:'Heebo','Inter',sans-serif;
+  outline:none;transition:border-color .2s,background .2s;
+  direction:rtl;
+}
+.form-input::placeholder,
+.form-textarea::placeholder{color:rgba(255,255,255,.2)}
+.form-input:focus,
+.form-textarea:focus{
+  border-color:rgba(0,153,255,.4);
+  background:rgba(0,153,255,.04);
+}
+.form-textarea{height:120px;resize:vertical}
+.form-submit{
+  width:100%;padding:15px;border-radius:6px;
+  background:var(--blue);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;
+  border:none;cursor:pointer;
+  font-family:'Heebo','Inter',sans-serif;
+  transition:opacity .2s;
+  margin-top:4px;
+}
+.form-submit:hover{opacity:.88}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--bg2);
+  border-top:1px solid var(--line);
+  padding:56px 56px 32px;
+}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:56px;margin-bottom:40px;
+  padding-bottom:40px;border-bottom:1px solid var(--line);
+}
+.footer-brand-logo{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:14px;
+}
+.footer-brand-logo-icon{
+  width:28px;height:28px;background:var(--blue);
+  border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+}
+.footer-brand-name{font-size:14px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.footer-brand-desc{font-size:13px;color:var(--muted);line-height:1.7;max-width:240px}
+.footer-col h4{
+  font-size:10px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:18px;font-weight:700;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul a{
+  font-size:13px;color:rgba(255,255,255,.5);
+  transition:color .2s;
+}
+.footer-col ul a:hover{color:#fff}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:.5px}
+.footer-links{display:flex;gap:24px}
+.footer-links a{
+  font-size:11px;color:rgba(255,255,255,.2);
+  transition:color .2s;
+}
+.footer-links a:hover{color:var(--muted)}
+
+/* ── VIDEO REEL ── */
+#reel{
+  position:relative;overflow:hidden;
+  height:72vh;min-height:480px;
+  background:#000;
+}
+#reel video{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+}
+.reel-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(26,26,26,.35) 0%,rgba(0,0,0,.55) 100%);
+}
+.reel-content{
+  position:relative;z-index:2;
+  height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:0 24px;
+  gap:20px;
+}
+.reel-label{
+  font-size:10px;letter-spacing:4px;text-transform:uppercase;
+  color:rgba(255,255,255,.55);font-weight:700;
+}
+.reel-title{
+  font-size:clamp(2rem,5vw,3.6rem);font-weight:900;
+  letter-spacing:-2px;line-height:1.05;color:#fff;
+}
+.reel-title em{color:var(--blue);font-style:normal}
+.reel-cta{
+  margin-top:8px;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 32px;border-radius:5px;
+  background:var(--blue);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;text-decoration:none;
+  transition:opacity .2s;
+}
+.reel-cta:hover{opacity:.85}
+
+/* ── MARQUEE STRIP ── */
+#marquee{
+  background:var(--bg2);
+  padding:0;overflow:hidden;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.marquee-wrap{
+  display:flex;align-items:stretch;
+  height:240px;
+  overflow:hidden;
+  direction:ltr;
+  -webkit-mask:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%);
+  mask:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%);
+}
+.marquee-track{
+  display:flex;gap:12px;
+  direction:ltr;
+  animation:marquee-scroll 40s linear infinite;
+  flex-shrink:0;
+}
+.marquee-track:hover{animation-play-state:paused}
+.marquee-item{
+  flex-shrink:0;height:240px;
+  border-radius:6px;overflow:hidden;
+  position:relative;
+}
+.marquee-item img{
+  height:100%;width:auto;
+  display:block;
+  transition:transform .5s ease;
+}
+.marquee-item:hover img{transform:scale(1.04)}
+@keyframes marquee-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.1s}
+.reveal-d2{transition-delay:.2s}
+.reveal-d3{transition-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  nav{padding:0 20px}
+  nav ul{display:none}
+  .nav-phone{display:none}
+  #hero{padding:0 20px 64px;align-items:flex-end}
+  .hero-bottom{flex-direction:column;align-items:flex-start;gap:24px}
+  .hero-scroll{left:20px}
+  #stats{padding:0 20px}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .section{padding:64px 20px}
+  .section-desc{margin-bottom:40px}
+  .services-grid{grid-template-columns:1fr}
+  .works-grid{grid-template-columns:1fr 1fr}
+  .work-card:nth-child(7n+3){aspect-ratio:16/9}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .process-step .process-arrow{display:none}
+  .why-grid{grid-template-columns:1fr}
+  .why-visual{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  footer{padding:40px 20px 24px}
+  .works-header{flex-direction:column;align-items:flex-start;gap:16px}
+  .form-row{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .works-grid{grid-template-columns:1fr}
+  .work-card:nth-child(5n+1){grid-column:span 1;aspect-ratio:16/9}
+  .work-card:nth-child(7n+3){aspect-ratio:16/9}
+  #clients{padding:40px 0}
+  .client-logo img{height:36px}
+  .hero-h1{letter-spacing:-1px}
+  .section-h2{letter-spacing:-1px}
+  #reel{height:55vh;min-height:360px}
+  .reel-title{letter-spacing:-1.5px}
+  .marquee-wrap{height:180px}
+  .marquee-item{height:180px}
+  .marquee-item img{min-width:260px}
+}
+</style>
+</head>
+<body>
+
+<!-- ── SKIP TO MAIN CONTENT ── -->
+<a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+
+<!-- ── NAV ── -->
+<nav role="navigation" aria-label="ניווט ראשי">
+  <a class="nav-logo" href="index.html">
+    <img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:56px;width:auto;object-fit:contain"/>
+  </a>
+  <ul>
+    <li><a href="#services">שירותים</a></li>
+    <li><a href="#works">עבודות</a></li>
+    <li><a href="products.html">מוצרים</a></li>
+    <li><a href="pool.html">מסכי בריכה</a></li>
+    <li><a href="cms.html">ניהול תוכן</a></li>
+    <li><a href="#why">אודות</a></li>
+    <li><a href="#contact">צור קשר</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-phone">*9555</span>
+    <a href="https://wa.me/972559732343" target="_blank" rel="noopener" class="nav-wa" aria-label="שלח הודעה בוואטסאפ">
+      <svg viewBox="0 0 32 32" aria-hidden="true" style="width:22px;height:22px;fill:#25D366;display:block">
+        <path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/>
+      </svg>
+    </a>
+    <a href="#contact" class="nav-cta">קבל הצעת מחיר</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<main id="main-content">
+<section id="hero" aria-label="כותרת ראשית">
+  <div class="hero-bg">
+    <iframe
+      src="https://www.youtube.com/embed/k6t9w1ngkR8?autoplay=1&mute=1&loop=1&playlist=k6t9w1ngkR8&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&modestbranding=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="Pixel background video"
+    ></iframe>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-tag-dot"></div>
+      המומחים למסכים מקצועיים לעסקים
+    </div>
+    <h1 class="hero-h1">
+      מסכי LED<br/>
+      <em>לכל עסק</em><br/>
+      בישראל
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        תכנון, ייצור, התקנה ותחזוקה של מסכי LED ומערכות שילוט דיגיטלי.
+        פרויקטים מכל הגדלים — מחנויות בודדות עד רשתות ארציות.
+      </p>
+      <div class="hero-btns">
+        <a href="#works" class="btn-outline">ראה עבודות</a>
+        <a href="#contact" class="btn-primary">קבל הצעת מחיר</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<div id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">מסכים מותקנים</div>
+    </div>
+    <div class="stat-item reveal reveal-d1">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">לקוחות פעילים</div>
+    </div>
+    <div class="stat-item reveal reveal-d2">
+      <div class="stat-num">15</div>
+      <div class="stat-label">שנות ניסיון</div>
+    </div>
+    <div class="stat-item reveal reveal-d3">
+      <div class="stat-num">99.9%</div>
+      <div class="stat-label">זמינות מערכות</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SERVICES ── -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-kicker">מה אנחנו עושים</div>
+      <h2 class="section-h2">השירותים <em>שלנו</em></h2>
+      <p class="section-desc">מהתכנון הראשוני ועד להתקנה הסופית ותחזוקה שוטפת — אנחנו מטפלים בהכל.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-indoor.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-indoor.jpg" alt="מסכי LED פנימיים" loading="lazy"/>
+        </picture>
+        <div class="service-num">01</div>
+        <div class="service-title">מסכי LED פנימיים</div>
+        <div class="service-text">מסכי LED Fine-Pitch באיכות גבוהה לחנויות, לובי, מסעדות, מרכזי קניות וכל מרחב מסחרי. מגוון פיקסל פיץ׳ בהתאם למרחק הצפייה.</div>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-outdoor.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-outdoor.jpg" alt="מסכי LED חיצוניים" loading="lazy"/>
+        </picture>
+        <div class="service-num">02</div>
+        <div class="service-title">מסכי LED חיצוניים</div>
+        <div class="service-text">מסכי LED עמידי חום, גשם ואור שמש ישיר לשלטי חוץ, חזיתות בניינים, אצטדיונים ומרחבים ציבוריים בהירות של עד 8000 nit.</div>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-cms.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-cms.jpg" alt="ניהול תוכן CMS" loading="lazy"/>
+        </picture>
+        <div class="service-num">03</div>
+        <div class="service-title">ניהול תוכן (CMS)</div>
+        <div class="service-text">מערכת ניהול תוכן מתקדמת לשליטה על כל מסך בזמן אמת — עדכון תמונות, וידאו, מחירים ותזמון תכנים. גישה מכל מכשיר.</div>
+      </div>
+      <div class="service-card reveal">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-install.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-install.jpg" alt="התקנה מקצועית" loading="lazy"/>
+        </picture>
+        <div class="service-num">04</div>
+        <div class="service-title">התקנה מקצועית</div>
+        <div class="service-text">צוות טכנאים מנוסה המבצע התקנה נקייה ומקצועית — כולל הסתרת חיווט, ביסוס קונסטרוקציה ובדיקות איכות מלאות.</div>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-support.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-support.jpg" alt="תחזוקה ותמיכה" loading="lazy"/>
+        </picture>
+        <div class="service-num">05</div>
+        <div class="service-title">תחזוקה ותמיכה</div>
+        <div class="service-text">חוזי תחזוקה שנתיים הכוללים בדיקות תקופתיות, החלפת רכיבים ותמיכה טלפונית 24/7. שמירה על זמינות מקסימלית.</div>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <picture class="svc-img-wrap">
+          <source srcset="assets/images/services/svc-content.webp" type="image/webp"/>
+          <img src="assets/images/services/svc-content.jpg" alt="ייצור תוכן" loading="lazy"/>
+        </picture>
+        <div class="service-num">06</div>
+        <div class="service-title">ייצור תוכן</div>
+        <div class="service-text">סטודיו פנימי לצילום מוצרים, עיצוב גרפי ועריכת וידאו לתצוגה על מסכי LED. תוכן שמוכר וממשיך למשוך עיניים.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── REEL ── -->
+<section id="reel">
+  <video class="reel-video" autoplay muted loop playsinline>
+    <source src="assets/videos/reel-1.mp4" type="video/mp4"/>
+    <source src="assets/videos/reel-2.mp4" type="video/mp4"/>
+  </video>
+  <div class="reel-overlay"></div>
+  <div class="reel-content">
+    <div class="reel-label">Pixel in action</div>
+    <h2 class="reel-title">פרויקטים שמדברים<br/><em>בעד עצמם</em></h2>
+    <a href="#contact" class="reel-cta">קבל הצעת מחיר ←</a>
+  </div>
+</section>
+
+<!-- ── WORKS ── -->
+<section class="section" id="works" style="background:var(--bg)">
+  <div class="section-inner">
+    <div class="works-header reveal">
+      <div>
+        <div class="section-kicker">פרויקטים</div>
+        <h2 class="section-h2">פרויקטים <em>לדוגמא</em></h2>
+      </div>
+      <a href="#contact" class="works-cta-link">פרויקטים נוספים ←</a>
+    </div>
+    <div class="works-grid">
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g01.webp" type="image/webp"/><img src="assets/images/works-g01.jpg" alt="מסך לד מותקן בעסק" loading="eager" fetchpriority="high"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g02.webp" type="image/webp"/><img src="assets/images/works-g02.jpg" alt="שילוט דיגיטלי לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g03.webp" type="image/webp"/><img src="assets/images/works-g03.jpg" alt="מסכי לד לחנות" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g04.webp" type="image/webp"/><img src="assets/images/works-g04.jpg" alt="מסך לד פרסומי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g05.webp" type="image/webp"/><img src="assets/images/works-g05.jpg" alt="שלט לד לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g06.webp" type="image/webp"/><img src="assets/images/works-g06.jpg" alt="מסכי לד לקניון" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g07.webp" type="image/webp"/><img src="assets/images/works-g07.jpg" alt="מסך לד למסעדה" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g08.webp" type="image/webp"/><img src="assets/images/works-g08.jpg" alt="שילוט דיגיטלי לרשת" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g09.webp" type="image/webp"/><img src="assets/images/works-g09.jpg" alt="מסך לד לחזית חנות" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g10.webp" type="image/webp"/><img src="assets/images/works-g10.jpg" alt="מסכי לד ללובי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g11.webp" type="image/webp"/><img src="assets/images/works-g11.jpg" alt="שלט לד חיצוני" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g12.webp" type="image/webp"/><img src="assets/images/works-g12.jpg" alt="מסך לד לאירוע" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g13.webp" type="image/webp"/><img src="assets/images/works-g13.jpg" alt="שילוט דיגיטלי לחנות" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g14.webp" type="image/webp"/><img src="assets/images/works-g14.jpg" alt="מסכי לד לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g15.webp" type="image/webp"/><img src="assets/images/works-g15.jpg" alt="מסך לד פנימי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g16.webp" type="image/webp"/><img src="assets/images/works-g16.jpg" alt="שלט לד לכניסה" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g17.webp" type="image/webp"/><img src="assets/images/works-g17.jpg" alt="מסכי לד לתצוגה" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g18.webp" type="image/webp"/><img src="assets/images/works-g18.jpg" alt="שילוט לד לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g19.webp" type="image/webp"/><img src="assets/images/works-g19.jpg" alt="מסך לד גדול לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g20.webp" type="image/webp"/><img src="assets/images/works-g20.jpg" alt="מסכי לד לסניף" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g21.webp" type="image/webp"/><img src="assets/images/works-g21.jpg" alt="מסך לד לחנות" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g22.webp" type="image/webp"/><img src="assets/images/works-g22.jpg" alt="שילוט דיגיטלי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g23.webp" type="image/webp"/><img src="assets/images/works-g23.jpg" alt="מסך לד פרסומי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g24.webp" type="image/webp"/><img src="assets/images/works-g24.jpg" alt="שלטי לד לרשת" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g25.webp" type="image/webp"/><img src="assets/images/works-g25.jpg" alt="מסכי לד לקניון" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g26.webp" type="image/webp"/><img src="assets/images/works-g26.jpg" alt="מסך לד חיצוני" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g27.webp" type="image/webp"/><img src="assets/images/works-g27.jpg" alt="שילוט לד לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g28.webp" type="image/webp"/><img src="assets/images/works-g28.jpg" alt="מסך לד לאולם" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g29.webp" type="image/webp"/><img src="assets/images/works-g29.jpg" alt="מסכי לד לחנות" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g30.webp" type="image/webp"/><img src="assets/images/works-g30.jpg" alt="שלט לד פנימי" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g31.webp" type="image/webp"/><img src="assets/images/works-g31.jpg" alt="מסך לד לעסק" loading="lazy"/></picture></div>
+      <div class="work-card reveal"><picture><source srcset="assets/images/works-g32.webp" type="image/webp"/><img src="assets/images/works-g32.jpg" alt="שילוט דיגיטלי לחנות" loading="lazy"/></picture></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div id="marquee">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="" loading="lazy"/></picture></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="" loading="lazy"/></picture></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROCESS ── -->
+<section class="section" id="process" style="background:var(--bg2)">
+  <div class="section-inner reveal">
+    <div class="section-kicker">איך עובדים</div>
+    <h2 class="section-h2">מקצועיות <em>ללא פשרות</em></h2>
+    <p class="section-desc">מהפגישה הראשונה ועד שהמסך עולה — אנחנו מלווים אותך בכל שלב.</p>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div class="process-title">פגישת ייעוץ</div>
+        <div class="process-text">מגיעים אלינו בזום או בפגישה פנים מול פנים. מבינים את הצרכים, המרחב והתקציב.</div>
+        <div class="process-arrow">←</div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div class="process-title">תכנון והצעת מחיר</div>
+        <div class="process-text">מכינים תכנית מפורטת עם הדמיות, מפרט טכני והצעת מחיר שקופה — ללא הפתעות.</div>
+        <div class="process-arrow">←</div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div class="process-title">ייצור והתקנה</div>
+        <div class="process-text">ייצור מסכים בסטנדרט גבוה, משלוח לישראל והתקנה מקצועית על ידי הצוות שלנו.</div>
+        <div class="process-arrow">←</div>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <div class="process-title">תחזוקה שוטפת</div>
+        <div class="process-text">לאחר ההתקנה — הדרכה, חיבור למערכת ניהול תוכן ותחזוקה שוטפת לאורך כל השנה.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section class="section" id="why" style="background:var(--bg)">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-kicker">למה Pixel</div>
+          <h2 class="section-h2">מניסיון של <em>15 שנה</em></h2>
+          <p class="section-desc">עשרות אלפי שעות עבודה, מאות פרויקטים ולקוחות חוזרים — זה הבסיס של Pixel.</p>
+        </div>
+        <ul class="why-list">
+          <li class="why-item reveal">
+            <div class="why-item-dot">✓</div>
+            <div>
+              <div class="why-item-title">ציוד מבוקר ומוסמך</div>
+              <div class="why-item-text">כל המסכים עוברים בדיקות קפדניות לפני ההתקנה. אנחנו עובדים עם NovaStar — מהמותגים המובילים בעולם.</div>
+            </div>
+          </li>
+          <li class="why-item reveal reveal-d1">
+            <div class="why-item-dot">✓</div>
+            <div>
+              <div class="why-item-title">מחיר שקוף ללא הפתעות</div>
+              <div class="why-item-text">הצעות מחיר מפורטות מראש עם כל הרכיבים, עבודת ההתקנה ועלות התחזוקה השנתית.</div>
+            </div>
+          </li>
+          <li class="why-item reveal reveal-d2">
+            <div class="why-item-dot">✓</div>
+            <div>
+              <div class="why-item-title">תמיכה מהירה ואמינה</div>
+              <div class="why-item-text">צוות הטכנאים שלנו זמין 24/7 לתמיכה טלפונית. תגובה בשטח תוך 24 שעות לכל תקלה.</div>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <div class="why-item-dot">✓</div>
+            <div>
+              <div class="why-item-title">פרויקטים מכל הגדלים</div>
+              <div class="why-item-text">מסך בודד לעסק קטן ועד מאות מסכים לרשתות ארציות — אותה מחויבות, אותה איכות.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-img-main">
+          <img src="assets/images/portfolio-whyus.jpg" alt="מסכי לד לעסקים" loading="lazy"/>
+        </div>
+        <div class="why-img-badge">
+          <div class="why-badge-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="why-badge-num">5 שנות</div>
+            <div class="why-badge-label">אחריות על כל התקנה</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CLIENTS ── -->
+<section id="clients">
+  <div class="clients-label reveal">לקוחות שסומכים עלינו</div>
+  <div class="clients-ticker-wrap">
+    <div class="clients-ticker">
+      <!-- set 1 -->
+      <div class="client-logo"><img src="assets/images/clients/c_japonica.png"   alt="ג'פניקה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_colmobil.png"   alt="כולמוביל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_fox.png"        alt="Fox"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hit.png"        alt="HIT"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_shufersal.png"  alt="שופרסל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hyundai.png"    alt="יונדאי"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_mitsubishi.png" alt="מיצובישי"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_jaecoo.png"     alt="JAECOO"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_meuhedet.png"   alt="קופת חולים מאוחדת"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hachshara.png"  alt="הכשרה ביטוח"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_kashet.png"     alt="קשת שלטים"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_ptikva.png"     alt="עיריית פתח תקווה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_oryehuda.png"   alt="עיריית אור יהודה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_afula.jpg"      alt="גרעיני עפולה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_arcosteel.png"  alt="ארקוסטיל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_doralon.png"    alt="דור אלון"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_rafael.png"     alt="רפאל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_roladin.png"    alt="רולדין"/></div>
+      <!-- set 2 — seamless loop duplicate -->
+      <div class="client-logo"><img src="assets/images/clients/c_japonica.png"   alt="ג'פניקה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_colmobil.png"   alt="כולמוביל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_fox.png"        alt="Fox"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hit.png"        alt="HIT"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_shufersal.png"  alt="שופרסל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hyundai.png"    alt="יונדאי"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_mitsubishi.png" alt="מיצובישי"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_jaecoo.png"     alt="JAECOO"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_meuhedet.png"   alt="קופת חולים מאוחדת"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_hachshara.png"  alt="הכשרה ביטוח"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_kashet.png"     alt="קשת שלטים"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_ptikva.png"     alt="עיריית פתח תקווה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_oryehuda.png"   alt="עיריית אור יהודה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_afula.jpg"      alt="גרעיני עפולה"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_arcosteel.png"  alt="ארקוסטיל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_doralon.png"    alt="דור אלון"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_rafael.png"     alt="רפאל"/></div>
+      <div class="client-logo"><img src="assets/images/clients/c_roladin.png"    alt="רולדין"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="section" id="contact" style="background:var(--bg)">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-kicker">צור קשר</div>
+      <h2 class="section-h2">בואו <em>נדבר</em></h2>
+      <p class="section-desc">השאירו פרטים ונחזור אליכם תוך 24 שעות עם הצעת מחיר מפורטת.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.34 6.18 19.79 19.79 0 011.27 2a2 2 0 011.99-2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">טלפון</div>
+            <div class="contact-info-val"><a href="tel:*9555" style="color:inherit">*9555</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" style="background:rgba(37,211,102,.12);border-color:rgba(37,211,102,.25);">
+            <svg viewBox="0 0 32 32" style="width:22px;height:22px;fill:#25D366;">
+              <path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">WhatsApp</div>
+            <div class="contact-info-val"><a href="https://wa.me/972559732343" target="_blank" style="color:inherit">+972-55-9732343</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">אימייל</div>
+            <div class="contact-info-val"><a href="mailto:info@pixel.co.il" style="color:inherit">info@pixel.co.il</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">כתובת</div>
+            <div class="contact-info-val">מודיעין 44, פתח תקווה</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-d1">
+        <form id="contact-form">
+          <input type="hidden" name="_subject" value="פנייה חדשה מאתר Pixel"/>
+          <input type="hidden" name="_captcha" value="false"/>
+          <input type="hidden" name="_template" value="table"/>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label">שם מלא</label>
+              <input class="form-input" type="text" name="שם מלא" placeholder="ישראל ישראלי" required/>
+            </div>
+            <div class="form-field">
+              <label class="form-label">טלפון</label>
+              <input class="form-input" type="tel" name="טלפון" placeholder="050-0000000" dir="ltr" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label">חברה / עסק</label>
+              <input class="form-input" type="text" name="חברה" placeholder="שם העסק"/>
+            </div>
+            <div class="form-field">
+              <label class="form-label">אימייל</label>
+              <input class="form-input" type="email" name="אימייל" placeholder="email@example.com" dir="ltr"/>
+            </div>
+          </div>
+          <div class="form-field full">
+            <label class="form-label">פרטי הפרויקט</label>
+            <textarea class="form-textarea" name="פרטי הפרויקט" placeholder="תארו את הצורך — סוג המסך, מיקום, גודל משוער..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="form-submit-btn">שלח פנייה ←</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SEO CONTENT BLOCK ── -->
+<section style="background:var(--bg2);padding:64px 56px;border-top:1px solid var(--line)">
+  <div style="max-width:900px;margin:0 auto">
+    <h2 style="font-size:1.4rem;font-weight:800;margin-bottom:20px">מסכי לד ושילוט דיגיטלי לעסקים</h2>
+    <p style="color:var(--muted);line-height:1.9;font-size:.95rem">
+      Pixel היא הכתובת המובילה ל<strong>מסכי לד לעסקים</strong>, <strong>שלטי חוצות דיגיטליים</strong> ו<strong>מסכי פרסום לעסקים</strong> בישראל. אנחנו מספקים פתרונות שילוט דיגיטלי מלאים — מייבוא מסכי לד גדולים, דרך תכנון מערכת <strong>שילוט דיגיטלי</strong> מותאמת, ועד התקנה ותמיכה שוטפת.
+      <br/><br/>
+      מחפשים <strong>מסך לד לפרסום</strong> לחנות, מסעדה או קניון? רוצים <strong>שלטי לד לעסקים</strong> עם ניהול תוכן מרחוק? Pixel מציעה <strong>מסכי לד לחנויות</strong>, <strong>שלטים מוארים</strong>, <strong>שלטים דיגיטליים לעסקים</strong> ו<strong>מסכי לד לאירועים</strong> — בכל גודל ותקציב.
+      <br/><br/>
+      תחומי ההתמחות שלנו: <strong>מסכי פרסום</strong> לחזית עסקים, <strong>שלטי חוצות</strong> חיצוניים עמידי מזג אוויר, <strong>מסכי לד חיצוניים</strong> להירות גבוהה, תצוגות ויטרינה, לוחות חכמים ועוד. <strong>כמה עולה שלט חוצות?</strong> <strong>כמה עולה מסכי פרסום לעסקים?</strong> — צרו קשר לקבלת הצעת מחיר מותאמת.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px">
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">מסכי לד לעסקים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">שלטי חוצות דיגיטליים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">מסכי פרסום</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">שילוט דיגיטלי</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">שלטים דיגיטליים לעסקים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">מסך לד לפרסום</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">שלטי לד לעסקים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">מסכי לד לאירועים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">שלטים מוארים</span>
+      <span style="padding:5px 14px;border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--muted)">מסכי לד גדולים</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+</main>
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-logo">
+          <img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/>
+        </div>
+        <p class="footer-brand-desc">מומחים למסכי לד, שלטי חוצות דיגיטליים ומסכי פרסום לעסקים — מהתכנון ועד ההתקנה.</p>
+      </div>
+      <div class="footer-col">
+        <h4>שירותים</h4>
+        <ul>
+          <li><a href="#services">מסכי לד לעסקים</a></li>
+          <li><a href="#services">שלטי חוצות דיגיטליים</a></li>
+          <li><a href="#services">מסכי פרסום</a></li>
+          <li><a href="#services">התקנה ותחזוקה</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>מוצרים</h4>
+        <ul>
+          <li><a href="products.html">מסכי LED</a></li>
+          <li><a href="products.html">נגני מדיה</a></li>
+          <li><a href="products.html">בקרי LED</a></li>
+          <li><a href="products.html">תוכנת CMS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>צור קשר</h4>
+        <ul>
+          <li><a href="tel:*9555">*9555</a></li>
+          <li><a href="https://wa.me/972559732343" target="_blank">WhatsApp</a></li>
+          <li><a href="#works">פרויקטים</a></li>
+          <li><a href="#process">איך עובדים</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Pixel by Keshet. כל הזכויות שמורות.</div>
+      <div class="footer-links">
+        <a href="#">תנאי שימוש</a>
+        <a href="#">פרטיות</a>
+        <a href="accessibility.html">נגישות</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div id="success-modal" style="
+  display:none;position:fixed;inset:0;z-index:9999;
+  background:rgba(0,0,0,.65);backdrop-filter:blur(8px);
+  align-items:center;justify-content:center;padding:20px;
+">
+  <div style="
+    background:#1e2530;border:1px solid rgba(0,153,255,.25);
+    border-radius:18px;padding:48px 40px;max-width:420px;width:100%;
+    text-align:center;position:relative;
+    box-shadow:0 32px 80px rgba(0,0,0,.6),0 0 0 1px rgba(0,153,255,.1);
+    animation:modal-in .35s cubic-bezier(.34,1.56,.64,1);
+  ">
+    <div style="
+      width:72px;height:72px;border-radius:50%;margin:0 auto 24px;
+      background:rgba(0,217,126,.12);border:2px solid rgba(0,217,126,.3);
+      display:flex;align-items:center;justify-content:center;
+    ">
+      <svg viewBox="0 0 24 24" style="width:32px;height:32px;stroke:#00D97E;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <h3 style="font-size:1.4rem;font-weight:900;margin-bottom:12px;letter-spacing:-.5px;">ההודעה נשלחה בהצלחה!</h3>
+    <p style="color:rgba(255,255,255,.6);font-size:.95rem;line-height:1.7;">
+      תכף מומחה שלנו חוזר אלייך.
+    </p>
+    <button onclick="document.getElementById('success-modal').style.display='none'" style="
+      margin-top:28px;padding:12px 32px;border-radius:8px;
+      background:var(--blue);color:#fff;border:none;cursor:pointer;
+      font-size:13px;font-weight:700;letter-spacing:1px;
+      font-family:'Heebo','Inter',sans-serif;transition:opacity .2s;
+    " onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">סגור</button>
+  </div>
+</div>
+<style>
+@keyframes modal-in{
+  from{opacity:0;transform:scale(.88) translateY(16px)}
+  to{opacity:1;transform:scale(1) translateY(0)}
+}
+</style>
+
+<script>
+// Reveal on scroll
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') })
+}, {threshold: 0.07})
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el))
+
+// Smooth nav background
+const nav = document.querySelector('nav')
+window.addEventListener('scroll', () => {
+  nav.style.background = window.scrollY > 60
+    ? 'rgba(26,26,26,0.97)'
+    : 'rgba(26,26,26,0.88)'
+})
+
+// Contact form submit
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault()
+  const btn = document.getElementById('form-submit-btn')
+  btn.textContent = 'שולח...'
+  btn.disabled = true
+
+  const data = new FormData(this)
+  try {
+    await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+  } catch(err) {}
+
+  // Show modal
+  const modal = document.getElementById('success-modal')
+  modal.style.display = 'flex'
+
+  // Reset form
+  this.reset()
+  btn.textContent = 'שלח פנייה ←'
+  btn.disabled = false
+
+  // Close on backdrop click
+  modal.addEventListener('click', function(ev) {
+    if(ev.target === modal) modal.style.display = 'none'
+  }, {once: true})
+})
+</script>
+
+<!-- ══════════════════════════════════════════════════
+     COOKIE CONSENT + ACCESSIBILITY WIDGET
+════════════════════════════════════════════════════ -->
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-modal="true" aria-label="הסכמה לשימוש בעוגיות" aria-live="polite">
+  <p class="cookie-text">
+    🍪 אנו משתמשים בעוגיות לשיפור חוויית הגלישה, ניתוח תנועה ושיפור השירות.
+    המשך הגלישה באתר מהווה הסכמה לשימוש בעוגיות.
+    <a href="accessibility.html#privacy" aria-label="קרא על מדיניות הפרטיות שלנו">מדיניות פרטיות</a>
+  </p>
+  <div class="cookie-btns">
+    <button id="cookie-accept" aria-label="קבל את כל העוגיות">אני מסכים/ה</button>
+    <button id="cookie-decline" aria-label="דחה עוגיות שאינן הכרחיות">דחה</button>
+  </div>
+</div>
+
+<!-- ACCESSIBILITY WIDGET -->
+<div id="a11y-widget" role="complementary" aria-label="כלי נגישות">
+  <button id="a11y-toggle"
+    aria-label="פתח תפריט נגישות"
+    aria-haspopup="true"
+    aria-expanded="false"
+    title="נגישות">
+    <!-- Wheelchair icon -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="4" r="1.5"/>
+      <path d="M9 8h4l2 4h3"/>
+      <path d="M11 8v5l2 3"/>
+      <circle cx="8" cy="20" r="2"/>
+      <circle cx="16" cy="20" r="2"/>
+      <path d="M8 18v-3l3-2"/>
+      <path d="M14 14l1 4"/>
+    </svg>
+  </button>
+  <div id="a11y-panel" role="dialog" aria-label="הגדרות נגישות" aria-modal="false">
+    <h3>נגישות</h3>
+
+    <div class="a11y-option">
+      <span class="a11y-label">גודל טקסט</span>
+      <div class="a11y-font-row">
+        <button class="a11y-btn" id="a11y-font-dec" aria-label="הקטן גודל טקסט">א-</button>
+        <button class="a11y-btn" id="a11y-font-inc" aria-label="הגדל גודל טקסט">א+</button>
+      </div>
+    </div>
+
+    <div class="a11y-option">
+      <span class="a11y-label">ניגודיות גבוהה</span>
+      <button class="a11y-btn" id="a11y-contrast" aria-label="הפעל ניגודיות גבוהה" aria-pressed="false">הפעל</button>
+    </div>
+
+    <div class="a11y-option">
+      <span class="a11y-label">גוון אפור</span>
+      <button class="a11y-btn" id="a11y-gray" aria-label="הפעל גוון אפור" aria-pressed="false">הפעל</button>
+    </div>
+
+    <div class="a11y-option">
+      <span class="a11y-label">הדגש קישורים</span>
+      <button class="a11y-btn" id="a11y-links" aria-label="הדגש קישורים" aria-pressed="false">הפעל</button>
+    </div>
+
+    <div class="a11y-option">
+      <span class="a11y-label">עצור אנימציות</span>
+      <button class="a11y-btn" id="a11y-anim" aria-label="עצור אנימציות" aria-pressed="false">הפעל</button>
+    </div>
+
+    <button class="a11y-reset-btn" id="a11y-reset" aria-label="אפס את כל הגדרות הנגישות">↺ איפוס הכל</button>
+    <a href="accessibility.html" class="a11y-statement-link" aria-label="הצהרת נגישות של האתר">הצהרת נגישות</a>
+  </div>
+</div>
+
+<script src="assets/js/a11y-cookie.js"></script>
+<script>
+(function(){
+  var wrap = document.querySelector('.clients-ticker-wrap');
+  if(!wrap) return;
+  function update(){
+    var r = wrap.getBoundingClientRect();
+    var cx = r.left + r.width / 2;
+    var half = r.width * 0.18; /* ±18% מהמרכז = ~3 לוגויים */
+    wrap.querySelectorAll('.client-logo').forEach(function(logo){
+      var lr = logo.getBoundingClientRect();
+      var lc = lr.left + lr.width / 2;
+      logo.classList.toggle('lit', Math.abs(lc - cx) < half);
+    });
+  }
+  setInterval(update, 60);
+})();
+</script>
+</body>
+</html>
