@@ -155,8 +155,8 @@
 /* ══════════════════════════════════════════
    GLOBAL ACCESSIBILITY MODES
 ══════════════════════════════════════════ */
-body.a11y-high-contrast{filter:contrast(150%) brightness(1.05)}
-body.a11y-grayscale{filter:grayscale(100%)}
+body.a11y-high-contrast > *:not(#a11y-widget):not(#cookie-banner){filter:contrast(135%) brightness(1.03)}
+body.a11y-grayscale > *:not(#a11y-widget):not(#cookie-banner){filter:grayscale(100%)}
 body.a11y-no-anim *,
 body.a11y-no-anim *::before,
 body.a11y-no-anim *::after{
