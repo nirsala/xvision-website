@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Pixel by Keshet API
+  description: מסכי LED ושילוט דיגיטלי לעסקים בישראל
+  version: 1.0.0
+servers:
+  - url: https://xvision.co.il
+paths:
+  /:
+    get:
+      summary: דף הבית — מסכי LED לעסקים
+      description: פתרונות מסכי LED ושילוט דיגיטלי לעסקים בישראל
+      responses:
+        '200':
+          description: Successful response
+  /products.html:
+    get:
+      summary: קטלוג מוצרים — מסכי LED פנימיים וחיצוניים
+      responses:
+        '200':
+          description: Successful response
+  /pool.html:
+    get:
+      summary: מסכי LED לבריכה
+      responses:
+        '200':
+          description: Successful response
+  /cms.html:
+    get:
+      summary: מערכת ניהול תוכן למסכי LED
+      responses:
+        '200':
+          description: Successful response
