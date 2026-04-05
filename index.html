@@ -71,6 +71,9 @@
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://i.ytimg.com"/>
+<link rel="preconnect" href="https://www.youtube.com"/>
+<link rel="preload" as="image" href="https://i.ytimg.com/vi/k6t9w1ngkR8/maxresdefault.jpg" fetchpriority="high"/>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/a11y-cookie.css"/>
 <style>
@@ -959,13 +962,15 @@ footer{
 <!-- ── HERO ── -->
 <main id="main-content">
 <section id="hero" aria-label="כותרת ראשית">
-  <div class="hero-bg">
-    <iframe
-      src="https://www.youtube.com/embed/k6t9w1ngkR8?autoplay=1&mute=1&loop=1&playlist=k6t9w1ngkR8&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&modestbranding=1"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-      title="Pixel background video"
-    ></iframe>
+  <div class="hero-bg" id="heroBg">
+    <!-- YouTube facade — loads iframe only after page is interactive (LCP fix) -->
+    <img id="heroThumb"
+      src="https://i.ytimg.com/vi/k6t9w1ngkR8/maxresdefault.jpg"
+      alt="מסכי LED לעסקים — Pixel by Keshet"
+      fetchpriority="high"
+      decoding="async"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"
+    />
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -1149,27 +1154,27 @@ footer{
 <div id="marquee">
   <div class="marquee-wrap">
     <div class="marquee-track">
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="פרויקט מסך LED — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="שילוט דיגיטלי לעסק — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="מסך LED לחנות — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="מסך LED פרסומי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="שלט LED לעסק — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="מסכי LED לרשת — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="מסך LED חיצוני — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="שילוט דיגיטלי מקצועי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="מסך LED לובי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="התקנת מסך LED — Pixel by Keshet" loading="lazy"/></picture></div>
       <!-- Duplicate for seamless loop -->
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="" loading="lazy"/></picture></div>
-      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s01.webp" type="image/webp"/><img src="assets/images/works-s01.jpg" alt="פרויקט מסך LED — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s02.webp" type="image/webp"/><img src="assets/images/works-s02.jpg" alt="שילוט דיגיטלי לעסק — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s03.webp" type="image/webp"/><img src="assets/images/works-s03.jpg" alt="מסך LED לחנות — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s04.webp" type="image/webp"/><img src="assets/images/works-s04.jpg" alt="מסך LED פרסומי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s05.webp" type="image/webp"/><img src="assets/images/works-s05.jpg" alt="שלט LED לעסק — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s06.webp" type="image/webp"/><img src="assets/images/works-s06.jpg" alt="מסכי LED לרשת — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s07.webp" type="image/webp"/><img src="assets/images/works-s07.jpg" alt="מסך LED חיצוני — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s08.webp" type="image/webp"/><img src="assets/images/works-s08.jpg" alt="שילוט דיגיטלי מקצועי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s09.webp" type="image/webp"/><img src="assets/images/works-s09.jpg" alt="מסך LED לובי — Pixel by Keshet" loading="lazy"/></picture></div>
+      <div class="marquee-item"><picture><source srcset="assets/images/works-s10.webp" type="image/webp"/><img src="assets/images/works-s10.jpg" alt="התקנת מסך LED — Pixel by Keshet" loading="lazy"/></picture></div>
     </div>
   </div>
 </div>
@@ -1497,8 +1502,8 @@ footer{
     <div class="footer-bottom">
       <div class="footer-copy">© 2026 Pixel by Keshet. כל הזכויות שמורות.</div>
       <div class="footer-links">
-        <a href="#">תנאי שימוש</a>
-        <a href="#">פרטיות</a>
+        <a href="accessibility.html#terms">תנאי שימוש</a>
+        <a href="accessibility.html#privacy">פרטיות</a>
         <a href="accessibility.html">נגישות</a>
       </div>
     </div>
@@ -1665,6 +1670,35 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 </div>
 
 <script src="assets/js/a11y-cookie.js"></script>
+<script>
+// ── YouTube Facade: load iframe after page is interactive ──
+(function(){
+  function loadYT(){
+    var bg = document.getElementById('heroBg');
+    var thumb = document.getElementById('heroThumb');
+    if(!bg || !thumb) return;
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/k6t9w1ngkR8?autoplay=1&mute=1&loop=1&playlist=k6t9w1ngkR8&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&modestbranding=1';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.setAttribute('allowfullscreen','');
+    iframe.title = 'Pixel by Keshet — מסכי LED לעסקים';
+    iframe.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78vh;height:100vh;min-width:100%;min-height:56.25vw;pointer-events:none;border:none;z-index:1';
+    bg.appendChild(iframe);
+    // fade out thumbnail after iframe loads
+    iframe.addEventListener('load', function(){
+      thumb.style.transition = 'opacity 1s ease';
+      thumb.style.opacity = '0';
+      setTimeout(function(){ if(thumb.parentNode) thumb.parentNode.removeChild(thumb); }, 1200);
+    });
+  }
+  // Load after main thread is free
+  if('requestIdleCallback' in window) {
+    requestIdleCallback(loadYT, { timeout: 3000 });
+  } else {
+    setTimeout(loadYT, 2000);
+  }
+})();
+</script>
 <script>
 (function(){
   var wrap = document.querySelector('.clients-ticker-wrap');

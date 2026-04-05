@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Pixel by Keshet",
+  "name_for_model": "pixel_by_keshet",
+  "description_for_human": "מסכי LED ושילוט דיגיטלי לעסקים בישראל — Pixel by Keshet",
+  "description_for_model": "Pixel by Keshet is an Israeli company specializing in LED screens and digital signage for businesses. Services include indoor LED displays, outdoor LED billboards, pool-area screens, CMS content management, installation and support. Located in Petah Tikva, Israel. Contact: *9555. Website: https://xvision.co.il",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://xvision.co.il/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png",
+  "contact_email": "info@pixel.co.il",
+  "legal_info_url": "https://xvision.co.il/accessibility.html"
+}
