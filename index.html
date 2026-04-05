@@ -32,10 +32,17 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://xvision.co.il/#business",
   "name": "Pixel by Keshet",
-  "description": "מסכי לד לעסקים, שלטי חוצות דיגיטליים ומסכי פרסום. פתרונות שילוט דיגיטלי לחנויות, מסעדות ואירועים.",
+  "alternateName": ["Pixel LED", "פיקסל בי קשת", "xvision"],
+  "description": "מסכי LED פנימיים וחיצוניים לעסקים — שילוט דיגיטלי, שלטי חוצות, ניהול תוכן מרחוק. ניסיון של שנים, עשרות פרויקטים ברחבי ישראל.",
   "url": "https://xvision.co.il",
-  "logo": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png",
+    "width": 200,
+    "height": 60
+  },
   "image": "https://xvision.co.il/assets/images/portfolio-w2.jpg",
   "telephone": "*9555",
   "email": "info@pixel.co.il",
@@ -43,15 +50,43 @@
     "@type": "PostalAddress",
     "streetAddress": "מודיעין 44",
     "addressLocality": "פתח תקווה",
+    "addressRegion": "מרכז",
+    "postalCode": "4959100",
     "addressCountry": "IL"
   },
-  "areaServed": "IL",
-  "serviceType": ["מסכי LED פנימיים","מסכי LED חיצוניים","מסכי לד לעסקים","שלטי חוצות דיגיטליים","מסכי פרסום","שילוט דיגיטלי","שלטים דיגיטליים לעסקים","מסכי לד לחנויות","ניהול תוכן מסכים","מסכי LED לבריכה"],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.0878",
+    "longitude": "34.8878"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"18:00"}
+  ],
+  "areaServed": [
+    {"@type":"Country","name":"Israel"},
+    {"@type":"City","name":"תל אביב"},
+    {"@type":"City","name":"ירושלים"},
+    {"@type":"City","name":"חיפה"},
+    {"@type":"City","name":"פתח תקווה"},
+    {"@type":"City","name":"ראשון לציון"}
+  ],
+  "serviceType": ["מסכי LED פנימיים","מסכי LED חיצוניים","מסכי לד לעסקים","שלטי חוצות דיגיטליים","מסכי פרסום","שילוט דיגיטלי","שלטים דיגיטליים לעסקים","מסכי לד לחנויות","ניהול תוכן מסכים","מסכי LED לבריכה","תצוגות ויטרינה","מסכי לד למסעדות","מסכי לד למלונות"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "קטלוג מסכי LED",
+    "url": "https://xvision.co.il/products.html"
+  },
+  "knowsAbout": ["LED screens","Digital signage","מסכי LED","שילוט דיגיטלי","Pixel pitch","IP65","CMS for digital signage"],
   "sameAs": [
     "https://www.facebook.com/pixelbykeshet",
     "https://www.instagram.com/pixelbykeshet",
     "https://www.linkedin.com/company/pixel-by-keshet"
-  ]
+  ],
+  "potentialAction": {
+    "@type": "ContactAction",
+    "target": "tel:*9555",
+    "name": "צור קשר"
+  }
 }
 </script>
 <!-- FAQ Schema for Google AI Overviews -->

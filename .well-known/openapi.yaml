@@ -1,33 +1,45 @@
 openapi: 3.0.0
 info:
   title: Pixel by Keshet API
-  description: מסכי LED ושילוט דיגיטלי לעסקים בישראל
+  description: LED screens and digital signage solutions for Israeli businesses
   version: 1.0.0
+  contact:
+    name: Pixel by Keshet
+    url: https://xvision.co.il
+    email: info@pixel.co.il
 servers:
   - url: https://xvision.co.il
+    description: Main website
+
 paths:
   /:
     get:
-      summary: דף הבית — מסכי LED לעסקים
-      description: פתרונות מסכי LED ושילוט דיגיטלי לעסקים בישראל
+      summary: Homepage — LED screens and digital signage for businesses
+      description: Main page with services, portfolio, and contact information
       responses:
         '200':
-          description: Successful response
+          description: Homepage content
+
   /products.html:
     get:
-      summary: קטלוג מוצרים — מסכי LED פנימיים וחיצוניים
+      summary: Product catalog — Indoor and outdoor LED screens
+      description: Full catalog of LED screen products for businesses
       responses:
         '200':
-          description: Successful response
+          description: Product catalog
+
   /pool.html:
     get:
-      summary: מסכי LED לבריכה
+      summary: Pool and outdoor luxury LED screens
+      description: Weatherproof LED screens for pools, villas and outdoor luxury venues
       responses:
         '200':
-          description: Successful response
+          description: Pool LED screen information
+
   /cms.html:
     get:
-      summary: מערכת ניהול תוכן למסכי LED
+      summary: CMS software for LED screen management
+      description: Cloud-based content management system for managing LED screens remotely
       responses:
         '200':
-          description: Successful response
+          description: CMS product information
