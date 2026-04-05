@@ -106,14 +106,12 @@
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preconnect" href="https://i.ytimg.com"/>
-<link rel="preconnect" href="https://www.youtube.com"/>
 <!-- LCP: preload hero image before anything else -->
 <link rel="preload" as="image" href="assets/images/hero-bg.jpg" fetchpriority="high"/>
 <!-- Fonts: non-blocking load to fix render delay -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/></noscript>
-<link rel="stylesheet" href="assets/css/a11y-cookie.css"/>
+<link rel="preload" href="assets/css/a11y-cookie.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="assets/css/a11y-cookie.css"/></noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -975,7 +973,7 @@ footer{
 <!-- ── NAV ── -->
 <nav role="navigation" aria-label="ניווט ראשי">
   <a class="nav-logo" href="index.html">
-    <img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:56px;width:auto;object-fit:contain"/>
+    <img src="assets/logo/pixel-logo-nav.png" alt="Pixel by Keshet" width="93" height="56" style="height:56px;width:auto;object-fit:contain"/>
   </a>
   <ul>
     <li><a href="#services">שירותים</a></li>
@@ -1130,7 +1128,7 @@ footer{
 
 <!-- ── REEL ── -->
 <section id="reel">
-  <video class="reel-video" autoplay muted loop playsinline>
+  <video class="reel-video" autoplay muted loop playsinline aria-label="סרטון תדמית Pixel by Keshet — מסכי LED לעסקים">
     <source src="assets/videos/reel-1.mp4" type="video/mp4"/>
     <source src="assets/videos/reel-2.mp4" type="video/mp4"/>
   </video>
@@ -1717,7 +1715,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     var thumb = document.getElementById('heroThumb');
     if(!bg || !thumb) return;
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/k6t9w1ngkR8?autoplay=1&mute=1&loop=1&playlist=k6t9w1ngkR8&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&modestbranding=1';
+    iframe.src = 'https://www.youtube-nocookie.com/embed/k6t9w1ngkR8?autoplay=1&mute=1&loop=1&playlist=k6t9w1ngkR8&controls=0&showinfo=0&rel=0&playsinline=1&modestbranding=1';
     iframe.allow = 'autoplay; encrypted-media';
     iframe.setAttribute('allowfullscreen','');
     iframe.title = 'Pixel by Keshet — מסכי LED לעסקים';
