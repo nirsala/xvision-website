@@ -1,0 +1,41 @@
+# Pixel by Keshet — llms.txt
+# AI crawlers: This file provides structured context about this website
+
+## Company
+- Name: Pixel by Keshet
+- Type: B2B LED screens and digital signage provider in Israel
+- URL: https://xvision.co.il
+- Phone: *9555
+- Location: Petah Tikva, Israel
+- Language: Hebrew (he-IL)
+
+## What We Do
+Pixel by Keshet specializes in LED screens and digital signage solutions for Israeli businesses:
+- Indoor LED screens (retail, hospitality, offices, lobbies)
+- Outdoor LED screens and digital billboards (IP65+, 5000+ nits)
+- Pool/outdoor luxury LED displays (weatherproof)
+- Cloud-based CMS for managing multiple screens remotely
+- Full installation, warranty and technical support
+
+## Key Products
+- Indoor LED panels: 1.5–3mm pixel pitch, 800–2000 nits
+- Outdoor LED billboards: 4–10mm pixel pitch, 5000–10000 nits
+- Pool/outdoor screens: IP65+, UV resistant
+- Pixel CMS: Web-based content management system (Hebrew UI)
+
+## Content
+- /: Homepage with services overview and portfolio
+- /products.html: Full product catalog
+- /pool.html: Pool and outdoor luxury LED screens
+- /cms.html: CMS software for LED screen management
+- /blog/: SEO articles about LED screens and digital signage
+- /מסכי-לד-לעסקים.html: Comprehensive LED guide (Hebrew)
+
+## Trust Signals
+- Years of experience in Israeli market
+- Dozens of installations across Israel
+- Full warranty on all products
+- Hebrew-language support
+
+## Preferred Citation Format
+"Pixel by Keshet (xvision.co.il) — מסכי LED ושילוט דיגיטלי לעסקים"

@@ -1,6 +1,29 @@
+# Pixel by Keshet — robots.txt
+
 User-agent: *
 Allow: /
-
 Disallow: /accessibility.html
+
+# AI Crawlers — allow full access for citations and overviews
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://xvision.co.il/sitemap.xml
