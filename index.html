@@ -279,14 +279,14 @@ nav ul a::after{
 }
 nav ul a:hover::after,nav ul a.active::after{
   transform:scaleX(1);
-  transform-origin:left center;
-  animation:nav-pulse 1s ease-in-out infinite;
+  animation:nav-pulse 1.4s ease-in-out infinite;
 }
 @keyframes nav-pulse{
-  0%  {transform:scaleX(1);   transform-origin:left center}
-  45% {transform:scaleX(0.25);transform-origin:left center}
-  55% {transform:scaleX(0.25);transform-origin:right center}
-  100%{transform:scaleX(1);   transform-origin:right center}
+  0%  {clip-path:inset(0 0 0 0)}
+  25% {clip-path:inset(0 0 0 85%)}
+  50% {clip-path:inset(0 0 0 0)}
+  75% {clip-path:inset(0 85% 0 0)}
+  100%{clip-path:inset(0 0 0 0)}
 }
 nav ul a:hover,nav ul a.active{
   color:var(--white);
