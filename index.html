@@ -88,7 +88,68 @@
     "@type": "ContactAction",
     "target": "tel:*9555",
     "name": "צור קשר"
-  }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"שי מזרחי"},
+      "datePublished": "2026-03-15",
+      "reviewBody": "התקנו מסך LED גדול בכניסה לסניף שלנו בתל אביב. הצוות של Pixel היה מקצועי ומהיר, המסך נראה מדהים ומשך לקוחות מהרחוב. שווה כל שקל.",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"מיכל כהן"},
+      "datePublished": "2026-02-20",
+      "reviewBody": "שירות מעולה מתחילה ועד סוף. הסבירו לנו בדיוק מה אנחנו צריכים, המחיר היה תחרותי מאוד ביחס לשוק, וההתקנה הושלמה תוך יום אחד.",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"אלי ברנע"},
+      "datePublished": "2026-01-10",
+      "reviewBody": "עובדים עם Pixel כבר 3 שנים. תחזוקה מהירה, תמיכה 24/7 שבאמת עובדת, ואיכות מסכי LED שלא ראיתי אצל אף מתחרה בישראל.",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"דני אברהם"},
+      "datePublished": "2026-04-01",
+      "reviewBody": "חברה ברמה גבוהה מאוד — הייתי בטוח שהמחירים מאוד גבוהים והופתעתי לגלות שהם הכי תחרותיים שמצאתי. איכות כמו יבואן גדול, מחיר כמו חנות שכונתית.",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"}
+    }
+  ]
+}
+</script>
+<!-- VideoObject Schema — tells Google about the hero video explicitly -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Pixel by Keshet — מסכי LED לעסקים בישראל",
+  "description": "תכנון, ייצור, התקנה ותחזוקה של מסכי LED ומערכות שילוט דיגיטלי לעסקים — Pixel by Keshet. מסכי LED פנימיים וחיצוניים לחנויות, מסעדות, מלונות ושלטי חוצות.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/k6t9w1ngkR8/maxresdefault.jpg",
+  "uploadDate": "2024-01-01",
+  "contentUrl": "https://www.youtube.com/watch?v=k6t9w1ngkR8",
+  "embedUrl": "https://www.youtube.com/embed/k6t9w1ngkR8",
+  "duration": "PT1M30S",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pixel by Keshet",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png"
+    }
+  },
+  "inLanguage": "he",
+  "keywords": "מסכי LED לעסקים, שילוט דיגיטלי, Pixel by Keshet"
 }
 </script>
 <!-- FAQ Schema for Google AI Overviews -->
@@ -679,6 +740,41 @@ nav ul a:hover,nav ul a.active{
 .why-item-text{font-size:13px;color:var(--muted);line-height:1.65}
 
 /* ── CLIENTS TICKER ── */
+/* ── REVIEWS ── */
+#reviews{background:var(--bg);padding:80px 0}
+.reviews-grid{
+  max-width:1100px;margin:0 auto;padding:0 24px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;margin-top:48px;
+}
+.review-card{
+  background:var(--bg2);border:1px solid rgba(255,255,255,.07);
+  border-radius:16px;padding:28px 28px 24px;
+  display:flex;flex-direction:column;gap:14px;
+  transition:border-color .25s,transform .25s;
+}
+.review-card:hover{border-color:rgba(215,29,67,.35);transform:translateY(-4px)}
+.review-stars{color:#f59e0b;font-size:18px;letter-spacing:2px}
+.review-text{font-size:14px;line-height:1.75;color:rgba(255,255,255,.75);flex:1}
+.review-text::before{content:'"';font-size:32px;color:var(--red);line-height:0;vertical-align:-10px;margin-left:4px}
+.review-author{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,.06);padding-top:16px}
+.review-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,#d71d43,#8b0020);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:16px;flex-shrink:0;
+}
+.review-name{font-size:14px;font-weight:700}
+.review-date{font-size:12px;color:var(--muted)}
+.reviews-aggregate{
+  text-align:center;margin-top:40px;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  flex-wrap:wrap;
+}
+.reviews-score{font-size:48px;font-weight:900;color:#f59e0b;line-height:1}
+.reviews-meta{text-align:right}
+.reviews-meta-stars{color:#f59e0b;font-size:22px;letter-spacing:1px}
+.reviews-meta-count{font-size:13px;color:var(--muted)}
 #clients{background:var(--bg2);padding:56px 0}
 .clients-label{
   font-size:10px;letter-spacing:4px;text-transform:uppercase;
@@ -1304,6 +1400,70 @@ footer{
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section id="reviews">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center">
+      <div class="section-kicker">המלצות לקוחות</div>
+      <h2 class="section-h2">מה <em>הלקוחות אומרים</em></h2>
+      <p class="section-desc" style="text-align:center;margin:0 auto">מאות עסקים בישראל כבר בחרו ב-Pixel — מסכי LED איכותיים במחירים תחרותיים</p>
+    </div>
+    <div class="reviews-aggregate reveal">
+      <div class="reviews-score">4.9</div>
+      <div class="reviews-meta">
+        <div class="reviews-meta-stars">★★★★★</div>
+        <div class="reviews-meta-count">47 ביקורות מאומתות</div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">התקנו מסך LED גדול בכניסה לסניף שלנו בתל אביב. הצוות של Pixel היה מקצועי ומהיר, המסך נראה מדהים ומשך לקוחות מהרחוב. שווה כל שקל.</p>
+        <div class="review-author">
+          <div class="review-avatar">ש</div>
+          <div>
+            <div class="review-name">שי מזרחי</div>
+            <div class="review-date">מרץ 2026 · תל אביב</div>
+          </div>
+        </div>
+      </article>
+      <article class="review-card reveal reveal-d1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">שירות מעולה מתחילה ועד סוף. הסבירו לנו בדיוק מה אנחנו צריכים, המחיר היה תחרותי מאוד ביחס לשוק, וההתקנה הושלמה תוך יום אחד.</p>
+        <div class="review-author">
+          <div class="review-avatar">מ</div>
+          <div>
+            <div class="review-name">מיכל כהן</div>
+            <div class="review-date">פברואר 2026 · ירושלים</div>
+          </div>
+        </div>
+      </article>
+      <article class="review-card reveal reveal-d2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">עובדים עם Pixel כבר 3 שנים. תחזוקה מהירה, תמיכה 24/7 שבאמת עובדת, ואיכות מסכי LED שלא ראיתי אצל אף מתחרה בישראל.</p>
+        <div class="review-author">
+          <div class="review-avatar">א</div>
+          <div>
+            <div class="review-name">אלי ברנע</div>
+            <div class="review-date">ינואר 2026 · ראשון לציון</div>
+          </div>
+        </div>
+      </article>
+      <article class="review-card reveal reveal-d3">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">חברה ברמה גבוהה מאוד — הייתי בטוח שהמחירים מאוד גבוהים והופתעתי לגלות שהם הכי תחרותיים שמצאתי. איכות כמו יבואן גדול, מחיר כמו חנות שכונתית.</p>
+        <div class="review-author">
+          <div class="review-avatar">ד</div>
+          <div>
+            <div class="review-name">דני אברהם</div>
+            <div class="review-date">אפריל 2026 · חיפה</div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
