@@ -1,84 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <url>
-    <loc>https://xvision.co.il/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://xvision.co.il/assets/images/portfolio-w2.jpg</image:loc>
-      <image:title>Pixel by Keshet — מסכי LED לעסקים</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/products.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://xvision.co.il/assets/images/portfolio-w2.jpg</image:loc>
-      <image:title>קטלוג מסכי LED פנימיים וחיצוניים — Pixel by Keshet</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/pool.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://xvision.co.il/assets/images/portfolio-w2.jpg</image:loc>
-      <image:title>מסכי LED לבריכה — Pixel by Keshet</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/cms.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%93-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/%D7%A9%D7%9C%D7%98%D7%99%D7%9D-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%D7%99%D7%9D.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%9C%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/blog/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://xvision.co.il/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%97%D7%99%D7%A4%D7%94-%D7%A4%D7%AA%D7%A8%D7%95%D7%A0%D7%95%D7%AA-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%91%D7%A6%D7%A4%D7%95%D7%9F.html</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://xvision.co.il/assets/images/portfolio-w2.jpg</image:loc>
-      <image:title>מסכי LED חיפה — פתרונות לעסקים בצפון</image:title>
-    </image:image>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://xvision.co.il/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/products.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/pool.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/cms.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%93-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/%D7%A9%D7%9C%D7%98%D7%99%D7%9D-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%D7%99%D7%9D.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%9C%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%97%D7%99%D7%A4%D7%94-%D7%A4%D7%AA%D7%A8%D7%95%D7%A0%D7%95%D7%AA-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%91%D7%A6%D7%A4%D7%95%D7%9F.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>http://www.xvision.co.il/blog/led-article-21-2026-04-07.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
