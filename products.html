@@ -112,6 +112,8 @@ nav ul a:hover::after,nav ul a.active::after{transform:scaleX(1);animation:nav-p
 .badge-interactive{background:#1e0d3a;color:#c8a0ff;border:1px solid rgba(180,120,255,.35)}
 .badge-led{background:#2a0d0d;color:#ff8866;border:1px solid rgba(255,100,60,.35)}
 .badge-special{background:#0d2a2a;color:#44ddcc;border:1px solid rgba(68,220,200,.35)}
+.badge-sale{background:#ff0;color:#000;border:none;font-weight:900;letter-spacing:0;animation:sale-pulse 1.2s ease-in-out infinite;font-size:11px}
+@keyframes sale-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 .pcard-sizes{position:absolute;bottom:10px;left:10px;display:flex;gap:5px;flex-wrap:wrap;direction:ltr;z-index:2}
 .size-pill{padding:2px 7px;background:rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.18);border-radius:4px;font-size:9px;font-family:'Inter',sans-serif;font-weight:600;backdrop-filter:blur(4px);color:#fff}
 
@@ -288,6 +290,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-commercial">
         <img src="assets/products/thumbs/p03.jpg" alt="תצוגת LED מסחרית QLED" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale">35% הנחה</div>
         <div class="pcard-sizes"><span class="size-pill">32"</span><span class="size-pill">43"</span><span class="size-pill">55"</span></div>
       </div>
       <div class="pcard-body">
@@ -442,6 +445,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-window">
         <img src="assets/products/thumbs/p06.jpg" alt="ויטרינה בהירות גבוהה עד 3000 ניט" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-outdoor">Full Sun</div>
         <div class="pcard-sizes"><span class="size-pill">43"</span><span class="size-pill">55"</span><span class="size-pill">65"</span></div>
       </div>
@@ -533,6 +537,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-signage">
         <img src="assets/products/thumbs/p12.jpg" alt="פוסטר דיגיטלי מתקפל עם גלגלים" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale">35% הנחה</div>
         <div class="pcard-sizes"><span class="size-pill">32"</span><span class="size-pill">43"</span><span class="size-pill">55"</span><span class="size-pill">65"</span></div>
       </div>
       <div class="pcard-body">
@@ -787,6 +792,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-touch">
         <img src="assets/products/thumbs/p18.jpg" alt="לוח חכם אינטראקטיבי MeetingPad" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-interactive">Smart Board</div>
         <div class="pcard-sizes"><span class="size-pill">55"</span><span class="size-pill">65"</span><span class="size-pill">75"</span><span class="size-pill">85"</span></div>
       </div>
@@ -926,6 +932,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-led">
         <img src="assets/products/thumbs/p26.jpg" alt="קיר LED פנים P0.8 עד P2.5 GOB" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-led">P0.8–P2.5</div>
       </div>
       <div class="pcard-body">
@@ -1016,6 +1023,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-outdoor">
         <img src="assets/products/thumbs/p34.jpg" alt="קיר LED חוץ IP67 עד 12000 ניט" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-outdoor">IP67</div>
         <div class="pcard-sizes"><span class="size-pill">P1.25</span><span class="size-pill">P2.5</span><span class="size-pill">P6</span><span class="size-pill">P10</span></div>
       </div>
@@ -1083,6 +1091,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-outdoor">
         <img src="assets/products/thumbs/p32.jpg" alt="עמדת חוץ IP66 Slim 5000 ניט" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-new">New IP66</div>
         <div class="pcard-sizes"><span class="size-pill">32"</span><span class="size-pill">43"</span><span class="size-pill">55"</span><span class="size-pill">65"</span><span class="size-pill">75"</span><span class="size-pill">86"</span></div>
       </div>
@@ -1150,6 +1159,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
       <div class="pcard-visual grad-videowall">
         <img src="assets/products/thumbs/p35.jpg" alt="קיר וידאו LCD מסגרת 0.88mm" class="pcard-img" loading="lazy"/>
         <div class="pcard-grad-overlay"></div>
+        <div class="pcard-badge badge-sale" style="right:auto;left:12px">35% הנחה</div>
         <div class="pcard-badge badge-special">0.88mm</div>
         <div class="pcard-sizes"><span class="size-pill">46"</span><span class="size-pill">49"</span><span class="size-pill">55"</span><span class="size-pill">65"</span></div>
       </div>
