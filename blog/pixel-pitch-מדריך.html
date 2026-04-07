@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>מהו Pixel Pitch? מדריך מלא לבחירת Pixel Pitch נכון למסך LED | בלוג Pixel by Keshet</title>
+<meta name="description" content="מדריך מלא ל-Pixel Pitch 2026: מה זה, איך זה משפיע על איכות התמונה, טבלת P1.5–P16 לפי שימוש ונוסחה לחישוב הפיצ' הנכון לעסק שלכם."/>
+<meta name="keywords" content="pixel pitch מסך LED, איך בוחרים pixel pitch, P2 P3 P4 P5 P10 מסך LED"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://xvision.co.il/blog/pixel-pitch-מדריך.html"/>
+<meta property="og:title" content="מהו Pixel Pitch? מדריך מלא לבחירת Pixel Pitch נכון למסך LED"/>
+<meta property="og:description" content="מדריך מלא ל-Pixel Pitch: מה זה, איך זה משפיע על איכות התמונה, ואיך בוחרים נכון."/>
+<meta property="og:locale" content="he_IL"/>
+<meta property="og:site_name" content="Pixel by Keshet"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://xvision.co.il/blog/pixel-pitch-מדריך.html"/>
+<link rel="alternate" hreflang="he" href="https://xvision.co.il/blog/pixel-pitch-מדריך.html"/>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"מהו Pixel Pitch? מדריך מלא לבחירת Pixel Pitch נכון למסך LED",
+  "description":"מדריך מלא ל-Pixel Pitch 2026: מה זה, איך זה משפיע על איכות התמונה, טבלת P1.5–P16 לפי שימוש ונוסחה לחישוב הפיצ' הנכון לעסק שלכם.",
+  "datePublished":"2026-04-07",
+  "dateModified":"2026-04-07",
+  "author":{"@type":"Organization","name":"Pixel by Keshet","url":"https://xvision.co.il"},
+  "publisher":{"@type":"Organization","name":"Pixel by Keshet","logo":{"@type":"ImageObject","url":"https://xvision.co.il/assets/logo/pixel-logo-transparent.png","width":280,"height":168}},
+  "image":{"@type":"ImageObject","url":"https://xvision.co.il/assets/images/portfolio-w2.jpg","width":1200,"height":675},
+  "url":"https://xvision.co.il/blog/pixel-pitch-מדריך.html",
+  "inLanguage":"he",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://xvision.co.il/blog/pixel-pitch-מדריך.html"},
+  "wordCount":1300,
+  "keywords":"pixel pitch מסך LED, איך בוחרים pixel pitch, P2 P3 P4 P5 P10 מסך LED"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"בית","item":"https://xvision.co.il/"},
+    {"@type":"ListItem","position":2,"name":"בלוג","item":"https://xvision.co.il/blog/"},
+    {"@type":"ListItem","position":3,"name":"מדריך Pixel Pitch","item":"https://xvision.co.il/blog/pixel-pitch-מדריך.html"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Heebo',sans-serif;direction:rtl;background:#1a1a1a;color:#fff;line-height:1.8;padding-top:68px}
+a{text-decoration:none}
+nav{position:fixed;top:0;right:0;left:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:68px;background:rgba(26,26,26,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{width:32px;height:32px;background:#d71d43;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-icon svg{width:18px;height:18px;fill:#fff}
+.nav-logo-text{font-size:15px;font-weight:900;letter-spacing:2px;color:#fff}
+.nav-logo-sub{font-size:10px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:1.5px;margin-right:2px}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.5px;font-weight:500;transition:color .2s}
+nav ul a:hover,nav ul a.active{color:#fff}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{font-size:13px;font-weight:700;color:rgba(255,255,255,.6);direction:ltr}
+.nav-cta{padding:10px 22px;border-radius:5px;background:#d71d43;color:#fff;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:box-shadow .2s}
+.nav-cta:hover{box-shadow:0 0 18px rgba(215,29,67,.55)}
+.breadcrumb{max-width:860px;margin:32px auto 0;padding:0 24px;font-size:13px;color:rgba(255,255,255,.35)}
+.breadcrumb a{color:rgba(255,255,255,.35);transition:color .2s}
+.breadcrumb a:hover{color:#fff}
+.breadcrumb span{margin:0 6px}
+article{max-width:860px;margin:28px auto 100px;padding:0 24px}
+article h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.2;margin-bottom:14px;color:#fff}
+article h2{font-size:1.3rem;font-weight:800;margin:40px 0 14px;color:#fff;border-right:3px solid #d71d43;padding-right:12px}
+article h3{font-size:1.05rem;font-weight:700;margin:24px 0 10px;color:rgba(255,255,255,.9)}
+article p{font-size:1rem;color:rgba(255,255,255,.75);margin-bottom:16px;line-height:1.85}
+article ul,article ol{margin:0 0 16px 0;padding-right:22px}
+article li{color:rgba(255,255,255,.72);margin-bottom:9px;line-height:1.7}
+article strong{color:#fff}
+article em{color:#d71d43;font-style:normal;font-weight:700}
+.article-meta{font-size:13px;color:rgba(255,255,255,.35);margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.article-meta-tag{background:rgba(215,29,67,.15);color:#d71d43;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1px}
+.highlight{background:rgba(215,29,67,.07);border-right:4px solid #d71d43;border-radius:0 10px 10px 0;padding:18px 20px;margin:28px 0}
+.highlight p{margin:0;color:rgba(255,255,255,.85)}
+.formula-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:20px 24px;margin:24px 0;text-align:center}
+.formula-box p{margin:0;font-size:1.1rem;font-weight:700;color:#fff;font-family:monospace,sans-serif;direction:ltr}
+.formula-label{font-size:12px;color:rgba(255,255,255,.4);margin-top:8px;font-family:'Heebo',sans-serif;direction:rtl}
+.table-wrap{overflow-x:auto;margin:28px 0;border-radius:10px;border:1px solid rgba(255,255,255,.07)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{background:rgba(215,29,67,.12);color:#fff;padding:12px 16px;text-align:right;font-weight:700}
+td{padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.07);color:rgba(255,255,255,.72)}
+tr:last-child td{border-bottom:none}
+.cta-box{background:linear-gradient(135deg,rgba(215,29,67,.1),rgba(215,29,67,.03));border:1px solid rgba(215,29,67,.25);border-radius:12px;padding:36px;text-align:center;margin:48px 0}
+.cta-box h3{font-size:1.3rem;font-weight:900;margin-bottom:10px}
+.cta-box p{color:rgba(255,255,255,.6);margin-bottom:24px;font-size:.95rem}
+.cta-box-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 28px;background:#d71d43;border-radius:6px;color:#fff;font-weight:700;font-size:13px;letter-spacing:.5px;transition:box-shadow .2s}
+.btn:hover{box-shadow:0 0 18px rgba(215,29,67,.55)}
+.btn-outline{background:transparent;border:1px solid rgba(215,29,67,.4);color:rgba(255,255,255,.7)}
+.btn-outline:hover{border-color:#d71d43;color:#fff}
+.related{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:24px;margin-top:16px}
+.related h4{font-size:11px;font-weight:700;color:rgba(255,255,255,.4);margin-bottom:14px;text-transform:uppercase;letter-spacing:2px}
+.related-links{display:flex;flex-wrap:wrap;gap:8px}
+.related-links a{padding:7px 16px;border:1px solid rgba(215,29,67,.2);border-radius:20px;font-size:13px;color:rgba(255,255,255,.65);transition:all .2s}
+.related-links a:hover{border-color:#d71d43;color:#fff}
+footer{background:#222;border-top:1px solid rgba(255,255,255,.07);padding:32px 56px;text-align:center;font-size:13px;color:rgba(255,255,255,.3)}
+footer a{color:#d71d43}
+@media(max-width:768px){nav{padding:0 20px}nav ul{display:none}.nav-logo-sub{display:none}article{padding:0 16px}footer{padding:24px 18px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 3h2v-2h2v2h2v2h-2v2h-2v-2h-2v-2z"/></svg>
+    </div>
+    <span class="nav-logo-text">PIXEL</span>
+    <span class="nav-logo-sub">BY KESHET</span>
+  </a>
+  <ul>
+    <li><a href="/#services">שירותים</a></li>
+    <li><a href="/#works">עבודות</a></li>
+    <li><a href="/products.html">מוצרים</a></li>
+    <li><a href="/blog/" class="active">בלוג</a></li>
+    <li><a href="/#contact">צור קשר</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-phone">*9555</span>
+    <a href="/#contact" class="nav-cta">קבל הצעת מחיר</a>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">בית</a><span>›</span><a href="/blog/">בלוג</a><span>›</span>מדריך Pixel Pitch
+</div>
+
+<article>
+  <h1>מהו Pixel Pitch? מדריך מלא לבחירת Pixel Pitch נכון למסך LED</h1>
+  <div class="article-meta">
+    <span class="article-meta-tag">מדריך טכני</span>
+    <span>Pixel by Keshet</span>
+    <span>7 באפריל 2026</span>
+    <span>זמן קריאה: 8 דקות</span>
+  </div>
+
+  <p>אחד המושגים הנפוצים ביותר בעולם מסכי ה-LED, ואחד המבולבלים ביותר, הוא <strong>Pixel Pitch</strong>. כשאתם מבקשים הצעת מחיר למסך LED, תשמעו מונחים כמו P2, P4, P6 או P10 — ולא תמיד ברור מה המשמעות ולמה זה כל כך חשוב. במדריך הזה נסביר הכל, מהבסיס ועד לנוסחה המדויקת שתעזור לכם לבחור נכון.</p>
+
+  <h2>מהו Pixel Pitch?</h2>
+  <p>Pixel Pitch (ניקוד פיקסלים, או בקיצור "פיצ'") הוא <strong>המרחק בין מרכז נורית LED אחת למרכז הנורית הסמוכה לה</strong>, נמדד במילימטרים. האות P מציינת את המרחק בסנטימטרים, ולכן:</p>
+
+  <ul>
+    <li><strong>P2</strong> = 2 מ"מ בין מרכז נורית לנורית</li>
+    <li><strong>P4</strong> = 4 מ"מ בין מרכז נורית לנורית</li>
+    <li><strong>P10</strong> = 10 מ"מ בין מרכז נורית לנורית</li>
+  </ul>
+
+  <p>כל פיקסל במסך LED מורכב מ-3 נוריות: אדומה (Red), ירוקה (Green) וכחולה (Blue) — ביחד הן יוצרות כל צבע שנראה על המסך. ה-Pixel Pitch קובע כמה נוריות יש לנו בשטח נתון, ובהתאם — מה הרזולוציה האפשרית של המסך.</p>
+
+  <h2>איך Pixel Pitch משפיע על איכות התמונה?</h2>
+  <p>הכלל הפשוט הוא: <em>ככל שה-Pixel Pitch קטן יותר — התמונה חדה יותר בצפייה מקרוב, אך המחיר גבוה יותר</em>.</p>
+
+  <h3>דוגמה מספרית</h3>
+  <p>מסך בגודל 1×1 מטר עם P2 יכיל כ-250,000 פיקסלים. אותו מסך עם P4 יכיל רק כ-62,500 פיקסלים — רבע מהרזולוציה. ההבדל ניכר לעין ממרחק של 2–4 מטר.</p>
+
+  <p>אך מה שחשוב להבין: <strong>מעל מרחק צפייה מסוים — ההבדל נעלם.</strong> מסך רחוב P10 נראה חד ומרשים לאדם הצועד ברחוב ממרחק 8–10 מטר, בדיוק כמו שמסך P2 פרימיום נראה חד מ-2 מטר. לכן, לקנות P2 לשלט חוצות הוא בזבוז כסף מוחלט.</p>
+
+  <h2>טבלת Pixel Pitch לפי שימוש</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Pixel Pitch</th>
+          <th>מרחק צפייה מינימלי</th>
+          <th>מרחק אידיאלי</th>
+          <th>שימוש מומלץ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>P1.5</strong></td>
+          <td>1 מ'</td>
+          <td>1–3 מ'</td>
+          <td>מסך ועידה, סטודיו, שידור</td>
+        </tr>
+        <tr>
+          <td><strong>P2</strong></td>
+          <td>1.5 מ'</td>
+          <td>2–4 מ'</td>
+          <td>לובי פרימיום, בנק, שיתוף ידע</td>
+        </tr>
+        <tr>
+          <td><strong>P2.5</strong></td>
+          <td>2 מ'</td>
+          <td>2.5–5 מ'</td>
+          <td>חנות, מסעדה, מלון</td>
+        </tr>
+        <tr>
+          <td><strong>P3</strong></td>
+          <td>2.5 מ'</td>
+          <td>3–6 מ'</td>
+          <td>חנות, לובי, בית קולנוע</td>
+        </tr>
+        <tr>
+          <td><strong>P4</strong></td>
+          <td>3 מ'</td>
+          <td>4–8 מ'</td>
+          <td>שטח מכירה, תחנות, קניונים</td>
+        </tr>
+        <tr>
+          <td><strong>P5</strong></td>
+          <td>4 מ'</td>
+          <td>5–10 מ'</td>
+          <td>כניסות, חניונים, חוץ קרוב</td>
+        </tr>
+        <tr>
+          <td><strong>P6</strong></td>
+          <td>5 מ'</td>
+          <td>6–12 מ'</td>
+          <td>חזית עסק, שלט חוצות קטן</td>
+        </tr>
+        <tr>
+          <td><strong>P8</strong></td>
+          <td>7 מ'</td>
+          <td>8–16 מ'</td>
+          <td>שלט חוצות, כביש משני</td>
+        </tr>
+        <tr>
+          <td><strong>P10</strong></td>
+          <td>8 מ'</td>
+          <td>10–20 מ'</td>
+          <td>שלט חוצות ראשי, כביש מהיר</td>
+        </tr>
+        <tr>
+          <td><strong>P16</strong></td>
+          <td>12 מ'</td>
+          <td>16–40 מ'</td>
+          <td>billboard ענק, אצטדיון</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>איך לחשב את הפיצ' הנכון?</h2>
+  <p>לא צריך להיות מהנדס כדי לחשב זאת. קיימת נוסחה פשוטה ומקובלת בתעשייה:</p>
+
+  <div class="formula-box">
+    <p>Pixel Pitch מקסימלי (מ"מ) = מרחק צפייה (מ') × 1000 / 3438</p>
+    <div class="formula-label">או בצורה פשוטה: מרחק הצפייה בסנטימטרים חלקי 3.4</div>
+  </div>
+
+  <h3>דוגמאות חישוב:</h3>
+  <ul>
+    <li><strong>מסך ועידה, צפייה ממרחק 3 מטר:</strong> 3000 / 3438 ≈ P0.87 → בחרו P1.5 (הקרוב ביותר מעל)</li>
+    <li><strong>מסך לחנות, צפייה ממרחק 5 מטר:</strong> 5000 / 3438 ≈ P1.45 → בחרו P2–P2.5</li>
+    <li><strong>שלט חזית עסק, צפייה ממרחק 8 מטר:</strong> 8000 / 3438 ≈ P2.3 → P4 יהיה מצוין</li>
+    <li><strong>שלט חוצות, צפייה ממרחק 15 מטר:</strong> 15000 / 3438 ≈ P4.4 → P6–P8 מומלץ</li>
+  </ul>
+
+  <div class="highlight">
+    <p><strong>טיפ חשוב:</strong> הנוסחה נותנת את ה-Pixel Pitch המקסימלי לקבלת תמונה חדה. בפועל, עדיף לבחור ערך קצת קטן יותר (רזולוציה גבוהה יותר) כשיש ספק — אך לא להגזים כי זה יעלה כסף מיותר.</p>
+  </div>
+
+  <h2>טעויות נפוצות בבחירת Pixel Pitch</h2>
+
+  <h3>טעות 1: לקנות פיצ' קטן מדי לשלט חוצות</h3>
+  <p>אנחנו פוגשים לעיתים לקוחות שמבקשים P2 לשלט שיוצב ברחוב, כי "רוצים שייראה הכי טוב". זו טעות יקרה. בצפייה ממרחק 10 מטר, המוח האנושי לא מבדיל בין P4 ל-P2. אתם משלמים פי 2–3 ולא מקבלים שום ערך נוסף.</p>
+
+  <h3>טעות 2: לקנות פיצ' גדול מדי לצפייה קרובה</h3>
+  <p>מסך P10 בחנות ספרים שבה לקוחות עומדים מרחק מטר–מטר וחצי — ייראה "פיקסלי" וגס. זו חוסכת כסף בהתחלה אך פוגעת בתדמית העסק.</p>
+
+  <h3>טעות 3: התעלמות מגורם הסביבה</h3>
+  <p>בסביבה חיצונית, בהירות המסך (ניט) חשובה לא פחות מה-Pixel Pitch. מסך P2 עם 800 ניט בחוץ ייראה גרוע ממסך P6 עם 5,000 ניט. לצרכים חיצוניים, ודאו שהבהירות לפחות 3,500–5,000 ניט.</p>
+
+  <h3>טעות 4: לא לשקול את מרחק הצפייה בפועל</h3>
+  <p>שאלו את עצמכם: מאיפה רוב הצופים יראו את המסך? לא מה המרחק המינימלי האפשרי. אם 80% מהצופים יעמדו ב-5–8 מטר, תכננו לפי זה.</p>
+
+  <h2>סיכום — המלצות Pixel by Keshet</h2>
+  <p>אחרי שנים של התקנת מסכי LED בכל רחבי ישראל, הנה ה-"כלל אצבע" שלנו:</p>
+
+  <ul>
+    <li><strong>משרד / חדר ישיבות:</strong> P1.5–P2</li>
+    <li><strong>חנות קמעונאית / מסעדה:</strong> P2.5–P3</li>
+    <li><strong>לובי / כניסה לבניין:</strong> P3–P4</li>
+    <li><strong>שלט חזית קטן (חוץ):</strong> P4–P6</li>
+    <li><strong>שלט חוצות בינוני:</strong> P6–P8</li>
+    <li><strong>Billboard / שלט גדול:</strong> P10–P16</li>
+  </ul>
+
+  <p>בכל מקרה של ספק — פנו אלינו. נשמח לחשב יחד אתכם את הפיצ' האופטימלי לפי הגודל, המיקום ומרחק הצפייה הספציפיים שלכם, ולהציע פתרון שמביא את הערך הטוב ביותר לכסף.</p>
+
+  <div class="cta-box">
+    <h3>לא בטוחים איזה Pixel Pitch מתאים לכם?</h3>
+    <p>שלחו לנו את מידות החלל ומרחק הצפייה — ונחזיר לכם המלצה מפורטת בחינם</p>
+    <div class="cta-box-btns">
+      <a href="/#contact" class="btn">קבל המלצת Pixel Pitch</a>
+      <a href="tel:*9555" class="btn btn-outline">*9555</a>
+    </div>
+  </div>
+
+  <div class="related">
+    <h4>מאמרים קשורים</h4>
+    <div class="related-links">
+      <a href="/blog/מחיר-מסך-led-לעסק.html">מחיר מסך LED לעסק</a>
+      <a href="/blog/מסך-led-vs-טלוויזיה.html">מסך LED מול טלוויזיה</a>
+      <a href="/blog/מסך-led-לחנות.html">מסך LED לחנות</a>
+      <a href="/blog/שלט-חוצות-דיגיטלי.html">שלט חוצות דיגיטלי</a>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <p>© 2026 Pixel by Keshet | <a href="/">מסכי LED לעסקים</a> | <a href="tel:*9555">*9555</a> | <a href="/blog/">בלוג</a></p>
+</footer>
+</body>
+</html>
