@@ -7,34 +7,76 @@
 <meta name="description" content="מאמרים מקצועיים על מסכי LED לעסקים, שילוט דיגיטלי, שלטי חוצות ועוד — Pixel by Keshet"/>
 <link rel="canonical" href="https://xvision.co.il/blog/"/>
 <link rel="icon" href="/favicon.ico"/>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Heebo',sans-serif;direction:rtl;background:#1a1a1a;color:#fff;line-height:1.7}
-a{color:inherit;text-decoration:none}
-nav{background:rgba(26,26,26,.97);border-bottom:1px solid rgba(255,255,255,.07);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between}
-.nav-brand{font-weight:900;font-size:16px;letter-spacing:2px}
-.nav-brand span{color:#d71d43}
-.nav-cta{background:#d71d43;color:#fff;padding:8px 18px;border-radius:5px;font-size:12px;font-weight:700}
-.hero{padding:60px 40px;text-align:center;border-bottom:1px solid rgba(255,255,255,.07)}
-.hero h1{font-size:2.2rem;font-weight:900;margin-bottom:12px}
-.hero p{color:rgba(255,255,255,.55);font-size:1rem}
-.grid{max-width:1000px;margin:48px auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+body{font-family:'Heebo',sans-serif;direction:rtl;background:#1a1a1a;color:#fff;line-height:1.7;padding-top:68px}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;right:0;left:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:68px;background:rgba(26,26,26,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:32px;height:32px;background:#d71d43;border-radius:6px;display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{width:18px;height:18px;fill:#fff}
+.nav-logo-text{font-size:15px;font-weight:900;letter-spacing:2px;color:#fff}
+.nav-logo-sub{font-size:10px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:1.5px}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.5px;font-weight:500;transition:color .2s}
+nav ul a:hover{color:#fff}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{font-size:13px;font-weight:700;color:rgba(255,255,255,.6);direction:ltr}
+.nav-cta{padding:10px 22px;border-radius:5px;background:#d71d43;color:#fff;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:box-shadow .2s}
+.nav-cta:hover{box-shadow:0 0 18px rgba(215,29,67,.55)}
+.hero{padding:72px 40px 60px;text-align:center;border-bottom:1px solid rgba(255,255,255,.07)}
+.hero h1{font-size:2.4rem;font-weight:900;margin-bottom:12px}
+.hero p{color:rgba(255,255,255,.5);font-size:1rem}
+.grid{max-width:1100px;margin:56px auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
 .card{background:#222;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden;transition:border-color .2s,transform .2s}
 .card:hover{border-color:rgba(215,29,67,.4);transform:translateY(-4px)}
-.card-img{width:100%;height:180px;object-fit:cover;display:block}
-.card-body{padding:20px}
-.card-tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d71d43;font-weight:700;margin-bottom:10px}
+.card-img{width:100%;height:190px;object-fit:cover;display:block}
+.card-body{padding:22px}
+.card-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#d71d43;font-weight:700;margin-bottom:10px}
 .card h2{font-size:1rem;font-weight:800;margin-bottom:10px;line-height:1.4}
+.card h2 a{color:#fff;transition:color .2s}
 .card h2 a:hover{color:#d71d43}
-.card-meta{font-size:12px;color:rgba(255,255,255,.35)}
-footer{text-align:center;padding:28px;font-size:13px;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.06);margin-top:40px}
+.card-meta{font-size:12px;color:rgba(255,255,255,.3)}
+footer{background:#222;border-top:1px solid rgba(255,255,255,.07);padding:56px 56px 32px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-brand-icon{width:28px;height:28px;background:#d71d43;border-radius:5px}
+.footer-brand-name{font-size:14px;font-weight:900;letter-spacing:2px}
+.footer-brand-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:16px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.25);transition:color .2s}
+.footer-links a:hover{color:#fff}
+@media(max-width:768px){nav{padding:0 20px}nav ul{display:none}.nav-logo-sub{display:none}footer{padding:40px 20px 24px}.footer-top{grid-template-columns:1fr 1fr;gap:24px}.footer-bottom{flex-direction:column;gap:12px;text-align:center}}
 </style>
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-brand">PIXEL <span>●</span> by Keshet</a>
-  <a href="tel:*9555" class="nav-cta">*9555</a>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 3h2v-2h2v2h2v2h-2v2h-2v-2h-2v-2z"/></svg></div>
+    <span class="nav-logo-text">PIXEL</span>
+    <span class="nav-logo-sub">BY KESHET</span>
+  </a>
+  <ul>
+    <li><a href="/#services">שירותים</a></li>
+    <li><a href="/#works">עבודות</a></li>
+    <li><a href="/products.html">מוצרים</a></li>
+    <li><a href="/pool.html">מסכי בריכה</a></li>
+    <li><a href="/cms.html">ניהול תוכן</a></li>
+    <li><a href="/#contact">צור קשר</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-phone">*9555</span>
+    <a href="/#contact" class="nav-cta">קבל הצעת מחיר</a>
+  </div>
 </nav>
 <div class="hero">
   <h1>בלוג מסכי LED ושילוט דיגיטלי</h1>
@@ -75,6 +117,53 @@ footer{text-align:center;padding:28px;font-size:13px;color:rgba(255,255,255,.3);
       </div>
     </article>
 </div>
-<footer>© 2026 Pixel by Keshet | <a href="https://xvision.co.il" style="color:#d71d43">xvision.co.il</a></footer>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-logo">
+          <div class="footer-brand-icon"></div>
+          <span class="footer-brand-name">PIXEL BY KESHET</span>
+        </div>
+        <p class="footer-brand-desc">מומחים למסכי LED ושילוט דיגיטלי לעסקים בישראל.<br/>פרויקטים בכל הארץ — מחנויות עד רשתות ארציות.</p>
+      </div>
+      <div class="footer-col">
+        <h4>שירותים</h4>
+        <ul>
+          <li><a href="/#services">מסכי LED לעסקים</a></li>
+          <li><a href="/#services">שלטי חוצות</a></li>
+          <li><a href="/#services">מסכי פרסום</a></li>
+          <li><a href="/#services">התקנה ותחזוקה</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>מוצרים</h4>
+        <ul>
+          <li><a href="/products.html">מסכי LED</a></li>
+          <li><a href="/pool.html">מסכי בריכה</a></li>
+          <li><a href="/cms.html">מערכת CMS</a></li>
+          <li><a href="/blog/">בלוג מקצועי</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>צור קשר</h4>
+        <ul>
+          <li><a href="tel:*9555">*9555</a></li>
+          <li><a href="https://wa.me/972559732343">WhatsApp</a></li>
+          <li><a href="/#contact">השאר פרטים</a></li>
+          <li><a href="/#works">פרויקטים</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Pixel by Keshet — כל הזכויות שמורות</p>
+      <div class="footer-links">
+        <a href="/accessibility.html#terms">תנאי שימוש</a>
+        <a href="/accessibility.html#privacy">פרטיות</a>
+        <a href="/accessibility.html">נגישות</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
