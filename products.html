@@ -96,8 +96,8 @@ nav ul a:hover::after,nav ul a.active::after{transform:scaleX(1);animation:nav-p
 .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0 56px}
 
 /* ── PRODUCT CARD ── */
-.product-card{background:var(--card);border-radius:14px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .3s;position:relative}
-.product-card:hover{transform:translateY(-6px);border-color:rgba(215,29,67,.3);box-shadow:0 20px 56px rgba(0,0,0,.5),0 0 0 1px rgba(215,29,67,.08)}
+.product-card{background:var(--card);border-radius:14px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .35s;position:relative;z-index:1}
+.product-card:hover{transform:scale(2);border-color:rgba(215,29,67,.4);box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 0 1px rgba(215,29,67,.15);z-index:100}
 
 /* visual */
 .pcard-visual{height:240px;position:relative;overflow:hidden;flex-shrink:0}
