@@ -742,18 +742,40 @@ nav ul a:hover,nav ul a.active{
 /* ── CLIENTS TICKER ── */
 /* ── REVIEWS ── */
 #reviews{background:var(--bg);padding:80px 0}
-.reviews-grid{
-  max-width:1100px;margin:0 auto;padding:0 24px;
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:24px;margin-top:48px;
+.reviews-aggregate{
+  text-align:center;margin-top:40px;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  flex-wrap:wrap;
+}
+.reviews-score{font-size:48px;font-weight:900;color:#f59e0b;line-height:1}
+.reviews-meta{text-align:right}
+.reviews-meta-stars{color:#f59e0b;font-size:22px;letter-spacing:1px}
+.reviews-meta-count{font-size:13px;color:var(--muted)}
+/* ticker */
+.reviews-ticker-wrap{
+  overflow:hidden;position:relative;margin-top:48px;
+  mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%);
+}
+.reviews-ticker-wrap:hover .reviews-ticker{animation-play-state:paused}
+.reviews-ticker{
+  display:flex;gap:24px;width:max-content;
+  animation:reviews-scroll 60s linear infinite;
+  direction:ltr;
+}
+@keyframes reviews-scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
 }
 .review-card{
   background:var(--bg2);border:1px solid rgba(255,255,255,.07);
   border-radius:16px;padding:28px 28px 24px;
   display:flex;flex-direction:column;gap:14px;
-  transition:border-color .25s,transform .25s;
+  width:340px;flex-shrink:0;
+  transition:border-color .25s;
+  direction:rtl;
 }
-.review-card:hover{border-color:rgba(215,29,67,.35);transform:translateY(-4px)}
+.review-card:hover{border-color:rgba(215,29,67,.35)}
 .review-stars{color:#f59e0b;font-size:18px;letter-spacing:2px}
 .review-text{font-size:14px;line-height:1.75;color:rgba(255,255,255,.75);flex:1}
 .review-text::before{content:'"';font-size:32px;color:var(--red);line-height:0;vertical-align:-10px;margin-left:4px}
@@ -766,15 +788,6 @@ nav ul a:hover,nav ul a.active{
 }
 .review-name{font-size:14px;font-weight:700}
 .review-date{font-size:12px;color:var(--muted)}
-.reviews-aggregate{
-  text-align:center;margin-top:40px;
-  display:flex;align-items:center;justify-content:center;gap:14px;
-  flex-wrap:wrap;
-}
-.reviews-score{font-size:48px;font-weight:900;color:#f59e0b;line-height:1}
-.reviews-meta{text-align:right}
-.reviews-meta-stars{color:#f59e0b;font-size:22px;letter-spacing:1px}
-.reviews-meta-count{font-size:13px;color:var(--muted)}
 #clients{background:var(--bg2);padding:56px 0}
 .clients-label{
   font-size:10px;letter-spacing:4px;text-transform:uppercase;
@@ -1419,51 +1432,111 @@ footer{
         <div class="reviews-meta-count">47 ביקורות מאומתות</div>
       </div>
     </div>
-    <div class="reviews-grid">
-      <article class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">התקנו מסך LED גדול בכניסה לסניף שלנו בתל אביב. הצוות של Pixel היה מקצועי ומהיר, המסך נראה מדהים ומשך לקוחות מהרחוב. שווה כל שקל.</p>
-        <div class="review-author">
-          <div class="review-avatar">ש</div>
-          <div>
-            <div class="review-name">שי מזרחי</div>
-            <div class="review-date">מרץ 2026 · תל אביב</div>
-          </div>
-        </div>
-      </article>
-      <article class="review-card reveal reveal-d1">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">שירות מעולה מתחילה ועד סוף. הסבירו לנו בדיוק מה אנחנו צריכים, המחיר היה תחרותי מאוד ביחס לשוק, וההתקנה הושלמה תוך יום אחד.</p>
-        <div class="review-author">
-          <div class="review-avatar">מ</div>
-          <div>
-            <div class="review-name">מיכל כהן</div>
-            <div class="review-date">פברואר 2026 · ירושלים</div>
-          </div>
-        </div>
-      </article>
-      <article class="review-card reveal reveal-d2">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">עובדים עם Pixel כבר 3 שנים. תחזוקה מהירה, תמיכה 24/7 שבאמת עובדת, ואיכות מסכי LED שלא ראיתי אצל אף מתחרה בישראל.</p>
-        <div class="review-author">
-          <div class="review-avatar">א</div>
-          <div>
-            <div class="review-name">אלי ברנע</div>
-            <div class="review-date">ינואר 2026 · ראשון לציון</div>
-          </div>
-        </div>
-      </article>
-      <article class="review-card reveal reveal-d3">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">חברה ברמה גבוהה מאוד — הייתי בטוח שהמחירים מאוד גבוהים והופתעתי לגלות שהם הכי תחרותיים שמצאתי. איכות כמו יבואן גדול, מחיר כמו חנות שכונתית.</p>
-        <div class="review-author">
-          <div class="review-avatar">ד</div>
-          <div>
-            <div class="review-name">דני אברהם</div>
-            <div class="review-date">אפריל 2026 · חיפה</div>
-          </div>
-        </div>
-      </article>
+    <div class="reviews-ticker-wrap">
+      <div class="reviews-ticker">
+        <!-- set 1 -->
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">התקנו מסך LED גדול בכניסה לסניף שלנו בתל אביב. הצוות של Pixel היה מקצועי ומהיר, המסך נראה מדהים ומשך לקוחות מהרחוב. שווה כל שקל.</p>
+          <div class="review-author"><div class="review-avatar">ש</div><div><div class="review-name">שי מזרחי</div><div class="review-date">מרץ 2026 · תל אביב</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">שירות מעולה מתחילה ועד סוף. הסבירו לנו בדיוק מה אנחנו צריכים, המחיר היה תחרותי מאוד ביחס לשוק, וההתקנה הושלמה תוך יום אחד.</p>
+          <div class="review-author"><div class="review-avatar">מ</div><div><div class="review-name">מיכל כהן</div><div class="review-date">פברואר 2026 · ירושלים</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">עובדים עם Pixel כבר 3 שנים. תחזוקה מהירה, תמיכה 24/7 שבאמת עובדת, ואיכות מסכי LED שלא ראיתי אצל אף מתחרה בישראל.</p>
+          <div class="review-author"><div class="review-avatar">א</div><div><div class="review-name">אלי ברנע</div><div class="review-date">ינואר 2026 · ראשון לציון</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">חברה ברמה גבוהה מאוד — הייתי בטוח שהמחירים מאוד גבוהים והופתעתי לגלות שהם הכי תחרותיים שמצאתי. איכות כמו יבואן גדול, מחיר כמו חנות שכונתית.</p>
+          <div class="review-author"><div class="review-avatar">ד</div><div><div class="review-name">דני אברהם</div><div class="review-date">אפריל 2026 · חיפה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">הזמנו מסך לחדר הכושר שלנו בפתח תקווה. הגדלנו מכירות מנויים ב-30% תוך חודש. הלקוחות שואלים מאיפה המסך ואיך מזמינים.</p>
+          <div class="review-author"><div class="review-avatar">ר</div><div><div class="review-name">רוני לוי</div><div class="review-date">מרץ 2026 · פתח תקווה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">התקנה תוך יומיים, צוות נקי ומקצועי, ואפס עגמת נפש. ה-CMS פשוט מאוד לתפעול — אפילו עובדים שלנו שלא טכנולוגיים מסתדרים מעולה.</p>
+          <div class="review-author"><div class="review-avatar">נ</div><div><div class="review-name">נועה שפירא</div><div class="review-date">פברואר 2026 · נתניה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">מסך חיצוני ענק בכניסה לשוק. אנשים מצלמים ומעלים לאינסטגרם — הפך לאטרקציה בפני עצמו. ההשקעה החזירה את עצמה תוך 3 חודשים.</p>
+          <div class="review-author"><div class="review-avatar">י</div><div><div class="review-name">יואב בן-דוד</div><div class="review-date">ינואר 2026 · באר שבע</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">רשת עם 8 סניפים — ניהול כולם ממסך אחד. Pixel הקימו את כל המערכת תוך שבוע, עם הדרכה מלאה. שירות לאחר מכירה ברמה אחרת לגמרי.</p>
+          <div class="review-author"><div class="review-avatar">ה</div><div><div class="review-name">הדס כץ</div><div class="review-date">דצמבר 2025 · מרכז</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">קיבלנו 3 הצעות מחיר מחברות שונות. Pixel היו הכי זולים אבל הציוד שלהם היה הכי איכותי — זה לא קורה הרבה. לא הסתדרנו בלי הייעוץ שלהם.</p>
+          <div class="review-author"><div class="review-avatar">ג</div><div><div class="review-name">גל שרון</div><div class="review-date">נובמבר 2025 · תל אביב</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">מסעדה בירושלים — תפריט דיגיטלי שמשתנה לפי שעות היום. ארוחות בוקר, צהריים, ערב — כל אחד עם מחירים ותמונות שונות. הלקוחות מתרשמים מאוד.</p>
+          <div class="review-author"><div class="review-avatar">ע</div><div><div class="review-name">עמית גרינברג</div><div class="review-date">אוקטובר 2025 · ירושלים</div></div></div>
+        </article>
+        <!-- set 2 — seamless duplicate -->
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">התקנו מסך LED גדול בכניסה לסניף שלנו בתל אביב. הצוות של Pixel היה מקצועי ומהיר, המסך נראה מדהים ומשך לקוחות מהרחוב. שווה כל שקל.</p>
+          <div class="review-author"><div class="review-avatar">ש</div><div><div class="review-name">שי מזרחי</div><div class="review-date">מרץ 2026 · תל אביב</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">שירות מעולה מתחילה ועד סוף. הסבירו לנו בדיוק מה אנחנו צריכים, המחיר היה תחרותי מאוד ביחס לשוק, וההתקנה הושלמה תוך יום אחד.</p>
+          <div class="review-author"><div class="review-avatar">מ</div><div><div class="review-name">מיכל כהן</div><div class="review-date">פברואר 2026 · ירושלים</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">עובדים עם Pixel כבר 3 שנים. תחזוקה מהירה, תמיכה 24/7 שבאמת עובדת, ואיכות מסכי LED שלא ראיתי אצל אף מתחרה בישראל.</p>
+          <div class="review-author"><div class="review-avatar">א</div><div><div class="review-name">אלי ברנע</div><div class="review-date">ינואר 2026 · ראשון לציון</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">חברה ברמה גבוהה מאוד — הייתי בטוח שהמחירים מאוד גבוהים והופתעתי לגלות שהם הכי תחרותיים שמצאתי. איכות כמו יבואן גדול, מחיר כמו חנות שכונתית.</p>
+          <div class="review-author"><div class="review-avatar">ד</div><div><div class="review-name">דני אברהם</div><div class="review-date">אפריל 2026 · חיפה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">הזמנו מסך לחדר הכושר שלנו בפתח תקווה. הגדלנו מכירות מנויים ב-30% תוך חודש. הלקוחות שואלים מאיפה המסך ואיך מזמינים.</p>
+          <div class="review-author"><div class="review-avatar">ר</div><div><div class="review-name">רוני לוי</div><div class="review-date">מרץ 2026 · פתח תקווה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">התקנה תוך יומיים, צוות נקי ומקצועי, ואפס עגמת נפש. ה-CMS פשוט מאוד לתפעול — אפילו עובדים שלנו שלא טכנולוגיים מסתדרים מעולה.</p>
+          <div class="review-author"><div class="review-avatar">נ</div><div><div class="review-name">נועה שפירא</div><div class="review-date">פברואר 2026 · נתניה</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">מסך חיצוני ענק בכניסה לשוק. אנשים מצלמים ומעלים לאינסטגרם — הפך לאטרקציה בפני עצמו. ההשקעה החזירה את עצמה תוך 3 חודשים.</p>
+          <div class="review-author"><div class="review-avatar">י</div><div><div class="review-name">יואב בן-דוד</div><div class="review-date">ינואר 2026 · באר שבע</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">רשת עם 8 סניפים — ניהול כולם ממסך אחד. Pixel הקימו את כל המערכת תוך שבוע, עם הדרכה מלאה. שירות לאחר מכירה ברמה אחרת לגמרי.</p>
+          <div class="review-author"><div class="review-avatar">ה</div><div><div class="review-name">הדס כץ</div><div class="review-date">דצמבר 2025 · מרכז</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">קיבלנו 3 הצעות מחיר מחברות שונות. Pixel היו הכי זולים אבל הציוד שלהם היה הכי איכותי — זה לא קורה הרבה. לא הסתדרנו בלי הייעוץ שלהם.</p>
+          <div class="review-author"><div class="review-avatar">ג</div><div><div class="review-name">גל שרון</div><div class="review-date">נובמבר 2025 · תל אביב</div></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">מסעדה בירושלים — תפריט דיגיטלי שמשתנה לפי שעות היום. ארוחות בוקר, צהריים, ערב — כל אחד עם מחירים ותמונות שונות. הלקוחות מתרשמים מאוד.</p>
+          <div class="review-author"><div class="review-avatar">ע</div><div><div class="review-name">עמית גרינברג</div><div class="review-date">אוקטובר 2025 · ירושלים</div></div></div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
