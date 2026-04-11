@@ -2135,18 +2135,42 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 </script>
 
 <script>
+// Scroll-spy: highlight nav link based on visible section
 (function(){
-  var path = window.location.pathname.replace(/\/index\.html$/, '/');
+  var map = {services:'שירותים', works:'עבודות', contact:'צור קשר'};
+  var links = {};
   document.querySelectorAll('nav ul a').forEach(function(a){
     var href = a.getAttribute('href') || '';
-    // Skip section links (they point to anchors, not pages)
-    if(href.indexOf('#') !== -1) return;
-    var linkPath = href.startsWith('/') ? href : '/' + href;
-    linkPath = linkPath.replace(/\/index\.html$/, '/');
-    if(linkPath === path || (linkPath !== '/' && path.startsWith(linkPath))) {
-      a.classList.add('active');
-    }
+    var hash = href.split('#')[1];
+    if(hash && map[hash]) links[hash] = a;
   });
+  if(!Object.keys(links).length) return;
+
+  var active = null;
+  function setActive(id){
+    if(active === id) return;
+    active = id;
+    Object.values(links).forEach(function(a){ a.classList.remove('active'); });
+    if(id && links[id]) links[id].classList.add('active');
+  }
+
+  var sections = ['services','works','contact'].map(function(id){
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting) setActive(e.target.id);
+    });
+    // If nothing intersecting, clear active
+    var anyVisible = sections.some(function(s){
+      var r = s.getBoundingClientRect();
+      return r.top < window.innerHeight * 0.6 && r.bottom > 0;
+    });
+    if(!anyVisible) setActive(null);
+  }, {threshold: 0.2, rootMargin: '-10% 0px -40% 0px'});
+
+  sections.forEach(function(s){ obs.observe(s); });
 })();
 </script>
 </body>
