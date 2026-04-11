@@ -159,9 +159,8 @@
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<!-- LCP: preload hero image before anything else -->
-<link rel="preload" as="image" href="assets/images/hero-bg.webp" imagesrcset="assets/images/hero-bg.webp" imagesizes="100vw" fetchpriority="high" type="image/webp"/>
-<link rel="preload" as="image" href="assets/images/hero-bg.jpg" fetchpriority="high"/>
+<!-- LCP: preload hero WebP (picture element handles JPG fallback for old browsers) -->
+<link rel="preload" as="image" href="assets/images/hero-bg.webp" imagesrcset="assets/images/hero-bg.webp" imagesizes="100vw" fetchpriority="high"/>
 <!-- Fonts: non-blocking load to fix render delay -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet"/></noscript>
