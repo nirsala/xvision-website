@@ -316,5 +316,26 @@ footer a{color:#d71d43}
 <footer>
   <p>© 2026 Pixel by Keshet | <a href="/">מסכי LED לעסקים</a> | <a href="tel:*9555">*9555</a> | <a href="/blog/">בלוג</a></p>
 </footer>
+
+<script>
+(function(){
+  var path = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+  document.querySelectorAll('nav ul a').forEach(function(a){
+    var href = a.getAttribute('href') || '';
+    // Strip hash and normalize
+    var linkPath = href.split('#')[0].replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+    // Resolve relative to current directory
+    if(linkPath && !linkPath.startsWith('/') && !linkPath.startsWith('http')) {
+      linkPath = '/' + linkPath;
+    }
+    linkPath = linkPath.replace(/\/index\.html$/, '/').replace(/\/$/, '') || '/';
+    if(linkPath && linkPath !== '/' && path && path !== '/' && (path === linkPath || path.startsWith(linkPath + '/'))) {
+      a.classList.add('active');
+    } else if(path === '/' && linkPath === '/') {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
 </body>
 </html>
