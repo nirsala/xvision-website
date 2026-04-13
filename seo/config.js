@@ -5,7 +5,7 @@
 module.exports = {
   site: {
     name: 'Pixel by Keshet',
-    url: 'https://nirsala.github.io/xvision-website',
+    url: 'https://xvision.co.il',
     dir: '/Users/nirsala/xvision-website',
     language: 'he',
     location: 'פתח תקווה, ישראל',
