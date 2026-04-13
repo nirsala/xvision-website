@@ -1111,7 +1111,6 @@ footer{
 <main id="main-content">
 <section id="hero" aria-label="כותרת ראשית">
   <div class="hero-bg" id="heroBg">
-    <!-- Local hero image for fast LCP, replaced by YouTube iframe on click -->
     <picture><source srcset="assets/images/hero-bg.webp" type="image/webp"/><img id="heroThumb"
       src="assets/images/hero-bg.jpg"
       alt="מסכי LED לעסקים — Pixel by Keshet"
@@ -2091,14 +2090,12 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     iframe.title = 'Pixel by Keshet — מסכי LED לעסקים';
     iframe.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78vh;height:100vh;min-width:100%;min-height:56.25vw;pointer-events:none;border:none;z-index:1';
     bg.appendChild(iframe);
-    // fade out thumbnail after iframe loads
     iframe.addEventListener('load', function(){
       thumb.style.transition = 'opacity 1s ease';
       thumb.style.opacity = '0';
       setTimeout(function(){ if(thumb.parentNode) thumb.parentNode.removeChild(thumb); }, 1200);
     });
   }
-  // Load after main thread is free
   if('requestIdleCallback' in window) {
     requestIdleCallback(loadYT, { timeout: 3000 });
   } else {
