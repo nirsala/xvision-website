@@ -107,6 +107,11 @@ ${content}
 }
 
 function updateSitemap(newUrl, date) {
+  // וידוא שה-URL מתחיל בhttps://xvision.co.il
+  if (!newUrl.startsWith('https://xvision.co.il')) {
+    console.error('[content-gen] URL שגוי, מתעלם:', newUrl);
+    return;
+  }
   const sitemapPath = path.join(cfg.site.dir, 'sitemap.xml');
   let sitemap = fs.readFileSync(sitemapPath, 'utf8');
   if (sitemap.includes(newUrl)) return; // כבר קיים
