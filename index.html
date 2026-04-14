@@ -2096,10 +2096,14 @@ document.getElementById('contact-form').addEventListener('submit', async functio
       setTimeout(function(){ if(thumb.parentNode) thumb.parentNode.removeChild(thumb); }, 1200);
     });
   }
-  if('requestIdleCallback' in window) {
-    requestIdleCallback(loadYT, { timeout: 3000 });
-  } else {
-    setTimeout(loadYT, 2000);
+  // מובייל: iOS חוסם autoplay של YouTube iframe — נשאיר תמונה סטטית
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+  if(!isMobile) {
+    if('requestIdleCallback' in window) {
+      requestIdleCallback(loadYT, { timeout: 3000 });
+    } else {
+      setTimeout(loadYT, 2000);
+    }
   }
 })();
 </script>
