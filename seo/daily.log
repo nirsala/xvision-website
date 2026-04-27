@@ -12,3 +12,25 @@
 [content-gen] נשמר: blog/כמה-עולה-מסך-LED-לעסק-מחיר-גדלים-ואפשרויות.html
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: could not read Username for 'https://github.com': Device not configured
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: could not read Username for 'https://github.com': Device not configured
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 5 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Google Sitemap ping: סטטוס 404
+[indexing] Bing IndexNow: שגיאה 202
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום שלישי, 21 באפריל 2026
+  ✅ מאמר: כמה עולה מסך LED לעסק? מחיר, גדלים ואפשרויות
+  ✅ מילת מפתח: מסכי LED לעסקים
+  ✅ קובץ: blog/כמה-עולה-מסך-LED-לעסק-מחיר-גדלים-ואפשרויות.html
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
