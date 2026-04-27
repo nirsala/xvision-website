@@ -87,16 +87,28 @@ async function generateArticle() {
 </script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Heebo',sans-serif;background:#0a0e18;color:#e8eaf0;direction:rtl;padding:40px 20px;max-width:780px;margin:0 auto;line-height:1.8}
+body{font-family:'Heebo',sans-serif;background:#0a0e18;color:#e8eaf0;direction:rtl;padding:80px 20px 40px;max-width:780px;margin:0 auto;line-height:1.8}
 h1{font-size:2rem;margin-bottom:24px;color:#fff}
 h2{font-size:1.3rem;margin:32px 0 12px;color:#fff}
 p{margin-bottom:16px;color:rgba(255,255,255,.78)}
 a{color:#d71d43}
-.back{display:inline-block;margin-bottom:32px;color:#d71d43;text-decoration:none;font-size:14px}
+nav{position:fixed;top:0;right:0;left:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:62px;background:rgba(10,14,24,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-logo{font-size:14px;font-weight:900;color:#fff;letter-spacing:2px;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none}
+nav ul a{font-size:12px;color:rgba(255,255,255,.5);font-weight:500;text-decoration:none;transition:color .2s}
+nav ul a:hover{color:#fff}
 </style>
 </head>
 <body>
-<a href="../index.html" class="back">← חזרה לאתר</a>
+<nav>
+  <a href="/" class="nav-logo">PIXEL <span style="opacity:.4;font-size:10px">BY KESHET</span></a>
+  <ul>
+    <li><a href="/products.html">מוצרים</a></li>
+    <li><a href="/blog/">בלוג</a></li>
+    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" style="color:#d71d43;border:1px solid rgba(215,29,67,.35);border-radius:12px;padding:2px 10px">מערכת ניהול</a></li>
+    <li><a href="/#contact">צור קשר</a></li>
+  </ul>
+</nav>
 ${content}
 <p style="margin-top:40px;font-size:12px;color:rgba(255,255,255,.4)">פורסם: ${dateStr} | Pixel by Keshet</p>
 </body>
