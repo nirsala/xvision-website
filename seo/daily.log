@@ -131,3 +131,32 @@ fatal: unable to access 'https://github.com/nirsala/xvision-website.git/': Could
 [daily] שגיאה בייצור תוכן: fetch failed
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: unable to access 'https://github.com/nirsala/xvision-website.git/': Could not resolve host: github.com
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: unable to access 'https://github.com/nirsala/xvision-website.git/': Could not resolve host: github.com
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 4 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Sitemap ping שגיאה: fetch failed
+[indexing] Bing שגיאה: fetch failed
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום רביעי, 6 במאי 2026
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
+
+══════════════════════════════════════
+ SEO DAILY — יום חמישי, 7 במאי 2026
+══════════════════════════════════════
+
+📝 שלב 1: ייצור תוכן SEO...
+[content-gen] מייצר מאמר: מסכי LED לאולמות אירועים — השדרוג שכל אולם צריך
+[daily] שגיאה בייצור תוכן: fetch failed
+
+🚀 שלב 2: פרסום ל-GitHub Pages...
