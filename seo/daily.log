@@ -160,3 +160,33 @@ fatal: unable to access 'https://github.com/nirsala/xvision-website.git/': Could
 [daily] שגיאה בייצור תוכן: fetch failed
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: could not read Username for 'https://github.com': Device not configured
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: could not read Username for 'https://github.com': Device not configured
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 4 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Google Sitemap ping: סטטוס 404
+[indexing] Bing IndexNow: שגיאה 202
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום חמישי, 7 במאי 2026
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
+
+══════════════════════════════════════
+ SEO DAILY — יום ראשון, 10 במאי 2026
+══════════════════════════════════════
+
+📝 שלב 1: ייצור תוכן SEO...
+[content-gen] מייצר מאמר: שלט לד לחניון — ניהול תנועה ופרסום חכם
+[content-gen] sitemap עודכן
+[content-gen] נשמר: blog/שלט-לד-לחניון-ניהול-תנועה-ופרסום-חכם.html
+
+🚀 שלב 2: פרסום ל-GitHub Pages...
