@@ -222,3 +222,32 @@ fatal: could not read Username for 'https://github.com': Device not configured
 [daily] שגיאה בייצור תוכן: fetch failed
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: could not read Username for 'https://github.com': Device not configured
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: could not read Username for 'https://github.com': Device not configured
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 4 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Bing IndexNow: שגיאה 202
+[indexing] Google Sitemap ping: סטטוס 404
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום שני, 11 במאי 2026
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
+
+══════════════════════════════════════
+ SEO DAILY — יום רביעי, 13 במאי 2026
+══════════════════════════════════════
+
+📝 שלב 1: ייצור תוכן SEO...
+[content-gen] מייצר מאמר: מסכי LED לאצטדיונים והיכלי ספורט בישראל
+[daily] שגיאה בייצור תוכן: fetch failed
+
+🚀 שלב 2: פרסום ל-GitHub Pages...
