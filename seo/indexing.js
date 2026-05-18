@@ -34,7 +34,7 @@ async function pingBing(urls) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     });
-    console.log(`[indexing] Bing IndexNow: ${res.status === 200 ? 'נשלח בהצלחה' : `שגיאה ${res.status}`}`);
+    console.log(`[indexing] Bing IndexNow: ${[200, 202].includes(res.status) ? 'נשלח בהצלחה' : `שגיאה ${res.status}`}`);
   } catch (e) {
     console.log(`[indexing] Bing שגיאה: ${e.message}`);
   }
@@ -60,14 +60,15 @@ async function pingGoogle(urls) {
   }
 }
 
-// ── Google Search Console sitemap ping ──────
+// ── Google Search Console sitemap submission ──────
+// google.com/ping?sitemap= הוסר בנובמבר 2023 — כעת יש להגיש ב-Search Console
 async function pingSitemap() {
-  const url = `https://www.google.com/ping?sitemap=${cfg.site.url}/sitemap.xml`;
-  try {
-    const res = await fetch(url);
-    console.log(`[indexing] Google Sitemap ping: ${res.status === 200 ? 'הצליח' : `סטטוס ${res.status}`}`);
-  } catch(e) {
-    console.log(`[indexing] Sitemap ping שגיאה: ${e.message}`);
+  const sitemapUrl = `${cfg.site.url}/sitemap.xml`;
+  if (cfg.googleServiceAccount) {
+    console.log(`[indexing] Google Sitemap: ${sitemapUrl} (דורש Search Console API)`);
+  } else {
+    console.log(`[indexing] Google Sitemap: ה-sitemap קיים בכתובת ${sitemapUrl}`);
+    console.log(`[indexing] לשליחה אוטומטית הגדר GOOGLE_SA_PATH עם service account`);
   }
 }
 
