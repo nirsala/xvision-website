@@ -2,11 +2,13 @@
 //  SEO DAILY SYSTEM — CONFIGURATION
 // ═══════════════════════════════════════════
 
+const path = require('path');
+
 module.exports = {
   site: {
     name: 'Pixel by Keshet',
-    url: 'https://nirsala.github.io/xvision-website',
-    dir: '/Users/nirsala/xvision-website',
+    url: 'https://xvision.co.il',
+    dir: path.resolve(__dirname, '..'),
     language: 'he',
     location: 'פתח תקווה, ישראל',
   },
