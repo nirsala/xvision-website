@@ -9,15 +9,41 @@ const cfg  = require('./config');
 
 const BLOG_DIR = path.join(cfg.site.dir, 'blog');
 
-// נושאים לסבב שבועי (7 נושאים ← כל יום אחר)
+// נושאים לסבב חודשי (28 נושאים ← עודכן עם 11 מתחרים)
 const TOPICS = [
+  // ── ביטויי ליבה — מסך לעסק ──
+  { title: 'מסך לעסק — כל מה שצריך לדעת לפני שקונים', keyword: 'מסך לעסק' },
+  { title: 'מסכים לעסקים: השוואה מלאה ומדריך בחירה 2026', keyword: 'מסכים לעסקים' },
+  { title: 'מסך מקצועי לעסק — למה לא כל מסך מתאים?', keyword: 'מסך מקצועי לעסק' },
+  { title: 'מסכים מקצועיים לעסקים — 5 תכונות שחייבים לדעת', keyword: 'מסכים מקצועיים לעסקים' },
+  { title: 'מסכי תצוגה לעסקים — פתרונות דיגיטליים חכמים', keyword: 'מסכי תצוגה לעסקים' },
+  { title: 'מסכים חכמים לעסקים — מה זה ומה היתרונות?', keyword: 'מסכים חכמים לעסקים' },
+  { title: 'מסך 24/7 לעסק — למה חשוב ולמה רגיל לא מספיק', keyword: 'מסכי 24/7' },
+  // ── LED ──
+  { title: 'כמה עולה מסך LED לעסק? מחיר, גדלים ואפשרויות', keyword: 'מסכי LED לעסקים' },
+  { title: 'מסכי LED חיצוניים — כל מה שצריך לדעת', keyword: 'מסכי LED חיצוניים' },
+  { title: 'קיר וידאו LED — כשאחד מסך לא מספיק', keyword: 'קיר וידאו' },
+  { title: 'רצפת LED וידאו — חוויה שאי אפשר להתעלם ממנה', keyword: 'רצפת LED וידאו' },
+  // ── לפי ענף ──
   { title: 'מסכי LED לחנויות קמעונאיות — המדריך המלא', keyword: 'מסכי LED לחנויות' },
   { title: '5 סיבות למה כל מסעדה צריכה שילוט דיגיטלי', keyword: 'שילוט דיגיטלי למסעדות' },
-  { title: 'מסכי LED חיצוניים — כל מה שצריך לדעת', keyword: 'מסכי LED חיצוניים' },
-  { title: 'מערכת ניהול תוכן למסכים — איך זה עובד?', keyword: 'ניהול תוכן מסכים' },
   { title: 'מסכי לובי — חוויית כניסה שתרשים כל מבקר', keyword: 'מסכי LED לובי' },
+  { title: 'מסכים לחדר ישיבות — המדריך המלא 2026', keyword: 'מסכים לחדר ישיבות' },
+  { title: 'מסכי LED לאולמות אירועים — השדרוג שכל אולם צריך', keyword: 'מסכי LED לאולמות אירועים' },
+  { title: 'מסכי LED לקניונים — שילוט שמוכר גם כשאתם ישנים', keyword: 'מסכי LED לקניונים' },
+  { title: 'מסכי שילוט לחלון ראווה — כך תמשכו עוברים ושבים', keyword: 'מסכי שילוט לחלונות ראווה' },
+  { title: 'שלט לד לחניון — ניהול תנועה ופרסום חכם', keyword: 'מסכי לד לחניון' },
+  { title: 'שלט LED לבית כנסת — זמני תפילה ועדכונים בקלות', keyword: 'שלטי לד לבית כנסת' },
+  { title: 'מסכי LED לתחנות דלק — שילוט שעובד בשמש ובגשם', keyword: 'מסכי לד לתחנות דלק' },
+  { title: 'מסכי LED לאצטדיונים והיכלי ספורט בישראל', keyword: 'מסכי LED לאצטדיונים' },
+  // ── שירותים ──
+  { title: 'מערכת ניהול תוכן למסכים — איך זה עובד?', keyword: 'ניהול תוכן מסכים' },
+  { title: 'השכרת מסכי LED לאירועים — מה כדאי לדעת?', keyword: 'השכרת מסכי LED לאירועים' },
+  { title: 'ניהול תורים דיגיטלי — כך משדרגים את חווית הלקוח', keyword: 'ניהול תורים דיגיטלי' },
+  { title: 'עמדת מידע דיגיטלית — כלי שיווקי שעובד בשבילך', keyword: 'עמדת מידע דיגיטלית' },
+  // ── גיאוגרפי ──
+  { title: 'מסכי LED לגני אירועים ואולמות חתונה', keyword: 'מסכי LED לגני אירועים' },
   { title: 'מסכי בריכה עמידים לחוץ — המדריך לבחירה', keyword: 'מסכי LED לבריכה' },
-  { title: 'כמה עולה מסך LED לעסק? מחיר, גדלים ואפשרויות', keyword: 'מסכי LED לעסקים' },
 ];
 
 async function generateArticle() {
@@ -79,16 +105,28 @@ async function generateArticle() {
 </script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Heebo',sans-serif;background:#0a0e18;color:#e8eaf0;direction:rtl;padding:40px 20px;max-width:780px;margin:0 auto;line-height:1.8}
+body{font-family:'Heebo',sans-serif;background:#0a0e18;color:#e8eaf0;direction:rtl;padding:80px 20px 40px;max-width:780px;margin:0 auto;line-height:1.8}
 h1{font-size:2rem;margin-bottom:24px;color:#fff}
 h2{font-size:1.3rem;margin:32px 0 12px;color:#fff}
 p{margin-bottom:16px;color:rgba(255,255,255,.78)}
 a{color:#d71d43}
-.back{display:inline-block;margin-bottom:32px;color:#d71d43;text-decoration:none;font-size:14px}
+nav{position:fixed;top:0;right:0;left:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:62px;background:rgba(10,14,24,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-logo{font-size:14px;font-weight:900;color:#fff;letter-spacing:2px;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none}
+nav ul a{font-size:12px;color:rgba(255,255,255,.5);font-weight:500;text-decoration:none;transition:color .2s}
+nav ul a:hover{color:#fff}
 </style>
 </head>
 <body>
-<a href="../index.html" class="back">← חזרה לאתר</a>
+<nav>
+  <a href="/" class="nav-logo">PIXEL <span style="opacity:.4;font-size:10px">BY KESHET</span></a>
+  <ul>
+    <li><a href="/products.html">מוצרים</a></li>
+    <li><a href="/blog/">בלוג</a></li>
+    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" style="color:#d71d43;border:1px solid rgba(215,29,67,.35);border-radius:12px;padding:2px 10px">מערכת ניהול</a></li>
+    <li><a href="/#contact">צור קשר</a></li>
+  </ul>
+</nav>
 ${content}
 <p style="margin-top:40px;font-size:12px;color:rgba(255,255,255,.4)">פורסם: ${dateStr} | Pixel by Keshet</p>
 </body>
@@ -107,6 +145,11 @@ ${content}
 }
 
 function updateSitemap(newUrl, date) {
+  // וידוא שה-URL מתחיל בhttps://xvision.co.il
+  if (!newUrl.startsWith('https://xvision.co.il')) {
+    console.error('[content-gen] URL שגוי, מתעלם:', newUrl);
+    return;
+  }
   const sitemapPath = path.join(cfg.site.dir, 'sitemap.xml');
   let sitemap = fs.readFileSync(sitemapPath, 'utf8');
   if (sitemap.includes(newUrl)) return; // כבר קיים

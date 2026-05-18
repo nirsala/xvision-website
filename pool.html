@@ -25,6 +25,20 @@
 <meta name="geo.region" content="IL"/>
 <meta name="geo.placename" content="פתח תקווה"/>
 <link rel="canonical" href="https://xvision.co.il/pool.html"/>
+<link rel="alternate" hreflang="he" href="https://xvision.co.il/pool.html"/>
+<link rel="alternate" hreflang="x-default" href="https://xvision.co.il/pool.html"/>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"בית","item":"https://xvision.co.il/"},
+    {"@type":"ListItem","position":2,"name":"מסכי LED לבריכה","item":"https://xvision.co.il/pool.html"}
+  ]
+}
+</script>
 <!-- FAQPage Schema -->
 <script type="application/ld+json">
 {
@@ -224,17 +238,17 @@ footer{background:var(--bg3);padding:48px 56px 0;border-top:1px solid var(--line
 <!-- NAV -->
 <nav role="navigation" aria-label="ניווט ראשי">
   <a class="nav-logo" href="index.html">
-    <img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/>
+    <picture><source srcset="assets/logo/pixel-logo-transparent.webp" type="image/webp"/><img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/></picture>
   </a>
-  <ul>
-    <li><a href="index.html">ראשי</a></li>
+    <ul>
     <li><a href="index.html#services">שירותים</a></li>
-    <li><a href="products.html">מוצרים</a></li>
-    <li><a href="pool.html" class="active" style="color:#fff">מסכי בריכה</a></li>
-    <li><a href="cms.html">ניהול תוכן</a></li>
     <li><a href="index.html#works">עבודות</a></li>
+    <li><a href="products.html">מוצרים</a></li>
+    <li><a href="מחירים.html">מחירים</a></li>
+    <li><a href="blog/">בלוג</a></li>
+    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" style="color:#d71d43;border:1px solid rgba(215,29,67,.35);border-radius:12px;padding:2px 10px;font-size:11px">מערכת ניהול</a></li><li><a href="index.html#contact">צור קשר</a></li>
   </ul>
-  <div class="nav-right">
+    <div class="nav-right">
     <span class="nav-phone">*9555</span>
     <a href="https://wa.me/972559732343" target="_blank" rel="noopener" class="nav-wa" aria-label="שלח הודעה בוואטסאפ">
       <svg viewBox="0 0 32 32" aria-hidden="true" style="width:22px;height:22px;fill:#25D366;display:block"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/></svg>
@@ -246,14 +260,7 @@ footer{background:var(--bg3);padding:48px 56px 0;border-top:1px solid var(--line
 <!-- HERO — YouTube BG -->
 <main id="main-content">
 <section class="hero">
-  <div class="hero-video">
-    <iframe
-      src="https://www.youtube.com/embed/qIyOaDks0WY?autoplay=1&mute=1&loop=1&playlist=qIyOaDks0WY&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&modestbranding=1"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-      title="Pixel pool screen background"
-    ></iframe>
-  </div>
+  <div class="hero-video" id="poolVideoBg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">● מסכי LED לבריכה ולחצר</div>
@@ -512,7 +519,7 @@ footer{background:var(--bg3);padding:48px 56px 0;border-top:1px solid var(--line
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="index.html">
-        <img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:44px;width:auto;object-fit:contain"/>
+        <picture><source srcset="assets/logo/pixel-logo-transparent.webp" type="image/webp"/><img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:44px;width:auto;object-fit:contain"/></picture>
       </a>
       <p>פתרונות מסכי לד, שלטי חוצות דיגיטליים ומסכי בריכה לבתי יוקרה — מהתכנון ועד ההתקנה.</p>
     </div>
@@ -600,5 +607,43 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </div>
 
 <script src="assets/js/a11y-cookie.js"></script>
+
+<script>
+(function(){
+  var path = window.location.pathname.replace(/\/index\.html$/, '/');
+  document.querySelectorAll('nav ul a').forEach(function(a){
+    var href = a.getAttribute('href') || '';
+    // Skip section links (they point to anchors, not pages)
+    if(href.indexOf('#') !== -1) return;
+    var linkPath = href.startsWith('/') ? href : '/' + href;
+    linkPath = linkPath.replace(/\/index\.html$/, '/');
+    if(linkPath === path || (linkPath !== '/' && path.startsWith(linkPath))) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+  if(isMobile) return;
+  function loadPoolYT(){
+    var bg = document.getElementById('poolVideoBg');
+    if(!bg) return;
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/qIyOaDks0WY?autoplay=1&mute=1&loop=1&playlist=qIyOaDks0WY&controls=0&showinfo=0&rel=0&playsinline=1&modestbranding=1';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.setAttribute('allowfullscreen','');
+    iframe.title = 'Pixel by Keshet — מסכי LED לבריכה';
+    iframe.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78vh;height:100vh;min-width:100%;min-height:56.25vw;pointer-events:none;border:none';
+    bg.appendChild(iframe);
+  }
+  if('requestIdleCallback' in window){
+    requestIdleCallback(loadPoolYT, {timeout:3000});
+  } else {
+    setTimeout(loadPoolYT, 2000);
+  }
+})();
+</script>
 </body>
 </html>
