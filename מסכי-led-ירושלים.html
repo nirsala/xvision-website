@@ -208,22 +208,22 @@ footer a{color:var(--red)}
 </style>
 <style id="nav-canonical">
 /* ── NAV CANONICAL — כל הדפים ── */
-nav{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(26,26,26,.95)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;box-sizing:border-box!important}
-.nav-logo{display:flex!important;align-items:center!important;text-decoration:none!important;flex-shrink:0!important}
-.nav-logo img{height:52px!important;width:auto!important;object-fit:contain!important;display:block!important}
+nav[role="navigation"]{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(26,26,26,.95)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;box-sizing:border-box!important}
+nav[role="navigation"] .nav-logo{display:flex!important;align-items:center!important;text-decoration:none!important;flex-shrink:0!important}
+nav[role="navigation"] .nav-logo img{height:52px!important;width:auto!important;object-fit:contain!important;display:block!important}
 .nav-logo-icon,.nav-logo-text,.nav-logo-sub{display:none!important}
-nav ul{display:flex!important;gap:2px!important;list-style:none!important;align-items:center!important;flex-wrap:nowrap!important;overflow:hidden!important}
-nav ul a{font-size:12px!important;color:rgba(255,255,255,.5)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
-nav ul a:hover,nav ul a.active{color:#fff!important;background:rgba(255,255,255,.05)!important}
+nav[role="navigation"] ul{display:flex!important;gap:2px!important;list-style:none!important;align-items:center!important;flex-wrap:nowrap!important}
+nav[role="navigation"] ul a{font-size:12px!important;color:rgba(255,255,255,.5)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
+nav[role="navigation"] ul a:hover,nav[role="navigation"] ul a.active{color:#fff!important;background:rgba(255,255,255,.05)!important}
 .nav-dds{color:#d71d43!important;border:1px solid rgba(215,29,67,.35)!important;border-radius:12px!important;padding:3px 10px!important;font-size:11px!important;background:transparent!important}
 .nav-dds:hover{color:#d71d43!important;background:rgba(215,29,67,.08)!important}
-.nav-right{display:flex!important;align-items:center!important;gap:12px!important;flex-shrink:0!important}
+nav[role="navigation"] .nav-right{display:flex!important;align-items:center!important;gap:12px!important;flex-shrink:0!important}
 .nav-phone{font-size:13px!important;font-weight:700!important;color:rgba(255,255,255,.6)!important;direction:ltr!important;white-space:nowrap!important}
 .nav-wa{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;border-radius:50%!important;background:rgba(37,211,102,.12)!important;border:1px solid rgba(37,211,102,.3)!important;transition:background .2s,box-shadow .2s!important;flex-shrink:0!important}
 .nav-wa:hover{background:rgba(37,211,102,.25)!important;box-shadow:0 0 14px rgba(37,211,102,.4)!important}
 .nav-cta{padding:9px 18px!important;border-radius:22px!important;background:#d71d43!important;color:#fff!important;font-size:12px!important;font-weight:700!important;white-space:nowrap!important;text-decoration:none!important;flex-shrink:0!important;transition:opacity .2s!important}
 .nav-cta:hover{opacity:.85!important;background:#d71d43!important}
-@media(max-width:900px){nav{padding:0 16px!important}nav ul{display:none!important}.nav-phone{display:none!important}}
+@media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
 </head>
 <body>
@@ -250,9 +250,9 @@ nav ul a:hover,nav ul a.active{color:#fff!important;background:rgba(255,255,255,
   </div>
 </nav>
 
-<nav class="breadcrumb" aria-label="נתיב ניווט">
+<div class="breadcrumb" aria-label="נתיב ניווט">
   <a href="/">בית</a> › <span aria-current="page">מסכי LED ירושלים</span>
-</nav>
+</div>
 
 <section class="hero">
   <div class="hero-tag">● ירושלים | מלונות | שוק מחנה יהודה | רחוב יפו</div>
