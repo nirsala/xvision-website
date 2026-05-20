@@ -193,29 +193,48 @@ details[open] .faq-icon{transform:rotate(45deg)}
   .cta-section{padding:36px 20px;margin:0 16px 60px}
 }
 </style>
+<style id="nav-canonical">
+/* ── NAV CANONICAL — כל הדפים ── */
+nav{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(26,26,26,.95)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;box-sizing:border-box!important}
+.nav-logo{display:flex!important;align-items:center!important;text-decoration:none!important;flex-shrink:0!important}
+.nav-logo img{height:52px!important;width:auto!important;object-fit:contain!important;display:block!important}
+.nav-logo-icon,.nav-logo-text,.nav-logo-sub{display:none!important}
+nav ul{display:flex!important;gap:2px!important;list-style:none!important;align-items:center!important;flex-wrap:nowrap!important;overflow:hidden!important}
+nav ul a{font-size:12px!important;color:rgba(255,255,255,.5)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
+nav ul a:hover,nav ul a.active{color:#fff!important;background:rgba(255,255,255,.05)!important}
+.nav-dds{color:#d71d43!important;border:1px solid rgba(215,29,67,.35)!important;border-radius:12px!important;padding:3px 10px!important;font-size:11px!important;background:transparent!important}
+.nav-dds:hover{color:#d71d43!important;background:rgba(215,29,67,.08)!important}
+.nav-right{display:flex!important;align-items:center!important;gap:12px!important;flex-shrink:0!important}
+.nav-phone{font-size:13px!important;font-weight:700!important;color:rgba(255,255,255,.6)!important;direction:ltr!important;white-space:nowrap!important}
+.nav-wa{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;border-radius:50%!important;background:rgba(37,211,102,.12)!important;border:1px solid rgba(37,211,102,.3)!important;transition:background .2s,box-shadow .2s!important;flex-shrink:0!important}
+.nav-wa:hover{background:rgba(37,211,102,.25)!important;box-shadow:0 0 14px rgba(37,211,102,.4)!important}
+.nav-cta{padding:9px 18px!important;border-radius:22px!important;background:#d71d43!important;color:#fff!important;font-size:12px!important;font-weight:700!important;white-space:nowrap!important;text-decoration:none!important;flex-shrink:0!important;transition:opacity .2s!important}
+.nav-cta:hover{opacity:.85!important;background:#d71d43!important}
+@media(max-width:900px){nav{padding:0 16px!important}nav ul{display:none!important}.nav-phone{display:none!important}}
+</style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav role="navigation" aria-label="ניווט ראשי">
-  <a class="nav-logo" href="index.html">
-    <picture><source srcset="assets/logo/pixel-logo-transparent.webp" type="image/webp"/><img src="assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/></picture>
+  <a class="nav-logo" href="/">
+    <picture><source srcset="/assets/logo/pixel-logo-transparent.webp" type="image/webp"/><img src="/assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/></picture>
   </a>
   <ul>
-    <li><a href="products.html">מוצרים</a></li>
-    <li><a href="cms.html">מערכת ניהול</a></li>
-    <li><a href="תחזוקת-מסכי-led.html">תחזוקה ושירות</a></li>
-    <li><a href="/ייעוץ-ומכרזים.html" class="active">ייעוץ ומכרזים</a></li>
-    <li><a href="blog/">בלוג</a></li>
-    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" style="color:#d71d43;border:1px solid rgba(215,29,67,.35);border-radius:12px;padding:2px 10px;font-size:11px">מערכת ניהול ↗</a></li>
-    <li><a href="index.html#contact">צור קשר</a></li>
+    <li><a href="/#services">שירותים</a></li>
+    <li><a href="/#works">עבודות</a></li>
+    <li><a href="/products.html">מוצרים</a></li>
+    <li><a href="/מחירים.html">מחירים</a></li>
+    <li><a href="/blog/">בלוג</a></li>
+    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" class="nav-dds">מערכת ניהול</a></li>
+    <li><a href="/ייעוץ-ומכרזים.html">ייעוץ ומכרזים</a></li>
+    <li><a href="/תחזוקת-מסכי-led.html">תחזוקה</a></li>
+    <li><a href="/#contact">צור קשר</a></li>
   </ul>
   <div class="nav-right">
     <span class="nav-phone">*9555</span>
-    <a href="https://wa.me/972559732343" target="_blank" rel="noopener" aria-label="שלח הודעה בוואטסאפ">
-      <svg viewBox="0 0 32 32" aria-hidden="true" style="width:22px;height:22px;fill:#25D366;display:block"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/></svg>
-    </a>
-    <a href="index.html#contact" class="nav-cta">קבל הצעת מחיר</a>
+    <a href="https://wa.me/972559732343" target="_blank" rel="noopener" class="nav-wa" aria-label="שלח הודעה בוואטסאפ"><svg viewBox="0 0 32 32" aria-hidden="true" style="width:22px;height:22px;fill:#25D366;display:block"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/></svg></a>
+    <a href="/#contact" class="nav-cta">קבל הצעת מחיר</a>
   </div>
 </nav>
 
