@@ -100,12 +100,12 @@ nav ul a:hover,nav ul a.active{color:#fff}
 
 /* ── HERO ── */
 .hero{padding:130px 32px 70px;text-align:center;background:linear-gradient(160deg,#1a1a1a 0%,#1e0a10 50%,#1a1a1a 100%);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 30%,rgba(215,29,67,.12),transparent)}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 30%,rgba(215,29,67,.12),transparent);pointer-events:none}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(215,29,67,.12);border:1px solid rgba(215,29,67,.3);color:var(--red);font-size:12px;font-weight:700;padding:6px 16px;border-radius:20px;margin-bottom:20px;letter-spacing:.5px}
 .hero h1{font-size:clamp(28px,5vw,54px);font-weight:900;line-height:1.15;margin-bottom:20px;max-width:800px;margin-inline:auto}
 .hero h1 span{color:var(--red)}
 .hero p{font-size:18px;color:#bbb;max-width:620px;margin:0 auto 36px}
-.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
 .btn-primary{background:var(--red);color:#fff;padding:14px 32px;border-radius:30px;font-size:16px;font-weight:700;text-decoration:none;transition:opacity .2s,transform .2s;display:inline-flex;align-items:center;gap:8px}
 .btn-primary:hover{opacity:.88;transform:translateY(-2px)}
 .btn-outline{border:2px solid rgba(255,255,255,.25);color:#fff;padding:14px 32px;border-radius:30px;font-size:16px;font-weight:700;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px}

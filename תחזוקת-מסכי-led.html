@@ -117,8 +117,8 @@ nav ul a:hover,nav ul a.active{color:var(--white)}
 
 /* HERO */
 .hero{position:relative;padding:160px 56px 100px;min-height:70vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#0d0d0d 0%,#1a0a10 40%,#0d0d0d 100%)}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 50%,rgba(215,29,67,.08) 0%,transparent 70%)}
-.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;width:100%}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 50%,rgba(215,29,67,.08) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;width:100%;position:relative;z-index:1}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid rgba(215,29,67,.4);border-radius:20px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:24px;background:rgba(215,29,67,.08)}
 .hero h1{font-size:clamp(2.2rem,4vw,3.4rem);font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:20px}
 .hero h1 em{color:var(--red);font-style:normal;display:block}
