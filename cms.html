@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ניהול תוכן מסכים | CMS למסכי LED ושילוט דיגיטלי — Pixel by Keshet</title>
-<meta name="description" content="מערכת ניהול תוכן (CMS) למסכי LED ושילוט דיגיטלי — עדכן תוכן, תזמן קמפיינים ונהל מאות מסכים בלחיצה אחת. מכל מכשיר, בכל מקום. Pixel by Keshet — *9555"/>
-<meta name="keywords" content="מערכת ניהול תוכן, CMS למסכי לד, שילוט דיגיטלי ניהול תוכן, תוכנה למסכי פרסום, ניהול מסכים מרחוק, digital signage CMS, CMS למסכי LED"/>
+<title>מערכת ניהול תוכן מבוססת AI | CMS חכם למסכי LED ושילוט דיגיטלי — Pixel by Keshet</title>
+<meta name="description" content="מערכת ניהול תוכן מבוססת בינה מלאכותית (AI) למסכי LED ושילוט דיגיטלי — יצירת תוכן אוטומטית, תזמון חכם, אנליטיקס AI. נהל מאות מסכים מכל מקום. Pixel by Keshet — *9555"/>
+<meta name="keywords" content="מערכת ניהול תוכן AI, CMS מבוסס בינה מלאכותית, שילוט דיגיטלי AI, ניהול מסכים חכם, יצירת תוכן אוטומטית, digital signage AI, CMS למסכי LED, מערכת ניהול תוכן, ניהול מסכים מרחוק"/>
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://xvision.co.il/cms.html"/>
-<meta property="og:title" content="CMS למסכי LED | מערכת ניהול תוכן לשילוט דיגיטלי — Pixel"/>
-<meta property="og:description" content="נהל מאות מסכי LED מכל מקום — תזמון קמפיינים, עדכון תוכן בזמן אמת, ממשק עברית. Pixel by Keshet."/>
+<meta property="og:title" content="מערכת CMS מבוססת AI למסכי LED | שילוט דיגיטלי חכם — Pixel"/>
+<meta property="og:description" content="המערכת הראשונה בישראל לניהול מסכי LED עם AI — יצירת תוכן אוטומטית, תזמון חכם ואנליטיקס מתקדם. Pixel by Keshet."/>
 <meta property="og:image" content="https://xvision.co.il/assets/images/portfolio-w2.jpg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="675"/>
@@ -18,8 +18,8 @@
 <meta property="og:site_name" content="Pixel by Keshet"/>
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="CMS למסכי LED | מערכת ניהול תוכן לשילוט דיגיטלי — Pixel"/>
-<meta name="twitter:description" content="נהל מאות מסכי LED מכל מקום — תזמון קמפיינים, עדכון תוכן בזמן אמת. Pixel by Keshet."/>
+<meta name="twitter:title" content="מערכת CMS מבוססת AI למסכי LED | שילוט דיגיטלי חכם — Pixel"/>
+<meta name="twitter:description" content="המערכת הראשונה בישראל לניהול מסכי LED עם AI — יצירת תוכן אוטומטית, תזמון חכם ואנליטיקס מתקדם. Pixel by Keshet."/>
 <meta name="twitter:image" content="https://xvision.co.il/assets/images/portfolio-w2.jpg"/>
 <!-- Geo / Local SEO -->
 <meta name="geo.region" content="IL"/>
@@ -49,7 +49,8 @@
   "name": "Pixel CMS",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, iOS, Android",
-  "description": "מערכת ניהול תוכן (CMS) למסכי LED ושילוט דיגיטלי — ניהול מרחוק, תזמון קמפיינים ועדכון תוכן בזמן אמת",
+  "description": "מערכת ניהול תוכן (CMS) מבוססת AI למסכי LED ושילוט דיגיטלי — יצירת תוכן אוטומטית, תזמון חכם, אנליטיקס AI, ניהול מרחוק ועדכון תוכן בזמן אמת",
+  "featureList": ["יצירת תוכן מבוססת AI","תזמון חכם עם AI","אנליטיקס מתקדם","ניהול מסכים מרחוק","תמיכה ב-RTL עברית","ניהול ריבוי מסכים"],
   "url": "https://xvision.co.il/cms.html",
   "provider": {
     "@type": "LocalBusiness",
@@ -458,11 +459,13 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 
   .footer-top{grid-template-columns:1fr 1fr}
   footer{padding:40px 20px 24px}
   #cta{padding:64px 20px}
+  #ai-features .section-inner > div[style*="grid-template-columns:repeat(2"]{grid-template-columns:1fr!important}
 }
 @media(max-width:600px){
   .features-grid{grid-template-columns:1fr}
   .usecases-grid{grid-template-columns:1fr 1fr}
   .hero-h1{letter-spacing:-1.5px}
+  #ai-features .reveal[style*="padding:48px"]{padding:28px 20px!important;flex-direction:column!important}
 }
 </style>
 <link rel="stylesheet" href="assets/css/a11y-cookie.css"/>
@@ -522,19 +525,19 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   <div class="hero-inner">
     <div class="hero-badge reveal">
       <div class="hero-badge-dot"></div>
-      מערכת ניהול תוכן לשילוט דיגיטלי
+      ✦ מערכת ניהול מסכים מבוססת AI — ראשונה בישראל
     </div>
     <h1 class="hero-h1 reveal">
       כל המסכים שלך<br/>
-      <em>בשליטה אחת</em>
+      <em>מנוהלים על ידי AI</em>
     </h1>
     <p class="hero-desc reveal">
-      עדכן תוכן, תזמן קמפיינים ונהל מאות מסכי לד בלחיצה אחת — מכל מחשב, טאבלט או טלפון.
-      ללא צורך בטכנאי, ללא חיבור פיזי.
+      הבינה המלאכותית כותבת תוכן, מתזמנת קמפיינים, מנתחת ביצועים ומייעלת אוטומטית.
+      אתה מחליט — ה-AI עושה את העבודה.
     </p>
     <div class="hero-btns reveal">
-      <a href="index.html#contact" class="btn-primary">קבל הדגמה חינם ←</a>
-      <a href="#features" class="btn-outline">גלה את התכונות</a>
+      <a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" class="btn-primary">נסה את מערכת ה-AI — חינם ←</a>
+      <a href="#ai-features" class="btn-outline">גלה את יכולות ה-AI</a>
     </div>
   </div>
 
@@ -547,7 +550,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
           <div class="mockup-dot"></div>
           <div class="mockup-dot"></div>
         </div>
-        <div class="mockup-url">cms.pixel.co.il/dashboard</div>
+        <div class="mockup-url">dds.xvision.co.il/dashboard · AI-Powered CMS ✦</div>
       </div>
       <div class="mockup-content">
         <img src="assets/images/portfolio-store.jpg" alt="ממשק ניהול מסכים"/>
@@ -573,11 +576,11 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 <div id="stats">
   <div class="stats-inner">
     <div class="stat-item reveal">
-      <div class="stat-num">500+</div>
+      <div class="stat-num">2,500+</div>
       <div class="stat-label">מסכים מנוהלים</div>
     </div>
     <div class="stat-item reveal reveal-d1">
-      <div class="stat-num">150+</div>
+      <div class="stat-num">500+</div>
       <div class="stat-label">עסקים פעילים</div>
     </div>
     <div class="stat-item reveal reveal-d2">
@@ -585,8 +588,8 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       <div class="stat-label">זמינות מערכת</div>
     </div>
     <div class="stat-item reveal reveal-d3">
-      <div class="stat-num">24/7</div>
-      <div class="stat-label">תמיכה טכנית</div>
+      <div class="stat-num">AI</div>
+      <div class="stat-label">מבוסס בינה מלאכותית</div>
     </div>
   </div>
 </div>
@@ -596,8 +599,8 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   <div class="section-inner">
     <div class="reveal">
       <div class="section-kicker">מה המערכת עושה</div>
-      <h2 class="section-h2">כל מה שצריך<br/><em>בממשק אחד</em></h2>
-      <p class="section-desc">מערכת ה-CMS של Pixel תוכננה לעסקים עם מסכים רבים — פשוטה מספיק לשימוש יומיומי, חזקה מספיק לניהול רשת שלמה.</p>
+      <h2 class="section-h2">כל מה שצריך<br/><em>בממשק אחד — מונע AI</em></h2>
+      <p class="section-desc">מערכת ה-CMS של Pixel היא המערכת הראשונה בישראל לניהול שילוט דיגיטלי המשלבת בינה מלאכותית — פשוטה לשימוש יומיומי, חזקה מספיק לרשת שלמה.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card reveal">
@@ -647,6 +650,23 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
         <div class="feature-title">ניטור ואנליטיקס</div>
         <div class="feature-text">ראה בזמן אמת אילו מסכים פעילים, מה מוצג עליהם ומה ביצועי הקמפיין. קבל התראות מיידיות על תקלות.</div>
         <div class="feature-tag">דאטה</div>
+      </div>
+      <!-- AI FEATURE CARDS -->
+      <div class="feature-card reveal" style="border-color:rgba(215,29,67,.2);background:linear-gradient(135deg,rgba(215,29,67,.06) 0%,var(--bg2) 100%)">
+        <div class="feature-icon" style="background:rgba(215,29,67,.15);border-color:rgba(215,29,67,.3)">
+          <svg viewBox="0 0 24 24"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 010 2h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 010-2h1a7 7 0 017-7h1V5.73A2 2 0 0110 4a2 2 0 012-2z"/><circle cx="9" cy="13" r="1.5"/><circle cx="15" cy="13" r="1.5"/></svg>
+        </div>
+        <div class="feature-title" style="color:var(--blue)">✦ AI יוצר תוכן אוטומטית</div>
+        <div class="feature-text">תאר את מה שאתה רוצה להציג — ה-AI כותב, מעצב ומייצר תוכן מקצועי למסכים תוך שניות. ללא מעצב גרפי, ללא סוכנות.</div>
+        <div class="feature-tag" style="background:rgba(215,29,67,.15);border-color:rgba(215,29,67,.3)">✦ AI Content</div>
+      </div>
+      <div class="feature-card reveal reveal-d1" style="border-color:rgba(215,29,67,.2);background:linear-gradient(135deg,rgba(215,29,67,.06) 0%,var(--bg2) 100%)">
+        <div class="feature-icon" style="background:rgba(215,29,67,.15);border-color:rgba(215,29,67,.3)">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="feature-title" style="color:var(--blue)">✦ תזמון חכם מבוסס AI</div>
+        <div class="feature-text">ה-AI מנתח דפוסי תנועה, זמני שיא ומעורבות לקוחות — ומתזמן אוטומטית את התוכן הנכון לשעה הנכונה בכל מסך.</div>
+        <div class="feature-tag" style="background:rgba(215,29,67,.15);border-color:rgba(215,29,67,.3)">✦ AI Scheduling</div>
       </div>
     </div>
   </div>
@@ -733,6 +753,133 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
             <div class="bfp-text"><strong>תבניות חוזרות</strong> — שמור פלייליסטים מוכנים ופרוס אותם בלחיצה.</div>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI FEATURES SECTION -->
+<section class="section" id="ai-features" style="background:linear-gradient(135deg,#0d1117 0%,#111827 60%,#0a1628 100%);border-top:1px solid rgba(215,29,67,.15);border-bottom:1px solid rgba(215,29,67,.15);">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:56px;">
+      <div class="section-kicker" style="justify-content:center;font-size:11px;">✦ בינה מלאכותית</div>
+      <h2 class="section-h2" style="text-align:center;">המערכת הראשונה בישראל<br/><em>לניהול מסכים מבוסס AI</em></h2>
+      <p style="color:var(--muted);max-width:580px;margin:0 auto;font-size:1rem;line-height:1.8;">הבינה המלאכותית של Pixel CMS לא רק חוסכת זמן — היא מייצרת תוכן איכותי יותר, מתזמנת חכם יותר, ומגדילה את ה-ROI של השילוט הדיגיטלי שלך.</p>
+    </div>
+    <!-- AI features big grid -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+      <!-- AI Content Generation -->
+      <div class="feature-card reveal" style="padding:40px 36px;border-color:rgba(215,29,67,.25);background:rgba(215,29,67,.04)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <div style="width:56px;height:56px;border-radius:14px;background:rgba(215,29,67,.15);border:1px solid rgba(215,29,67,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" style="width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 010 2h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 010-2h1a7 7 0 017-7h1V5.73A2 2 0 0110 4a2 2 0 012-2z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:4px;">✦ AI Content Generation</div>
+            <div style="font-size:1.15rem;font-weight:800;">יצירת תוכן אוטומטית</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;">תאר בטקסט חופשי מה אתה רוצה להציג — "מבצע שישי שחור על נעלי ריצה" — וה-AI מייצר מיד עיצוב מלא עם כותרת, תמונה, צבעים ואנימציות. תוכן מקצועי תוך 30 שניות.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> כותב טקסטים שיווקיים בעברית
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מתאים עיצוב לזהות המותג שלך
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מייצר גרסאות לפורמטים שונים (אופקי, אנכי, ריבועי)
+          </li>
+        </ul>
+      </div>
+      <!-- AI Smart Scheduling -->
+      <div class="feature-card reveal reveal-d1" style="padding:40px 36px;border-color:rgba(215,29,67,.25);background:rgba(215,29,67,.04)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <div style="width:56px;height:56px;border-radius:14px;background:rgba(215,29,67,.15);border:1px solid rgba(215,29,67,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" style="width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div>
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:4px;">✦ AI Smart Scheduling</div>
+            <div style="font-size:1.15rem;font-weight:800;">תזמון חכם עם AI</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;">ה-AI מנתח מתי הקהל שלך הכי קשוב — שעות שיא, ימים עמוסים, אירועים עונתיים — ומוציא את הקמפיין הנכון לאוויר בדיוק בזמן הנכון, אוטומטית.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מזהה זמני שיא תנועה ומתאים תוכן
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מציע תזמונים אופטימליים לקמפיינים
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מתאים תוכן אוטומטית לפי מזג אוויר ואירועים
+          </li>
+        </ul>
+      </div>
+      <!-- AI Analytics -->
+      <div class="feature-card reveal" style="padding:40px 36px;border-color:rgba(215,29,67,.25);background:rgba(215,29,67,.04)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <div style="width:56px;height:56px;border-radius:14px;background:rgba(215,29,67,.15);border:1px solid rgba(215,29,67,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" style="width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:4px;">✦ AI Analytics</div>
+            <div style="font-size:1.15rem;font-weight:800;">אנליטיקס מבוסס AI</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;">ה-AI לא רק מציג נתונים — הוא מפרש אותם. מזהה אילו קמפיינים מביאים תוצאות, מגלה מגמות נסתרות ומציע פעולות קונקרטיות לשיפור ביצועים.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> דוחות אוטומטיים עם תובנות AI
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> מדידת אפקטיביות קמפיינים
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> התראות חריגות בזמן אמת
+          </li>
+        </ul>
+      </div>
+      <!-- AI Optimization -->
+      <div class="feature-card reveal reveal-d1" style="padding:40px 36px;border-color:rgba(215,29,67,.25);background:rgba(215,29,67,.04)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <div style="width:56px;height:56px;border-radius:14px;background:rgba(215,29,67,.15);border:1px solid rgba(215,29,67,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" style="width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:4px;">✦ AI Optimization</div>
+            <div style="font-size:1.15rem;font-weight:800;">אופטימיזציה אוטומטית</div>
+          </div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;">ה-AI בודק כל הזמן את ביצועי הקמפיינים שלך ומציע שיפורים — שינוי ניסוח, התאמת עיצוב, חיזוק CTA. אתה מאשר בלחיצה, ה-AI מיישם.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> A/B testing אוטומטי לתכנים
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> המלצות לשיפור מעורבות קהל
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.75);">
+            <span style="color:var(--blue);font-weight:900;">✓</span> למידה מתמדת מהנתונים שלך
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- AI CTA Banner -->
+    <div class="reveal" style="margin-top:56px;background:linear-gradient(135deg,rgba(215,29,67,.12) 0%,rgba(215,29,67,.04) 100%);border:1px solid rgba(215,29,67,.25);border-radius:20px;padding:48px 48px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:12px;">✦ נסה עכשיו בחינם</div>
+        <div style="font-size:1.6rem;font-weight:900;letter-spacing:-1.5px;margin-bottom:12px;line-height:1.2;">14 יום ניסיון חינם<br/>ב-Pixel CMS AI</div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.7;">ללא כרטיס אשראי, ללא התחייבות. פתח חשבון ב-2 דקות וראה את ה-AI יוצר תוכן למסכים שלך.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+        <a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:var(--blue);color:#fff;border-radius:8px;font-size:14px;font-weight:700;letter-spacing:.5px;white-space:nowrap;text-decoration:none;transition:opacity .2s;">
+          <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          התחל ניסיון חינם ←
+        </a>
+        <a href="tel:*9555" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);border-radius:8px;font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none;transition:border-color .2s;">
+          *9555 — דבר עם מומחה
+        </a>
       </div>
     </div>
   </div>
@@ -982,13 +1129,14 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 <!-- CTA -->
 <section id="cta">
   <div class="cta-content">
-    <div class="cta-kicker reveal">מוכנים להתחיל?</div>
-    <h2 class="cta-h2 reveal">נהלו את המסכים שלכם<br/>כמו <em>מקצוענים</em></h2>
-    <p class="cta-desc reveal">קבלו הדגמה חינם של 30 דקות — נראה לכם בדיוק איך המערכת עובדת עם המסכים שלכם, ללא התחייבות.</p>
+    <div class="cta-kicker reveal">✦ מוכנים לחוות AI בפעולה?</div>
+    <h2 class="cta-h2 reveal">נהלו את המסכים שלכם<br/>עם <em>בינה מלאכותית</em></h2>
+    <p class="cta-desc reveal">התחילו ניסיון חינם של 14 יום ב-Pixel CMS — המערכת הראשונה בישראל לניהול שילוט דיגיטלי מבוסס AI. ללא כרטיס אשראי, ללא התחייבות.</p>
     <div class="cta-btns reveal">
-      <a href="index.html#contact" class="btn-primary">קבל הדגמה חינם ←</a>
-      <a href="tel:*9555" class="btn-outline">*9555</a>
+      <a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" class="btn-primary">נסה את Pixel CMS AI — חינם ←</a>
+      <a href="index.html#contact" class="btn-outline">קבל הדגמה אישית</a>
     </div>
+    <p style="margin-top:20px;font-size:12px;color:rgba(255,255,255,.3);">או התקשרו: <a href="tel:*9555" style="color:rgba(255,255,255,.4);">*9555</a></p>
   </div>
 </section>
 
