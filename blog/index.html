@@ -57,45 +57,24 @@ footer{background:#222;border-top:1px solid rgba(255,255,255,.07);padding:56px 5
 .footer-links a:hover{color:#fff}
 @media(max-width:768px){nav{padding:0 20px}nav ul{display:none}.nav-logo-sub{display:none}footer{padding:40px 20px 24px}.footer-top{grid-template-columns:1fr 1fr;gap:24px}.footer-bottom{flex-direction:column;gap:12px;text-align:center}}
 </style>
-<style id="nav-canonical">
-/* ── NAV CANONICAL — כל הדפים ── */
-nav[role="navigation"]{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(26,26,26,.95)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;box-sizing:border-box!important}
-nav[role="navigation"] .nav-logo{display:flex!important;align-items:center!important;text-decoration:none!important;flex-shrink:0!important}
-nav[role="navigation"] .nav-logo img{height:52px!important;width:auto!important;object-fit:contain!important;display:block!important}
-.nav-logo-icon,.nav-logo-text,.nav-logo-sub{display:none!important}
-nav[role="navigation"] ul{display:flex!important;gap:2px!important;list-style:none!important;align-items:center!important;flex-wrap:nowrap!important}
-nav[role="navigation"] ul a{font-size:12px!important;color:rgba(255,255,255,.5)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
-nav[role="navigation"] ul a:hover,nav[role="navigation"] ul a.active{color:#fff!important;background:rgba(255,255,255,.05)!important}
-.nav-dds{color:#d71d43!important;border:1px solid rgba(215,29,67,.35)!important;border-radius:12px!important;padding:3px 10px!important;font-size:11px!important;background:transparent!important}
-.nav-dds:hover{color:#d71d43!important;background:rgba(215,29,67,.08)!important}
-nav[role="navigation"] .nav-right{display:flex!important;align-items:center!important;gap:12px!important;flex-shrink:0!important}
-.nav-phone{font-size:13px!important;font-weight:700!important;color:rgba(255,255,255,.6)!important;direction:ltr!important;white-space:nowrap!important}
-.nav-wa{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;border-radius:50%!important;background:rgba(37,211,102,.12)!important;border:1px solid rgba(37,211,102,.3)!important;transition:background .2s,box-shadow .2s!important;flex-shrink:0!important}
-.nav-wa:hover{background:rgba(37,211,102,.25)!important;box-shadow:0 0 14px rgba(37,211,102,.4)!important}
-.nav-cta{padding:9px 18px!important;border-radius:22px!important;background:#d71d43!important;color:#fff!important;font-size:12px!important;font-weight:700!important;white-space:nowrap!important;text-decoration:none!important;flex-shrink:0!important;transition:opacity .2s!important}
-.nav-cta:hover{opacity:.85!important;background:#d71d43!important}
-@media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
-</style>
 </head>
 <body>
-<nav role="navigation" aria-label="ניווט ראשי">
-  <a class="nav-logo" href="/">
-    <picture><source srcset="/assets/logo/pixel-logo-transparent.webp" type="image/webp"/><img src="/assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:52px;width:auto;object-fit:contain"/></picture>
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 3h2v-2h2v2h2v2h-2v2h-2v-2h-2v-2z"/></svg></div>
+    <span class="nav-logo-text">PIXEL</span>
+    <span class="nav-logo-sub">BY KESHET</span>
   </a>
   <ul>
     <li><a href="/#services">שירותים</a></li>
     <li><a href="/#works">עבודות</a></li>
     <li><a href="/products.html">מוצרים</a></li>
-    <li><a href="/מחירים.html">מחירים</a></li>
-    <li><a href="/blog/">בלוג</a></li>
-    <li><a href="https://dds.xvision.co.il/" target="_blank" rel="noopener" class="nav-dds">מערכת ניהול</a></li>
-    <li><a href="/ייעוץ-ומכרזים.html">ייעוץ ומכרזים</a></li>
-    <li><a href="/תחזוקת-מסכי-led.html">תחזוקה</a></li>
+    <li><a href="/pool.html">מסכי בריכה</a></li>
+    <li><a href="/cms.html">ניהול תוכן</a></li>
     <li><a href="/#contact">צור קשר</a></li>
   </ul>
   <div class="nav-right">
     <span class="nav-phone">*9555</span>
-    <a href="https://wa.me/972559732343" target="_blank" rel="noopener" class="nav-wa" aria-label="שלח הודעה בוואטסאפ"><svg viewBox="0 0 32 32" aria-hidden="true" style="width:22px;height:22px;fill:#25D366;display:block"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/></svg></a>
     <a href="/#contact" class="nav-cta">קבל הצעת מחיר</a>
   </div>
 </nav>
@@ -106,7 +85,15 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 <div class="grid">
   
     <article class="card">
-      <a href="/blog/led-article-29-2026-05-20.html"><img src="https://xvision.co.il/assets/images/services/svc-indoor.jpg" alt="מסכי LED למלונות בעידן ההוספיטליות: כיצד Pixel by Keshet משפרת את חווית האורח בכל נקודת יצירת ערך" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-30-2026-05-21.html"><img src="https://xvision.co.il/assets/images/services/svc-cms.jpg" alt="מסכי LED לאולמות אירועים - פיקסל בקשת מביאה לך חוויית צפייה עוצמתית ובהירה" class="card-img" loading="lazy"/></a>
+      <div class="card-body">
+        <div class="card-tag">מסכי LED לאולמות אירועים</div>
+        <h2><a href="/blog/led-article-30-2026-05-21.html">מסכי LED לאולמות אירועים - פיקסל בקשת מביאה לך חוויית צפייה עוצמתית ובהירה</a></h2>
+        <div class="card-meta">2026-05-21</div>
+      </div>
+    </article>
+    <article class="card">
+      <a href="/blog/led-article-29-2026-05-20.html"><img src="https://xvision.co.il/assets/images/services/svc-install.jpg" alt="מסכי LED למלונות בעידן ההוספיטליות: כיצד Pixel by Keshet משפרת את חווית האורח בכל נקודת יצירת ערך" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED למלונות</div>
         <h2><a href="/blog/led-article-29-2026-05-20.html">מסכי LED למלונות בעידן ההוספיטליות: כיצד Pixel by Keshet משפרת את חווית האורח בכל נקודת יצירת ערך</a></h2>
@@ -114,7 +101,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-28-2026-05-19.html"><img src="https://xvision.co.il/assets/images/services/svc-outdoor.jpg" alt="תפריט דיגיטלי למסעדה חכם: כיצד Pixel by Keshet משנה את חווית ההזמנה של הלקוח" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-28-2026-05-19.html"><img src="https://xvision.co.il/assets/images/services/svc-support.jpg" alt="תפריט דיגיטלי למסעדה חכם: כיצד Pixel by Keshet משנה את חווית ההזמנה של הלקוח" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תפריט דיגיטלי למסעדה</div>
         <h2><a href="/blog/led-article-28-2026-05-19.html">תפריט דיגיטלי למסעדה חכם: כיצד Pixel by Keshet משנה את חווית ההזמנה של הלקוח</a></h2>
@@ -122,7 +109,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-27-2026-05-18.html"><img src="https://xvision.co.il/assets/images/services/svc-cms.jpg" alt="שלטים דיגיטליים לעסקים: כיצד Pixel by Keshet הופכת שידור תוכן לנתון תחרותי" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-27-2026-05-18.html"><img src="https://xvision.co.il/assets/images/services/svc-content.jpg" alt="שלטים דיגיטליים לעסקים: כיצד Pixel by Keshet הופכת שידור תוכן לנתון תחרותי" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שלטים דיגיטליים לעסקים</div>
         <h2><a href="/blog/led-article-27-2026-05-18.html">שלטים דיגיטליים לעסקים: כיצד Pixel by Keshet הופכת שידור תוכן לנתון תחרותי</a></h2>
@@ -130,7 +117,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-26-2026-05-17.html"><img src="https://xvision.co.il/assets/images/services/svc-install.jpg" alt="מסכי LED סופרמרקט חכמים: כיצד Pixel by Keshet הופכת מדפים דיגיטליים לכלי מכירה משכנע" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-26-2026-05-17.html"><img src="https://xvision.co.il/assets/images/hero-bg.jpg" alt="מסכי LED סופרמרקט חכמים: כיצד Pixel by Keshet הופכת מדפים דיגיטליים לכלי מכירה משכנע" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED סופרמרקט</div>
         <h2><a href="/blog/led-article-26-2026-05-17.html">מסכי LED סופרמרקט חכמים: כיצד Pixel by Keshet הופכת מדפים דיגיטליים לכלי מכירה משכנע</a></h2>
@@ -138,7 +125,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-25-2026-05-16.html"><img src="https://xvision.co.il/assets/images/services/svc-support.jpg" alt="pixel pitch LED חדש של Pixel by Keshet: הדיוק הוויזואלי שמעניק שדרוג דיגיטלי לעסקים" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-25-2026-05-16.html"><img src="https://xvision.co.il/assets/images/works-s01.jpg" alt="pixel pitch LED חדש של Pixel by Keshet: הדיוק הוויזואלי שמעניק שדרוג דיגיטלי לעסקים" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">pixel pitch LED</div>
         <h2><a href="/blog/led-article-25-2026-05-16.html">pixel pitch LED חדש של Pixel by Keshet: הדיוק הוויזואלי שמעניק שדרוג דיגיטלי לעסקים</a></h2>
@@ -146,7 +133,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-24-2026-05-15.html"><img src="https://xvision.co.il/assets/images/services/svc-content.jpg" alt="IP65 מסכי LED עמידים לסביבות קשות: כיצד Pixel by Keshet מבטיחה ביצועים אופטימליים בתנאים קיצוניים" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-24-2026-05-15.html"><img src="https://xvision.co.il/assets/images/works-s02.jpg" alt="IP65 מסכי LED עמידים לסביבות קשות: כיצד Pixel by Keshet מבטיחה ביצועים אופטימליים בתנאים קיצוניים" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">IP65 מסכי LED</div>
         <h2><a href="/blog/led-article-24-2026-05-15.html">IP65 מסכי LED עמידים לסביבות קשות: כיצד Pixel by Keshet מבטיחה ביצועים אופטימליים בתנאים קיצוניים</a></h2>
@@ -154,7 +141,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-23-2026-05-14.html"><img src="https://xvision.co.il/assets/images/hero-bg.jpg" alt="היתר שלט חוצות דיגיטלי: כיצד Pixel by Keshet מפיקה את הפוטנציאל המלא של שילוט חוצות מודרני" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-23-2026-05-14.html"><img src="https://xvision.co.il/assets/images/works-s03.jpg" alt="היתר שלט חוצות דיגיטלי: כיצד Pixel by Keshet מפיקה את הפוטנציאל המלא של שילוט חוצות מודרני" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">היתר שלט חוצות</div>
         <h2><a href="/blog/led-article-23-2026-05-14.html">היתר שלט חוצות דיגיטלי: כיצד Pixel by Keshet מפיקה את הפוטנציאל המלא של שילוט חוצות מודרני</a></h2>
@@ -162,7 +149,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-22-2026-05-13.html"><img src="https://xvision.co.il/assets/images/works-s01.jpg" alt="מסכי LED רמת גן: פתרון תצוגה חזותית מתקדם לעסקים המבקשים לשנות את חוויית הלקוח" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-22-2026-05-13.html"><img src="https://xvision.co.il/assets/images/works-s04.jpg" alt="מסכי LED רמת גן: פתרון תצוגה חזותית מתקדם לעסקים המבקשים לשנות את חוויית הלקוח" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED רמת גן</div>
         <h2><a href="/blog/led-article-22-2026-05-13.html">מסכי LED רמת גן: פתרון תצוגה חזותית מתקדם לעסקים המבקשים לשנות את חוויית הלקוח</a></h2>
@@ -170,7 +157,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-21-2026-05-12.html"><img src="https://xvision.co.il/assets/images/works-s02.jpg" alt="מסכי LED פתח תקווה: פתרון תצוגה חזותית לעסקים המחפשים השפעה מדידה" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-21-2026-05-12.html"><img src="https://xvision.co.il/assets/images/works-s05.jpg" alt="מסכי LED פתח תקווה: פתרון תצוגה חזותית לעסקים המחפשים השפעה מדידה" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED פתח תקווה</div>
         <h2><a href="/blog/led-article-21-2026-05-12.html">מסכי LED פתח תקווה: פתרון תצוגה חזותית לעסקים המחפשים השפעה מדידה</a></h2>
@@ -178,7 +165,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-20-2026-05-11.html"><img src="https://xvision.co.il/assets/images/works-s03.jpg" alt="תצוגות ויטרינה LED שמגדילות מכירות: כיצד Pixel by Keshet הופכת חנויות לחלונות דיגיטליים משכנעים" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-20-2026-05-11.html"><img src="https://xvision.co.il/assets/images/works-s06.jpg" alt="תצוגות ויטרינה LED שמגדילות מכירות: כיצד Pixel by Keshet הופכת חנויות לחלונות דיגיטליים משכנעים" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תצוגות ויטרינה LED</div>
         <h2><a href="/blog/led-article-20-2026-05-11.html">תצוגות ויטרינה LED שמגדילות מכירות: כיצד Pixel by Keshet הופכת חנויות לחלונות דיגיטליים משכנעים</a></h2>
@@ -186,7 +173,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-19-2026-05-10.html"><img src="https://xvision.co.il/assets/images/works-s04.jpg" alt="מסכי LED אירועים בעידן החוויה: כיצד Pixel by Keshet יוצרת חיבור חזותי בלתי נשכח עם הקהל" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-19-2026-05-10.html"><img src="https://xvision.co.il/assets/images/works-s07.jpg" alt="מסכי LED אירועים בעידן החוויה: כיצד Pixel by Keshet יוצרת חיבור חזותי בלתי נשכח עם הקהל" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED אירועים</div>
         <h2><a href="/blog/led-article-19-2026-05-10.html">מסכי LED אירועים בעידן החוויה: כיצד Pixel by Keshet יוצרת חיבור חזותי בלתי נשכח עם הקהל</a></h2>
@@ -194,7 +181,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-18-2026-05-09.html"><img src="https://xvision.co.il/assets/images/works-s05.jpg" alt="שילוט דיגיטלי בריאות: כיצד Pixel by Keshet משפר את תקשורת המטופלים במוסדות רפואיים" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-18-2026-05-09.html"><img src="https://xvision.co.il/assets/images/works-s08.jpg" alt="שילוט דיגיטלי בריאות: כיצד Pixel by Keshet משפר את תקשורת המטופלים במוסדות רפואיים" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שילוט דיגיטלי בריאות</div>
         <h2><a href="/blog/led-article-18-2026-05-09.html">שילוט דיגיטלי בריאות: כיצד Pixel by Keshet משפר את תקשורת המטופלים במוסדות רפואיים</a></h2>
@@ -202,7 +189,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-17-2026-05-08.html"><img src="https://xvision.co.il/assets/images/works-s06.jpg" alt="מסכי LED חדר כושר: כיצד Pixel by Keshet הופכת את אימוני הקבוצה לחוויית мотივציה חזותית" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-17-2026-05-08.html"><img src="https://xvision.co.il/assets/images/works-s09.jpg" alt="מסכי LED חדר כושר: כיצד Pixel by Keshet הופכת את אימוני הקבוצה לחוויית мотივציה חזותית" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED חדר כושר</div>
         <h2><a href="/blog/led-article-17-2026-05-08.html">מסכי LED חדר כושר: כיצד Pixel by Keshet הופכת את אימוני הקבוצה לחוויית мотივציה חזותית</a></h2>
@@ -210,7 +197,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-16-2026-05-07.html"><img src="https://xvision.co.il/assets/images/works-s07.jpg" alt="מסכי LED ספורט בעידן הדיגיטלי: כיצד Pixel by Keshet מעלה את רמת ההשתתפות בתרבויות הספורט" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-16-2026-05-07.html"><img src="https://xvision.co.il/assets/images/works-s10.jpg" alt="מסכי LED ספורט בעידן הדיגיטלי: כיצד Pixel by Keshet מעלה את רמת ההשתתפות בתרבויות הספורט" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED ספורט</div>
         <h2><a href="/blog/led-article-16-2026-05-07.html">מסכי LED ספורט בעידן הדיגיטלי: כיצד Pixel by Keshet מעלה את רמת ההשתתפות בתרבויות הספורט</a></h2>
@@ -218,7 +205,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-15-2026-05-06.html"><img src="https://xvision.co.il/assets/images/works-s08.jpg" alt="שילוט דיגיטלי בנקים: טרנספורמציה של חווית הלקוח בסניפים עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-15-2026-05-06.html"><img src="https://xvision.co.il/assets/images/works-g01.jpg" alt="שילוט דיגיטלי בנקים: טרנספורמציה של חווית הלקוח בסניפים עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שילוט דיגיטלי בנקים</div>
         <h2><a href="/blog/led-article-15-2026-05-06.html">שילוט דיגיטלי בנקים: טרנספורמציה של חווית הלקוח בסניפים עם Pixel by Keshet</a></h2>
@@ -226,7 +213,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-14-2026-05-05.html"><img src="https://xvision.co.il/assets/images/works-s09.jpg" alt="מסכי LED חינוך משדרגים: כיצד Pixel by Keshet הופכת את הכיתה לחוויה דיגיטלית אינטראקטיבית" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-14-2026-05-05.html"><img src="https://xvision.co.il/assets/images/works-g02.jpg" alt="מסכי LED חינוך משדרגים: כיצד Pixel by Keshet הופכת את הכיתה לחוויה דיגיטלית אינטראקטיבית" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED חינוך</div>
         <h2><a href="/blog/led-article-14-2026-05-05.html">מסכי LED חינוך משדרגים: כיצד Pixel by Keshet הופכת את הכיתה לחוויה דיגיטלית אינטראקטיבית</a></h2>
@@ -234,7 +221,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-13-2026-05-04.html"><img src="https://xvision.co.il/assets/images/works-s10.jpg" alt="שלטי חוצות דיגיטליים של Pixel by Keshet - פתרון פרסום חדשני לעיר המודרנית" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-13-2026-05-04.html"><img src="https://xvision.co.il/assets/images/works-g03.jpg" alt="שלטי חוצות דיגיטליים של Pixel by Keshet - פתרון פרסום חדשני לעיר המודרנית" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שלטי חוצות דיגיטליים</div>
         <h2><a href="/blog/led-article-13-2026-05-04.html">שלטי חוצות דיגיטליים של Pixel by Keshet - פתרון פרסום חדשני לעיר המודרנית</a></h2>
@@ -242,7 +229,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-12-2026-05-03.html"><img src="https://xvision.co.il/assets/images/works-g01.jpg" alt="השוואת מסכי LED: בחרו את המסך המושלם לעסקכם עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-12-2026-05-03.html"><img src="https://xvision.co.il/assets/images/works-g04.jpg" alt="השוואת מסכי LED: בחרו את המסך המושלם לעסקכם עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">השוואת מסכי LED</div>
         <h2><a href="/blog/led-article-12-2026-05-03.html">השוואת מסכי LED: בחרו את המסך המושלם לעסקכם עם Pixel by Keshet</a></h2>
@@ -250,7 +237,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-11-2026-05-02.html"><img src="https://xvision.co.il/assets/images/works-g02.jpg" alt="תחזוקת מסכי LED: מדריך מקיף להחזקת תצוגות דיגיטליות בשיא הביצועים" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-11-2026-05-02.html"><img src="https://xvision.co.il/assets/images/works-g05.jpg" alt="תחזוקת מסכי LED: מדריך מקיף להחזקת תצוגות דיגיטליות בשיא הביצועים" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תחזוקת מסכי LED</div>
         <h2><a href="/blog/led-article-11-2026-05-02.html">תחזוקת מסכי LED: מדריך מקיף להחזקת תצוגות דיגיטליות בשיא הביצועים</a></h2>
@@ -258,7 +245,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-10-2026-05-01.html"><img src="https://xvision.co.il/assets/images/works-g03.jpg" alt="מסכי LED חיפה: פתרון שילוט חכם להגברת נראות העסק בעיר הצפון" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-10-2026-05-01.html"><img src="https://xvision.co.il/assets/images/works-g06.jpg" alt="מסכי LED חיפה: פתרון שילוט חכם להגברת נראות העסק בעיר הצפון" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED חיפה</div>
         <h2><a href="/blog/led-article-10-2026-05-01.html">מסכי LED חיפה: פתרון שילוט חכם להגברת נראות העסק בעיר הצפון</a></h2>
@@ -266,7 +253,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-9-2026-04-30.html"><img src="https://xvision.co.il/assets/images/works-g04.jpg" alt="מסכי LED ירושלים: פתרון שילוט דיגיטלי חכם לעסקים בעיר העתיקה" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-9-2026-04-30.html"><img src="https://xvision.co.il/assets/images/works-g07.jpg" alt="מסכי LED ירושלים: פתרון שילוט דיגיטלי חכם לעסקים בעיר העתיקה" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED ירושלים</div>
         <h2><a href="/blog/led-article-9-2026-04-30.html">מסכי LED ירושלים: פתרון שילוט דיגיטלי חכם לעסקים בעיר העתיקה</a></h2>
@@ -274,7 +261,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-8-2026-04-29.html"><img src="https://xvision.co.il/assets/images/works-g05.jpg" alt="מסכי LED תל אביב: טכנולוגיית תצוגה עילית לעסקים המחפשים השפעה מקסימלית" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-8-2026-04-29.html"><img src="https://xvision.co.il/assets/images/works-g08.jpg" alt="מסכי LED תל אביב: טכנולוגיית תצוגה עילית לעסקים המחפשים השפעה מקסימלית" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED תל אביב</div>
         <h2><a href="/blog/led-article-8-2026-04-29.html">מסכי LED תל אביב: טכנולוגיית תצוגה עילית לעסקים המחפשים השפעה מקסימלית</a></h2>
@@ -282,7 +269,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-7-2026-04-28.html"><img src="https://xvision.co.il/assets/images/works-g06.jpg" alt="שילוט דיגיטלי רשתות: פתרון מודרני להצגת המותג של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-7-2026-04-28.html"><img src="https://xvision.co.il/assets/images/works-g09.jpg" alt="שילוט דיגיטלי רשתות: פתרון מודרני להצגת המותג של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שילוט דיגיטלי רשתות</div>
         <h2><a href="/blog/led-article-7-2026-04-28.html">שילוט דיגיטלי רשתות: פתרון מודרני להצגת המותג של Pixel by Keshet</a></h2>
@@ -290,7 +277,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-6-2026-04-27.html"><img src="https://xvision.co.il/assets/images/works-g07.jpg" alt="מסכי LED מלונות 5 כוכבים: טכנולוגיית תצוגה פרימיום שמעלה את רמת השירות ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-6-2026-04-27.html"><img src="https://xvision.co.il/assets/images/works-g10.jpg" alt="מסכי LED מלונות 5 כוכבים: טכנולוגיית תצוגה פרימיום שמעלה את רמת השירות ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED מלונות</div>
         <h2><a href="/blog/led-article-6-2026-04-27.html">מסכי LED מלונות 5 כוכבים: טכנולוגיית תצוגה פרימיום שמעלה את רמת השירות ב-Pixel by Keshet</a></h2>
@@ -298,7 +285,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-5-2026-04-26.html"><img src="https://xvision.co.il/assets/images/works-g08.jpg" alt="מסכי LED לבריכה: טכנולוגיה עמידה למים שמעניקה חוויה חזותית מדהימה עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-5-2026-04-26.html"><img src="https://xvision.co.il/assets/images/services/svc-indoor.jpg" alt="מסכי LED לבריכה: טכנולוגיה עמידה למים שמעניקה חוויה חזותית מדהימה עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לבריכה</div>
         <h2><a href="/blog/led-article-5-2026-04-26.html">מסכי LED לבריכה: טכנולוגיה עמידה למים שמעניקה חוויה חזותית מדהימה עם Pixel by Keshet</a></h2>
@@ -306,7 +293,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-4-2026-04-25.html"><img src="https://xvision.co.il/assets/images/works-g09.jpg" alt="מסכי LED לובי: פתרון התצוגה החכם שמשנה את חוויית הנוכחים ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-4-2026-04-25.html"><img src="https://xvision.co.il/assets/images/services/svc-outdoor.jpg" alt="מסכי LED לובי: פתרון התצוגה החכם שמשנה את חוויית הנוכחים ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לובי</div>
         <h2><a href="/blog/led-article-4-2026-04-25.html">מסכי LED לובי: פתרון התצוגה החכם שמשנה את חוויית הנוכחים ב-Pixel by Keshet</a></h2>
@@ -314,7 +301,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-3-2026-04-24.html"><img src="https://xvision.co.il/assets/images/works-g10.jpg" alt="CMS למסכי LED: כיצד לנהל שילוט דיגיטלי מקצועי בקלות עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-3-2026-04-24.html"><img src="https://xvision.co.il/assets/images/services/svc-cms.jpg" alt="CMS למסכי LED: כיצד לנהל שילוט דיגיטלי מקצועי בקלות עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">CMS למסכי LED</div>
         <h2><a href="/blog/led-article-3-2026-04-24.html">CMS למסכי LED: כיצד לנהל שילוט דיגיטלי מקצועי בקלות עם Pixel by Keshet</a></h2>
@@ -322,7 +309,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-2-2026-04-23.html"><img src="https://xvision.co.il/assets/images/services/svc-indoor.jpg" alt="מסכי LED חיצוניים בעיצוב מותאם אישי: הפתרון המלא של Pixel by Keshet לשילוט עסקי" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-2-2026-04-23.html"><img src="https://xvision.co.il/assets/images/services/svc-install.jpg" alt="מסכי LED חיצוניים בעיצוב מותאם אישי: הפתרון המלא של Pixel by Keshet לשילוט עסקי" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED חיצוניים</div>
         <h2><a href="/blog/led-article-2-2026-04-23.html">מסכי LED חיצוניים בעיצוב מותאם אישי: הפתרון המלא של Pixel by Keshet לשילוט עסקי</a></h2>
@@ -330,7 +317,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-1-2026-04-22.html"><img src="https://xvision.co.il/assets/images/services/svc-outdoor.jpg" alt="שילוט דיגיטלי למסעדות: פתרונות LED מתקדמים שמגבירים מכירות ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-1-2026-04-22.html"><img src="https://xvision.co.il/assets/images/services/svc-support.jpg" alt="שילוט דיגיטלי למסעדות: פתרונות LED מתקדמים שמגבירים מכירות ב-Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שילוט דיגיטלי למסעדות</div>
         <h2><a href="/blog/led-article-1-2026-04-22.html">שילוט דיגיטלי למסעדות: פתרונות LED מתקדמים שמגבירים מכירות ב-Pixel by Keshet</a></h2>
@@ -338,7 +325,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-21.html"><img src="https://xvision.co.il/assets/images/services/svc-cms.jpg" alt="מסכי LED לחנויות: פתרונות שילוט דיגיטלי חכם של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-21.html"><img src="https://xvision.co.il/assets/images/services/svc-content.jpg" alt="מסכי LED לחנויות: פתרונות שילוט דיגיטלי חכם של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לחנויות</div>
         <h2><a href="/blog/led-article-0-2026-04-21.html">מסכי LED לחנויות: פתרונות שילוט דיגיטלי חכם של Pixel by Keshet</a></h2>
@@ -346,7 +333,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-20.html"><img src="https://xvision.co.il/assets/images/services/svc-install.jpg" alt="שלטי חוצות LED ישראל: פתרונות סיגנאג חיצוניים עוצמתיים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-20.html"><img src="https://xvision.co.il/assets/images/hero-bg.jpg" alt="שלטי חוצות LED ישראל: פתרונות סיגנאג חיצוניים עוצמתיים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שלטי חוצות LED ישראל</div>
         <h2><a href="/blog/led-article-0-2026-04-20.html">שלטי חוצות LED ישראל: פתרונות סיגנאג חיצוניים עוצמתיים של Pixel by Keshet</a></h2>
@@ -354,7 +341,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-19.html"><img src="https://xvision.co.il/assets/images/services/svc-support.jpg" alt="מסכי LED לקליניקות: פתרונות תצוגה רפואיים מהימנים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-19.html"><img src="https://xvision.co.il/assets/images/works-s01.jpg" alt="מסכי LED לקליניקות: פתרונות תצוגה רפואיים מהימנים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לקליניקות</div>
         <h2><a href="/blog/led-article-0-2026-04-19.html">מסכי LED לקליניקות: פתרונות תצוגה רפואיים מהימנים של Pixel by Keshet</a></h2>
@@ -362,7 +349,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-18.html"><img src="https://xvision.co.il/assets/images/services/svc-content.jpg" alt="מסכי LED לתחנות דלק: מערכות סיגנאג חכמות של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-18.html"><img src="https://xvision.co.il/assets/images/works-s02.jpg" alt="מסכי LED לתחנות דלק: מערכות סיגנאג חכמות של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לתחנות דלק</div>
         <h2><a href="/blog/led-article-0-2026-04-18.html">מסכי LED לתחנות דלק: מערכות סיגנאג חכמות של Pixel by Keshet</a></h2>
@@ -370,7 +357,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-17.html"><img src="https://xvision.co.il/assets/images/hero-bg.jpg" alt="מסכי LED לסופרמרקט: מערכות סיגנאג דיגיטלי מקצועיות של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-17.html"><img src="https://xvision.co.il/assets/images/works-s03.jpg" alt="מסכי LED לסופרמרקט: מערכות סיגנאג דיגיטלי מקצועיות של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לסופרמרקט</div>
         <h2><a href="/blog/led-article-0-2026-04-17.html">מסכי LED לסופרמרקט: מערכות סיגנאג דיגיטלי מקצועיות של Pixel by Keshet</a></h2>
@@ -378,7 +365,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-0-2026-04-16.html"><img src="https://xvision.co.il/assets/images/works-s01.jpg" alt="מסכי LED לחדרי כושר: פתרונות תצוגה מתקדמים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-0-2026-04-16.html"><img src="https://xvision.co.il/assets/images/works-s04.jpg" alt="מסכי LED לחדרי כושר: פתרונות תצוגה מתקדמים של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED לחדרי כושר</div>
         <h2><a href="/blog/led-article-0-2026-04-16.html">מסכי LED לחדרי כושר: פתרונות תצוגה מתקדמים של Pixel by Keshet</a></h2>
@@ -386,7 +373,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-29-2026-04-15.html"><img src="https://xvision.co.il/assets/images/works-s02.jpg" alt="תפריט דיגיטלי למסעדה - פתרון LED מתקדם מ-Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-29-2026-04-15.html"><img src="https://xvision.co.il/assets/images/works-s05.jpg" alt="תפריט דיגיטלי למסעדה - פתרון LED מתקדם מ-Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תפריט דיגיטלי למסעדה</div>
         <h2><a href="/blog/led-article-29-2026-04-15.html">תפריט דיגיטלי למסעדה - פתרון LED מתקדם מ-Pixel by Keshet</a></h2>
@@ -394,7 +381,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-28-2026-04-14.html"><img src="https://xvision.co.il/assets/images/works-s03.jpg" alt="שלטים דיגיטליים לעסקים: טכנולוגיית LED חכמה לעלייה בנראות ובמכירות | Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-28-2026-04-14.html"><img src="https://xvision.co.il/assets/images/works-s06.jpg" alt="שלטים דיגיטליים לעסקים: טכנולוגיית LED חכמה לעלייה בנראות ובמכירות | Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">שלטים דיגיטליים לעסקים</div>
         <h2><a href="/blog/led-article-28-2026-04-14.html">שלטים דיגיטליים לעסקים: טכנולוגיית LED חכמה לעלייה בנראות ובמכירות | Pixel by Keshet</a></h2>
@@ -402,7 +389,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-27-2026-04-13.html"><img src="https://xvision.co.il/assets/images/works-s04.jpg" alt="מסכי LED סופרמרקט: פתרונות תצוגה מתקדמים שמגבירים מכירות | Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-27-2026-04-13.html"><img src="https://xvision.co.il/assets/images/works-s07.jpg" alt="מסכי LED סופרמרקט: פתרונות תצוגה מתקדמים שמגבירים מכירות | Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED סופרמרקט</div>
         <h2><a href="/blog/led-article-27-2026-04-13.html">מסכי LED סופרמרקט: פתרונות תצוגה מתקדמים שמגבירים מכירות | Pixel by Keshet</a></h2>
@@ -410,7 +397,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-26-2026-04-12.html"><img src="https://xvision.co.il/assets/images/works-s05.jpg" alt="pixel pitch LED – בחירת הגודל המושלם למסך שלך | Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-26-2026-04-12.html"><img src="https://xvision.co.il/assets/images/works-s08.jpg" alt="pixel pitch LED – בחירת הגודל המושלם למסך שלך | Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">pixel pitch LED</div>
         <h2><a href="/blog/led-article-26-2026-04-12.html">pixel pitch LED – בחירת הגודל המושלם למסך שלך | Pixel by Keshet</a></h2>
@@ -418,7 +405,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-25-2026-04-11.html"><img src="https://xvision.co.il/assets/images/works-s06.jpg" alt="מסכי LED IP65 עמידים בכל תנאי מזג אוויר - פתרון שילוט דיגיטלי מקצועי מ-Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-25-2026-04-11.html"><img src="https://xvision.co.il/assets/images/works-s09.jpg" alt="מסכי LED IP65 עמידים בכל תנאי מזג אוויר - פתרון שילוט דיגיטלי מקצועי מ-Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">IP65 מסכי LED</div>
         <h2><a href="/blog/led-article-25-2026-04-11.html">מסכי LED IP65 עמידים בכל תנאי מזג אוויר - פתרון שילוט דיגיטלי מקצועי מ-Pixel by Keshet</a></h2>
@@ -426,7 +413,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/led-article-21-2026-04-07.html"><img src="https://xvision.co.il/assets/images/works-s07.jpg" alt="תצוגות ויטרינה LED חכמות: איך Pixel by Keshet משנה את פנים החנויות בישראל" class="card-img" loading="lazy"/></a>
+      <a href="/blog/led-article-21-2026-04-07.html"><img src="https://xvision.co.il/assets/images/works-s10.jpg" alt="תצוגות ויטרינה LED חכמות: איך Pixel by Keshet משנה את פנים החנויות בישראל" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תצוגות ויטרינה LED</div>
         <h2><a href="/blog/led-article-21-2026-04-07.html">תצוגות ויטרינה LED חכמות: איך Pixel by Keshet משנה את פנים החנויות בישראל</a></h2>
@@ -434,7 +421,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/השוואת-מסכי-LED-בישראל-בחרו-את-הפתרון-המושלם-לעסקכם-עם-Pixel.html"><img src="https://xvision.co.il/assets/images/works-s08.jpg" alt="השוואת מסכי LED בישראל: בחרו את הפתרון המושלם לעסקכם עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/השוואת-מסכי-LED-בישראל-בחרו-את-הפתרון-המושלם-לעסקכם-עם-Pixel.html"><img src="https://xvision.co.il/assets/images/works-g01.jpg" alt="השוואת מסכי LED בישראל: בחרו את הפתרון המושלם לעסקכם עם Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">השוואת מסכי LED</div>
         <h2><a href="/blog/השוואת-מסכי-LED-בישראל-בחרו-את-הפתרון-המושלם-לעסקכם-עם-Pixel.html">השוואת מסכי LED בישראל: בחרו את הפתרון המושלם לעסקכם עם Pixel by Keshet</a></h2>
@@ -442,7 +429,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/תחזוקת-מסכי-LED-מקצועית-המדריך-המלא-של-Pixel-by-Keshet-לאורך.html"><img src="https://xvision.co.il/assets/images/works-s09.jpg" alt="תחזוקת מסכי LED מקצועית — המדריך המלא של Pixel by Keshet" class="card-img" loading="lazy"/></a>
+      <a href="/blog/תחזוקת-מסכי-LED-מקצועית-המדריך-המלא-של-Pixel-by-Keshet-לאורך.html"><img src="https://xvision.co.il/assets/images/works-g02.jpg" alt="תחזוקת מסכי LED מקצועית — המדריך המלא של Pixel by Keshet" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">תחזוקת מסכי LED</div>
         <h2><a href="/blog/תחזוקת-מסכי-LED-מקצועית-המדריך-המלא-של-Pixel-by-Keshet-לאורך.html">תחזוקת מסכי LED מקצועית — המדריך המלא של Pixel by Keshet</a></h2>
@@ -450,7 +437,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       </div>
     </article>
     <article class="card">
-      <a href="/blog/מסכי-LED-חיפה-פתרונות-לעסקים-בצפון.html"><img src="https://xvision.co.il/assets/images/works-s10.jpg" alt="מסכי LED חיפה — פתרונות לעסקים בצפון" class="card-img" loading="lazy"/></a>
+      <a href="/blog/מסכי-LED-חיפה-פתרונות-לעסקים-בצפון.html"><img src="https://xvision.co.il/assets/images/works-g03.jpg" alt="מסכי LED חיפה — פתרונות לעסקים בצפון" class="card-img" loading="lazy"/></a>
       <div class="card-body">
         <div class="card-tag">מסכי LED חיפה</div>
         <h2><a href="/blog/מסכי-LED-חיפה-פתרונות-לעסקים-בצפון.html">מסכי LED חיפה — פתרונות לעסקים בצפון</a></h2>
