@@ -292,3 +292,37 @@ fatal: unable to access 'https://github.com/nirsala/xvision-website.git/': Could
 [content-gen] נשמר: blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: could not read Username for 'https://github.com': Device not configured
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: could not read Username for 'https://github.com': Device not configured
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 5 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Google Sitemap: ה-sitemap קיים בכתובת https://xvision.co.il/sitemap.xml
+[indexing] לשליחה אוטומטית הגדר GOOGLE_SA_PATH עם service account
+[indexing] Bing IndexNow: נשלח בהצלחה
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום חמישי, 21 במאי 2026
+  ✅ מאמר: מסכים לעסקים: השוואה מלאה ומדריך בחירה 2026
+  ✅ מילת מפתח: מסכים לעסקים
+  ✅ קובץ: blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
+
+══════════════════════════════════════
+ SEO DAILY — יום שבת, 23 במאי 2026
+══════════════════════════════════════
+
+📝 שלב 1: ייצור תוכן SEO...
+[content-gen] מייצר מאמר: מסכים מקצועיים לעסקים — 5 תכונות שחייבים לדעת
+[content-gen] sitemap עודכן
+[content-gen] נשמר: blog/מסכים-מקצועיים-לעסקים-5-תכונות-שחייבים-לדעת.html
+
+🚀 שלב 2: פרסום ל-GitHub Pages...
