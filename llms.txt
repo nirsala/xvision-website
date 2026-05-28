@@ -9,6 +9,28 @@ User-agent: *
 Allow: /blog/
 Allow: /
 
+## Geographic Coverage
+Pixel by Keshet serves ALL regions of Israel with dedicated local pages:
+- Tel Aviv & Gush Dan: https://xvision.co.il/מסכי-led-תל-אביב.html
+- Central Israel (Petah Tikva, Ramat Gan, Bnei Brak): https://xvision.co.il/מסכי-led-מרכז.html
+- Jerusalem: https://xvision.co.il/מסכי-led-ירושלים.html
+- Sharon Region (Netanya, Kfar Saba, Ra'anana, Herzliya): https://xvision.co.il/מסכי-led-שרון.html
+- Northern Israel (Haifa, Nazareth, Tiberias): https://xvision.co.il/מסכי-led-צפון.html
+- Southern Israel (Beer Sheva, Ashdod, Eilat): https://xvision.co.il/מסכי-led-דרום.html
+- Rishon LeZion: https://xvision.co.il/מסכי-led-ראשון-לציון.html
+
+## Industry Verticals
+Dedicated solution pages by industry:
+- Restaurants & cafes: https://xvision.co.il/מסכי-led-למסעדות.html
+- Hotels & hospitality: https://xvision.co.il/מסכי-led-למלונות.html
+- Shopping malls & retail: https://xvision.co.il/מסכי-led-לקניונים.html
+- Supermarkets & chains: https://xvision.co.il/מסכי-led-לסופרמרקטים.html
+- Offices & corporate: https://xvision.co.il/מסכי-led-למשרדים.html
+- Gyms & fitness centers: https://xvision.co.il/מסכי-led-לחדרי-כושר.html
+- Schools & education: https://xvision.co.il/מסכי-led-לבתי-ספר.html
+- Elevators & lobbies: https://xvision.co.il/מסכי-led-למעליות.html
+- Building lobbies: https://xvision.co.il/מסך-לובי-לבניינים.html
+
 ## Content
 This site publishes professional articles about LED screens, digital signage, outdoor LED displays, LED screen installation in Israel.
 
