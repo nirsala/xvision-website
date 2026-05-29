@@ -71,15 +71,16 @@
   <url><loc>https://xvision.co.il/עבודות.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xvision.co.il/blog/led-article-36-2026-05-27.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xvision.co.il/blog/led-article-0-2026-05-28.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/unilumin.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/absen.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/leyard.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/infiled.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-צפון.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-דרום.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-שרון.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-מרכז.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-למעליות.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xvision.co.il/מסכי-led-לסופרמרקטים.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/unilumin.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://xvision.co.il/absen.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://xvision.co.il/leyard.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://xvision.co.il/infiled.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-צפון.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-דרום.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-שרון.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-מרכז.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-למעליות.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/מסכי-led-לסופרמרקטים.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xvision.co.il/blog/led-article-1-2026-05-29.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xvision.co.il/blog/קיר-וידאו-LED-כשאחד-מסך-לא-מספיק.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
