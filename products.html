@@ -60,7 +60,10 @@ nav ul a:hover::after,nav ul a.active::after{transform:scaleX(1);animation:nav-p
 .nav-wa:hover{background:rgba(37,211,102,.25);box-shadow:0 0 14px rgba(37,211,102,.5)}
 
 /* ── HERO ── */
-.page-hero{padding:130px 0 60px;text-align:center;background:linear-gradient(180deg,#1e2a3a 0%,var(--bg) 100%)}
+.page-hero{position:relative;padding:130px 0 60px;text-align:center;background:linear-gradient(180deg,#1e2a3a 0%,var(--bg) 100%);overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;z-index:0;background:url('assets/images/products-hero-bg.webp') center/cover no-repeat,url('assets/images/products-hero-bg.jpg') center/cover no-repeat;opacity:.45}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,28,40,.55) 0%,rgba(20,28,40,.78) 60%,var(--bg) 100%)}
+.page-hero>*{position:relative;z-index:2}
 .page-hero h1{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:12px}
 .page-hero h1 span{color:var(--blue)}
 .page-hero p{font-size:1rem;color:var(--muted);max-width:500px;margin:0 auto 40px}
