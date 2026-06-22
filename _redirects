@@ -1,0 +1,3 @@
+# Redirect pixel-keshet.co.il to xvision.co.il
+https://pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
+https://www.pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
