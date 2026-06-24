@@ -37,8 +37,18 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"בית","item":"https://xvision.co.il/"},
-    {"@type":"ListItem","position":2,"name":"מסך לובי לבניינים","item":"https://xvision.co.il/מסך-לובי-לבניינים.html"}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "בית",
+      "item": "https://xvision.co.il/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "מסך לובי לבניינים",
+      "item": "https://xvision.co.il/מסך-לובי-לבניינים.html"
+    }
   ]
 }
 </script>
@@ -52,7 +62,16 @@
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, iOS, Android",
   "description": "מערכת ניהול מסך לובי לבנייני מגורים — הודעות לדיירים, חדשות חיות, מוזיקה, תאריך עברי, תזמון תמונות וסרטונים. ניהול מרחוק מכל מכשיר ללא ידע טכני.",
-  "featureList": ["הודעות לדיירים בזמן אמת","פס חדשות גולש אוטומטי","מוזיקת רקע מ-MP3","לוח שנה עברי מובנה","תזמון תמונות וסרטונים","ניהול מרחוק מהנייד","התקנה בדקות","מנוע AI לתזמון תכנים"],
+  "featureList": [
+    "הודעות לדיירים בזמן אמת",
+    "פס חדשות גולש אוטומטי",
+    "מוזיקת רקע מ-MP3",
+    "לוח שנה עברי מובנה",
+    "תזמון תמונות וסרטונים",
+    "ניהול מרחוק מהנייד",
+    "התקנה בדקות",
+    "מנוע AI לתזמון תכנים"
+  ],
   "url": "https://xvision.co.il/מסך-לובי-לבניינים.html",
   "provider": {
     "@type": "LocalBusiness",
@@ -64,6 +83,12 @@
       "streetAddress": "מודיעין 44",
       "addressLocality": "פתח תקווה",
       "addressCountry": "IL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5"
     }
   },
   "offers": {
@@ -150,33 +175,100 @@
     "longitude": "34.8878"
   },
   "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"18:00"}
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
   ],
   "sameAs": [
     "https://www.facebook.com/pixelbykeshet",
     "https://www.instagram.com/pixelbykeshet",
     "https://www.linkedin.com/company/pixel-by-keshet"
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5"
+  }
 }
 </script>
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"מסך לובי לבניין מגורים — Pixel by Keshet",
-  "description":"מסכי לובי דיגיטליים לבנייני מגורים: הודעות לדיירים, חדשות, לוח מודעות דיגיטלי. ניהול מרחוק מהנייד.",
-  "provider":{"@type":"LocalBusiness","name":"Pixel by Keshet","url":"https://xvision.co.il","telephone":"055-973-2343","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"47","bestRating":"5"}},
-  "areaServed":{"@type":"Country","name":"Israel"},
-  "serviceType":"מסך לובי לבניין מגורים",
-  "hasOfferCatalog":{
-    "@type":"OfferCatalog",
-    "name":"מחירי מסכי לובי לבניינים",
-    "itemListElement":[
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"מסך לובי 43 אינץ' לבניין"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"4000","maxPrice":"8000","priceCurrency":"ILS"}},
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"מסך LED P4 ללובי בניין"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"8000","maxPrice":"20000","priceCurrency":"ILS"}},
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"פתרון לובי כולל CMS ותוכן"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"6000","maxPrice":"15000","priceCurrency":"ILS"}}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "מסך לובי לבניין מגורים — Pixel by Keshet",
+  "description": "מסכי לובי דיגיטליים לבנייני מגורים: הודעות לדיירים, חדשות, לוח מודעות דיגיטלי. ניהול מרחוק מהנייד.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pixel by Keshet",
+    "url": "https://xvision.co.il",
+    "telephone": "055-973-2343",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Israel"
+  },
+  "serviceType": "מסך לובי לבניין מגורים",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "מחירי מסכי לובי לבניינים",
+    "itemListElement": [
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "מסך לובי 43 אינץ' לבניין"
+        },
+        "lowPrice": "4000",
+        "highPrice": "8000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "מסך LED P4 ללובי בניין"
+        },
+        "lowPrice": "8000",
+        "highPrice": "20000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "פתרון לובי כולל CMS ותוכן"
+        },
+        "lowPrice": "6000",
+        "highPrice": "15000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      }
     ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5"
   }
 }
 </script>

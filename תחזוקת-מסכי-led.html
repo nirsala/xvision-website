@@ -27,8 +27,18 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"בית","item":"https://xvision.co.il/"},
-    {"@type":"ListItem","position":2,"name":"תחזוקת מסכי LED","item":"https://xvision.co.il/תחזוקת-מסכי-led.html"}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "בית",
+      "item": "https://xvision.co.il/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "תחזוקת מסכי LED",
+      "item": "https://xvision.co.il/תחזוקת-מסכי-led.html"
+    }
   ]
 }
 </script>
@@ -44,11 +54,46 @@
     "name": "Pixel by Keshet",
     "url": "https://xvision.co.il",
     "telephone": "055-973-2343",
-    "address": {"@type":"PostalAddress","addressLocality":"פתח תקווה","addressCountry":"IL"}
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "פתח תקווה",
+      "addressCountry": "IL"
+    }
   },
   "description": "שירות תחזוקה ותיקון מסכי LED מקצועי — ארצי, 24/7. כולל תחזוקה שוטפת, תיקון חירום, החלפת רכיבים ועדכוני תוכנה.",
-  "areaServed": {"@type":"Country","name":"Israel"},
-  "availableChannel": {"@type":"ServiceChannel","servicePhone":{"@type":"ContactPoint","telephone":"055-973-2343","contactType":"customer support","availableLanguage":"Hebrew","hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}}
+  "areaServed": {
+    "@type": "Country",
+    "name": "Israel"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "055-973-2343",
+      "contactType": "customer support",
+      "availableLanguage": "Hebrew",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5"
+  }
 }
 </script>
 
@@ -58,12 +103,54 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"כמה פעמים בשנה צריך לתחזק מסך LED?","acceptedAnswer":{"@type":"Answer","text":"מסכי LED פנימיים דורשים תחזוקה מינימלית פעמיים בשנה — ניקוי, בדיקת חיבורים ועדכון תוכנה. מסכי LED חיצוניים מומלץ לתחזק 3-4 פעמים בשנה בשל חשיפה לאבק, לחות וקרינת UV."}},
-    {"@type":"Question","name":"מה קורה למסך LED ללא תחזוקה?","acceptedAnswer":{"@type":"Answer","text":"ללא תחזוקה, מסך LED עלול לסבול מהצטברות אבק שגורמת להתחממות יתר, שחיקה מוקדמת של פיקסלים, נפילות תוכנה תכופות, ירידה בבהירות ובסופו של דבר — קצור משמעותי של חיי המסך. עלות תיקון אחרי כשל מלא גבוהה פי 5-10 מתחזוקה שוטפת."}},
-    {"@type":"Question","name":"כמה עולה תחזוקת מסך LED?","acceptedAnswer":{"@type":"Answer","text":"עלות תחזוקה שנתית למסך LED תלויה בגודל ובמיקום. חבילות תחזוקה שנתיות של Pixel by Keshet מתחילות מאלפי שקלים ספורים וכוללות ביקורים תקופתיים, ניטור מרחוק ותמיכה טכנית. צרו קשר לקבלת הצעת מחיר: צרו קשר לפרטים."}},
-    {"@type":"Question","name":"מה זמן ההגעה לתיקון חירום?","acceptedAnswer":{"@type":"Answer","text":"Pixel by Keshet מתחייבת להגעה לתיקון חירום תוך 4 שעות בכל רחבי הארץ — תל אביב, ירושלים, חיפה, באר שבע ועוד. שירות הטלפון פתוח 24/7 בכל ימות השנה."}},
-    {"@type":"Question","name":"האם ניתן לתקן מסך LED עם פיקסלים שרופים?","acceptedAnswer":{"@type":"Answer","text":"כן. החלפת מודולי LED עם פיקסלים פגומים היא פעולה סטנדרטית. הטכנאים שלנו מחזיקים מלאי מודולים תואמים לדגמים הנפוצים. במקרים רבים ניתן לתקן במקום ללא פירוק המסך."}},
-    {"@type":"Question","name":"האם התחזוקה מתבצעת במקום או בסדנה?","acceptedAnswer":{"@type":"Answer","text":"רוב פעולות התחזוקה והתיקון מתבצעות במקום הלקוח, ללא הצורך להוריד את המסך. רק תיקונים מורכבים הדורשים החלפת לוח אם או ספק כוח עיקרי מבוצעים לעיתים בסדנה, עם זמן עבודה של 24-72 שעות."}}
+    {
+      "@type": "Question",
+      "name": "כמה פעמים בשנה צריך לתחזק מסך LED?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מסכי LED פנימיים דורשים תחזוקה מינימלית פעמיים בשנה — ניקוי, בדיקת חיבורים ועדכון תוכנה. מסכי LED חיצוניים מומלץ לתחזק 3-4 פעמים בשנה בשל חשיפה לאבק, לחות וקרינת UV."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מה קורה למסך LED ללא תחזוקה?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ללא תחזוקה, מסך LED עלול לסבול מהצטברות אבק שגורמת להתחממות יתר, שחיקה מוקדמת של פיקסלים, נפילות תוכנה תכופות, ירידה בבהירות ובסופו של דבר — קצור משמעותי של חיי המסך. עלות תיקון אחרי כשל מלא גבוהה פי 5-10 מתחזוקה שוטפת."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "כמה עולה תחזוקת מסך LED?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "עלות תחזוקה שנתית למסך LED תלויה בגודל ובמיקום. חבילות תחזוקה שנתיות של Pixel by Keshet מתחילות מאלפי שקלים ספורים וכוללות ביקורים תקופתיים, ניטור מרחוק ותמיכה טכנית. צרו קשר לקבלת הצעת מחיר: צרו קשר לפרטים."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מה זמן ההגעה לתיקון חירום?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pixel by Keshet מתחייבת להגעה לתיקון חירום תוך 4 שעות בכל רחבי הארץ — תל אביב, ירושלים, חיפה, באר שבע ועוד. שירות הטלפון פתוח 24/7 בכל ימות השנה."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "האם ניתן לתקן מסך LED עם פיקסלים שרופים?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "כן. החלפת מודולי LED עם פיקסלים פגומים היא פעולה סטנדרטית. הטכנאים שלנו מחזיקים מלאי מודולים תואמים לדגמים הנפוצים. במקרים רבים ניתן לתקן במקום ללא פירוק המסך."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "האם התחזוקה מתבצעת במקום או בסדנה?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "רוב פעולות התחזוקה והתיקון מתבצעות במקום הלקוח, ללא הצורך להוריד את המסך. רק תיקונים מורכבים הדורשים החלפת לוח אם או ספק כוח עיקרי מבוצעים לעיתים בסדנה, עם זמן עבודה של 24-72 שעות."
+      }
+    }
   ]
 }
 </script>
@@ -76,11 +163,31 @@
   "name": "איך מתבצעת תחזוקת מסך LED מקצועית",
   "description": "תהליך תחזוקה שוטפת של מסכי LED על ידי טכנאי Pixel by Keshet",
   "step": [
-    {"@type":"HowToStep","name":"אבחון ובדיקה ויזואלית","text":"בדיקת כל הפיקסלים, זיהוי פיקסלים מתים או שרופים, בדיקת אחידות הצבע והבהירות"},
-    {"@type":"HowToStep","name":"ניקוי מקצועי","text":"ניקוי האבק מהמודולים, ממאווררי הקירור ומהמעגלים הפנימיים באמצעות ציוד מיוחד"},
-    {"@type":"HowToStep","name":"בדיקת חיבורים וחשמל","text":"בדיקת כל הכבלים, ספקי הכוח, הקרקעה ורמות המתח"},
-    {"@type":"HowToStep","name":"עדכון תוכנה","text":"עדכון firmware, כיול צבעים ויחס ניגודיות, בדיקת מערכת ה-CMS"},
-    {"@type":"HowToStep","name":"דוח ותיעוד","text":"הפקת דוח תחזוקה מפורט עם תמונות, המלצות ומועד הביקור הבא"}
+    {
+      "@type": "HowToStep",
+      "name": "אבחון ובדיקה ויזואלית",
+      "text": "בדיקת כל הפיקסלים, זיהוי פיקסלים מתים או שרופים, בדיקת אחידות הצבע והבהירות"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ניקוי מקצועי",
+      "text": "ניקוי האבק מהמודולים, ממאווררי הקירור ומהמעגלים הפנימיים באמצעות ציוד מיוחד"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "בדיקת חיבורים וחשמל",
+      "text": "בדיקת כל הכבלים, ספקי הכוח, הקרקעה ורמות המתח"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "עדכון תוכנה",
+      "text": "עדכון firmware, כיול צבעים ויחס ניגודיות, בדיקת מערכת ה-CMS"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "דוח ותיעוד",
+      "text": "הפקת דוח תחזוקה מפורט עם תמונות, המלצות ומועד הביקור הבא"
+    }
   ]
 }
 </script>
@@ -90,21 +197,71 @@
 <link rel="apple-touch-icon" href="/assets/logo/favicon.png"/>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"תחזוקת מסכי LED — Pixel by Keshet",
-  "description":"שירות תחזוקה מקצועי למסכי LED: תיקון, ניקוי, החלפת מודולים ותמיכה טכנית 24/7. חוזי תחזוקה שנתיים.",
-  "provider":{"@type":"LocalBusiness","name":"Pixel by Keshet","url":"https://xvision.co.il","telephone":"055-973-2343","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"47","bestRating":"5"}},
-  "areaServed":{"@type":"Country","name":"Israel"},
-  "serviceType":"תחזוקת מסכי LED",
-  "hasOfferCatalog":{
-    "@type":"OfferCatalog",
-    "name":"חוזי תחזוקה למסכי LED",
-    "itemListElement":[
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"חוזה תחזוקה שנתי בסיסי"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"2400","maxPrice":"6000","priceCurrency":"ILS"}},
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"חוזה תחזוקה שנתי מורחב + 24/7"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"6000","maxPrice":"18000","priceCurrency":"ILS"}},
-      {"@type":"Offer","itemOffered":{"@type":"Product","name":"תיקון ותחזוקה חד-פעמית"},"priceSpecification":{"@type":"PriceSpecification","minPrice":"800","maxPrice":"5000","priceCurrency":"ILS"}}
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "תחזוקת מסכי LED — Pixel by Keshet",
+  "description": "שירות תחזוקה מקצועי למסכי LED: תיקון, ניקוי, החלפת מודולים ותמיכה טכנית 24/7. חוזי תחזוקה שנתיים.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pixel by Keshet",
+    "url": "https://xvision.co.il",
+    "telephone": "055-973-2343",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Israel"
+  },
+  "serviceType": "תחזוקת מסכי LED",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "חוזי תחזוקה למסכי LED",
+    "itemListElement": [
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "חוזה תחזוקה שנתי בסיסי"
+        },
+        "lowPrice": "2400",
+        "highPrice": "6000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "חוזה תחזוקה שנתי מורחב + 24/7"
+        },
+        "lowPrice": "6000",
+        "highPrice": "18000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "תיקון ותחזוקה חד-פעמית"
+        },
+        "lowPrice": "800",
+        "highPrice": "5000",
+        "priceCurrency": "ILS",
+        "offerCount": "1"
+      }
     ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5"
   }
 }
 </script>
