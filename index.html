@@ -85,23 +85,23 @@
       "name": "Israel"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "תל אביב"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "ירושלים"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "חיפה"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "פתח תקווה"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "ראשון לציון"
     }
   ],
@@ -261,34 +261,88 @@
 }</script>
 
 <!-- BreadcrumbList Schema -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"דף הבית","item":"https://xvision.co.il/"},
-    {"@type":"ListItem","position":2,"name":"מסכי LED לעסקים","item":"https://xvision.co.il/מסכי-לד-לעסקים.html"}
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "דף הבית",
+      "item": "https://xvision.co.il/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "מסכי LED לעסקים",
+      "item": "https://xvision.co.il/מסכי-לד-לעסקים.html"
+    }
   ]
-}
-</script>
+}</script>
 <!-- FAQ Schema for Google AI Overviews -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"כמה עולה מסך LED לעסק?","acceptedAnswer":{"@type":"Answer","text":"מחיר מסך LED לעסק נע בין ₪8,000 למסכי LED פנימיים קטנים לבין ₪140,000+ לשלטי חוצות דיגיטליים גדולים. הגורמים המשפיעים: גודל, pixel pitch, שימוש פנימי או חיצוני, ותוכנת ניהול תוכן. Pixel by Keshet מציעה מחירים תחרותיים — צרו קשר לקבלת הצעת מחיר בטלפון 055-973-2343."}},
-    {"@type":"Question","name":"מה ההבדל בין מסך LED פנימי לחיצוני?","acceptedAnswer":{"@type":"Answer","text":"מסך LED פנימי מתוכנן לסביבות מוגנות כמו חנויות, מסעדות ומשרדים — בהירות 800–2000 ניט, pixel pitch עדין לצפייה מקרוב. מסך LED חיצוני עמיד גשם, חום ואבק (IP65), עם בהירות 5000+ ניט לנראות מלאה בשמש ישירה."}},
-    {"@type":"Question","name":"מהו מסך LED ואיך הוא עובד?","acceptedAnswer":{"@type":"Answer","text":"מסך LED (Light Emitting Diode) הוא לוח תצוגה המורכב ממאות אלפי נוריות LED בצבעי RGB. כל נורית שולטת בפיקסל אחד — ביחד הן יוצרות תמונה חדה ומבריקה. בשונה מטלוויזיה, מסכי LED מיועדים לשימוש 24/7, ניתנים לחיבור מודולרי לכל גודל, ומחוברים למערכת ניהול תוכן (CMS) לעדכון פרסומות בזמן אמת."}},
-    {"@type":"Question","name":"מה ההבדל בין מסך LED למקרן או טלוויזיה?","acceptedAnswer":{"@type":"Answer","text":"מסך LED עדיף על מקרן בסביבות מוארות — אין בעיות של אור יום, הבהירות גבוהה בהרבה (פי 5–10). לעומת טלוויזיה, מסך LED מיועד לפעולה רציפה 24/7, ניתן לחיבור מודולרי לגדלים גדולים מ-100 אינץ', ועמיד הרבה יותר לשימוש מסחרי."}},
-    {"@type":"Question","name":"האם ניתן לשלוט על תוכן המסך מרחוק?","acceptedAnswer":{"@type":"Answer","text":"כן. מערכת ה-CMS של Pixel by Keshet מאפשרת שינוי תכנים, מחירים ופרסומות בזמן אמת מכל מכשיר — מחשב, טלפון או טאבלט. ניתן לתזמן קמפיינים, לנהל מאות מסכים בו-זמנית ולהציג תוכן שונה בשעות שונות."}},
-    {"@type":"Question","name":"כמה זמן לוקחת ההתקנה?","acceptedAnswer":{"@type":"Answer","text":"התקנת מסך LED לעסק רגיל אורכת 1–2 ימי עבודה. פרויקטים גדולים עם מספר מסכים עשויים לקחת 3–5 ימים. Pixel by Keshet מספקת התקנה מקצועית עם הנחיה מלאה ואחריות שירות."}},
-    {"@type":"Question","name":"האם מסכי LED מתאימים לחוץ ולבריכות?","acceptedAnswer":{"@type":"Answer","text":"כן. מסכי LED חיצוניים של Pixel by Keshet מוגנים בדרגת IP65 ועמידים לגשם, חום, קור ואבק. מסכי LED לבריכות וספאים מגיעים עם הגנת לחות מיוחדת לסביבות רטובות."}}
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "כמה עולה מסך LED לעסק?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מחיר מסך LED לעסק נע בין ₪8,000 למסכי LED פנימיים קטנים לבין ₪140,000+ לשלטי חוצות דיגיטליים גדולים. הגורמים המשפיעים: גודל, pixel pitch, שימוש פנימי או חיצוני, ותוכנת ניהול תוכן. Pixel by Keshet מציעה מחירים תחרותיים — צרו קשר לקבלת הצעת מחיר בטלפון 055-973-2343."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מה ההבדל בין מסך LED פנימי לחיצוני?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מסך LED פנימי מתוכנן לסביבות מוגנות כמו חנויות, מסעדות ומשרדים — בהירות 800–2000 ניט, pixel pitch עדין לצפייה מקרוב. מסך LED חיצוני עמיד גשם, חום ואבק (IP65), עם בהירות 5000+ ניט לנראות מלאה בשמש ישירה."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מהו מסך LED ואיך הוא עובד?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מסך LED (Light Emitting Diode) הוא לוח תצוגה המורכב ממאות אלפי נוריות LED בצבעי RGB. כל נורית שולטת בפיקסל אחד — ביחד הן יוצרות תמונה חדה ומבריקה. בשונה מטלוויזיה, מסכי LED מיועדים לשימוש 24/7, ניתנים לחיבור מודולרי לכל גודל, ומחוברים למערכת ניהול תוכן (CMS) לעדכון פרסומות בזמן אמת."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מה ההבדל בין מסך LED למקרן או טלוויזיה?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מסך LED עדיף על מקרן בסביבות מוארות — אין בעיות של אור יום, הבהירות גבוהה בהרבה (פי 5–10). לעומת טלוויזיה, מסך LED מיועד לפעולה רציפה 24/7, ניתן לחיבור מודולרי לגדלים גדולים מ-100 אינץ', ועמיד הרבה יותר לשימוש מסחרי."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "האם ניתן לשלוט על תוכן המסך מרחוק?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "כן. מערכת ה-CMS של Pixel by Keshet מאפשרת שינוי תכנים, מחירים ופרסומות בזמן אמת מכל מכשיר — מחשב, טלפון או טאבלט. ניתן לתזמן קמפיינים, לנהל מאות מסכים בו-זמנית ולהציג תוכן שונה בשעות שונות."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "כמה זמן לוקחת ההתקנה?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "התקנת מסך LED לעסק רגיל אורכת 1–2 ימי עבודה. פרויקטים גדולים עם מספר מסכים עשויים לקחת 3–5 ימים. Pixel by Keshet מספקת התקנה מקצועית עם הנחיה מלאה ואחריות שירות."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "האם מסכי LED מתאימים לחוץ ולבריכות?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "כן. מסכי LED חיצוניים של Pixel by Keshet מוגנים בדרגת IP65 ועמידים לגשם, חום, קור ואבק. מסכי LED לבריכות וספאים מגיעים עם הגנת לחות מיוחדת לסביבות רטובות."
+      }
+    }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
+}</script>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://xvision.co.il/#organization",
@@ -296,9 +350,15 @@
   "url": "https://xvision.co.il",
   "logo": "https://xvision.co.il/assets/logo/pixel-logo-transparent.png",
   "foundingDate": "2018",
-  "numberOfEmployees": {"@type":"QuantitativeValue","value":12},
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 12
+  },
   "description": "ספק מסכי LED מוביל בישראל — פתרונות שילוט דיגיטלי לעסקים, מוסדות ורשויות. יבוא, התקנה ותחזוקה.",
-  "areaServed": {"@type":"Country","name":"Israel"},
+  "areaServed": {
+    "@type": "Country",
+    "name": "Israel"
+  },
   "sameAs": [
     "https://www.facebook.com/pixelbykeshet",
     "https://www.instagram.com/pixelbykeshet",
@@ -310,8 +370,7 @@
     "contactType": "customer service",
     "availableLanguage": "Hebrew"
   }
-}
-</script>
+}</script>
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
