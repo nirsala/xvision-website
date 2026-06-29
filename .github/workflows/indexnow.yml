@@ -1,0 +1,68 @@
+name: IndexNow & Sitemap Ping
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+      - 'llms.txt'
+
+jobs:
+  ping-search-engines:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed HTML files
+        id: changed
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- '*.html' | head -20)
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Ping IndexNow for changed pages
+        run: |
+          KEY="xvision-indexnow-2026"
+          BASE="https://xvision.co.il"
+          while IFS= read -r file; do
+            if [ -n "$file" ]; then
+              URL="${BASE}/${file}"
+              echo "Pinging IndexNow: $URL"
+              curl -s "https://api.indexnow.org/indexnow?url=${URL}&key=${KEY}" || true
+              sleep 1
+            fi
+          done <<< "${{ steps.changed.outputs.files }}"
+
+      - name: Ping IndexNow bulk (sitemap)
+        run: |
+          curl -s "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "xvision.co.il",
+              "key": "xvision-indexnow-2026",
+              "keyLocation": "https://xvision.co.il/xvision-indexnow-2026.txt",
+              "urlList": [
+                "https://xvision.co.il/",
+                "https://xvision.co.il/sitemap.xml"
+              ]
+            }' || true
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
+          echo "Google sitemap pinged"
+
+      - name: Ping Bing Sitemap
+        run: |
+          curl -s "https://www.bing.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
+          echo "Bing sitemap pinged"
+
+      - name: Ping Yandex Sitemap
+        run: |
+          curl -s "https://webmaster.yandex.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
+          echo "Yandex sitemap pinged"
