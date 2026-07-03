@@ -32,38 +32,61 @@
 <link rel="apple-touch-icon" href="/assets/logo/favicon.png"/>
 
 <!-- BreadcrumbList Schema -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"בית","item":"https://xvision.co.il/"},
-    {"@type":"ListItem","position":2,"name":"מסך לובי לבניינים","item":"https://xvision.co.il/מסך-לובי-לבניינים.html"}
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "בית",
+      "item": "https://xvision.co.il/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "מסך לובי לבניינים",
+      "item": "https://xvision.co.il/מסך-לובי-לבניינים.html"
+    }
   ]
-}
-</script>
+}</script>
 
 <!-- SoftwareApplication Schema -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Pixel Lobby CMS",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, iOS, Android",
   "description": "מערכת ניהול מסך לובי לבנייני מגורים — הודעות לדיירים, חדשות חיות, מוזיקה, תאריך עברי, תזמון תמונות וסרטונים. ניהול מרחוק מכל מכשיר ללא ידע טכני.",
-  "featureList": ["הודעות לדיירים בזמן אמת","פס חדשות גולש אוטומטי","מוזיקת רקע מ-MP3","לוח שנה עברי מובנה","תזמון תמונות וסרטונים","ניהול מרחוק מהנייד","התקנה בדקות","מנוע AI לתזמון תכנים"],
+  "featureList": [
+    "הודעות לדיירים בזמן אמת",
+    "פס חדשות גולש אוטומטי",
+    "מוזיקת רקע מ-MP3",
+    "לוח שנה עברי מובנה",
+    "תזמון תמונות וסרטונים",
+    "ניהול מרחוק מהנייד",
+    "התקנה בדקות",
+    "מנוע AI לתזמון תכנים"
+  ],
   "url": "https://xvision.co.il/מסך-לובי-לבניינים.html",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Pixel by Keshet",
     "url": "https://xvision.co.il",
-    "telephone": "*9555",
+    "telephone": "055-973-2343",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "מודיעין 44",
       "addressLocality": "פתח תקווה",
       "addressCountry": "IL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
     }
   },
   "offers": {
@@ -72,12 +95,10 @@
     "priceCurrency": "ILS",
     "description": "ניסיון חינם 14 יום"
   }
-}
-</script>
+}</script>
 
 <!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -118,23 +139,21 @@
       "name": "כמה עולה מסך לובי לבניין?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "המחיר תלוי בגודל המסך ובסוג ההתקנה. צרו קשר ב-*9555 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות."
+        "text": "המחיר תלוי בגודל המסך ובסוג ההתקנה. צרו קשר בטלפון 055-973-2343 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות."
       }
     }
   ]
-}
-</script>
+}</script>
 
 <!-- LocalBusiness Schema -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://xvision.co.il/#business",
   "name": "Pixel by Keshet",
   "description": "מסכי לובי דיגיטליים לבנייני מגורים — ניהול תוכן מרחוק, הודעות לדיירים, חדשות חיות, מוזיקה ותאריך עברי.",
   "url": "https://xvision.co.il",
-  "telephone": "*9555",
+  "telephone": "055-973-2343",
   "email": "info@pixel.co.il",
   "address": {
     "@type": "PostalAddress",
@@ -150,15 +169,103 @@
     "longitude": "34.8878"
   },
   "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"18:00"}
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
   ],
   "sameAs": [
     "https://www.facebook.com/pixelbykeshet",
     "https://www.instagram.com/pixelbykeshet",
     "https://www.linkedin.com/company/pixel-by-keshet"
-  ]
-}
-</script>
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}</script>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "מסך לובי לבניין מגורים — Pixel by Keshet",
+  "description": "מסכי לובי דיגיטליים לבנייני מגורים: הודעות לדיירים, חדשות, לוח מודעות דיגיטלי. ניהול מרחוק מהנייד.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pixel by Keshet",
+    "url": "https://xvision.co.il",
+    "telephone": "055-973-2343",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Israel"
+  },
+  "serviceType": "מסך לובי לבניין מגורים",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "מחירי מסכי לובי לבניינים",
+    "itemListElement": [
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "מסך לובי 43 אינץ' לבניין"
+        },
+        "lowPrice": "4000",
+        "highPrice": "8000",
+        "priceCurrency": "ILS",
+        "offerCount": 1
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "מסך LED P4 ללובי בניין"
+        },
+        "lowPrice": "8000",
+        "highPrice": "20000",
+        "priceCurrency": "ILS",
+        "offerCount": 1
+      },
+      {
+        "@type": "AggregateOffer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "פתרון לובי כולל CMS ותוכן"
+        },
+        "lowPrice": "6000",
+        "highPrice": "15000",
+        "priceCurrency": "ILS",
+        "offerCount": 1
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
 <style>
