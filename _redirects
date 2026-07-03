@@ -1,0 +1,22 @@
+# Redirect pixel-keshet.co.il to xvision.co.il
+https://pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
+https://www.pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
+
+# Fix 404s from Google Search Console
+/מסכי-בריכה/ /pool.html 301
+/מסכי-בריכה /pool.html 301
+/services/ /products.html 301
+/services /products.html 301
+/catalog/ /products.html 301
+/catalog /products.html 301
+/about-us/ /אודות.html 301
+/about-us /אודות.html 301
+/contact/ / 301
+/contact /products.html 301
+/custom-color-schemes/ / 301
+/custom-color-schemes / 301
+/blog/products.html /products.html 301
+/blog/blog/ /blog/ 301
+/blog/blog /blog/ 301
+/blog/%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D.html /%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D.html 301
+/blog/מחירים.html /מחירים.html 301
