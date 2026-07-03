@@ -160,271 +160,247 @@
 }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#1A1A1A;--bg2:#222222;--bg3:#2C2C2C;--card:#303030;
-  --line:rgba(255,255,255,0.07);--white:#FFFFFF;--muted:rgba(255,255,255,0.42);
-  --blue:#d71d43;--blue2:#e8234f;--green:#00D97E;
+  --bg:#040911;--bg2:#081120;--bg3:#0b1729;--card:#0d1a2e;
+  --line:rgba(74,196,243,0.1);--white:#FFFFFF;--muted:rgba(230,242,255,0.5);
+  --cyan:#4ac4f3;--cyan-soft:rgba(74,196,243,.12);--indigo:#3b29bf;--sky:#0d9ef0;
+  --grad:linear-gradient(120deg,#3b29bf 0%,#0d9ef0 55%,#4ac4f3 100%);
+  --green:#25D366;
 }
 html{scroll-behavior:smooth}
-body{font-family:'Heebo','Inter',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;direction:rtl;}
+body{font-family:'Assistant','Heebo',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden;direction:rtl;}
 a{color:inherit;text-decoration:none}
-
-/* NAV */
-nav{position:fixed;top:0;right:0;left:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:68px;background:rgba(26,26,26,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);}
-.nav-logo img{transition:filter .35s ease;transform-origin:top right}
-.nav-logo:hover img{filter:brightness(1.22) drop-shadow(0 0 22px rgba(215,29,67,.75));animation:logo-pop 2s cubic-bezier(.22,1,.36,1) 1 normal none}
-@keyframes logo-pop{0%{transform:scale(1) rotate(0deg)}15%{transform:scale(4.3) rotate(-4deg)}32%{transform:scale(3.8) rotate(3deg)}52%{transform:scale(4.1) rotate(0deg)}70%{transform:scale(1.12) rotate(1deg)}85%{transform:scale(0.96)}100%{transform:scale(1) rotate(0deg)}}
-nav ul{display:flex;gap:36px;list-style:none;align-items:center;}
-nav ul a{font-size:12px;color:var(--muted);letter-spacing:.5px;font-weight:500;padding-bottom:3px;background-image:linear-gradient(var(--blue),var(--blue));background-repeat:no-repeat;background-size:0 2px;background-position:right bottom;transition:color .2s,background-size .22s ease}
-nav ul a:hover,nav ul a.active{color:var(--white);background-size:60% 2px;animation:nav-run .6s ease-in-out infinite alternate,nav-link-pop .45s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes nav-link-pop{0%{transform:scale(1) rotate(0deg)}35%{transform:scale(1.55) rotate(-3deg)}65%{transform:scale(1.45) rotate(2deg)}100%{transform:scale(1.5) rotate(0deg)}}
-@keyframes nav-run{from{background-position:right bottom}to{background-position:left bottom}}
-.nav-right{display:flex;align-items:center;gap:16px}
-.nav-phone{font-size:12px;color:var(--muted);letter-spacing:.5px;direction:ltr;display:inline-block;transition:color .2s,transform .2s;cursor:default}
-.nav-phone:hover{color:var(--white);animation:phone-pop .45s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes phone-pop{0%{transform:scale(1)}35%{transform:scale(1.55) rotate(-4deg)}65%{transform:scale(1.45) rotate(3deg)}100%{transform:scale(1.5) rotate(0deg)}}
-.nav-cta{padding:10px 22px;border-radius:5px;background:var(--blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:box-shadow .2s,transform .2s;white-space:nowrap}
-.nav-cta:hover{animation:cta-pop .45s cubic-bezier(.22,1,.36,1) forwards;box-shadow:0 0 18px rgba(215,29,67,.55)}
-@keyframes cta-pop{0%{transform:scale(1)}35%{transform:scale(1.55) rotate(-2deg)}65%{transform:scale(1.45) rotate(1.5deg)}100%{transform:scale(1.5) rotate(0deg)}}
-.nav-wa{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.3);transition:background .2s,box-shadow .2s;flex-shrink:0}
-.nav-wa:hover{background:rgba(37,211,102,.25);box-shadow:0 0 14px rgba(37,211,102,.5);animation:wa-pop .45s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes wa-pop{0%{transform:scale(1)}35%{transform:scale(1.55) rotate(4deg)}65%{transform:scale(1.45) rotate(-3deg)}100%{transform:scale(1.5) rotate(0deg)}}
+::selection{background:rgba(74,196,243,.35)}
 
 /* BUTTONS */
-.btn-primary{padding:15px 36px;border-radius:6px;background:var(--blue);color:#fff;font-size:13px;font-weight:700;letter-spacing:1px;transition:opacity .2s;display:inline-block;}
-.btn-primary:hover{opacity:.87}
-.btn-outline{padding:15px 36px;border-radius:6px;border:1px solid rgba(255,255,255,.15);color:#fff;font-size:13px;font-weight:600;transition:border-color .2s,background .2s;display:inline-block;}
-.btn-outline:hover{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.04)}
+.btn-primary{padding:16px 38px;border-radius:40px;background:var(--grad);color:#fff;font-size:15px;font-weight:700;letter-spacing:.3px;display:inline-block;transition:transform .25s,box-shadow .25s;box-shadow:0 8px 28px rgba(13,158,240,.35);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(13,158,240,.5)}
+.btn-outline{padding:16px 38px;border-radius:40px;border:1px solid rgba(74,196,243,.35);color:var(--cyan);font-size:15px;font-weight:600;transition:border-color .2s,background .2s;display:inline-block;}
+.btn-outline:hover{border-color:var(--cyan);background:var(--cyan-soft)}
+
+/* HERO */
+.lobby-hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:130px 56px 80px;
+  background:radial-gradient(1100px 600px at 85% -10%,rgba(59,41,191,.35) 0%,transparent 60%),
+             radial-gradient(900px 550px at 5% 110%,rgba(13,158,240,.18) 0%,transparent 60%),
+             var(--bg);}
+.lobby-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(74,196,243,0.09) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);}
+.hero-inner{position:relative;z-index:2;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%;}
+.hero-inner>*{min-width:0}
+.screen-frame,.screen,.scr-ticker{min-width:0;max-width:100%}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 18px;border-radius:30px;
+  border:1px solid rgba(74,196,243,.35);
+  background:var(--cyan-soft);
+  font-size:13px;letter-spacing:1px;
+  color:var(--cyan);font-weight:700;margin-bottom:26px;
+}
+.hero-badge-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse-dot 2s ease infinite;box-shadow:0 0 10px var(--cyan);}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}
+.hero-h1{font-size:clamp(2.3rem,4.6vw,3.9rem);font-weight:800;letter-spacing:-1px;line-height:1.08;margin-bottom:22px;}
+.hero-h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero-desc{font-size:1.15rem;color:var(--muted);line-height:1.75;max-width:520px;margin-bottom:14px;}
+.hero-trust{font-size:13px;color:rgba(230,242,255,.35);margin-bottom:36px;}
+.hero-trust b{color:var(--cyan);font-weight:700}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* HERO SCREEN MOCKUP */
+.screen-wrap{position:relative;display:flex;justify-content:center;}
+.screen-glow{position:absolute;inset:-8%;background:radial-gradient(ellipse at center,rgba(13,158,240,.28) 0%,transparent 65%);filter:blur(10px);}
+.screen-frame{position:relative;width:100%;max-width:520px;background:#0c0f16;border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:12px;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 1px rgba(74,196,243,.08);}
+.screen-frame::after{content:'';position:absolute;bottom:-26px;right:50%;transform:translateX(50%);width:120px;height:14px;background:rgba(74,196,243,.12);border-radius:50%;filter:blur(8px);}
+.screen{border-radius:10px;overflow:hidden;background:linear-gradient(160deg,#0a1424 0%,#101c33 100%);aspect-ratio:16/10;display:flex;flex-direction:column;font-family:'Heebo',sans-serif;}
+.scr-top{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.07);font-size:13px;color:rgba(255,255,255,.85);}
+.scr-clock{font-size:20px;font-weight:800;letter-spacing:1px;color:#fff;direction:ltr}
+.scr-heb{color:var(--cyan);font-weight:600;font-size:12.5px}
+.scr-weather{font-size:12.5px;color:rgba(255,255,255,.7)}
+.scr-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:18px 22px;gap:10px;}
+.scr-msg-label{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--cyan);letter-spacing:1.5px;}
+.scr-msg{font-size:clamp(15px,2vw,19px);font-weight:700;line-height:1.5;color:#fff;}
+.scr-msg-sub{font-size:12.5px;color:rgba(255,255,255,.55);line-height:1.6;}
+.scr-music{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:11.5px;color:rgba(255,255,255,.45);}
+.scr-bars{display:flex;align-items:flex-end;gap:2px;height:14px;}
+.scr-bars i{width:3px;background:var(--cyan);border-radius:2px;animation:eq 1s ease-in-out infinite;}
+.scr-bars i:nth-child(1){height:60%;animation-delay:0s}
+.scr-bars i:nth-child(2){height:100%;animation-delay:.2s}
+.scr-bars i:nth-child(3){height:45%;animation-delay:.4s}
+.scr-bars i:nth-child(4){height:80%;animation-delay:.1s}
+@keyframes eq{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(1)}}
+.scr-ticker{background:rgba(4,9,17,.85);border-top:1px solid rgba(74,196,243,.2);padding:8px 0;overflow:hidden;white-space:nowrap;position:relative;}
+.scr-ticker-inner{display:inline-block;padding-right:100%;animation:ticker 26s linear infinite;font-size:12.5px;color:rgba(255,255,255,.75);}
+.scr-ticker-inner b{color:var(--cyan);font-weight:700}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(100%)}}
 
 /* STATS BAR */
-#stats{
-  background:rgba(215,29,67,.06);
-  border-top:1px solid rgba(215,29,67,.12);
-  border-bottom:1px solid rgba(215,29,67,.12);
-  padding:0 56px;
-}
-.stats-inner{
-  max-width:1100px;margin:0 auto;
-  display:grid;grid-template-columns:repeat(4,1fr);
-}
-.stat-item{
-  padding:32px 20px;text-align:center;
-  border-left:1px solid var(--line);
-}
+#stats{background:linear-gradient(90deg,rgba(59,41,191,.12),rgba(13,158,240,.1),rgba(59,41,191,.12));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0 56px;}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-item{padding:34px 20px;text-align:center;border-left:1px solid var(--line);}
 .stat-item:last-child{border-left:none}
-.stat-num{font-size:2rem;font-weight:900;letter-spacing:-1.5px;color:var(--white);}
-.stat-label{font-size:11px;color:var(--muted);letter-spacing:.5px;margin-top:4px;}
+.stat-num{font-size:2.1rem;font-weight:800;letter-spacing:-1px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.stat-label{font-size:13px;color:var(--muted);letter-spacing:.4px;margin-top:4px;}
 
 /* SECTIONS */
-.section{padding:96px 56px;}
+.section{padding:100px 56px;}
 .section-inner{max-width:1100px;margin:0 auto;}
-.section-kicker{
-  font-size:10px;letter-spacing:3.5px;text-transform:uppercase;
-  color:var(--blue);font-weight:700;margin-bottom:12px;
-  display:flex;align-items:center;gap:10px;
-}
-.section-kicker::after{content:'';display:block;width:32px;height:1px;background:var(--blue);opacity:.5}
-.section-h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;letter-spacing:-2px;line-height:1.1;margin-bottom:16px;}
-.section-h2 em{color:var(--blue);font-style:normal}
-.section-desc{font-size:1rem;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:56px;}
+.section-center{text-align:center}
+.section-kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:14px;display:inline-flex;align-items:center;gap:10px;}
+.section-kicker::before,.section-kicker::after{content:'';display:block;width:28px;height:1px;background:var(--cyan);opacity:.5}
+.section-h2{font-size:clamp(1.8rem,3.8vw,2.8rem);font-weight:800;letter-spacing:-.5px;line-height:1.15;margin-bottom:16px;}
+.section-h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.section-desc{font-size:1.05rem;color:var(--muted);line-height:1.8;max-width:600px;margin:0 auto 60px;}
 
-/* FEATURE CARDS GRID (2 col) */
-.features-grid-2{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
-}
-.feature-card{
-  background:#2a2a2a;border:1px solid var(--line);border-radius:12px;
-  padding:32px 28px;transition:border-color .3s,transform .3s,box-shadow .3s;
-  position:relative;overflow:hidden;
-  border-right:3px solid transparent;
-}
-.feature-card:hover{
-  border-color:rgba(215,29,67,.25);
-  border-right-color:var(--blue);
-  transform:translateY(-4px);
-  box-shadow:0 20px 48px rgba(0,0,0,.3);
-}
-.feature-icon-wrap{
-  width:52px;height:52px;border-radius:10px;
-  background:rgba(215,29,67,.1);border:1px solid rgba(215,29,67,.2);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;font-size:1.4rem;
-}
-.feature-title{font-size:1rem;font-weight:800;margin-bottom:10px;}
-.feature-text{font-size:13px;color:var(--muted);line-height:1.7;}
+/* SIMPLE 3 CARDS */
+.simple-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.simple-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:38px 28px;text-align:center;position:relative;transition:transform .3s,border-color .3s,box-shadow .3s;}
+.simple-card:hover{transform:translateY(-6px);border-color:rgba(74,196,243,.4);box-shadow:0 24px 50px rgba(0,0,0,.45),0 0 30px rgba(13,158,240,.08);}
+.simple-icon{width:64px;height:64px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 20px;box-shadow:0 10px 26px rgba(13,158,240,.35);}
+.simple-title{font-size:1.15rem;font-weight:800;margin-bottom:8px;}
+.simple-text{font-size:14.5px;color:var(--muted);line-height:1.7;}
+
+/* FEATURES */
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.feature-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 22px;transition:border-color .3s,transform .3s,background .3s;}
+.feature-card:hover{border-color:rgba(74,196,243,.45);transform:translateY(-4px);background:#101f38;}
+.feature-icon-wrap{width:48px;height:48px;border-radius:12px;background:var(--cyan-soft);border:1px solid rgba(74,196,243,.25);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.3rem;}
+.feature-title{font-size:1rem;font-weight:800;margin-bottom:8px;}
+.feature-text{font-size:13.5px;color:var(--muted);line-height:1.65;}
+
+/* OFFLINE STRIP */
+#offline-strip{padding:0 56px;}
+.offline-inner{max-width:1100px;margin:0 auto;background:linear-gradient(120deg,rgba(59,41,191,.25),rgba(13,158,240,.15));border:1px solid rgba(74,196,243,.25);border-radius:24px;padding:44px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;position:relative;overflow:hidden;}
+.offline-inner::before{content:'';position:absolute;top:-60%;left:-10%;width:340px;height:340px;background:radial-gradient(circle,rgba(74,196,243,.2),transparent 70%);}
+.offline-title{font-size:1.5rem;font-weight:800;margin-bottom:6px;}
+.offline-title em{font-style:normal;color:var(--cyan)}
+.offline-text{color:var(--muted);font-size:15px;line-height:1.7;max-width:560px;}
 
 /* HOW IT WORKS */
-.steps-row{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
-  position:relative;margin-top:16px;
-}
-.steps-row::before{
-  content:'';position:absolute;top:26px;right:16.5%;left:16.5%;
-  height:1px;background:linear-gradient(90deg,transparent,rgba(215,29,67,.3),rgba(215,29,67,.3),transparent);
-  direction:ltr;
-}
-.step-card{
-  background:var(--bg2);border:1px solid var(--line);border-radius:12px;
-  padding:32px 24px;text-align:center;
-}
-.step-num{
-  width:52px;height:52px;border-radius:50%;
-  background:var(--blue);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.4rem;font-weight:900;
-  flex-shrink:0;
-  box-shadow:0 0 20px rgba(215,29,67,.4);
-  margin:0 auto 20px;
-}
-.step-title{font-size:1rem;font-weight:800;margin-bottom:10px;}
-.step-text{font-size:13px;color:var(--muted);line-height:1.65;}
+.steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;margin-top:16px;}
+.steps-row::before{content:'';position:absolute;top:30px;right:16.5%;left:16.5%;height:2px;background:linear-gradient(90deg,transparent,rgba(74,196,243,.4),rgba(59,41,191,.4),transparent);}
+.step-card{background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:36px 26px;text-align:center;position:relative;transition:transform .3s,border-color .3s;}
+.step-card:hover{transform:translateY(-4px);border-color:rgba(74,196,243,.35)}
+.step-num{width:60px;height:60px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:800;box-shadow:0 0 28px rgba(13,158,240,.45);margin:0 auto 22px;position:relative;z-index:1;}
+.step-title{font-size:1.1rem;font-weight:800;margin-bottom:10px;}
+.step-text{font-size:14px;color:var(--muted);line-height:1.7;}
 
 /* COMPARISON TABLE */
-.compare-table{width:100%;border-collapse:collapse;margin-top:32px;}
-.compare-table th{padding:14px 20px;font-size:.9rem;font-weight:700;letter-spacing:1px;}
-.compare-table th:first-child{background:rgba(255,50,50,0.08);color:rgba(255,255,255,0.5);}
-.compare-table th:last-child{background:rgba(215,29,67,0.12);color:var(--blue);}
-.compare-table td{padding:12px 20px;font-size:.88rem;border-bottom:1px solid rgba(255,255,255,0.05);}
-.compare-table tr:last-child td{border-bottom:none;}
+.compare-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:24px;}
+.compare-table{width:100%;border-collapse:collapse;}
+.compare-table th{padding:18px 24px;font-size:1rem;font-weight:800;letter-spacing:.5px;}
+.compare-table th:first-child{background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.45);}
+.compare-table th:last-child{background:linear-gradient(120deg,rgba(59,41,191,.3),rgba(13,158,240,.25));color:var(--cyan);}
+.compare-table td{padding:14px 24px;font-size:.92rem;border-top:1px solid rgba(255,255,255,0.05);}
 .compare-table td:first-child{color:rgba(255,255,255,.4);}
-.compare-table td:last-child{color:rgba(255,255,255,.9);font-weight:600;}
+.compare-table td:last-child{color:rgba(255,255,255,.92);font-weight:600;background:rgba(74,196,243,.04);}
 
 /* TESTIMONIALS */
-.testimonials-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
-  margin-top:16px;
-}
-.testimonial-card{
-  background:var(--bg2);border:1px solid var(--line);border-radius:12px;
-  padding:32px 28px;
-}
-.testimonial-quote{
-  font-size:15px;line-height:1.75;margin-bottom:20px;
-  color:rgba(255,255,255,.85);font-style:italic;
-}
-.testimonial-quote::before{content:'"';color:var(--blue);font-size:2rem;line-height:.5;display:block;margin-bottom:8px;}
-.testimonial-author{font-size:12px;color:var(--muted);letter-spacing:.5px;}
-.testimonial-author strong{display:block;color:#fff;font-size:13px;margin-bottom:2px;}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:16px;}
+.testimonial-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px 28px;transition:border-color .3s,transform .3s;}
+.testimonial-card:hover{border-color:rgba(74,196,243,.3);transform:translateY(-4px)}
+.testimonial-stars{color:var(--cyan);letter-spacing:3px;font-size:14px;margin-bottom:14px;}
+.testimonial-quote{font-size:15px;line-height:1.75;margin-bottom:20px;color:rgba(230,242,255,.85);}
+.testimonial-author{font-size:12.5px;color:var(--muted);letter-spacing:.4px;display:flex;align-items:center;gap:12px;}
+.testimonial-avatar{width:42px;height:42px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#fff;flex-shrink:0;}
+.testimonial-author strong{display:block;color:#fff;font-size:14px;margin-bottom:1px;}
 
 /* FAQ */
-.faq-list{margin-top:16px;}
-.faq-item{border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden;}
-.faq-q{padding:20px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:1rem;font-weight:600;user-select:none;}
-.faq-q::after{content:'+';font-size:1.5rem;color:var(--blue);transition:transform .3s;flex-shrink:0;margin-right:16px;}
+.faq-list{margin:16px auto 0;max-width:760px;}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:border-color .3s;}
+.faq-item.open{border-color:rgba(74,196,243,.4)}
+.faq-q{padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:1.02rem;font-weight:700;user-select:none;text-align:right;}
+.faq-q::after{content:'+';font-size:1.5rem;color:var(--cyan);transition:transform .3s;flex-shrink:0;margin-right:16px;font-weight:400;}
 .faq-item.open .faq-q::after{transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.7;}
-.faq-item.open .faq-a{max-height:200px;padding-bottom:20px;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;font-size:.93rem;color:rgba(230,242,255,.6);line-height:1.75;padding:0 24px;text-align:right;}
+.faq-item.open .faq-a{max-height:240px;padding-bottom:22px;}
 
 /* CTA SECTION */
-#cta-lobby{
-  background:linear-gradient(135deg,#2a0010 0%,#3d0018 50%,#2a0010 100%);
-  padding:96px 56px;text-align:center;
-  border-top:1px solid rgba(215,29,67,.2);
-  border-bottom:1px solid rgba(215,29,67,.2);
-  position:relative;overflow:hidden;
-}
-#cta-lobby::before{
-  content:'';position:absolute;
-  top:50%;left:50%;transform:translate(-50%,-50%);
-  width:600px;height:400px;
-  background:radial-gradient(ellipse,rgba(215,29,67,.18) 0%,transparent 70%);
-}
+#cta-lobby{background:radial-gradient(900px 500px at 50% 0%,rgba(59,41,191,.4) 0%,transparent 65%),var(--bg2);padding:110px 56px;text-align:center;border-top:1px solid var(--line);position:relative;overflow:hidden;}
+#cta-lobby::before{content:'';position:absolute;top:55%;left:50%;transform:translate(-50%,-50%);width:640px;height:420px;background:radial-gradient(ellipse,rgba(13,158,240,.18) 0%,transparent 70%);}
 #cta-lobby .cta-content{position:relative;z-index:1;max-width:700px;margin:0 auto;}
-.cta-h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;letter-spacing:-2px;margin-bottom:16px;}
-.cta-desc{color:rgba(255,255,255,.65);font-size:1rem;line-height:1.7;margin-bottom:40px;}
+.cta-h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px;}
+.cta-h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.cta-desc{color:var(--muted);font-size:1.05rem;line-height:1.7;margin-bottom:40px;}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 
 /* FOOTER */
-footer{background:var(--bg2);border-top:1px solid var(--line);padding:48px 56px 28px;}
+footer{background:#030710;border-top:1px solid var(--line);padding:48px 56px 28px;}
 .footer-inner{max-width:1100px;margin:0 auto;}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--line);}
 .footer-brand-desc{font-size:13px;color:var(--muted);line-height:1.7;max-width:240px;margin-top:12px;}
 .footer-col h4{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:700;}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
-.footer-col ul a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s;}
-.footer-col ul a:hover{color:#fff}
+.footer-col ul a{font-size:13px;color:rgba(230,242,255,.5);transition:color .2s;}
+.footer-col ul a:hover{color:var(--cyan)}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;}
-.footer-copy{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:.5px;}
+.footer-copy{font-size:11px;color:rgba(230,242,255,.25);letter-spacing:.5px;}
 .footer-links{display:flex;gap:24px;}
-.footer-links a{font-size:11px;color:rgba(255,255,255,.2);transition:color .2s;}
+.footer-links a{font-size:11px;color:rgba(230,242,255,.25);transition:color .2s;}
 .footer-links a:hover{color:var(--muted)}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
+.reveal.instant{transition:none}
 .reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}
 
-/* LOBBY HERO */
-.lobby-hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(135deg,#060610 0%,#120818 50%,#060610 100%);overflow:hidden;}
-.lobby-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(215,29,67,0.08) 1px,transparent 1px);background-size:40px 40px;}
-.hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;padding:0 24px;}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:6px 16px;border-radius:30px;
-  border:1px solid rgba(215,29,67,.3);
-  background:rgba(215,29,67,.08);
-  font-size:11px;letter-spacing:2px;text-transform:uppercase;
-  color:var(--blue);font-weight:700;margin-bottom:28px;
-}
-.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);animation:pulse-dot 2s ease infinite;}
-@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
-.hero-h1{
-  font-size:clamp(2.4rem,6vw,5rem);font-weight:900;letter-spacing:-3px;
-  line-height:1.02;margin-bottom:24px;
-}
-.hero-h1 em{color:var(--blue);font-style:normal}
-.hero-desc{font-size:1.1rem;color:var(--muted);line-height:1.7;max-width:620px;margin:0 auto 40px;}
-.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+/* WHATSAPP FAB */
+.wa-fab{position:fixed;bottom:26px;left:26px;z-index:400;width:56px;height:56px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .25s;}
+.wa-fab:hover{transform:scale(1.1)}
 
 /* RESPONSIVE */
 @media(max-width:960px){
   nav{padding:0 20px}
   nav ul{display:none}
   .section{padding:64px 20px}
-  .lobby-hero{padding:100px 20px 64px;align-items:flex-end}
+  .lobby-hero{padding:110px 20px 64px}
+  .hero-inner{grid-template-columns:1fr;gap:44px;text-align:center}
+  .hero-desc{margin-left:auto;margin-right:auto}
+  .hero-btns{justify-content:center}
   #stats{padding:0 20px}
   .stats-inner{grid-template-columns:repeat(2,1fr)}
-  .features-grid-2{grid-template-columns:1fr}
+  .stat-item:nth-child(2){border-left:none}
+  .simple-grid{grid-template-columns:1fr}
+  .features-grid{grid-template-columns:repeat(2,1fr)}
   .steps-row{grid-template-columns:1fr;gap:16px}
   .steps-row::before{display:none}
   .testimonials-grid{grid-template-columns:1fr}
+  #offline-strip{padding:0 20px}
+  .offline-inner{padding:34px 26px}
   .footer-top{grid-template-columns:1fr 1fr}
   footer{padding:40px 20px 24px}
-  #cta-lobby{padding:64px 20px}
+  #cta-lobby{padding:70px 20px}
 }
 @media(max-width:600px){
-  .features-grid-2{grid-template-columns:1fr}
-  .hero-h1{letter-spacing:-1.5px}
-  .compare-table th,.compare-table td{padding:10px 12px;font-size:.8rem}
+  .features-grid{grid-template-columns:1fr}
+  .compare-table th,.compare-table td{padding:12px 14px;font-size:.82rem}
 }
 </style>
 <link rel="stylesheet" href="assets/css/a11y-cookie.css"/>
 <style id="nav-canonical">
 /* ── NAV CANONICAL — כל הדפים ── */
-nav[role="navigation"]{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(26,26,26,.95)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;box-sizing:border-box!important}
+nav[role="navigation"]{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 40px!important;height:68px!important;background:rgba(4,9,17,.9)!important;backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(74,196,243,.12)!important;box-sizing:border-box!important}
 nav[role="navigation"] .nav-logo{display:flex!important;align-items:center!important;text-decoration:none!important;flex-shrink:0!important}
 nav[role="navigation"] .nav-logo img{height:52px!important;width:auto!important;object-fit:contain!important;display:block!important}
 .nav-logo-icon,.nav-logo-text,.nav-logo-sub{display:none!important}
 nav[role="navigation"] ul{display:flex!important;gap:2px!important;list-style:none!important;align-items:center!important;flex-wrap:nowrap!important}
-nav[role="navigation"] ul a{font-size:12px!important;color:rgba(255,255,255,.5)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
-nav[role="navigation"] ul a:hover,nav[role="navigation"] ul a.active{color:#fff!important;background:rgba(255,255,255,.05)!important}
-.nav-dds{color:#d71d43!important;border:1px solid rgba(215,29,67,.35)!important;border-radius:12px!important;padding:3px 10px!important;font-size:11px!important;background:transparent!important}
-.nav-dds:hover{color:#d71d43!important;background:rgba(215,29,67,.08)!important}
+nav[role="navigation"] ul a{font-size:12px!important;color:rgba(230,242,255,.55)!important;letter-spacing:.3px!important;font-weight:500!important;padding:5px 8px!important;border-radius:6px!important;transition:color .2s!important;white-space:nowrap!important;text-decoration:none!important;position:relative!important}
+nav[role="navigation"] ul a:hover,nav[role="navigation"] ul a.active{color:#fff!important;background:rgba(74,196,243,.08)!important}
+.nav-dds{color:#4ac4f3!important;border:1px solid rgba(74,196,243,.35)!important;border-radius:12px!important;padding:3px 10px!important;font-size:11px!important;background:transparent!important}
+.nav-dds:hover{color:#4ac4f3!important;background:rgba(74,196,243,.08)!important}
 nav[role="navigation"] .nav-right{display:flex!important;align-items:center!important;gap:12px!important;flex-shrink:0!important}
-.nav-phone{font-size:13px!important;font-weight:700!important;color:rgba(255,255,255,.6)!important;direction:ltr!important;white-space:nowrap!important}
+.nav-phone{font-size:13px!important;font-weight:700!important;color:rgba(230,242,255,.6)!important;direction:ltr!important;white-space:nowrap!important}
 .nav-wa{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;border-radius:50%!important;background:rgba(37,211,102,.12)!important;border:1px solid rgba(37,211,102,.3)!important;transition:background .2s,box-shadow .2s!important;flex-shrink:0!important}
 .nav-wa:hover{background:rgba(37,211,102,.25)!important;box-shadow:0 0 14px rgba(37,211,102,.4)!important}
-.nav-cta{padding:9px 18px!important;border-radius:22px!important;background:#d71d43!important;color:#fff!important;font-size:12px!important;font-weight:700!important;white-space:nowrap!important;text-decoration:none!important;flex-shrink:0!important;transition:opacity .2s!important}
-.nav-cta:hover{opacity:.85!important;background:#d71d43!important}
+.nav-cta{padding:9px 18px!important;border-radius:22px!important;background:linear-gradient(120deg,#3b29bf,#0d9ef0)!important;color:#fff!important;font-size:12px!important;font-weight:700!important;white-space:nowrap!important;text-decoration:none!important;flex-shrink:0!important;transition:opacity .2s!important}
+.nav-cta:hover{opacity:.85!important}
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
 </head>
 <body>
 
-<a href="#main-content" class="skip-link" style="position:absolute;top:-999px;left:-999px;padding:8px 16px;background:var(--blue);color:#fff;z-index:9999;border-radius:4px;font-size:14px;transition:top .2s">דלג לתוכן הראשי</a>
+<a href="#main-content" class="skip-link" style="position:absolute;top:-999px;left:-999px;padding:8px 16px;background:var(--sky);color:#fff;z-index:9999;border-radius:4px;font-size:14px;transition:top .2s">דלג לתוכן הראשי</a>
 
 <!-- NAV -->
 <nav role="navigation" aria-label="ניווט ראשי">
@@ -456,15 +432,43 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 <!-- ── HERO ── -->
 <section class="lobby-hero" aria-label="כותרת ראשית">
   <div class="hero-inner">
-    <div class="hero-badge reveal">
-      <span class="hero-badge-dot"></span>
-      ✦ מסך לובי חכם לבניין מגורים — מבוסס AI
+    <div class="hero-text">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-dot"></span>
+        מסך לובי חכם לבניין מגורים — מבוסס AI
+      </div>
+      <h1 class="hero-h1 reveal reveal-d1">לוח מודעות דיגיטלי<br/><em>שהבניין שלכם מגיע לו</em></h1>
+      <p class="hero-desc reveal reveal-d2">הודעות לדיירים, חדשות חיות, מוזיקת רקע ותאריך עברי — הכל בניהול מרחוק מהנייד, פשוט כמו WhatsApp וללא ידע טכני.</p>
+      <p class="hero-trust reveal reveal-d2">ללא התחייבות · התקנה תוך יום · <b>14 יום ניסיון חינם</b></p>
+      <div class="hero-btns reveal reveal-d3">
+        <a href="https://lobby-cms.onrender.com/admin/" class="btn-primary" target="_blank" rel="noopener">נסו חינם — 14 יום</a>
+        <a href="https://lobby-cms.onrender.com/display/" class="btn-outline" target="_blank" rel="noopener">ראו דמו חי</a>
+      </div>
     </div>
-    <h1 class="hero-h1 reveal reveal-d1">מסך הלובי שכל<br/><em>הבניין ידבר עליו</em></h1>
-    <p class="hero-desc reveal reveal-d2">הודעות לדיירים, חדשות חיות, מוזיקה ותאריך עברי — הכל בניהול מרחוק מהנייד, ללא ידע טכני</p>
-    <div class="hero-btns reveal reveal-d3">
-      <a href="https://lobby-cms.onrender.com/admin/" class="btn-primary" target="_blank" rel="noopener">נסו חינם — 14 יום ←</a>
-      <a href="https://lobby-cms.onrender.com/display/" class="btn-outline" target="_blank" rel="noopener">ראו דמו חי</a>
+
+    <div class="screen-wrap reveal reveal-d2" aria-hidden="true">
+      <div class="screen-glow"></div>
+      <div class="screen-frame">
+        <div class="screen">
+          <div class="scr-top">
+            <span class="scr-clock" id="scr-clock">20:45</span>
+            <span class="scr-heb" id="scr-date">י״ז בתמוז תשפ״ו</span>
+            <span class="scr-weather">☀️ 28° פתח תקווה</span>
+          </div>
+          <div class="scr-body">
+            <span class="scr-msg-label">📢 הודעת ועד הבית</span>
+            <p class="scr-msg">ביום רביעי 8:00–12:00 תתבצע שטיפת חניון. נא לא להחנות ברחבה.</p>
+            <p class="scr-msg-sub">מזל טוב למשפחת לוי מקומה 4 על הולדת הבת! 🎉</p>
+            <div class="scr-music">
+              <span class="scr-bars"><i></i><i></i><i></i><i></i></span>
+              מוזיקת רקע · פלייליסט בוקר
+            </div>
+          </div>
+          <div class="scr-ticker">
+            <span class="scr-ticker-inner"><b>חדשות</b> · מזג אוויר נעים צפוי בסוף השבוע · הרכבת הקלה: קו חדש נפתח במרכז · מחירי הדלק יורדים החל ממחר בחצות · <b>עדכון ועד</b> · אסיפת דיירים ביום ראשון בשעה 19:30</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -474,15 +478,15 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   <div class="stats-inner">
     <div class="stat-item">
       <div class="stat-num">500+</div>
-      <div class="stat-label">בניינים</div>
+      <div class="stat-label">בניינים ברחבי הארץ</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">📱</div>
-      <div class="stat-label">ניהול מהנייד</div>
+      <div class="stat-num">2 דק׳</div>
+      <div class="stat-label">לעדכון הודעה מהנייד</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">✓</div>
-      <div class="stat-label">עובד ללא אינטרנט</div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">עובד גם ללא אינטרנט</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">24/7</div>
@@ -491,60 +495,98 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 </section>
 
-<!-- ── FEATURES ── -->
-<section id="features" class="section" aria-label="תכונות המוצר">
+<!-- ── SIMPLE TO USE ── -->
+<section id="simple" class="section section-center" aria-label="פשוט לשימוש">
   <div class="section-inner">
-    <div class="section-kicker">תכונות</div>
-    <h2 class="section-h2 reveal">מה מסך הלובי שלכם <em>יכול לעשות?</em></h2>
-    <p class="section-desc reveal reveal-d1">פתרון מלא לבניין מגורים מודרני — שילוט דיגיטלי לבניין שמדבר עם הדיירים</p>
+    <div class="section-kicker">פשוט לשימוש</div>
+    <h2 class="section-h2 reveal">כותבים מהנייד — <em>וזה כבר בלובי</em></h2>
+    <p class="section-desc reveal reveal-d1">בלי מחשבים, בלי טכנאים ובלי כאב ראש. שלוש פעולות שכל ועד בית עושה לבד</p>
 
-    <div class="features-grid-2">
-      <div class="feature-card reveal">
-        <div class="feature-icon-wrap">📢</div>
-        <h3 class="feature-title">הודעות לדיירים</h3>
-        <p class="feature-text">כתבו הודעה מהנייד והיא מופיעה על מסך הכניסה לבניין תוך שניות. גלילה אוטומטית, ניתן לשנות צבע וגודל גופן. מסך הודעות לדיירים אמיתי בניהול פשוט.</p>
+    <div class="simple-grid">
+      <div class="simple-card reveal">
+        <div class="simple-icon">✍️</div>
+        <h3 class="simple-title">כותבים הודעה</h3>
+        <p class="simple-text">מקלידים בנייד — וההודעה מופיעה על מסך הכניסה לבניין תוך שניות, עם גלילה אוטומטית ובחירת צבע וגודל גופן.</p>
       </div>
-      <div class="feature-card reveal reveal-d1">
-        <div class="feature-icon-wrap">📰</div>
-        <h3 class="feature-title">חדשות חיות</h3>
-        <p class="feature-text">פס חדשות גולש בתחתית המסך עם כותרות מ-Ynet, Walla ו-Mako. מתעדכן אוטומטית כל שעה — ניהול תוכן מסך לובי שעובד לבד.</p>
+      <div class="simple-card reveal reveal-d1">
+        <div class="simple-icon">🖼️</div>
+        <h3 class="simple-title">גוררים תמונה או סרטון</h3>
+        <p class="simple-text">מעלים קובץ, קובעים תאריך ושעה — והתוכן עולה ויורד לבד. מושלם לאירועים, חגים ומזל־טובים של הדיירים.</p>
       </div>
-      <div class="feature-card reveal reveal-d2">
-        <div class="feature-icon-wrap">🎵</div>
-        <h3 class="feature-title">מוזיקת רקע</h3>
-        <p class="feature-text">העלו קבצי MP3 מהמחשב. המוזיקה מתנגנת ברצף גם ללא חיבור לאינטרנט. מסך חכם לבניין מגורים שגם נשמע טוב.</p>
-      </div>
-      <div class="feature-card reveal reveal-d3">
-        <div class="feature-icon-wrap">🗓️</div>
-        <h3 class="feature-title">תאריך עברי</h3>
-        <p class="feature-text">לוח שנה עברי מובנה. שבת, חגים ומועדים מוצגים אוטומטית — מסך לובי עם תאריך עברי שלא תמצאו אצל המתחרים.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon-wrap">🖼️</div>
-        <h3 class="feature-title">תמונות וסרטונים</h3>
-        <p class="feature-text">העלו תמונות וסרטונים עם תזמון לפי תאריך ושעה. מסך תזמן חדשות בניין מגורים — מושלם לאירועים ומבצעים של הדיירים.</p>
-      </div>
-      <div class="feature-card reveal reveal-d1">
-        <div class="feature-icon-wrap">🤖</div>
-        <h3 class="feature-title">ניהול מבוסס AI</h3>
-        <p class="feature-text">מנוע ה-AI מציע תכנים לשילוט דיגיטלי לבניין, מתזמן אוטומטית ומדווח על ביצועים. לוח מודעות דיגיטלי לבניין שחושב לבד.</p>
-      </div>
-      <div class="feature-card reveal reveal-d2">
-        <div class="feature-icon-wrap">⚡</div>
-        <h3 class="feature-title">התקנה בדקות</h3>
-        <p class="feature-text">מסך לובי לבניין מגורים שמוכן תוך שעות — ממשק ניהול בעברית מלאה, ללא הכשרה טכנית. חיבור לכל מסך עם דפדפן.</p>
-      </div>
-      <div class="feature-card reveal reveal-d3">
-        <div class="feature-icon-wrap">📱</div>
-        <h3 class="feature-title">ניהול מרחוק</h3>
-        <p class="feature-text">ניהול מסך לובי מהנייד — כניסה מכל מכשיר, בכל מקום. לא צריך להגיע לבניין. מסך לבניין ועד בית שמנהלים בשתי דקות.</p>
+      <div class="simple-card reveal reveal-d2">
+        <div class="simple-icon">🎵</div>
+        <h3 class="simple-title">בוחרים מוזיקה</h3>
+        <p class="simple-text">מעלים קבצי MP3 והפלייליסט מתנגן ברצף בלובי — גם כשאין חיבור לאינטרנט. לובי שגם נשמע טוב.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── FEATURES ── -->
+<section id="features" class="section section-center" style="background:var(--bg2);" aria-label="תכונות המוצר">
+  <div class="section-inner">
+    <div class="section-kicker">מה אתם מרוויחים</div>
+    <h2 class="section-h2 reveal">כל מה שמסך הלובי שלכם <em>יודע לעשות</em></h2>
+    <p class="section-desc reveal reveal-d1">פתרון מלא לבניין מגורים מודרני — שילוט דיגיטלי לבניין שמדבר עם הדיירים</p>
+
+    <div class="features-grid" style="text-align:right">
+      <div class="feature-card reveal">
+        <div class="feature-icon-wrap">📢</div>
+        <h3 class="feature-title">הודעות לדיירים</h3>
+        <p class="feature-text">מסך הודעות לדיירים אמיתי — כתבו מהנייד וזה על המסך תוך שניות.</p>
+      </div>
+      <div class="feature-card reveal reveal-d1">
+        <div class="feature-icon-wrap">📰</div>
+        <h3 class="feature-title">חדשות חיות</h3>
+        <p class="feature-text">פס חדשות גולש עם כותרות מ-Ynet, Walla ו-Mako. מתעדכן אוטומטית כל שעה.</p>
+      </div>
+      <div class="feature-card reveal reveal-d2">
+        <div class="feature-icon-wrap">🗓️</div>
+        <h3 class="feature-title">תאריך עברי</h3>
+        <p class="feature-text">לוח שנה עברי מובנה — שבת, חגים ומועדים מוצגים אוטומטית, בלי הגדרות.</p>
+      </div>
+      <div class="feature-card reveal reveal-d3">
+        <div class="feature-icon-wrap">🤖</div>
+        <h3 class="feature-title">ניהול מבוסס AI</h3>
+        <p class="feature-text">מנוע ה-AI מציע תכנים, מתזמן אוטומטית ומדווח על ביצועים. לוח שחושב לבד.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon-wrap">🎵</div>
+        <h3 class="feature-title">מוזיקת רקע</h3>
+        <p class="feature-text">קבצי MP3 מתנגנים ברצף גם ללא אינטרנט — אווירה נעימה בכל כניסה.</p>
+      </div>
+      <div class="feature-card reveal reveal-d1">
+        <div class="feature-icon-wrap">🖼️</div>
+        <h3 class="feature-title">תמונות וסרטונים</h3>
+        <p class="feature-text">העלאה עם תזמון לפי תאריך ושעה — התוכן עולה ויורד לבד.</p>
+      </div>
+      <div class="feature-card reveal reveal-d2">
+        <div class="feature-icon-wrap">⚡</div>
+        <h3 class="feature-title">התקנה בדקות</h3>
+        <p class="feature-text">ממשק בעברית מלאה, חיבור לכל מסך עם דפדפן — מוכן תוך שעות.</p>
+      </div>
+      <div class="feature-card reveal reveal-d3">
+        <div class="feature-icon-wrap">📱</div>
+        <h3 class="feature-title">ניהול מרחוק</h3>
+        <p class="feature-text">כניסה מכל מכשיר, מכל מקום. לא צריך להגיע לבניין — שתי דקות וסיימתם.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OFFLINE STRIP ── -->
+<section id="offline-strip" class="section" style="padding-top:0;padding-bottom:0;margin:100px 0;" aria-label="עובד ללא אינטרנט">
+  <div class="offline-inner reveal">
+    <div>
+      <h3 class="offline-title">אין אינטרנט יציב בלובי? <em>לא בעיה.</em></h3>
+      <p class="offline-text">המוזיקה, התמונות והסרטונים שמורים מקומית על המסך וממשיכים לרוץ גם בניתוק מלא. וכשצריך — נדאג לכם גם לפתרון אינטרנט ייעודי לבניין.</p>
+    </div>
+    <a href="/#contact" class="btn-primary" style="flex-shrink:0">דברו איתנו</a>
+  </div>
+</section>
+
 <!-- ── HOW IT WORKS ── -->
-<section id="how" class="section" style="background:var(--bg2);" aria-label="שלבי ההתקנה">
+<section id="how" class="section section-center" aria-label="שלבי ההתקנה">
   <div class="section-inner">
     <div class="section-kicker">תהליך</div>
     <h2 class="section-h2 reveal">3 צעדים פשוטים <em>לשדרוג הלובי</em></h2>
@@ -554,30 +596,30 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       <div class="step-card reveal">
         <div class="step-num">1</div>
         <h3 class="step-title">מתקינים מסך</h3>
-        <p class="step-text">מסך LED מקצועי לדיגיטל לובי בניין בגודל ובסגנון שתבחרו — אנחנו מגיעים ומתקינים. שילוט דיגיטלי לבניין ברמה מסחרית.</p>
+        <p class="step-text">מסך LED מקצועי בגודל ובסגנון שתבחרו — אנחנו מגיעים ומתקינים ברמה מסחרית, בהתקנה אסתטית ונקייה.</p>
       </div>
       <div class="step-card reveal reveal-d1">
         <div class="step-num">2</div>
         <h3 class="step-title">מחברים למערכת</h3>
-        <p class="step-text">חיבור מהיר למערכת Pixel Lobby CMS — לוקח פחות משעה. מסך כניסה לבניין מחובר ומוכן לניהול.</p>
+        <p class="step-text">חיבור מהיר למערכת Pixel Lobby CMS — לוקח פחות משעה. מסך הכניסה לבניין מחובר ומוכן לניהול.</p>
       </div>
       <div class="step-card reveal reveal-d2">
         <div class="step-num">3</div>
         <h3 class="step-title">מנהלים מהנייד</h3>
-        <p class="step-text">כניסה לפאנל הניהול מכל מקום ועדכון המסך בזמן אמת. ניהול מסך לובי מהנייד — פשוט כמו WhatsApp.</p>
+        <p class="step-text">נכנסים לפאנל הניהול מכל מקום ומעדכנים את המסך בזמן אמת — פשוט כמו WhatsApp.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── COMPARISON TABLE ── -->
-<section id="compare" class="section" aria-label="השוואה ללוח מודעות רגיל">
+<section id="compare" class="section section-center" style="background:var(--bg2);" aria-label="השוואה ללוח מודעות רגיל">
   <div class="section-inner">
     <div class="section-kicker">השוואה</div>
     <h2 class="section-h2 reveal">למה לא <em>לוח מודעות רגיל?</em></h2>
     <p class="section-desc reveal reveal-d1">לוח מודעות דיגיטלי לבניין לעומת הפתרון הישן — ההבדל ברור</p>
 
-    <div class="reveal">
+    <div class="compare-wrap reveal">
       <table class="compare-table" role="table">
         <thead>
           <tr>
@@ -611,7 +653,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
             <td>לוח עברי מובנה</td>
           </tr>
           <tr>
-            <td>מסרבל וישן</td>
+            <td>מסורבל וישן</td>
             <td>מראה מודרני ויוקרתי</td>
           </tr>
         </tbody>
@@ -621,32 +663,35 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </section>
 
 <!-- ── TESTIMONIALS ── -->
-<section id="testimonials" class="section" style="background:var(--bg2);" aria-label="המלצות דיירים">
+<section id="testimonials" class="section section-center" aria-label="המלצות דיירים">
   <div class="section-inner">
-    <div class="section-kicker">לקוחות</div>
+    <div class="section-kicker">לקוחות מספרים</div>
     <h2 class="section-h2 reveal">מה אומרים <em>הדיירים</em></h2>
-    <p class="section-desc reveal reveal-d1">מסך לובי לבניין מגורים שמדיירים ממליצים עליו</p>
+    <p class="section-desc reveal reveal-d1">מסך לובי לבניין מגורים שדיירים ממליצים עליו</p>
 
-    <div class="testimonials-grid">
+    <div class="testimonials-grid" style="text-align:right">
       <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-quote">המסך שדרג לחלוטין את תחושת הכניסה לבניין. הדיירים אוהבים לקרוא את החדשות בבוקר ולראות את ההודעות של הוועד.</p>
         <div class="testimonial-author">
-          <strong>דוד כהן</strong>
-          ועד בית, תל אביב
+          <span class="testimonial-avatar">ד</span>
+          <span><strong>דוד כהן</strong>ועד בית, תל אביב</span>
         </div>
       </div>
       <div class="testimonial-card reveal reveal-d1">
+        <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-quote">הדיירים מבקשים להעלות תכנים בעצמם. זה הפך לכלי קהילתי אמיתי — מסך חכם לבניין מגורים שמחזק את הקהילה.</p>
         <div class="testimonial-author">
-          <strong>שרה לוי</strong>
-          מנהלת נכס, רמת גן
+          <span class="testimonial-avatar">ש</span>
+          <span><strong>שרה לוי</strong>מנהלת נכס, רמת גן</span>
         </div>
       </div>
       <div class="testimonial-card reveal reveal-d2">
-        <p class="testimonial-quote">ההתקנה לקחה שעה וכבר ביום הראשון היו הודעות על המסך. פשוט, מהיר ומקצועי. כמה עולה מסך לובי לבניין? שווה כל שקל.</p>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">ההתקנה לקחה שעה וכבר ביום הראשון היו הודעות על המסך. פשוט, מהיר ומקצועי. שווה כל שקל.</p>
         <div class="testimonial-author">
-          <strong>יוסי אברהם</strong>
-          ועד בית, פתח תקווה
+          <span class="testimonial-avatar">י</span>
+          <span><strong>יוסי אברהם</strong>ועד בית, פתח תקווה</span>
         </div>
       </div>
     </div>
@@ -654,13 +699,13 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </section>
 
 <!-- ── FAQ ── -->
-<section id="faq" class="section" aria-label="שאלות ותשובות">
+<section id="faq" class="section section-center" style="background:var(--bg2);" aria-label="שאלות ותשובות">
   <div class="section-inner">
     <div class="section-kicker">שאלות נפוצות</div>
     <h2 class="section-h2 reveal">שאלות <em>ותשובות</em></h2>
     <p class="section-desc reveal reveal-d1">כל מה שרציתם לדעת על מסך לובי לבניין</p>
 
-    <div class="faq-list reveal" style="max-width:760px;" role="list">
+    <div class="faq-list reveal" role="list">
 
       <div class="faq-item" role="listitem">
         <div class="faq-q" role="button" tabindex="0" aria-expanded="false">האם צריך ידע טכני לניהול המסך?</div>
@@ -695,7 +740,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 <section id="cta-lobby" aria-label="קריאה לפעולה">
   <div class="cta-content">
     <h2 class="cta-h2 reveal">רוצים לשדרג את <em>לובי הבניין?</em></h2>
-    <p class="cta-desc reveal reveal-d1">השאירו פרטים ונחזור אליכם תוך שעה עם הצעת מחיר ללא התחייבות</p>
+    <p class="cta-desc reveal reveal-d1">השאירו פרטים ונחזור אליכם תוך שעה עם הצעת מחיר ללא התחייבות — או התנסו במערכת עוד היום, חינם.</p>
     <div class="cta-btns reveal reveal-d2">
       <a href="/#contact" class="btn-primary">קבל הצעת מחיר</a>
       <a href="https://lobby-cms.onrender.com/admin/" class="btn-outline" target="_blank" rel="noopener">נסו את המערכת חינם</a>
@@ -704,6 +749,10 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </section>
 
 </main>
+
+<a href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%9E%D7%A1%D7%9A%20%D7%9C%D7%95%D7%91%D7%99%20%D7%9C%D7%91%D7%A0%D7%99%D7%99%D7%9F" target="_blank" rel="noopener" class="wa-fab" aria-label="דברו איתנו בוואטסאפ">
+  <svg viewBox="0 0 32 32" aria-hidden="true" style="width:30px;height:30px;fill:#fff;display:block"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667zm0 24a11.04 11.04 0 01-5.6-1.52l-.4-.24-4.107 1.067 1.093-3.987-.267-.413A11.04 11.04 0 014.667 16c0-6.253 5.08-11.333 11.333-11.333S27.333 9.747 27.333 16 22.253 26.667 16.004 26.667zm6.213-8.48c-.347-.173-2.027-1-2.347-1.12-.32-.107-.547-.16-.773.173-.227.333-.88 1.12-1.08 1.347-.2.213-.4.24-.747.08-.347-.173-1.467-.533-2.787-1.707-1.04-.907-1.733-2.027-1.947-2.373-.2-.347-.013-.533.16-.707.16-.16.347-.4.52-.6.173-.2.227-.347.347-.573.107-.227.053-.427-.027-.6-.08-.173-.773-1.853-1.053-2.547-.28-.667-.56-.573-.773-.587H9.6c-.2 0-.52.08-.8.373-.28.28-1.053 1.027-1.053 2.507s1.08 2.907 1.227 3.107c.16.2 2.12 3.24 5.133 4.547.72.307 1.28.493 1.72.627.72.227 1.373.2 1.893.12.573-.093 1.773-.72 2.027-1.413.24-.693.24-1.293.173-1.413-.08-.12-.28-.2-.613-.36z"/></svg>
+</a>
 
 <footer role="contentinfo">
   <div class="footer-inner">
@@ -752,27 +801,56 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </footer>
 
 <script>
-// Reveal on scroll
+// Reveal on scroll — elements already in the first viewport show instantly (no blank flash on load)
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') })
 }, {threshold:0.07})
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el))
-
-// Nav scroll effect
-const nav = document.querySelector('nav')
-window.addEventListener('scroll', () => {
-  nav.style.background = window.scrollY > 60
-    ? 'rgba(26,26,26,0.97)' : 'rgba(26,26,26,0.92)'
+document.querySelectorAll('.reveal').forEach(el => {
+  const r = el.getBoundingClientRect()
+  if(r.top < window.innerHeight && r.bottom > 0){
+    el.classList.add('instant','in')
+  } else {
+    obs.observe(el)
+  }
 })
+
+// Live clock + Hebrew date on the hero screen mockup
+function gematria(n){
+  const units=['','א','ב','ג','ד','ה','ו','ז','ח','ט']
+  const tens=['','י','כ','ל','מ','נ','ס','ע','פ','צ']
+  const hundreds=['','ק','ר','ש','ת','תק','תר','תש','תת','תתק']
+  n = n % 1000
+  let s = hundreds[Math.floor(n/100)]
+  const r = n % 100
+  if(r === 15) s += 'טו'
+  else if(r === 16) s += 'טז'
+  else s += tens[Math.floor(r/10)] + units[r%10]
+  return s.length > 1 ? s.slice(0,-1) + '״' + s.slice(-1) : s + '׳'
+}
+function updateScreen(){
+  const now = new Date()
+  const clock = document.getElementById('scr-clock')
+  if(clock) clock.textContent = now.toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'})
+  const heb = document.getElementById('scr-date')
+  if(heb){
+    try{
+      const parts = new Intl.DateTimeFormat('he-u-ca-hebrew',{day:'numeric',month:'long',year:'numeric'}).formatToParts(now)
+      const day = +parts.find(p=>p.type==='day').value
+      const month = parts.find(p=>p.type==='month').value
+      const year = +parts.find(p=>p.type==='year').value
+      heb.textContent = gematria(day) + ' ב' + month + ' ' + gematria(year)
+    }catch(e){}
+  }
+}
+updateScreen()
+setInterval(updateScreen, 30000)
 
 // FAQ accordion
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.closest('.faq-item')
     const isOpen = item.classList.contains('open')
-    // close all
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'))
-    // toggle current
     if (!isOpen) {
       item.classList.add('open')
       q.setAttribute('aria-expanded', 'true')
