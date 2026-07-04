@@ -353,6 +353,25 @@ h1.dl .hl,h2.dl .hl{color:var(--blue2);-webkit-text-stroke:1.5px var(--blue2);}
 .note.n4{top:64%;left:14%;font-size:22px;animation-delay:4.4s}
 @keyframes fly{0%{transform:translate(0,0) scale(1);opacity:.7}100%{transform:translate(60px,-150px) scale(1.4);opacity:0}}
 
+/* ── LIVE DEMO ── */
+.demo{background:linear-gradient(180deg,#fff 0,#eef6ff 100%);padding:70px 0 80px}
+.demo-badge{display:inline-flex;align-items:center;gap:9px;background:#fff;border:2px solid #d6ecff;border-radius:30px;padding:8px 20px;font-size:14px;font-weight:800;color:var(--blueDeep);box-shadow:var(--shadow);margin-bottom:16px}
+.demo-dot{width:10px;height:10px;border-radius:50%;background:#ff3b3b;animation:live-pulse 1.6s ease infinite;box-shadow:0 0 0 0 rgba(255,59,59,.5)}
+@keyframes live-pulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.5)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
+.demo-screen{position:relative;max-width:1000px;margin:34px auto 0;background:#0c0f16;border-radius:22px;padding:16px;box-shadow:var(--shadow-lg),0 0 0 1px rgba(20,50,90,.06)}
+.demo-screen::before{content:'';position:absolute;top:8px;right:50%;transform:translateX(50%);width:70px;height:5px;border-radius:5px;background:rgba(255,255,255,.18)}
+.demo-stage{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#0d1a30}
+.demo-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.demo-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:rgba(255,255,255,.6);font-size:1.05rem;z-index:1;transition:opacity .5s;pointer-events:none}
+.demo-loading.hide{opacity:0}
+.demo-spin{width:44px;height:44px;border-radius:50%;border:4px solid rgba(95,201,255,.25);border-top-color:#5fc9ff;animation:demo-spin 1s linear infinite}
+@keyframes demo-spin{to{transform:rotate(360deg)}}
+.demo-note{margin-top:22px;font-size:1.05rem;color:var(--ink2)}
+.demo-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.demo-stand{width:120px;height:26px;margin:0 auto;background:linear-gradient(180deg,#0c0f16,#0c0f16 40%,transparent 41%);border-radius:0 0 14px 14px}
+.demo-stand::after{content:'';display:block;width:180px;height:10px;margin:6px auto 0;background:rgba(20,50,90,.12);border-radius:50%;filter:blur(6px)}
+@media(max-width:600px){.demo-screen{padding:10px}}
+
 /* ── SECTION shells ── */
 .sec{padding:80px 0}
 .sec-head{text-align:center;margin-bottom:50px}
@@ -604,7 +623,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       <p class="first-sub wow fadeInRight d2">הצטרפו עוד היום למאות בניינים מרוצים · ניהול מהנייד · 14 יום חינם</p>
       <div class="hero-btns wow fadeInRight d3">
         <a href="https://lobby-cms.onrender.com/admin/" class="button-digital" target="_blank" rel="noopener"><span class="bounce-ico">🚀</span> שדרגו את הלובי</a>
-        <a href="https://lobby-cms.onrender.com/display/" class="btn-white" target="_blank" rel="noopener">▶ ראו דמו חי</a>
+        <a href="#demo" class="btn-white">▶ ראו דמו חי</a>
       </div>
     </div>
     <div class="screen-wrap wow fadeInLeft d1" aria-hidden="true">
@@ -630,6 +649,27 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DEMO -->
+<section class="demo" id="demo" aria-label="דמו חי">
+  <div class="wrap" style="text-align:center">
+    <span class="demo-badge wow fadeInDown"><span class="demo-dot"></span> דמו חי · משודר בזמן אמת</span>
+    <h2 class="dl wow fadeInDown" style="font-size:clamp(2rem,4.2vw,3.4rem)">ככה זה נראה <span class="hl">בלובי שלכם</span></h2>
+    <p class="sec-sub wow fadeInUp d1">זה המסך האמיתי של מערכת Pixel Lobby — שעון, תאריך עברי, מזג אוויר, חדשות והודעות לדיירים. מתעדכן חי, ממש עכשיו.</p>
+    <div class="demo-screen wow fadeInUp d1">
+      <div class="demo-stage">
+        <div class="demo-loading" id="demo-loading"><span class="demo-spin"></span> טוען את הדמו החי…</div>
+        <iframe id="demo-frame" title="דמו חי — Pixel Lobby Display" loading="lazy" src="about:blank" data-src="https://lobby-cms.onrender.com/display/" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+    </div>
+    <div class="demo-stand" aria-hidden="true"></div>
+    <p class="demo-note wow fadeInUp">💡 טעינה ראשונה עשויה לקחת כמה שניות. רוצים לשחק עם התכנים בעצמכם?</p>
+    <div class="demo-actions wow fadeInUp">
+      <a href="https://lobby-cms.onrender.com/display/" class="button-digital" target="_blank" rel="noopener"><span class="bounce-ico">🖥️</span> פתחו במסך מלא</a>
+      <a href="https://lobby-cms.onrender.com/admin/" class="btn-white" target="_blank" rel="noopener">🎛️ נסו את פאנל הניהול</a>
     </div>
   </div>
 </section>
@@ -899,6 +939,24 @@ function updateScreen(){
   if(hd)['scr-date','vscr-date'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=hd})
 }
 updateScreen();setInterval(updateScreen,30000)
+
+// live demo — load iframe only when scrolled into view; hide spinner on load
+(function(){
+  const frame=document.getElementById('demo-frame'),loading=document.getElementById('demo-loading')
+  if(!frame)return
+  let loaded=false
+  const hide=()=>{ if(loading) loading.classList.add('hide') }
+  frame.addEventListener('load',()=>{ if(frame.src.indexOf('lobby-cms')>-1) hide() })
+  const start=()=>{ if(loaded)return; loaded=true; frame.src=frame.dataset.src; setTimeout(hide,6000) }
+  try{
+    const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ start(); io.disconnect() } }) },{rootMargin:'300px'})
+    io.observe(frame.closest('.demo-screen'))
+  }catch(e){}
+  // if user clicks "ראו דמו חי" jump, ensure it starts loading right away
+  document.querySelectorAll('a[href="#demo"]').forEach(a=>a.addEventListener('click',start))
+  // fallback: always start the live demo shortly after load (so it's ready when reached)
+  setTimeout(start,2500)
+})()
 
 // faq accordion
 document.querySelectorAll('.faq-q').forEach(q=>{
