@@ -360,12 +360,35 @@ h1.dl .hl,h2.dl .hl{color:var(--blue2);-webkit-text-stroke:1.5px var(--blue2);}
 @keyframes live-pulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.5)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
 .demo-screen{position:relative;max-width:1000px;margin:34px auto 0;background:#0c0f16;border-radius:22px;padding:16px;box-shadow:var(--shadow-lg),0 0 0 1px rgba(20,50,90,.06)}
 .demo-screen::before{content:'';position:absolute;top:8px;right:50%;transform:translateX(50%);width:70px;height:5px;border-radius:5px;background:rgba(255,255,255,.18)}
-.demo-stage{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#0d1a30}
-.demo-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.demo-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:rgba(255,255,255,.6);font-size:1.05rem;z-index:1;transition:opacity .5s;pointer-events:none}
-.demo-loading.hide{opacity:0}
-.demo-spin{width:44px;height:44px;border-radius:50%;border:4px solid rgba(95,201,255,.25);border-top-color:#5fc9ff;animation:demo-spin 1s linear infinite}
-@keyframes demo-spin{to{transform:rotate(360deg)}}
+.demo-stage{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(155deg,#0a1424,#0f2038);container-type:inline-size}
+/* self-contained live lobby display */
+.ld{position:absolute;inset:0;display:flex;flex-direction:column;color:#fff;font-family:'Heebo',sans-serif}
+.ld-top{display:flex;align-items:center;justify-content:space-between;padding:2.4cqw 3cqw;border-bottom:1px solid rgba(255,255,255,.08)}
+.ld-welcome{font-size:2.6cqw;font-weight:800;letter-spacing:.3px}
+.ld-welcome b{color:#5fc9ff}
+.ld-logo{font-size:2.2cqw;font-weight:900;letter-spacing:1px;color:#fff;opacity:.9}
+.ld-logo span{color:#5fc9ff}
+.ld-mid{flex:1;display:flex;min-height:0}
+.ld-stage{flex:1;position:relative;overflow:hidden}
+.ld-scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:4cqw;gap:1.6cqw;opacity:0;transform:scale(1.04);transition:opacity .8s ease,transform .8s ease}
+.ld-scene.on{opacity:1;transform:none}
+.ld-kicker{display:inline-flex;align-items:center;gap:1cqw;font-size:2cqw;font-weight:800;color:#5fc9ff;letter-spacing:.5px}
+.ld-h{font-size:4.4cqw;font-weight:900;line-height:1.15}
+.ld-p{font-size:2.5cqw;color:rgba(255,255,255,.72);line-height:1.5}
+.ld-photo{flex:1;border-radius:2cqw;background:linear-gradient(135deg,#1b3a5c,#2b6ca8);display:flex;align-items:center;justify-content:center;font-size:7cqw}
+.ld-eq{display:inline-flex;align-items:flex-end;gap:.5cqw;height:3cqw}
+.ld-eq i{width:.9cqw;background:#5fc9ff;border-radius:2px;animation:eq 1s ease-in-out infinite}
+.ld-eq i:nth-child(1){height:50%}.ld-eq i:nth-child(2){height:100%;animation-delay:.2s}.ld-eq i:nth-child(3){height:40%;animation-delay:.4s}.ld-eq i:nth-child(4){height:80%;animation-delay:.1s}.ld-eq i:nth-child(5){height:60%;animation-delay:.3s}
+.ld-side{width:30%;background:rgba(3,10,24,.55);border-right:1px solid rgba(255,255,255,.08);padding:3cqw;display:flex;flex-direction:column;gap:2cqw}
+.ld-clock{font-size:8cqw;font-weight:900;letter-spacing:.5px;line-height:1;direction:ltr;text-align:left}
+.ld-date{font-size:2.3cqw;color:#5fc9ff;font-weight:700}
+.ld-weather{font-size:2.2cqw;color:rgba(255,255,255,.75)}
+.ld-panel-t{font-size:1.9cqw;font-weight:800;color:#5fc9ff;letter-spacing:.5px;border-top:1px solid rgba(255,255,255,.1);padding-top:2cqw;display:flex;align-items:center;gap:1cqw}
+.ld-note{background:rgba(95,201,255,.08);border:1px solid rgba(95,201,255,.2);border-radius:1.4cqw;padding:1.8cqw;font-size:2cqw;line-height:1.4;color:rgba(255,255,255,.9)}
+.ld-ticker{background:rgba(3,10,24,.85);border-top:1px solid rgba(95,201,255,.25);padding:1.6cqw 0;overflow:hidden;white-space:nowrap}
+.ld-ticker span{display:inline-block;padding-right:100%;animation:ticker 24s linear infinite;font-size:2cqw;color:rgba(255,255,255,.82);font-weight:600}
+.ld-ticker b{color:#5fc9ff}
+@container (max-width:520px){.ld-clock{font-size:9cqw}}
 .demo-note{margin-top:22px;font-size:1.05rem;color:var(--ink2)}
 .demo-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .demo-stand{width:120px;height:26px;margin:0 auto;background:linear-gradient(180deg,#0c0f16,#0c0f16 40%,transparent 41%);border-radius:0 0 14px 14px}
@@ -661,12 +684,49 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
     <p class="sec-sub wow fadeInUp d1">זה המסך האמיתי של מערכת Pixel Lobby — שעון, תאריך עברי, מזג אוויר, חדשות והודעות לדיירים. מתעדכן חי, ממש עכשיו.</p>
     <div class="demo-screen wow fadeInUp d1">
       <div class="demo-stage">
-        <div class="demo-loading" id="demo-loading"><span class="demo-spin"></span> טוען את הדמו החי…</div>
-        <iframe id="demo-frame" title="דמו חי — Pixel Lobby Display" loading="lazy" src="about:blank" data-src="https://lobby-cms.onrender.com/display/" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+        <div class="ld" id="ld" role="img" aria-label="הדגמה חיה של מסך לובי Pixel">
+          <div class="ld-top">
+            <span class="ld-welcome">ברוכים הבאים · <b>לובי הבניין</b></span>
+            <span class="ld-logo">PIXEL<span> LOBBY</span></span>
+          </div>
+          <div class="ld-mid">
+            <div class="ld-stage" id="ld-stage">
+              <div class="ld-scene on">
+                <span class="ld-kicker">📢 הודעת ועד הבית</span>
+                <div class="ld-h">שטיפת חניון ביום רביעי<br/>08:00–12:00</div>
+                <div class="ld-p">נא לפנות את הרחבה. תודה על שיתוף הפעולה 🙏</div>
+              </div>
+              <div class="ld-scene">
+                <span class="ld-kicker">🎉 מזל טוב</span>
+                <div class="ld-h">למשפחת לוי מקומה 4<br/>על הולדת הבת!</div>
+                <div class="ld-photo">🎈🎉🍼</div>
+              </div>
+              <div class="ld-scene">
+                <span class="ld-kicker">🎵 מוזיקת רקע</span>
+                <div class="ld-h">פלייליסט בוקר</div>
+                <div class="ld-p">אווירה נעימה בכניסה לבניין <span class="ld-eq"><i></i><i></i><i></i><i></i><i></i></span></div>
+              </div>
+              <div class="ld-scene">
+                <span class="ld-kicker">📅 אירוע קרוב</span>
+                <div class="ld-h">אסיפת דיירים<br/>יום ראשון · 19:30</div>
+                <div class="ld-p">נשמח לראותכם בלובי. יוגש כיבוד קל ☕</div>
+              </div>
+            </div>
+            <div class="ld-side">
+              <div class="ld-clock" id="ld-clock">20:45</div>
+              <div class="ld-date" id="ld-date">י״ז בתמוז תשפ״ו</div>
+              <div class="ld-weather">☀️ 28° · פתח תקווה</div>
+              <div class="ld-panel-t">💬 הודעות לדיירים</div>
+              <div class="ld-note">התקבלה חבילה עבור דירה 7 — ממתינה בתא הדואר.</div>
+              <div class="ld-note">בדיקת מעליות מחר בין 10:00 ל-11:00.</div>
+            </div>
+          </div>
+          <div class="ld-ticker"><span><b>חדשות</b> · מזג אוויר נעים צפוי בסוף השבוע · הרכבת הקלה: קו חדש נפתח במרכז · מחירי הדלק יורדים החל ממחר · <b>עדכון ועד</b> · אסיפת דיירים ביום ראשון 19:30 · </span></div>
+        </div>
       </div>
     </div>
     <div class="demo-stand" aria-hidden="true"></div>
-    <p class="demo-note wow fadeInUp">💡 טעינה ראשונה עשויה לקחת כמה שניות. רוצים לשחק עם התכנים בעצמכם?</p>
+    <p class="demo-note wow fadeInUp">💡 זו הדגמה חיה של המסך. רוצים לשחק עם התכנים האמיתיים בעצמכם?</p>
     <div class="demo-actions wow fadeInUp">
       <a href="https://lobby-cms.onrender.com/display/" class="button-digital" target="_blank" rel="noopener"><span class="bounce-ico">🖥️</span> פתחו במסך מלא</a>
       <a href="https://lobby-cms.onrender.com/admin/" class="btn-white" target="_blank" rel="noopener">🎛️ נסו את פאנל הניהול</a>
@@ -935,27 +995,17 @@ function updateScreen(){
   let hd=''
   try{const p=new Intl.DateTimeFormat('he-u-ca-hebrew',{day:'numeric',month:'long',year:'numeric'}).formatToParts(now)
     hd=gematria(+p.find(x=>x.type==='day').value)+' ב'+p.find(x=>x.type==='month').value+' '+gematria(+p.find(x=>x.type==='year').value)}catch(e){}
-  ;['scr-clock','vscr-clock'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=time})
-  if(hd)['scr-date','vscr-date'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=hd})
+  ;['scr-clock','vscr-clock','ld-clock'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=time})
+  if(hd)['scr-date','vscr-date','ld-date'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=hd})
 }
-updateScreen();setInterval(updateScreen,30000)
+updateScreen();setInterval(updateScreen,15000)
 
-// live demo — load iframe only when scrolled into view; hide spinner on load
+// live demo — self-contained rotating lobby display (no external dependency, always instant)
 (function(){
-  const frame=document.getElementById('demo-frame'),loading=document.getElementById('demo-loading')
-  if(!frame)return
-  let loaded=false
-  const hide=()=>{ if(loading) loading.classList.add('hide') }
-  frame.addEventListener('load',()=>{ if(frame.src.indexOf('lobby-cms')>-1) hide() })
-  const start=()=>{ if(loaded)return; loaded=true; frame.src=frame.dataset.src; setTimeout(hide,6000) }
-  try{
-    const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ start(); io.disconnect() } }) },{rootMargin:'300px'})
-    io.observe(frame.closest('.demo-screen'))
-  }catch(e){}
-  // if user clicks "ראו דמו חי" jump, ensure it starts loading right away
-  document.querySelectorAll('a[href="#demo"]').forEach(a=>a.addEventListener('click',start))
-  // fallback: always start the live demo shortly after load (so it's ready when reached)
-  setTimeout(start,2500)
+  const scenes=document.querySelectorAll('#ld-stage .ld-scene')
+  if(!scenes.length)return
+  let i=0
+  setInterval(()=>{ scenes[i].classList.remove('on'); i=(i+1)%scenes.length; scenes[i].classList.add('on') },4200)
 })()
 
 // faq accordion
