@@ -603,6 +603,14 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 .nav-cta:hover{transform:translateY(-2px)!important;box-shadow:0 10px 22px rgba(13,158,240,.4)!important}
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
+<style>
+.rel-card{display:flex;flex-direction:column;gap:6px;background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:22px 24px;border-right:5px solid var(--blue);transition:transform .25s,box-shadow .25s}
+.rel-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.rel-t{font-size:1.2rem;font-weight:800;color:var(--ink)}
+.rel-card:hover .rel-t{color:var(--blueDeep)}
+.rel-d{font-size:1rem;color:var(--ink2);line-height:1.5}
+@media(max-width:700px){section[aria-label="ראו גם — מדריכים נוספים"] div[style*=grid]{grid-template-columns:1fr!important}}
+</style>
 </head>
 <body>
 
@@ -913,6 +921,20 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
     <div class="support-btns">
       <a href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%9E%D7%A1%D7%9A%20%D7%9C%D7%95%D7%91%D7%99%20%D7%9C%D7%91%D7%A0%D7%99%D7%99%D7%9F" target="_blank" rel="noopener" class="support-wa"><span class="bounce-ico">💬</span> לצ׳אט בוואטסאפ</a>
       <a href="#faq" class="support-qa">שאלות ותשובות ▾</a>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED CLUSTER -->
+<section aria-label="ראו גם — מדריכים נוספים">
+  <div class="faqsec wow fadeInUp" style="margin-top:40px">
+    <h2 class="dl">ראו <span class="hl">גם</span></h2>
+    <p class="sec-sub">מדריכים נוספים לשילוט דיגיטלי בבנייני מגורים, משרדים וניהול נכסים</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:820px;margin:32px auto 0;text-align:right">
+        <a href="/לוח-מודעות-דיגיטלי-לוועד-בית.html" class="rel-card"><span class="rel-t">לוח מודעות דיגיטלי לוועד בית</span><span class="rel-d">הודעות ועד, אסיפות דיירים, תשלומים ותחזוקה — במקום לוח הנייר.</span></a>
+        <a href="/מסך-דיגיטלי-ללובי-בניין-מגורים.html" class="rel-card"><span class="rel-t">מסך דיגיטלי ללובי בניין מגורים</span><span class="rel-d">מיתוג, אווירה, שעון, מזג אוויר וברכות לדיירים בכניסה.</span></a>
+        <a href="/שילוט-דיגיטלי-לחברות-ניהול-מבנים.html" class="rel-card"><span class="rel-t">שילוט דיגיטלי לחברות ניהול מבנים</span><span class="rel-d">ניהול מרכזי של מסכים בעשרות בניינים מדשבורד אחד.</span></a>
+        <a href="/מסך-דיגיטלי-לבניין-משרדים.html" class="rel-card"><span class="rel-t">מסך דיגיטלי לבניין משרדים</span><span class="rel-d">מדריך קומות, הכוונה למבקרים, שילוט מעליות ומיתוג המגדל.</span></a>
     </div>
   </div>
 </section>
