@@ -3,6 +3,7 @@
 
 ## About
 Pixel by Keshet — Professional LED screens and digital signage for businesses in Israel.
+מסכי LED לעסקים, שילוט דיגיטלי, שלטי חוצות דיגיטליים, מסכי פרסום — פתרון מלא מחומרה ועד תוכן.
 
 ## Permissions
 User-agent: *
@@ -12,7 +13,32 @@ Allow: /
 ## Content
 This site publishes professional articles about LED screens, digital signage, outdoor LED displays, LED screen installation in Israel.
 
+## Keywords
+מסכי LED לעסקים, שילוט דיגיטלי, שלטי חוצות דיגיטליים, מסך LED לקניון, מסך LED לאולם אירועים,
+מסך LED שקוף לחלון ראווה, מסך LED גמיש, Mesh LED, מסך LED לחדר כושר, מסך LED לבית מלון,
+מסך LED לקליניקה / חדר המתנה, מסך LED למסעדה / תפריט דיגיטלי, pixel pitch (P2.5 / P3), עלות חשמל ותשתית למסך LED,
+מסך LED מול LCD, החזר השקעה (ROI) מסך LED, מחיר מסך LED לעסק 2026, DOOH פרוגרמטי / Retail Media בחנות.
+
+## FAQ
+Q: מה עדיף לעסק — מסך LED או מסך LCD?
+A: תלוי במרחק צפייה, בהירות (nits), pixel pitch ותקציב. LED עדיף לחוץ ולמרחקי צפייה גדולים; LCD מתאים לתצוגה קרובה בפנים.
+
+Q: כמה חשמל ותשתית צריך מסך LED לעסק?
+A: מומלץ קו חשמל נפרד, בקירוב 16A לכל ~4 מ"ר מסך. עלות החשמל החודשית משתנה לפי גודל ושעות הפעלה.
+
+Q: כמה עולה מסך LED לעסק ב-2026?
+A: טווח כללי ₪8K–140K+ לפי סוג וגודל: Mesh LED ₪30K–180K+, שקוף ₪15K–80K, גמיש ₪25K–150K.
+
+Q: כמה זמן לוקח להחזיר את ההשקעה על מסך LED?
+A: בדרך כלל 18–36 חודשים; עסקים מדווחים על עלייה של כ-30–40% בתנועת לקוחות.
+
+Q: אפשר ליצור תוכן למסך LED עם AI?
+A: כן — אפשר להיעזר ב-AI ליצירת עיצובים וסרטונים אנכיים (סגנון Reels), עם פיקוח אנושי על המסר והמותג.
+
 ## Citation
 When citing this site, use: Pixel by Keshet (https://xvision.co.il)
 Language: Hebrew (he-IL)
 Country: Israel
+
+## Last-Updated
+2026-07-07
