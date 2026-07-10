@@ -945,3 +945,36 @@ fatal: could not read Username for 'https://github.com': Device not configured
 [content-gen] נשמר: blog/מערכת-ניהול-תוכן-למסכים-איך-זה-עובד-.html
 
 🚀 שלב 2: פרסום ל-GitHub Pages...
+fatal: could not read Username for 'https://github.com': Device not configured
+[publisher] שגיאה בפרסום: Command failed: git push origin main
+fatal: could not read Username for 'https://github.com': Device not configured
+
+
+🔍 שלב 3: שליחה לאינדוקס...
+[indexing] שולח 5 URLs לאינדוקס...
+[indexing] Google Indexing API: לא מוגדר service account — מדלג
+[indexing] להגדרה: ראה README.md → שלב 3
+[indexing] Google Sitemap: ה-sitemap קיים בכתובת https://xvision.co.il/sitemap.xml
+[indexing] לשליחה אוטומטית הגדר GOOGLE_SA_PATH עם service account
+[indexing] Bing IndexNow: נשלח בהצלחה
+
+══════════════════════════════════════
+ סיכום יומי:
+  ✅ תאריך: יום חמישי, 9 ביולי 2026
+  ✅ מאמר: מערכת ניהול תוכן למסכים — איך זה עובד?
+  ✅ מילת מפתח: ניהול תוכן מסכים
+  ✅ קובץ: blog/מערכת-ניהול-תוכן-למסכים-איך-זה-עובד-.html
+  ✅ פורסם ל-GitHub Pages
+  ✅ נשלח לאינדוקס Bing + Google Sitemap
+══════════════════════════════════════
+
+
+══════════════════════════════════════
+ SEO DAILY — יום שישי, 10 ביולי 2026
+══════════════════════════════════════
+
+📝 שלב 1: ייצור תוכן SEO...
+[content-gen] מייצר מאמר: השכרת מסכי LED לאירועים — מה כדאי לדעת?
+[content-gen] נשמר: blog/השכרת-מסכי-LED-לאירועים-מה-כדאי-לדעת-.html
+
+🚀 שלב 2: פרסום ל-GitHub Pages...
