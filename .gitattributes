@@ -1,0 +1,2 @@
+sitemap.xml merge=union
+blog/index.json merge=union
