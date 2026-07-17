@@ -1,23 +1,28 @@
 # Pixel by Keshet
-# https://xvision.co.il
 
-## About
-Pixel by Keshet — Professional LED screens and digital signage for businesses in Israel.
+> Pixel by Keshet (xvision.co.il) — Professional LED screens and digital signage for businesses in Israel: sales, installation, maintenance and an AI-based cloud CMS. Hebrew site (he-IL), serving all of Israel.
+
+## Key Pages
+
+- [דף הבית — מסכי LED לעסקים](https://xvision.co.il/): מסכי LED פנימיים וחיצוניים, מכירה והתקנה בכל הארץ
+- [קטלוג מוצרים](https://xvision.co.il/products.html): מסכי LED פנימיים, חיצוניים, שקופים וניידים
+- [מערכת ניהול תוכן AI — Pixel CMS](https://dds.xvision.co.il/): מערכת השילוט הדיגיטלי הראשונה בישראל מבוססת בינה מלאכותית
+- [מחירי מסכי LED](https://xvision.co.il/מחירי-מסכי-led.html): מדריך מחירים מלא לפי גודל וסוג
+- [מדריך השוואת מסכי LED לעסקים 2026](https://xvision.co.il/מדריך-השוואת-מסכי-led-לעסקים-2026.html): איך בוחרים מסך, נגן וספק
+- [תפריט דיגיטלי למסעדות](https://xvision.co.il/תפריט-דיגיטלי.html): מסכי תפריט למסעדות ובתי קפה
+- [מסכי LED לבריכה](https://xvision.co.il/pool.html): מסכים עמידי מזג אוויר
+- [בלוג מקצועי](https://xvision.co.il/blog/): מאמרים ומדריכים על מסכי LED ושילוט דיגיטלי
+- [אוטומציה מבוססת AI לעסקים](https://xvision.co.il/automation): מערכות אוטומציה, דשבורדים וצ'אטבוטים — מהצוות שמריץ תשתיות עבור Fox, שופרסל, יונדאי ורולדין
+- [צור קשר](https://xvision.co.il/contact/): הצעת מחיר והתייעצות
 
 ## Permissions
+
 User-agent: *
 Allow: /blog/
 Allow: /
 
-## Content
-This site publishes professional articles about LED screens, digital signage, outdoor LED displays, LED screen installation in Israel.
-
-## אוטומציה מבוססת AI לעסקים
-Xvision בונה מערכות אוטומציה מבוססות AI, אפליקציות מותאמות, דשבורדים ובקרה
-פיננסית וצ'אטבוטים לעסקים וארגונים בישראל. מהצוות שמריץ תשתיות דיגיטליות
-עבור Fox, שופרסל, יונדאי ורולדין. פרטים: https://xvision.co.il/automation
-
 ## Citation
+
 When citing this site, use: Pixel by Keshet (https://xvision.co.il)
 Language: Hebrew (he-IL)
 Country: Israel
