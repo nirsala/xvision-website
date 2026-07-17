@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מערכות אוטומציה מבוססות AI לעסקים | אפליקציות ודשבורדים | Xvision - Pixel by Keshet</title>
+<meta name="description" content="בניית מערכות אוטומציה מבוססות AI, אפליקציות ודשבורדים לעסקים וארגונים. מהצוות שמריץ תשתיות דיגיטליות ל-Fox, שופרסל, יונדאי ורולדין. שיחת מיפוי חינם.">
+<meta property="og:title" content="מערכות אוטומציה מבוססות AI לעסקים | Xvision">
+<meta property="og:description" content="מערכות מבוססות AI שעובדות בשבילכם 24/7 — אוטומציות, אפליקציות ודשבורדים לעסקים.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xvision.co.il/automation">
+<link rel="canonical" href="https://xvision.co.il/automation">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Assistant:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "בניית מערכות אוטומציה מבוססות AI, אפליקציות ודשבורדים לעסקים",
+  "provider": {
+    "@type": "Organization",
+    "name": "Xvision - Pixel by Keshet",
+    "url": "https://xvision.co.il",
+    "telephone": "+972-55-973-2343",
+    "areaServed": "IL"
+  },
+  "serviceType": ["Business Automation", "Custom Software Development", "Business Dashboards", "AI Chatbots"],
+  "description": "בניית מערכות אוטומציה מבוססות AI, אפליקציות מותאמות, דשבורדים ובקרה פיננסית לעסקים וארגונים בישראל.",
+  "areaServed": {"@type": "Country", "name": "Israel"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "כמה זמן לוקח להטמיע אוטומציה ראשונה בעסק?", "acceptedAnswer": {"@type": "Answer", "text": "אוטומציה ראשונה (Quick Win) עולה לאוויר תוך שבוע-שבועיים. מערכות מורכבות עם מספר אינטגרציות נבנות בשלבים של 4-8 שבועות, כשכל שלב מספק ערך בפני עצמו."}},
+    {"@type": "Question", "name": "האם הנתונים של העסק שלי נשארים אצלי?", "acceptedAnswer": {"@type": "Answer", "text": "כן. אנחנו מתמחים בפתרונות Self-Hosted על שרתים ייעודיים, כך שהמידע העסקי שלכם נשאר בשליטתכם המלאה ולא עובר דרך צד שלישי."}},
+    {"@type": "Question", "name": "אילו מערכות אתם יודעים לחבר?", "acceptedAnswer": {"@type": "Answer", "text": "CRM, וואטסאפ עסקי, מיילים, טפסים באתר, מערכות הנהלת חשבונות, גיליונות, יומנים, מערכות שילוט דיגיטלי ולמעשה כל מערכת עם ממשק API - כולל פיתוח חיבורים מותאמים."}},
+    {"@type": "Question", "name": "כמה עולה מערכת אוטומציה לעסק?", "acceptedAnswer": {"@type": "Answer", "text": "התמחור נקבע לפי היקף - מאוטומציה ממוקדת ועד מערכת מלאה עם דשבורד ו-AI. שיחת המיפוי הראשונה חינם, ובסופה תקבלו הצעה מסודרת עם עלות וזמנים."}}
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#0d0d12;
+  --ink-2:#16161e;
+  --paper:#ffffff;
+  --off:#f7f7f9;
+  --red:#e30613;
+  --red-deep:#a50410;
+  --gray:#5d5d68;
+  --line:#e7e7ec;
+  --pixel-dim:#26262f;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Assistant',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3,.display{font-family:'Rubik',sans-serif}
+.mono{font-family:'IBM Plex Mono',monospace}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:var(--red);text-transform:uppercase;margin-bottom:18px}
+.eyebrow::before{content:"";width:10px;height:10px;background:var(--red);display:inline-block}
+h2{font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;letter-spacing:-.01em;margin-bottom:14px}
+.sub{font-size:19px;color:var(--gray);max-width:640px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Rubik',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+.logo .px{width:12px;height:12px;background:var(--red)}
+.logo small{font-weight:500;font-size:12px;color:var(--gray);letter-spacing:.02em}
+.nav-links{display:flex;gap:28px;font-weight:600;font-size:15.5px}
+.nav-links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Rubik',sans-serif;font-weight:600;font-size:16px;padding:13px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:.18s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--red);color:var(--red)}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:#f1f1f4}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1eb857}
+.nav .btn{padding:10px 20px;font-size:15px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:#fff;padding:96px 0 80px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(34px,4.6vw,54px);font-weight:800;line-height:1.15;letter-spacing:-.015em;margin-bottom:20px}
+.hero h1 .r{color:var(--red)}
+.hero p.lead{font-size:19.5px;color:#b8b8c2;max-width:520px;margin-bottom:32px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .proof{margin-top:34px;font-size:15px;color:#8b8b96;display:flex;align-items:center;gap:10px}
+.hero .proof strong{color:#fff;font-weight:600}
+/* pixel field background */
+.pixel-field{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:radial-gradient(var(--pixel-dim) 1.4px, transparent 1.4px);
+  background-size:22px 22px;
+  mask-image:linear-gradient(120deg,rgba(0,0,0,.9),transparent 65%)}
+
+/* ---------- flow diagram (signature) ---------- */
+.flow-card{background:var(--ink-2);border:1px solid #23232d;border-radius:18px;padding:28px 24px;position:relative}
+.flow-title{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#7c7c88;text-transform:uppercase;margin-bottom:22px;display:flex;justify-content:space-between}
+.flow-title .live{color:#25d366}
+.flow-title .live::before{content:"●";margin-left:6px;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+.flow{display:flex;flex-direction:column;gap:0}
+.fnode{display:flex;align-items:center;gap:16px;padding:13px 14px;border-radius:12px;background:#1b1b24;border:1px solid #26262f;position:relative}
+.fnode + .fconn{height:26px;width:2px;margin-right:37px;background:repeating-linear-gradient(to bottom,var(--red) 0 4px,transparent 4px 9px);position:relative;overflow:visible}
+.fconn::after{content:"";position:absolute;right:-3px;top:0;width:8px;height:8px;background:var(--red);animation:drop 2.2s linear infinite}
+@keyframes drop{0%{top:-4px;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:22px;opacity:0}}
+.fnode .ic{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#101018;border:1px solid #2a2a34;font-size:20px}
+.fnode b{font-family:'Rubik',sans-serif;font-weight:600;font-size:15.5px;color:#fff;display:block}
+.fnode span{font-size:13.5px;color:#8b8b96;display:block}
+.fnode .t{margin-right:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#25d366;white-space:nowrap}
+.flow-sum{margin-top:20px;padding-top:18px;border-top:1px solid #26262f;display:flex;justify-content:space-between;align-items:baseline}
+.flow-sum b{font-family:'IBM Plex Mono',monospace;font-size:26px;color:#fff}
+.flow-sum span{font-size:14px;color:#8b8b96}
+
+/* ---------- trust ---------- */
+.trust{padding:34px 0;border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;align-items:center;gap:34px;flex-wrap:wrap;justify-content:center}
+.trust p{font-size:14px;color:var(--gray);font-weight:600;white-space:nowrap}
+.brands{display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:center}
+.brands span{font-family:'Rubik',sans-serif;font-weight:700;font-size:19px;color:#b9b9c2;letter-spacing:.01em}
+
+/* ---------- pains ---------- */
+.pains{background:var(--off)}
+.pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.pain{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}
+.pain .x{font-family:'IBM Plex Mono',monospace;color:var(--red);font-size:14px;margin-bottom:12px;display:block}
+.pain h3{font-size:17.5px;font-weight:600;margin-bottom:8px}
+.pain p{font-size:15px;color:var(--gray)}
+.pain-cta{margin-top:36px;font-size:18px;font-weight:600;text-align:center}
+.pain-cta .r{color:var(--red)}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.svc{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:.2s;position:relative;overflow:hidden}
+.svc:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 14px 34px rgba(13,13,18,.07)}
+.svc .ic{width:50px;height:50px;border-radius:12px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:23px;margin-bottom:20px}
+.svc:hover .ic{background:var(--red)}
+.svc h3{font-size:20px;font-weight:700;margin-bottom:10px}
+.svc p{font-size:15.5px;color:var(--gray)}
+.svc ul{margin-top:14px;list-style:none}
+.svc li{font-size:14.5px;color:var(--ink);padding:5px 0;padding-right:20px;position:relative}
+.svc li::before{content:"";position:absolute;right:0;top:12px;width:8px;height:8px;background:var(--red)}
+
+/* ---------- cases ---------- */
+.cases{background:var(--ink);color:#fff}
+.cases .sub{color:#b8b8c2}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.case{background:var(--ink-2);border:1px solid #23232d;border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column}
+.case .tag{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;color:var(--red);text-transform:uppercase;margin-bottom:14px}
+.case h3{font-size:18.5px;font-weight:600;margin-bottom:10px;line-height:1.35}
+.case p{font-size:15px;color:#9d9da8;flex:1}
+.case .num{margin-top:22px;padding-top:16px;border-top:1px solid #26262f}
+.case .num b{font-family:'IBM Plex Mono',monospace;font-size:26px;color:#fff;display:block}
+.case .num span{font-size:13.5px;color:#8b8b96}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.step{padding:26px 22px;border:1px solid var(--line);border-radius:var(--radius);position:relative}
+.step .n{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--red);margin-bottom:14px;display:block}
+.step h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15px;color:var(--gray)}
+
+/* ---------- why ---------- */
+.why{background:var(--off)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.why-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;gap:18px}
+.why-item .px{width:12px;height:12px;background:var(--red);flex-shrink:0;margin-top:8px}
+.why-item h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.why-item p{font-size:15.5px;color:var(--gray)}
+
+/* ---------- faq ---------- */
+.faq-list{margin-top:44px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:22px 4px;font-family:'Rubik',sans-serif;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;color:var(--red);font-weight:400;transition:.2s;flex-shrink:0}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 4px 22px;color:var(--gray);max-width:760px}
+
+/* ---------- contact ---------- */
+.contact{background:var(--ink);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{color:#fff}
+.contact .sub{color:#b8b8c2;margin-bottom:30px}
+.c-opts{display:flex;flex-direction:column;gap:14px}
+.c-opt{display:flex;align-items:center;gap:16px;background:var(--ink-2);border:1px solid #23232d;border-radius:var(--radius);padding:18px 20px;transition:.18s}
+.c-opt:hover{border-color:var(--red)}
+.c-opt .ic{width:46px;height:46px;border-radius:10px;background:#101018;border:1px solid #2a2a34;display:flex;align-items:center;justify-content:center;font-size:21px;flex-shrink:0}
+.c-opt b{display:block;font-family:'Rubik',sans-serif;font-size:16.5px}
+.c-opt span{font-size:14px;color:#8b8b96}
+.form-card{background:#fff;color:var(--ink);border-radius:18px;padding:34px 30px}
+.form-card h3{font-size:21px;font-weight:700;margin-bottom:6px}
+.form-card .fc-sub{font-size:15px;color:var(--gray);margin-bottom:24px}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:600;font-size:14.5px;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:'Assistant',sans-serif;font-size:16px;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red)}
+.form-card .btn{width:100%;margin-top:6px}
+.form-note{font-size:13px;color:var(--gray);text-align:center;margin-top:12px}
+
+/* ---------- footer ---------- */
+footer{padding:38px 0;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer p{font-size:14px;color:var(--gray)}
+footer .links{display:flex;gap:22px;font-size:14.5px;font-weight:600}
+footer .links a:hover{color:var(--red)}
+
+/* ---------- floating wa ---------- */
+.wa-float{position:fixed;bottom:22px;left:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.18s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .fconn::after,.flow-title .live::before{animation:none}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .hero .wrap{grid-template-columns:1fr}
+  .svc-grid,.case-grid{grid-template-columns:1fr 1fr}
+  .pain-grid,.steps{grid-template-columns:1fr 1fr}
+  .contact .wrap{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+@media(max-width:600px){
+  section{padding:64px 0}
+  .svc-grid,.case-grid,.pain-grid,.steps,.why-grid{grid-template-columns:1fr}
+  .hero{padding:64px 0 56px}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="https://xvision.co.il" class="logo"><img src="https://xvision.co.il/assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:44px;width:auto;object-fit:contain"></a>
+    <nav class="nav-links">
+      <a href="#services">שירותים</a>
+      <a href="#cases">דוגמאות</a>
+      <a href="#process">איך זה עובד</a>
+      <a href="#faq">שאלות</a>
+    </nav>
+    <a href="#contact" class="btn btn-red">שיחת מיפוי חינם</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="pixel-field" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">אוטומציה מבוססת AI · אפליקציות · מערכות לעסקים</span>
+      <h1>העסק שלכם עובד קשה.<br>הגיע הזמן שהמערכות <span class="r">יעבדו בשבילכם.</span></h1>
+      <p class="lead">אנחנו בונים מערכות אוטומציה מבוססות AI, אפליקציות ודשבורדים שמורידים מכם את העבודה הידנית — לידים, דוחות, וואטסאפ, חשבוניות והכל ביניהם. רץ 24/7, בלי טעויות אנוש.</p>
+      <div class="ctas">
+        <a class="btn btn-wa" href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A4%D7%AA%D7%A8%D7%95%D7%A0%D7%95%D7%AA%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99" target="_blank" rel="noopener">דברו איתנו בוואטסאפ</a>
+        <a class="btn btn-ghost" style="border-color:#fff;color:#fff" href="#contact">קבעו שיחת מיפוי חינם</a>
+      </div>
+      <p class="proof">הצוות שמריץ תשתיות דיגיטליות עבור <strong>Fox, שופרסל, יונדאי ורולדין</strong></p>
+    </div>
+
+    <div class="flow-card" aria-hidden="true">
+      <div class="flow-title"><span>AUTOMATION — LIVE</span><span class="live">פעיל</span></div>
+      <div class="flow">
+        <div class="fnode"><div class="ic">📥</div><div><b>ליד חדש נכנס</b><span>טופס באתר / קמפיין</span></div><span class="t">00:00</span></div>
+        <div class="fconn"></div>
+        <div class="fnode"><div class="ic">🗂️</div><div><b>נשמר אוטומטית ב-CRM</b><span>כולל מקור ותיוג</span></div><span class="t">00:02</span></div>
+        <div class="fconn"></div>
+        <div class="fnode"><div class="ic">💬</div><div><b>וואטסאפ נשלח ללקוח</b><span>הודעה מותאמת אישית</span></div><span class="t">00:05</span></div>
+        <div class="fconn"></div>
+        <div class="fnode"><div class="ic">📊</div><div><b>מעודכן בדשבורד</b><span>וההנהלה רואה הכל בזמן אמת</span></div><span class="t">00:06</span></div>
+      </div>
+      <div class="flow-sum"><span>זמן טיפול בליד — מרגע הכניסה:</span><b>6 שניות</b></div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <p>המותגים שסומכים על התשתיות שלנו:</p>
+    <div class="brands">
+      <span>FOX</span><span>שופרסל</span><span>HYUNDAI</span><span>MITSUBISHI</span><span>רולדין</span>
+    </div>
+  </div>
+</div>
+
+<!-- PAINS -->
+<section class="pains">
+  <div class="wrap">
+    <span class="eyebrow">נשמע מוכר?</span>
+    <h2 class="rv">כמה שעות בשבוע הולכות לכם על עבודה ידנית?</h2>
+    <div class="pain-grid">
+      <div class="pain rv"><span class="x">// 01</span><h3>לידים שנופלים בין הכיסאות</h3><p>מישהו מילא טופס, ועד שחזרתם אליו — הוא כבר סגר עם המתחרה.</p></div>
+      <div class="pain rv"><span class="x">// 02</span><h3>העתקות בין מערכות</h3><p>מהאקסל ל-CRM, מהמייל לגיליון, מהחשבונית לדוח. שוב ושוב.</p></div>
+      <div class="pain rv"><span class="x">// 03</span><h3>דוחות שנבנים ידנית</h3><p>כל סוף חודש אותו סיוט: לאסוף נתונים מחמישה מקומות שונים.</p></div>
+      <div class="pain rv"><span class="x">// 04</span><h3>אפס תמונת מצב</h3><p>אתם מגלים בעיות באיחור, כי אין מקום אחד שמראה מה קורה בעסק.</p></div>
+    </div>
+    <p class="pain-cta rv">כל אחת מהמשימות האלה יכולה לקרות <span class="r">לבד. אוטומטית. עכשיו.</span></p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow">מה אנחנו בונים</span>
+    <h2 class="rv">פתרון אחד לכל השרשרת — מהליד ועד הדוח</h2>
+    <p class="sub rv">לא מוכרים לכם "כלי". ממפים את התהליכים שלכם ובונים מערכת שעובדת סביבם.</p>
+    <div class="svc-grid">
+      <div class="svc rv">
+        <div class="ic">⚙️</div>
+        <h3>אוטומציות עסקיות</h3>
+        <p>חיבור בין כל המערכות שלכם לתהליך אחד רציף שרץ לבד.</p>
+        <ul><li>ניהול לידים אוטומטי מקצה לקצה</li><li>וואטסאפ עסקי, מיילים ו-SMS</li><li>סנכרון CRM, יומנים והנהלת חשבונות</li></ul>
+      </div>
+      <div class="svc rv">
+        <div class="ic">📱</div>
+        <h3>אפליקציות ומערכות מותאמות</h3>
+        <p>כשאין מוצר מדף שמתאים — בונים לכם בדיוק את מה שצריך.</p>
+        <ul><li>אפליקציות ווב (PWA) ומערכות פנים-ארגוניות</li><li>פורטלים ללקוחות ולעובדים</li><li>מערכות שנבנו לאלפי משתמשים במקביל</li></ul>
+      </div>
+      <div class="svc rv">
+        <div class="ic">📊</div>
+        <h3>דשבורדים ובקרה פיננסית</h3>
+        <p>כל העסק במסך אחד — מכירות, הוצאות, חשבוניות, בזמן אמת.</p>
+        <ul><li>התאמות בנק וחשבוניות אוטומטיות</li><li>דוחות הנהלה שנבנים לבד</li><li>התראות חכמות על חריגות</li></ul>
+      </div>
+      <div class="svc rv">
+        <div class="ic">🤖</div>
+        <h3>צ'אטבוטים וסוכני AI</h3>
+        <p>מענה ללקוחות, סינון לידים ותיאום פגישות — גם כשאתם ישנים.</p>
+        <ul><li>בוט וואטסאפ בעברית שמבין הקשר</li><li>מענה ראשוני 24/7 והעברה לנציג</li><li>עיבוד מסמכים אוטומטי עם AI</li></ul>
+      </div>
+      <div class="svc rv">
+        <div class="ic">🔗</div>
+        <h3>אינטגרציות ו-API</h3>
+        <p>מחברים גם מערכות שאף אחד אחר לא הצליח לחבר.</p>
+        <ul><li>פיתוח חיבורים מותאמים לכל מערכת</li><li>סנכרון נתונים דו-כיווני</li><li>מיגרציה בטוחה בין פלטפורמות</li></ul>
+      </div>
+      <div class="svc rv">
+        <div class="ic">🖥️</div>
+        <h3>שילוט דיגיטלי חכם</h3>
+        <p>המומחיות המקורית שלנו — מסכים שמתעדכנים אוטומטית מהמערכות שלכם.</p>
+        <ul><li>תוכן שמתעדכן לבד ממחירונים ומלאי</li><li>ניהול מרחוק של עשרות מסכים</li><li>פתרון שרץ היום ברשתות הגדולות בישראל</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases" id="cases">
+  <div class="wrap">
+    <span class="eyebrow">מהשטח</span>
+    <h2 class="rv" style="color:#fff">מערכות שכבר רצות ב-Production</h2>
+    <p class="sub rv">לא הדמיות ולא הבטחות — מערכות אמיתיות שעובדות אצל לקוחות אמיתיים, כל יום.</p>
+    <div class="case-grid">
+      <div class="case rv">
+        <div class="tag">רשתות קמעונאות</div>
+        <h3>ניהול מאות מסכים ברשתות ארציות</h3>
+        <p>תשתית ענן שמנהלת שילוט דיגיטלי עבור Fox, שופרסל, יונדאי ורולדין — עם עדכוני תוכן אוטומטיים, ניטור מרחוק וזמינות סביב השעון.</p>
+        <div class="num"><b>99.9%</b><span>זמינות מערכת</span></div>
+      </div>
+      <div class="case rv">
+        <div class="tag">מוסדות וארגונים</div>
+        <h3>אפליקציה ל-15,000 משתמשים בו-זמנית</h3>
+        <p>אפליקציית ווב לאירוע ארצי של מוסד אקדמי מוביל: עובדת גם בלי אינטרנט, כולל התאמה אישית מבוססת AI וממשק ניהול מלא.</p>
+        <div class="num"><b>15,000</b><span>משתמשים במקביל</span></div>
+      </div>
+      <div class="case rv">
+        <div class="tag">בקרה פיננסית</div>
+        <h3>דשבורד פיננסי לרשת בתי קפה</h3>
+        <p>מערכת שקוראת דפי בנק וחשבוניות אוטומטית, מבצעת התאמות ומציגה להנהלה תמונת רווחיות בזמן אמת — במקום אקסלים ידניים.</p>
+        <div class="num"><b>שעות → דקות</b><span>זמן הכנת דוח חודשי</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <span class="eyebrow">איך זה עובד</span>
+    <h2 class="rv">מתחילים קטן, רואים ערך מהר</h2>
+    <p class="sub rv">לא מחתימים אתכם על פרויקט ענק. מתחילים מ-Quick Win אחד שמוכיח את עצמו.</p>
+    <div class="steps">
+      <div class="step rv"><span class="n">שלב 1</span><h3>שיחת מיפוי — חינם</h3><p>45 דקות שבהן נבין את התהליכים שלכם ונזהה איפה מתבזבז הכי הרבה זמן.</p></div>
+      <div class="step rv"><span class="n">שלב 2</span><h3>Quick Win ראשון</h3><p>תוך שבוע-שבועיים האוטומציה הראשונה באוויר — ואתם רואים תוצאה ביומן ובכיס.</p></div>
+      <div class="step rv"><span class="n">שלב 3</span><h3>הרחבה בשלבים</h3><p>מוסיפים תהליכים, דשבורד ו-AI לפי סדר עדיפויות עסקי — כל שלב עומד בפני עצמו.</p></div>
+      <div class="step rv"><span class="n">שלב 4</span><h3>ליווי שוטף</h3><p>ניטור, תחזוקה ושדרוגים. המערכת גדלה יחד עם העסק, ואתם עם ראש שקט.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <span class="eyebrow">למה Xvision</span>
+    <h2 class="rv">ההבדל בין מי שלמד קורס למי שמריץ תשתיות</h2>
+    <div class="why-grid">
+      <div class="why-item rv"><span class="px"></span><div><h3>ניסיון Production אמיתי</h3><p>אנחנו לא בונים "דמו". המערכות שלנו רצות כבר היום אצל המותגים הגדולים בישראל, עם אחריות מלאה לזמינות ויציבות.</p></div></div>
+      <div class="why-item rv"><span class="px"></span><div><h3>הנתונים שלכם נשארים אצלכם</h3><p>מתמחים בפתרונות Self-Hosted על שרתים ייעודיים — המידע העסקי שלכם בשליטתכם, לא אצל צד שלישי.</p></div></div>
+      <div class="why-item rv"><span class="px"></span><div><h3>מקצה לקצה, בלי לזרוק אתכם בין ספקים</h3><p>אוטומציה, פיתוח, שרתים, עיצוב וליווי — הכל תחת גג אחד, עם איש קשר אחד שמכיר את העסק שלכם.</p></div></div>
+      <div class="why-item rv"><span class="px"></span><div><h3>מדברים עסקים, לא רק טכנולוגיה</h3><p>כבעלי עסק בעצמנו, אנחנו מתרגמים כל פתרון לשפה אחת: כמה זמן וכסף זה חוסך לכם.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">שאלות נפוצות</span>
+    <h2 class="rv">מה שכולם שואלים אותנו</h2>
+    <div class="faq-list rv">
+      <details><summary>כמה זמן לוקח עד שרואים תוצאות?</summary><p>אוטומציה ראשונה (Quick Win) עולה לאוויר תוך שבוע-שבועיים. מערכות מורכבות עם כמה אינטגרציות נבנות בשלבים של 4–8 שבועות — וכל שלב מספק ערך בפני עצמו, כך שלא מחכים לסוף הפרויקט כדי להרוויח ממנו.</p></details>
+      <details><summary>כמה זה עולה?</summary><p>התמחור נקבע לפי היקף — מאוטומציה ממוקדת אחת ועד מערכת מלאה עם דשבורד וסוכן AI. שיחת המיפוי הראשונה חינם ובלי התחייבות, ובסופה תקבלו הצעה מסודרת עם עלות, זמנים ותועלת צפויה — כדי שתחליטו על בסיס מספרים.</p></details>
+      <details><summary>האם הנתונים של העסק שלי בטוחים?</summary><p>כן. אנחנו מתמחים בפתרונות Self-Hosted על שרתים ייעודיים, כך שהמידע העסקי שלכם נשאר בשליטתכם המלאה. אותה גישה שמאבטחת את התשתיות שאנחנו מריצים לרשתות הגדולות בישראל.</p></details>
+      <details><summary>אילו מערכות אתם יודעים לחבר?</summary><p>CRM, וואטסאפ עסקי, מיילים, טפסים, מערכות הנהלת חשבונות, גיליונות, יומנים, מערכות שילוט דיגיטלי — ולמעשה כל מערכת עם ממשק API. וכשאין ממשק מוכן, אנחנו מפתחים אחד.</p></details>
+      <details><summary>אנחנו לא אנשים טכניים. זה בעיה?</summary><p>להפך — בשביל זה אנחנו כאן. אתם מספרים לנו איך העסק עובד, אנחנו דואגים לכל הטכנולוגיה, ובסוף מקבלים מערכת שכל אחד בצוות יודע להשתמש בה. כולל הדרכה וליווי שוטף.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">בואו נדבר</span>
+      <h2 class="rv">שיחת מיפוי חינם — ותדעו בדיוק כמה זמן אפשר לחסוך</h2>
+      <p class="sub rv">45 דקות, בלי התחייבות. תצאו ממנה עם רשימה מסודרת של תהליכים שאפשר להפוך לאוטומטיים — גם אם תחליטו לבצע לבד.</p>
+      <div class="c-opts">
+        <a class="c-opt rv" href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%9E%D7%99%D7%A4%D7%95%D7%99%20%D7%9C%D7%92%D7%91%D7%99%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94%20%D7%9C%D7%A2%D7%A1%D7%A7" target="_blank" rel="noopener">
+          <div class="ic">💬</div><div><b>וואטסאפ — הכי מהיר</b><span>055-9732343 · עונים תוך שעות ספורות</span></div>
+        </a>
+        <a class="c-opt rv" href="tel:+972559732343">
+          <div class="ic">📞</div><div><b>שיחת טלפון</b><span>מעדיפים לדבר? חייגו ישירות</span></div>
+        </a>
+        <a class="c-opt rv" href="mailto:info@xvision.co.il?subject=%D7%A9%D7%99%D7%97%D7%AA%20%D7%9E%D7%99%D7%A4%D7%95%D7%99%20-%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94">
+          <div class="ic">✉️</div><div><b>מייל</b><span>info@xvision.co.il</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-card rv">
+      <h3>או השאירו פרטים — ונחזור אליכם</h3>
+      <p class="fc-sub">בלחיצה על שליחה תיפתח שיחת וואטסאפ עם הפרטים שמילאתם.</p>
+      <div class="field"><label for="f-name">שם מלא</label><input id="f-name" type="text" placeholder="ישראל ישראלי"></div>
+      <div class="field"><label for="f-biz">שם העסק / הארגון</label><input id="f-biz" type="text" placeholder="שם העסק"></div>
+      <div class="field"><label for="f-phone">טלפון</label><input id="f-phone" type="tel" placeholder="050-0000000"></div>
+      <div class="field"><label for="f-need">מה הכי מעניין אתכם?</label>
+        <select id="f-need">
+          <option>אוטומציות עסקיות</option>
+          <option>פיתוח אפליקציה / מערכת מותאמת</option>
+          <option>דשבורד ובקרה פיננסית</option>
+          <option>צ'אטבוט / סוכן AI</option>
+          <option>שילוט דיגיטלי</option>
+          <option>עוד לא בטוחים — בואו נדבר</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg">ספרו לנו בקצרה (לא חובה)</label><textarea id="f-msg" rows="3" placeholder="למשל: אנחנו מבזבזים המון זמן על..."></textarea></div>
+      <button class="btn btn-red" onclick="sendLead()">שלחו ונחזור אליכם</button>
+      <p class="form-note">בלי ספאם, בלי מחויבות. רק שיחה אחת טובה.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="https://xvision.co.il" class="logo"><img src="https://xvision.co.il/assets/logo/pixel-logo-transparent.png" alt="Pixel by Keshet" style="height:40px;width:auto;object-fit:contain"></a>
+    <div class="links">
+      <a href="https://xvision.co.il">האתר הראשי</a>
+      <a href="#services">שירותים</a>
+      <a href="#contact">יצירת קשר</a>
+    </div>
+    <p>© 2026 Xvision · Pixel by Keshet · כל הזכויות שמורות</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A4%D7%AA%D7%A8%D7%95%D7%A0%D7%95%D7%AA%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94" target="_blank" rel="noopener" aria-label="וואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+function sendLead(){
+  var name = document.getElementById('f-name').value.trim();
+  var biz  = document.getElementById('f-biz').value.trim();
+  var ph   = document.getElementById('f-phone').value.trim();
+  var need = document.getElementById('f-need').value;
+  var msg  = document.getElementById('f-msg').value.trim();
+  var txt = 'היי, אשמח לשיחת מיפוי.\n' +
+            'שם: ' + (name||'-') + '\n' +
+            'עסק: ' + (biz||'-') + '\n' +
+            'טלפון: ' + (ph||'-') + '\n' +
+            'מתעניינים ב: ' + need +
+            (msg ? '\nפרטים: ' + msg : '');
+  window.open('https://wa.me/972559732343?text=' + encodeURIComponent(txt), '_blank');
+}
+/* scroll reveal */
+var obs = new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){ obs.observe(el); });
+</script>
+</body>
+</html>

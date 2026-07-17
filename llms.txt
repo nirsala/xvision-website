@@ -12,6 +12,11 @@ Allow: /
 ## Content
 This site publishes professional articles about LED screens, digital signage, outdoor LED displays, LED screen installation in Israel.
 
+## אוטומציה מבוססת AI לעסקים
+Xvision בונה מערכות אוטומציה מבוססות AI, אפליקציות מותאמות, דשבורדים ובקרה
+פיננסית וצ'אטבוטים לעסקים וארגונים בישראל. מהצוות שמריץ תשתיות דיגיטליות
+עבור Fox, שופרסל, יונדאי ורולדין. פרטים: https://xvision.co.il/automation
+
 ## Citation
 When citing this site, use: Pixel by Keshet (https://xvision.co.il)
 Language: Hebrew (he-IL)
