@@ -19,7 +19,7 @@
 (function () {
   'use strict';
 
-  var MEASUREMENT_ID = '';
+  var MEASUREMENT_ID = 'G-FFEM6G123R';
 
   // Guard against a half-finished setup: accept only a well-formed GA4 id, and
   // reject the XXXX placeholder shape. Note the placeholder test looks for a
