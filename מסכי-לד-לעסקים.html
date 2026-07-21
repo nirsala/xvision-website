@@ -286,6 +286,102 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   <p><strong>טיפ חיסכון:</strong> שכר עבודה להתקנה הוא לרוב 15–25% מעלות המסך. Pixel by Keshet מציעה חבילות התקנה מלאות הכוללות הכל — ייעוץ, תכנון, אספקה, התקנה ואחריות.</p>
 </div>
 
+<style>
+.est{background:var(--bg3);border:1px solid var(--line);border-radius:12px;padding:28px 24px;margin:32px 0}
+.est h3{margin:0 0 6px!important;font-size:1.2rem!important}
+.est .est-sub{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+.est-row{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px}
+.est-field{flex:1 1 200px;display:flex;flex-direction:column;gap:7px}
+.est-field label{font-size:.8rem;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.85)}
+.est-field select{font-family:'Heebo',sans-serif;font-size:.95rem;padding:11px 13px;border-radius:7px;background:var(--bg2);color:var(--white);border:1px solid var(--line);cursor:pointer}
+.est-field select:focus{outline:2px solid var(--red);outline-offset:1px}
+.est-out{border-top:1px solid var(--line);padding-top:20px;margin-top:4px}
+.est-label{font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.est-num{font-size:clamp(1.9rem,5vw,2.6rem);font-weight:900;color:var(--red);line-height:1.2;margin:6px 0 10px}
+.est-note{font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.75}
+.est-cta{display:inline-block;margin-top:16px;padding:12px 26px;border-radius:6px;background:var(--red);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.est-cta:hover{background:var(--red2)}
+@media(max-width:520px){.est-row{flex-direction:column;gap:14px}}
+</style>
+
+<div class="est">
+  <h3>מחשבון עלות — נקודת פתיחה למסך שלך</h3>
+  <p class="est-sub">בחרו מיקום, גודל וכמות כדי לראות מהיכן מתחילים. זו נקודת פתיחה להתמצאות, לא הצעת מחיר.</p>
+
+  <div class="est-row">
+    <div class="est-field">
+      <label for="est-place">איפה המסך יותקן?</label>
+      <select id="est-place">
+        <option value="in">בתוך העסק (פנימי)</option>
+        <option value="out">בחוץ / חזית (חיצוני)</option>
+      </select>
+    </div>
+    <div class="est-field">
+      <label for="est-size">גודל המסך</label>
+      <select id="est-size"></select>
+    </div>
+    <div class="est-field">
+      <label for="est-qty">כמה מסכים?</label>
+      <select id="est-qty">
+        <option value="1">מסך אחד</option>
+        <option value="2">2 מסכים</option>
+        <option value="3">3 מסכים</option>
+        <option value="5">5 מסכים ומעלה</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="est-out">
+    <span class="est-label">טווח פתיחה משוער</span>
+    <div class="est-num" id="est-result">החל מ-₪5,000</div>
+    <p class="est-note" id="est-note"></p>
+    <a class="est-cta" href="/contact/">קבלו הצעה מדויקת</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SIZES={
+    in:[{v:5000,t:'40–65 אינץ\' — קופה, בר, עמדת קבלה'},
+        {v:15000,t:'80 אינץ\' עד 2×1 מ\' — חנות, מסעדה, לובי'},
+        {v:50000,t:'3×2 מ\' ומעלה — קניון, אולם, בנק'}],
+    out:[{v:25000,t:'2×1 מ\' — חזית עסק, קיוסק'},
+         {v:80000,t:'4×2 מ\' ומעלה — כביש ראשי, מגרש חניה'}]
+  };
+  var place=document.getElementById('est-place'),
+      size=document.getElementById('est-size'),
+      qty=document.getElementById('est-qty'),
+      out=document.getElementById('est-result'),
+      note=document.getElementById('est-note');
+  if(!place||!size||!qty||!out||!note)return;
+
+  function fillSizes(){
+    var list=SIZES[place.value];
+    size.innerHTML='';
+    list.forEach(function(o,i){
+      var el=document.createElement('option');
+      el.value=String(i);el.textContent=o.t;size.appendChild(el);
+    });
+  }
+  function calc(){
+    var list=SIZES[place.value],
+        base=list[Math.min(+size.value||0,list.length-1)].v,
+        n=+qty.value||1,
+        total=base*n;
+    out.textContent='החל מ-₪'+total.toLocaleString('he-IL');
+    var parts=['כולל מסך, הרכבה ומערכת ניהול התוכן. <strong>לא כולל</strong> עבודות חשמל, מבנה נושא או היתר שילוט.'];
+    if(place.value==='out')parts.push('שלט חוצות עשוי לחייב <strong>היתר מהרשות המקומית</strong> — אנחנו מלווים בתהליך.');
+    if(n>1)parts.push('לפרויקטים מרובי מסכים יש <strong>תמחור מדורג</strong>, כך שהעלות למסך יורדת.');
+    parts.push('המספר הוא רצפה להתמצאות בלבד — המחיר בפועל נקבע לפי מפרט, אתר ההתקנה והיקף העבודה.');
+    note.innerHTML=parts.join(' ');
+  }
+  place.addEventListener('change',function(){fillSizes();calc()});
+  size.addEventListener('change',calc);
+  qty.addEventListener('change',calc);
+  fillSizes();calc();
+})();
+</script>
+
 <h2>מסך LED פנימי או חיצוני — איך בוחרים?</h2>
 
 <table class="comparison-table">
