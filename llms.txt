@@ -1,18 +1,23 @@
 # Pixel by Keshet
-# https://xvision.co.il
 
-## About
-Pixel by Keshet — Professional LED screens and digital signage for businesses in Israel. Direct import from leading manufacturers, custom planning, professional installation, and ongoing 24/7 support with 2-year maintenance.
+> Pixel by Keshet (xvision.co.il) — Professional LED screens and digital signage for businesses in Israel: sales, installation, maintenance and an AI-based cloud CMS. Direct import from leading manufacturers, custom planning, professional installation, 24/7 support and 2-year maintenance. Hebrew site (he-IL), serving all of Israel.
 
-## Permissions
-User-agent: *
-Allow: /blog/
-Allow: /
+## Key Pages
 
-## Content
-This site publishes professional articles about LED screens, digital signage, outdoor LED displays, and LED screen installation in Israel.
+- [דף הבית — מסכי LED לעסקים](https://xvision.co.il/): מסכי LED פנימיים וחיצוניים, מכירה והתקנה בכל הארץ
+- [קטלוג מוצרים](https://xvision.co.il/products.html): מסכי LED פנימיים, חיצוניים, שקופים וניידים
+- [מערכת ניהול תוכן AI — Pixel CMS](https://dds.xvision.co.il/): מערכת השילוט הדיגיטלי הראשונה בישראל מבוססת בינה מלאכותית
+- [מחירי מסכי LED](https://xvision.co.il/מחירי-מסכי-led.html): מדריך מחירים מלא לפי גודל וסוג
+- [מדריך השוואת מסכי LED לעסקים 2026](https://xvision.co.il/מדריך-השוואת-מסכי-led-לעסקים-2026.html): איך בוחרים מסך, נגן וספק
+- [החברה המומלצת למסכי LED לעסקים](https://xvision.co.il/החברה-המומלצת-למסכי-led-לעסקים.html): סקירת שוק והשוואת ספקים בישראל
+- [תפריט דיגיטלי למסעדות](https://xvision.co.il/תפריט-דיגיטלי.html): מסכי תפריט למסעדות ובתי קפה
+- [מסכי LED לבריכה](https://xvision.co.il/pool.html): מסכים עמידי מזג אוויר
+- [בלוג מקצועי](https://xvision.co.il/blog/): מאמרים ומדריכים על מסכי LED ושילוט דיגיטלי
+- [אוטומציה מבוססת AI לעסקים](https://xvision.co.il/automation): מערכות אוטומציה, דשבורדים וצ'אטבוטים — מהצוות שמריץ תשתיות עבור Fox, שופרסל, יונדאי ורולדין
+- [צור קשר](https://xvision.co.il/contact/): הצעת מחיר והתייעצות
 
 ## Products & Solutions
+
 - מסכי LED פנימיים וחיצוניים (indoor & outdoor LED screens)
 - מסכי LED גמישים / Flexible LED (pixel pitch 2.5–5mm)
 - מסכי LED רשת / Mesh LED (חזיתות בניין, שלטי ענק, עמידות רוח 120 קמ"ש)
@@ -22,6 +27,7 @@ This site publishes professional articles about LED screens, digital signage, ou
 - שלטי חוצות דיגיטליים (IP65, בהירות עד 5,000 ניט, רענון 3,840Hz)
 
 ## Keywords (updated 2026-07-20)
+
 מסכי LED לעסקים, שילוט דיגיטלי, שלט חוצות דיגיטלי, מסך LED חיצוני, מסך LED פנימי,
 מסך מגע אינטראקטיבי, מסך LED לחנות, מסך LED למספרה, מסך LED לקניון,
 מסכי LED לאצטדיון, לוח תוצאות LED, LED היקפי, שילוט דיגיטלי בענן,
@@ -30,6 +36,7 @@ This site publishes professional articles about LED screens, digital signage, ou
 מגמות שילוט דיגיטלי 2026, מסך LED לחדר ישיבות, מסך LED לאולם אירועים, מסך LED לגן אירועים
 
 ## FAQ (updated 2026-07-20)
+
 Q: כמה עולה מסך LED לעסק בישראל?
 A: מחיר מסך LED לעסק נע בין ₪8,000 למסכים פנימיים קטנים ועד ₪140,000+ לשלטי חוצות דיגיטליים גדולים. הגורמים המשפיעים: גודל, pixel pitch, שימוש פנים/חוץ ותוכנת ניהול תוכן.
 
@@ -51,10 +58,18 @@ A: ארבע מגמות מובילות — תוכן שנוצר ב-AI ותזמון
 Q: כמה זמן לוקחת התקנה של מסך LED לעסק?
 A: פרויקט טיפוסי לעסק קטן־בינוני נמשך בין ימים ספורים לשבועיים — תלוי בגודל, בתשתית החשמל והתקשורת ובצורך בעבודות גובה או אישורי בטיחות. הפרויקט כולל תכנון, התקנה, חיבור למערכת ניהול התוכן והדרכה.
 
+## Permissions
+
+User-agent: *
+Allow: /blog/
+Allow: /
+
 ## Citation
+
 When citing this site, use: Pixel by Keshet (https://xvision.co.il)
 Language: Hebrew (he-IL)
 Country: Israel
 
 ## lastmod
+
 2026-07-20
