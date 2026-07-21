@@ -17,52 +17,61 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Get changed HTML files
-        id: changed
-        run: |
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- '*.html' | head -20)
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGED" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
+      # Submits every changed HTML page to IndexNow in a single bulk request.
+      # core.quotepath=false is required: without it git escapes Hebrew filenames
+      # as octal (\327\224...), which previously produced garbage URLs.
+      # Paths are percent-encoded here because IndexNow expects encoded URLs.
       - name: Ping IndexNow for changed pages
         run: |
-          KEY="xvision-indexnow-2026"
-          BASE="https://xvision.co.il"
-          while IFS= read -r file; do
-            if [ -n "$file" ]; then
-              URL="${BASE}/${file}"
-              echo "Pinging IndexNow: $URL"
-              curl -s "https://api.indexnow.org/indexnow?url=${URL}&key=${KEY}" || true
-              sleep 1
-            fi
-          done <<< "${{ steps.changed.outputs.files }}"
+          python3 - <<'PY'
+          import json, subprocess, urllib.request, urllib.parse, sys
 
-      - name: Ping IndexNow bulk (sitemap)
-        run: |
-          curl -s "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d '{
+          KEY  = "xvision-indexnow-2026"
+          BASE = "https://xvision.co.il"
+
+          out = subprocess.run(
+              ["git", "-c", "core.quotepath=false", "diff", "--name-only",
+               "HEAD~1", "HEAD", "--", "*.html"],
+              capture_output=True, text=True, encoding="utf-8", check=True).stdout
+
+          files = [f for f in out.splitlines() if f.strip()][:20]
+
+          urls = [f"{BASE}/" + urllib.parse.quote(f) for f in files]
+          # Always refresh the homepage and sitemap alongside changed pages.
+          urls += [f"{BASE}/", f"{BASE}/sitemap.xml"]
+
+          for u in urls:
+              print("submitting:", u)
+
+          payload = {
               "host": "xvision.co.il",
-              "key": "xvision-indexnow-2026",
-              "keyLocation": "https://xvision.co.il/xvision-indexnow-2026.txt",
-              "urlList": [
-                "https://xvision.co.il/",
-                "https://xvision.co.il/sitemap.xml"
-              ]
-            }' || true
+              "key": KEY,
+              "keyLocation": f"{BASE}/{KEY}.txt",
+              "urlList": urls,
+          }
 
-      - name: Ping Google Sitemap
-        run: |
-          curl -s "https://www.google.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
-          echo "Google sitemap pinged"
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST")
 
-      - name: Ping Bing Sitemap
-        run: |
-          curl -s "https://www.bing.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
-          echo "Bing sitemap pinged"
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  body = r.read().decode("utf-8", "replace")
+                  print(f"IndexNow HTTP {r.status} — submitted {len(urls)} URL(s)")
+                  if body.strip():
+                      print("body:", body)
+          except Exception as e:
+              # Never fail the deploy because a search-engine ping failed.
+              print("IndexNow submission failed:", e, file=sys.stderr)
+          PY
 
+      # NOTE: the Google (/ping?sitemap=) and Bing (/ping?sitemap=) endpoints were
+      # retired by both vendors and now return 404 / 410 — they were removed on
+      # 2026-07-21. Google discovers the sitemap via robots.txt and Search Console;
+      # Bing/Yandex/Seznam/Naver are covered by the IndexNow submission above.
       - name: Ping Yandex Sitemap
         run: |
-          curl -s "https://webmaster.yandex.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
-          echo "Yandex sitemap pinged"
+          curl -s -o /dev/null -w 'Yandex ping HTTP %{http_code}\n' \
+            "https://webmaster.yandex.com/ping?sitemap=https://xvision.co.il/sitemap.xml" || true
