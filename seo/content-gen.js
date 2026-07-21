@@ -87,8 +87,26 @@ async function generateArticle() {
     })
   });
 
+  if (!response.ok) {
+    const body = await response.text().catch(() => '');
+    console.error(`[content-gen] קריאת API נכשלה (${response.status}) — לא נכתב קובץ. ${body.slice(0, 300)}`);
+    return null;
+  }
+
   const data = await response.json();
   const content = data.content?.[0]?.text || '';
+
+  // שער איכות: לעולם לא לכתוב דף ריק או חלקי לאתר החי.
+  // בלי הבדיקה הזו כשל API שקט יוצר דף עם Article schema ובלי גוף תוכן.
+  const plainText = content.replace(/<[^>]+>/g, ' ').trim();
+  const wordCount = plainText ? plainText.split(/\s+/).length : 0;
+  const MIN_WORDS = 300;
+  if (!content.includes('<h1') || wordCount < MIN_WORDS) {
+    console.error(
+      `[content-gen] תוכן פסול — h1=${content.includes('<h1')}, מילים=${wordCount} (מינימום ${MIN_WORDS}). לא נכתב קובץ.`
+    );
+    return null;
+  }
 
   // יצירת HTML מלא לדף הבלוג
   const html = `<!DOCTYPE html>
