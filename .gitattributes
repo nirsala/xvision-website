@@ -1,2 +1,5 @@
-sitemap.xml merge=union
-blog/index.json merge=union
+# sitemap.xml ו-blog/index.json הם תוצרים שנבנים מחדש (seo/build-sitemap.js).
+# אין למזג אותם טקסטואלית: merge=union ייצר XML/JSON לא תקין
+# (שלושה תגי </urlset> ו-24 כפילויות) שגוגל דוחה במלואו.
+sitemap.xml -merge
+blog/index.json -merge

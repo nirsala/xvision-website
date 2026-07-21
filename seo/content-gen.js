@@ -155,27 +155,12 @@ ${content}
   const filePath = path.join(BLOG_DIR, `${slug}.html`);
   fs.writeFileSync(filePath, html, 'utf8');
 
-  // עדכון sitemap
-  updateSitemap(`${cfg.site.url}/blog/${slug}.html`, dateStr);
+  // ה-sitemap נבנה מחדש מהקבצים ע"י seo/build-sitemap.js בזמן הפרסום,
+  // ולכן אין צורך (ואסור) לתפור אליו כאן שורה טקסטואלית.
 
   console.log(`[content-gen] נשמר: blog/${slug}.html`);
   return { slug, title: topic.title, keyword: topic.keyword, filePath };
 }
 
-function updateSitemap(newUrl, date) {
-  // וידוא שה-URL מתחיל בhttps://xvision.co.il
-  if (!newUrl.startsWith('https://xvision.co.il')) {
-    console.error('[content-gen] URL שגוי, מתעלם:', newUrl);
-    return;
-  }
-  const sitemapPath = path.join(cfg.site.dir, 'sitemap.xml');
-  let sitemap = fs.readFileSync(sitemapPath, 'utf8');
-  if (sitemap.includes(newUrl)) return; // כבר קיים
-
-  const entry = `  <url><loc>${newUrl}</loc><lastmod>${date}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`;
-  sitemap = sitemap.replace('</urlset>', `${entry}\n</urlset>`);
-  fs.writeFileSync(sitemapPath, sitemap, 'utf8');
-  console.log('[content-gen] sitemap עודכן');
-}
 
 module.exports = { generateArticle };
