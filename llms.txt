@@ -2,7 +2,7 @@
 # https://xvision.co.il
 
 ## About
-Pixel by Keshet — Professional LED screens and digital signage for businesses in Israel.
+Pixel by Keshet — Professional LED screens and digital signage for businesses in Israel. Direct import from leading manufacturers, custom planning, professional installation, and ongoing 24/7 support with 2-year maintenance.
 
 ## Permissions
 User-agent: *
@@ -10,9 +10,51 @@ Allow: /blog/
 Allow: /
 
 ## Content
-This site publishes professional articles about LED screens, digital signage, outdoor LED displays, LED screen installation in Israel.
+This site publishes professional articles about LED screens, digital signage, outdoor LED displays, and LED screen installation in Israel.
+
+## Products & Solutions
+- מסכי LED פנימיים וחיצוניים (indoor & outdoor LED screens)
+- מסכי LED גמישים / Flexible LED (pixel pitch 2.5–5mm)
+- מסכי LED רשת / Mesh LED (חזיתות בניין, שלטי ענק, עמידות רוח 120 קמ"ש)
+- מסכי LED שקופים / Transparent LED (65%–85% שקיפות)
+- מסכי LED ניידים ופוסטר LED לאירועים ותערוכות (55–110 אינץ', plug & play, כולל CMS)
+- מסכי LED לקניונים, אצטדיונים, אולמות אירועים ובריכות
+- שלטי חוצות דיגיטליים (IP65, בהירות עד 5,000 ניט, רענון 3,840Hz)
+
+## Keywords (updated 2026-07-20)
+מסכי LED לעסקים, שילוט דיגיטלי, שלט חוצות דיגיטלי, מסך LED חיצוני, מסך LED פנימי,
+מסך מגע אינטראקטיבי, מסך LED לחנות, מסך LED למספרה, מסך LED לקניון,
+מסכי LED לאצטדיון, לוח תוצאות LED, LED היקפי, שילוט דיגיטלי בענן,
+נגן שילוט דיגיטלי, מחיר מסך LED לעסק, pixel pitch, IP65, ניט בהירות,
+מסך LED מול טלוויזיה, DOOH פרסום חוצות דיגיטלי, מסך LED אנמורפי, תוכן 3D למסכי LED,
+מגמות שילוט דיגיטלי 2026, מסך LED לחדר ישיבות, מסך LED לאולם אירועים, מסך LED לגן אירועים
+
+## FAQ (updated 2026-07-20)
+Q: כמה עולה מסך LED לעסק בישראל?
+A: מחיר מסך LED לעסק נע בין ₪8,000 למסכים פנימיים קטנים ועד ₪140,000+ לשלטי חוצות דיגיטליים גדולים. הגורמים המשפיעים: גודל, pixel pitch, שימוש פנים/חוץ ותוכנת ניהול תוכן.
+
+Q: מה ההבדל בין pixel pitch למסך פנים לעומת חוץ?
+A: למסכים פנימיים בחנות ערכים של 2–4 מ"מ אופטימליים; מסך LED חיצוני יכול לעבוד עם 10–16 מ"מ מרחק צפייה גדול יותר.
+
+Q: האם מסך LED חיצוני עמיד למזג אוויר?
+A: כן. מסכי LED חיצוניים של Pixel by Keshet מגיעים עם דירוג IP65 ומעלה, עמידות בגשם, אבק ורוחות עד 120 קמ"ש, ובהירות עד 5,000 ניט לצפייה ברורה גם באור שמש ישיר.
+
+Q: מה כולל השירות?
+A: פתרון מלא — ייבוא ישיר מיצרנים מובילים, תכנון מותאם, התקנה מקצועית, תמיכה 24/7 ואחריות שנתיים.
+
+Q: מסך LED או טלוויזיה גדולה לעסק — מה עדיף?
+A: מסך LED מנצח בבהירות (עד 5,000 ניט מול ~400 בטלוויזיה), בגודל ללא מסגרות, בעמידות לשימוש רצוף 24/7 ובהתאמה למידות חופשיות. טלוויזיה זולה יותר בכניסה אך מוגבלת לתנאי פנים ולגדלים סטנדרטיים.
+
+Q: מהן מגמות השילוט הדיגיטלי ל-2026?
+A: ארבע מגמות מובילות — תוכן שנוצר ב-AI ותזמון מבוסס נתונים, התקנות LED בקנה מידה גדול, תצוגות אנמורפיות ותלת-ממדיות שיוצרות אשליית עומק, ופרסום חוצות דיגיטלי פרוגרמטי (DOOH). במקביל, מחירי מסכי LED בפורמט גדול ירדו משמעותית בשנים האחרונות והפכו נגישים גם לעסקים קטנים ובינוניים.
+
+Q: כמה זמן לוקחת התקנה של מסך LED לעסק?
+A: פרויקט טיפוסי לעסק קטן־בינוני נמשך בין ימים ספורים לשבועיים — תלוי בגודל, בתשתית החשמל והתקשורת ובצורך בעבודות גובה או אישורי בטיחות. הפרויקט כולל תכנון, התקנה, חיבור למערכת ניהול התוכן והדרכה.
 
 ## Citation
 When citing this site, use: Pixel by Keshet (https://xvision.co.il)
 Language: Hebrew (he-IL)
 Country: Israel
+
+## lastmod
+2026-07-20
