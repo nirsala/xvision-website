@@ -1035,3 +1035,22 @@ fatal: could not read Username for 'https://github.com': Device not configured
   ✅ נשלח לאינדוקס Bing + Google Sitemap
 ══════════════════════════════════════
 
+
+========================================
+DATE: 2026-07-22 | BATCH: 4 | KEYWORDS: מסך לובי לבניינים, מסך LED לובי, מסך דיגיטלי לבניין, מסך כניסה לבניין, מסך עמדת קבלה
+========================================
+RANKINGS:
+  מסך לובי לבניינים: xvision.co.il present in results (homepage + blog) | position: top-5 | Competitors: danor.com present
+  מסך LED לובי: xvision.co.il present (homepage, LED pages) | position: top-5 | Competitors: danor.com present
+  מסך דיגיטלי לבניין: xvision.co.il present (homepage, product pages) | position: not top-5 | Competitors: danor.com, scannerlight.co.il present
+  מסך כניסה לבניין: xvision.co.il present (mesh LED page) | position: not top-5 | Competitors: danor.com present
+  מסך עמדת קבלה: xvision.co.il not found in top results | position: not found | Competitors: danor.com, scannerlight.co.il present
+ARTICLES CREATED:
+  2026-07-22-masach-digital-livnyan.html — מסך דיגיטלי לבניין
+  2026-07-22-masach-knisa-livnyan.html — מסך כניסה לבניין
+  2026-07-22-masach-amdat-kabala.html — מסך עמדת קבלה
+ARTICLES SKIPPED (already covered):
+  מסך לובי לבניינים — מסך-לובי-לבניינים-מומלץ-2026.html
+  מסך LED לובי — led-article-4-2026-04-25.html (title: מסכי LED לובי)
+SITEMAP UPDATES:
+  3 URLs added
