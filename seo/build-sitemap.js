@@ -104,6 +104,16 @@ function collect() {
     }
   }
 
+  // דפי landing באנגלית בתוך en/ — index.html כבר נוסף ככתובת ספרייה (/en/) למעלה
+  const enDir = path.join(ROOT, 'en');
+  if (fs.existsSync(enDir)) {
+    for (const f of fs.readdirSync(enDir).sort()) {
+      if (!f.endsWith('.html') || EXCLUDE.has(f) || f === 'index.html') continue;
+      if (!shouldInclude(path.join(enDir, f))) continue;
+      add(`en/${f}`, '0.7');
+    }
+  }
+
   return urls;
 }
 
