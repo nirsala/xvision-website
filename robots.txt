@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /api/
 
 Sitemap: https://xvision.co.il/sitemap.xml
 

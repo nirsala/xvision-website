@@ -1,0 +1,47 @@
+/* Pixel by Keshet — Blog Article Stylesheet */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#1a1a1a;--bg2:#222;--card:#2c2c2c;--white:#fff;--muted:rgba(255,255,255,.55);--red:#d71d43;--blue:#0099ff;--line:rgba(255,255,255,.08)}
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',system-ui,sans-serif;background:var(--bg);color:var(--white);direction:rtl;line-height:1.8;padding-top:80px}
+a{color:var(--red);text-decoration:underline}
+a:hover{color:#ff3d63}
+
+/* NAV / BREADCRUMB */
+header{position:fixed;top:0;right:0;left:0;z-index:300;background:rgba(26,26,26,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+header nav{max-width:860px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+header nav a{color:var(--muted);text-decoration:none;transition:color .2s}
+header nav a:hover{color:var(--white)}
+
+/* MAIN CONTENT */
+main{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+article{max-width:720px}
+
+h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.25;margin-bottom:12px;letter-spacing:-.5px}
+h2{font-size:1.25rem;font-weight:800;margin:40px 0 14px;color:var(--white);padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:1.05rem;font-weight:700;margin:28px 0 10px;color:rgba(255,255,255,.9)}
+p{font-size:1rem;color:rgba(255,255,255,.8);margin-bottom:16px}
+ul,ol{margin:0 0 20px 0;padding-right:24px}
+li{font-size:1rem;color:rgba(255,255,255,.8);margin-bottom:8px}
+li strong{color:var(--white)}
+p strong{color:var(--white)}
+
+.meta{font-size:.8rem;color:var(--muted);margin-bottom:36px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+
+/* CTA BOX */
+section.cta{background:var(--card);border:1px solid rgba(215,29,67,.3);border-radius:12px;padding:28px 32px;margin-top:48px}
+section.cta h2{border-bottom:none;margin:0 0 12px;padding:0;color:var(--white)}
+section.cta p{margin:0;font-size:.95rem}
+section.cta a{color:var(--red);font-weight:700}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--line);text-align:center;padding:32px 24px;font-size:.8rem;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--white)}
+footer p{margin-bottom:4px;color:var(--muted)}
+
+@media(max-width:600px){
+  body{padding-top:56px}
+  main{padding:32px 16px 60px}
+  section.cta{padding:20px}
+  h1{font-size:1.5rem}
+}
