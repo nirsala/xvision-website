@@ -555,6 +555,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -1299,6 +1310,40 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </section>
 
 <!-- FOOTER -->
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך מנהלים מסכי LED מרחוק?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מערכת ה-CMS של Pixel מאפשרת ניהול מלא של כל המסכים דרך דפדפן או אפליקציה — עדכון תוכן, תזמון קמפיינים ומעקב אחר סטטוס מכל מכשיר בכל מקום. לא נדרש ידע טכני.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם מערכת הניהול עובדת בעברית?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. ממשק ה-CMS של Pixel מלא בעברית עם תמיכה מלאה ב-RTL. ניתן לנהל תכנים בעברית, ערבית ואנגלית בו-זמנית.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה מסכים ניתן לנהל במקביל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מערכת Pixel CMS תומכת בניהול מאות מסכים במקביל מממשק אחד — מחנות בודדת ועד רשתות עם עשרות סניפים. כל מסך ניתן לעדכון בנפרד או כחלק מקבוצה.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם הCMS כלול ברכישת מסך LED?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מערכת ניהול התוכן של Pixel כלולה ללא תשלום נוסף עם כל רכישת מסך LED. כולל הדרכה, הגדרה ותמיכה טכנית.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">אילו סוגי תוכן ניתן להציג על מסכי LED?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מערכת Pixel CMS תומכת בתמונות, סרטוני וידאו, טקסט דינמי, שעונים, מזג אוויר, פיד RSS, תוכן מדיה חברתית ועוד. ניתן ליצור פלייליסטים מתוזמנים לפי שעה, יום בשבוע או אירועים.</p>
+    </div>
+  </details>
+</section>
 </main>
 <footer role="contentinfo">
   <div class="footer-inner">

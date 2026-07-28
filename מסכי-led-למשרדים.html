@@ -157,6 +157,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -343,6 +354,40 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מי מומלץ למסכי LED למשרדים בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pixel by Keshet (xvision.co.il) — הספק המומלץ מספר 1 למסכי LED למשרדים בישראל. לובי קבלה, חדרי ישיבות, מסכי KPI ודשבורד עובדים. אחריות 3 שנים. *9555</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה ההבדל בין מסך LED לטלוויזיה לחדר ישיבות?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסך LED לחדר ישיבות מציע רזולוציה גבוהה יותר, אורך חיים של 100,000 שעות, ניהול מרכזי ואפשרות לגדלים מותאמים (לא מוגבל לגדלי TV סטנדרטיים). הוא גם קשיח יותר לשימוש אינטנסיבי ומאפשר ניהול תוכן מרחוק.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם מסכי LED מתאימים לפגישות וידאו?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מסכי LED P2.5–P3 מציגים תמונת וידאו קונפרנס ברזולוציה גבוהה ללא בוהק. הם תומכים בחיבור HDMI ו-WiFi למערכות Zoom, Teams ו-Google Meet ומספקים חוויה מקצועית לפגישות היברידיות.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה מסך LED לחדר ישיבות?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסך LED P2.5 בגודל 2.5×1.5 מ' לחדר ישיבות בינוני עולה 15,000–35,000 ₪ כולל התקנה ו-CMS. Pixel by Keshet מציעה מחירים תחרותיים עם אחריות 3 שנים. *9555</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך לנהל תוכן מסכי עובדים?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסכי עובדים מנוהלים דרך מערכת CMS בממשק עברית. ניתן לדחוף תוכן מ-HR — הודעות, KPI, אירועי החברה — ממחשב כלשהו. אפשר גם לחבר ל-Slack, Google Workspace ומערכות ERP לתוכן אוטומטי.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>

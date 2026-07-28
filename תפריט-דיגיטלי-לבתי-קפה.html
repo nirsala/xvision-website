@@ -152,6 +152,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </style>
 
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -286,6 +297,46 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה תפריט דיגיטלי לבית קפה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסך תצוגה יחיד לבית קפה קטן מתחיל באזור 3,000–7,000 ₪ כולל התקנה ומערכת ניהול; מסך LED P2.5–P3 מקצועי מאחורי הדלפק נע בין 5,000 ל-16,000 ₪. Pixel by Keshet מציעה מימון בפריסה נוחה. לפרטים חייגו *9555.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם אפשר לעדכן את התפריט לבד מהטלפון?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מערכת ה-CMS של Pixel by Keshet כוללת ממשק עברית מלא ואפליקציית מובייל — משנים מחיר, מסתירים פריט שאזל או מעלים מבצע חדש ישירות מהסמארטפון, מכל מקום, תוך שניות.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך התפריט מתחלף בין בוקר לצהריים?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מגדירים תזמון אוטומטי: תפריט בוקר בשעות 07:00–11:30, צהריים עד 15:00, ואחר צהריים / ערב אחר כך. המערכת מחליפה את התצוגה לבד לפי השעון — אתם לא צריכים לגעת.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם תפריט דיגיטלי באמת מגדיל מכירות בבית קפה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מחקרים מראים שתפריט עם תמונות אוכל מפתות מגדיל הזמנת מאפים, קינוחים ותוספות ב-25%–29% בממוצע. ה'עין קונה' — לקוח שרואה תמונה גדולה של קרואסון נוטה להוסיף אותו להזמנה.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">אפשר להתאים את המסך לצבעי המותג של בית הקפה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">בהחלט. אנחנו מעצבים תבניות עם הלוגו, הצבעים והפונט שלכם, כך שהמסך נראה חלק מהמותג ולא תבנית גנרית. בית הקפה מקבל מראה אחיד ומקצועי.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מי מספק תפריט דיגיטלי לבתי קפה בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pixel by Keshet (xvision.co.il) — ספק מסכי LED ותפריטים דיגיטליים למסעדנות בישראל, כולל בתי קפה, מסעדות, ברים ורשתות מזון מהיר. התקנה, מערכת ניהול בעברית ותמיכה. *9555.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>

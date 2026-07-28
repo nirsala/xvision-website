@@ -245,6 +245,17 @@ footer{background:#111;padding:40px 56px;color:var(--muted);font-size:13px;text-
 }
 </style>
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 <nav>
@@ -380,6 +391,28 @@ footer{background:#111;padding:40px 56px;color:var(--muted);font-size:13px;text-
       <a href="/#contact" class="btn-primary">קבל הצעת מחיר חינם</a>
     </div>
   </div>
+</section>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מי הוא היבואן הרשמי של Unilumin בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pixel by Keshet הוא היבואן הרשמי של Unilumin בישראל. אנו מספקים מסכי LED Unilumin עם אחריות מלאה, חלפים מקומיים ותמיכה טכנית בעברית.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה מייחד את מסכי Unilumin?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Unilumin מתאפיינת בדיוק צבעים יוצא דופן (Delta E &lt; 2), קצבי רענון גבוהים (≥3840Hz), אמינות מכנית גבוהה ואורך חיי מוצר של 100,000 שעות. מושלמת הן למסכי פנים (Indoor) ברזולוציות גבוהות והן למסכי חוץ מאסיביים.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם ניתן לקבל אחריות על מסכי Unilumin שנרכשו מ-Pixel by Keshet?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן — כל מסכי Unilumin שנמכרים על ידי Pixel by Keshet מגיעים עם אחריות יצרן מלאה של 3-5 שנים, גיבוי חלפים מקומי בישראל ותמיכה טכנית 24/7.</p>
+    </div>
+  </details>
 </section>
 </main>
 

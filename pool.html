@@ -290,6 +290,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -577,6 +588,40 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </section>
 
 <!-- FOOTER -->
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם מסך LED מתאים לאזור הבריכה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מסכי LED לבריכה של Pixel by Keshet מדורגים IP65 ומעלה — עמידים בגשם, לחות גבוהה, קרני UV ושינויי טמפרטורה. מתאימים לבתי יוקרה, וילות, מלונות ואולמות אירועים.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה בהירות מסך LED חיצוני לבריכה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסכי LED חיצוניים לבריכה מגיעים לבהירות של 5000-6000 ניט, כך שהם נראים היטב גם בשמש ישירה. לשם השוואה, מסך טלוויזיה ביתי מגיע לכ-400-800 ניט בלבד.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה גודל מסך LED מינימלי לבריכה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">לחוויית צפייה מיטבית ליד הבריכה, מומלץ מסך LED בגודל 3x2 מטר לפחות. Pixel by Keshet מספקת מסכי LED מודולריים שניתן להרכיב לכל גודל לפי הצורך.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה מסך LED לבריכה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">עלות מסך LED לבריכה תלויה בגודל, דרגת ה-IP ורמת הרזולוציה. הפרויקטים שלנו מתחילים מעשרות אלפי שקלים. צרו קשר לקבלת הצעת מחיר מותאמת: צרו קשר</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם מסך LED לבריכה דורש תחזוקה מיוחדת?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסכי LED לחוץ דורשים ניקוי תקופתי ובדיקת חיבורים אחת לשנה. Pixel by Keshet מספקת חבילת שירות ותחזוקה הכוללת מעקב מרחוק ותמיכה טכנית מלאה.</p>
+    </div>
+  </details>
+</section>
 </main>
 <footer role="contentinfo">
   <div class="footer-inner">

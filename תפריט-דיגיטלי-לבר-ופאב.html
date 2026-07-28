@@ -152,6 +152,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </style>
 
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -285,6 +296,46 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה מציגים על תפריט דיגיטלי בבר?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">בעיקר תפריט משקאות — בירות מהחבית, קוקטיילים, יין ושוטים עם מחירים מעודכנים — לצד מבצע happy hour דינמי, ובמקביל אפשר לשדר ספורט על מסך צמוד או בפיצול מסך. הכל מתעדכן מרחוק.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך עובד happy hour דינמי על המסך?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מגדירים את שעות ה-happy hour פעם אחת, והמבצע מופיע על המסך אוטומטית בזמן הנכון ונעלם כשהוא נגמר. אפשר להוסיף ספירה לאחור שמגבירה את תחושת הדחיפות ומזרזת הזמנות.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">אפשר לשדר ספורט ותפריט על אותו מסך?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. מסך LED עם CMS מתקדם תומך בפיצול מסך — חצי שידור ספורט, חצי תפריט — או במעבר אוטומטי לפי שעה. לפני המשחק מוצג התפריט, ובזמן המשחק עוברים לשידור חי.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איזה גודל מסך מתאים לבר לשידור ספורט?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">לשידור ספורט בבר מומלץ מסך LED גדול P4–P5 או קיר מסכים על הקיר המרכזי, כך שהמשחק גלוי מכל פינה. לתפריט המשקאות מאחורי הבר מספיק מסך P2.5–P3 או מסך תצוגה 55 אינץ'.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה תפריט דיגיטלי לבר?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסך תפריט מאחורי הבר מתחיל באזור 5,000–14,000 ₪ לפי סוג וגודל; מסך LED גדול לשידור ספורט עולה יותר. Pixel by Keshet בונה הצעה מותאמת עם מימון בפריסה. חייגו *9555.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מי מספק תפריט דיגיטלי ומסכים לברים ופאבים בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pixel by Keshet (xvision.co.il) — מסכי LED ותפריטים דיגיטליים לברים, פאבים ומסעדות: תפריט משקאות, happy hour דינמי ושידור ספורט. התקנה ותמיכה בכל הארץ. *9555.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>

@@ -152,6 +152,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </style>
 
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -286,6 +297,46 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה היתרון של מסכי LED לרשת מזון מהיר?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מסכי LED מאפשרים ניהול מרכזי אחד לכל הסניפים: מעדכנים מחיר או מבצע במטה והוא מופיע בכל הרשת מיד, עם אחידות מותג מלאה. בנוסף, menu boards דיגיטליים מגדילים מכירות קומבו ומזרזים את התור.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך מנהלים תוכן על מסכים בכמה סניפים?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">דרך מערכת CMS מרכזית. מעלים תוכן פעם אחת ומשייכים אותו לסניפים הרלוונטיים — כולם או חלקם. אפשר גם להריץ מבצע ארצי בבת אחת או תוכן מקומי לסניף מסוים.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם מסכי LED מתאימים ל-drive-thru?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. לנתיב ה-drive-thru משתמשים במסכי LED חיצוניים בדירוג IP65 — עמידים לגשם, שמש וחום, עם בהירות גבוהה שנשארת קריאה גם באור יום ישיר.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה סט menu boards דיגיטלי לסניף?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">סט של מספר מסכי LED מעל הדלפק לסניף מזון מהיר משתנה לפי מספר המסכים, הגודל וה-Pixel Pitch. אנחנו בונים הצעה מותאמת לרשת עם תמחור לכל הסניפים. חייגו *9555.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם המסכים מגדילים את שווי ההזמנה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. הדגשת קומבו ומבצעים דינמיים על ה-menu board מגדילה את שווי ההזמנה הממוצע ב-3%–8%, כי הלקוח נדחף לשדרג לקומבו או להוסיף פריט תוך כדי ההמתנה בתור.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מי מספק מסכי LED לרשתות מזון מהיר בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pixel by Keshet (xvision.co.il) מתמחה במסכי LED ותפריטים דיגיטליים למסעדנות, כולל רשתות מזון מהיר — menu boards, drive-thru וניהול מרכזי לכל הסניפים. *9555.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>

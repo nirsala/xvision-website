@@ -152,6 +152,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 </style>
 
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -286,6 +297,46 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך תפריט דיגיטלי מתחבר למערכת הקופה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">החיבור נעשה בין מערכת ניהול התוכן (CMS) של המסך למערכת הקופה, לרוב דרך ממשק API או ייצוא קובץ מחירים. כשמחיר או מלאי משתנים בקופה, המסך מתעדכן אוטומטית — בלי עדכון ידני כפול.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">לאילו מערכות קופה אפשר להתחבר בישראל?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">אפשר להתחבר למערכות קופה (POS) נפוצות בישראל דרך ה-API או קובץ ייצוא שהן מספקות. בשלב בדיקת התאימות אנחנו בודקים בדיוק לאיזו מערכת אתם מחוברים ומה היא חושפת. חייגו *9555 לבדיקה.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">מה קורה כשפריט אוזל במלאי?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כשפריט מסומן כ'אזל' בקופה, החיבור מעדכן את המסך מיד — הפריט נעלם או מסומן אפור. הלקוח לא מזמין מנה שכבר לא קיימת, ואתם חוסכים תלונות ואכזבות.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם צריך לעדכן מחירים פעמיים — בקופה ובמסך?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">לא. זו כל המטרה של החיבור: מקור אמת אחד. אתם מעדכנים מחיר בקופה בלבד, והתפריט הדיגיטלי מסתנכרן אוטומטית. אפס עדכון כפול, אפס פערי מחיר.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">אפשר להוסיף הזמנה עצמית עם QR?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. אפשר להציג קוד QR על המסך שמוביל את הלקוח להזמנה עצמית מהטלפון שלו. זה מוריד עומס מהצוות בשעות עומס ומגדיל מכירות של תוספות וקינוחים.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה חיבור תפריט דיגיטלי לקופה?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">העלות תלויה במספר המסכים ובסוג החיבור לקופה. ההגדרה נעשית פעם אחת בהתקנה. Pixel by Keshet מציעה בדיקת תאימות ללא התחייבות והצעת מחיר מותאמת — חייגו *9555.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>

@@ -151,6 +151,17 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
   <script src="/analytics.js" defer></script>
+
+<style id="faq-style">
+.faq-section{margin:56px 0 0;padding:48px 0 0;border-top:1px solid rgba(255,255,255,.08)}
+.faq-section h2{font-size:1.5rem;font-weight:900;margin-bottom:28px;color:#fff}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:10px;margin-bottom:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-item summary{padding:18px 22px;font-size:.95rem;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.2rem;font-weight:300;color:rgba(255,255,255,.4);transition:transform .2s;flex-shrink:0;margin-right:12px}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 22px 18px;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7}
+</style>
 </head>
 <body>
 
@@ -275,6 +286,46 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 
 </div>
+
+<section class="faq-section" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 id="faq-heading">שאלות נפוצות</h2>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך מציגים דשבורד KPI על מסך במשרד?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">מחברים מסך LED או טלוויזיה חכמה למחשב נגן קטן שמריץ דשבורד — מ-Power BI, Tableau, Google Data Studio או ממערכת ה-CRM/ERP. הדשבורד מציג מכירות, יעדים ומדדי ביצוע בזמן אמת, מתרענן אוטומטית ומנוהל מרחוק דרך CMS. *9555</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">אילו נתונים כדאי להציג על מסך KPI?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">נתוני מכירות מול יעדים, צנרת עסקאות, מדדי שירות (זמן תגובה, NPS, קריאות פתוחות), מדדי ייצור ולוגיסטיקה, ונתוני מוקד תמיכה. מומלץ להתמקד ב-4-6 מדדים מרכזיים כדי לשמור על מסך ברור וקריא.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">למאילו מערכות אפשר לחבר את מסך הנתונים?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">אפשר לחבר למערכות CRM (Salesforce, HubSpot, Monday), כלי BI (Power BI, Tableau, Looker), מערכות ERP ומוקדי שירות. החיבור נעשה דרך API או הטמעת דשבורד קיים, כך שהנתונים על המסך תמיד תואמים למקור.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">האם הנתונים מתעדכנים בזמן אמת?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כן. הדשבורד נשלף ישירות מהמערכת ומתרענן במרווחים שמגדירים — משניות ועד דקות. כך צוות המכירות והשירות רואה את המצב העדכני לאורך כל היום, בלי דוחות ידניים.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">איך מסך KPI מגביר מוטיבציה בצוותים?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">כשהיעדים והביצועים גלויים לכולם בזמן אמת, נוצרת תחרות בריאה, שקיפות ואחריות אישית. צוותי מכירות ושירות מגיבים מיד לפערים, וחגיגת יעדים על המסך מחזקת מוטיבציה וגאוות יחידה.</p>
+    </div>
+  </details>
+  <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <summary itemprop="name">כמה עולה מסך דשבורד KPI למשרד?</summary>
+    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">העלות תלויה בגודל המסך, במספר המסכים ובמורכבות האינטגרציה. Pixel by Keshet מספקת פתרון מלא — מסך, נגן, חיבור למערכות ו-CMS — במחירים תחרותיים. להצעת מחיר מותאמת חייגו *9555.</p>
+    </div>
+  </details>
+</section>
 </main>
 
 <footer>
