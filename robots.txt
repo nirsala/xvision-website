@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
 Sitemap: https://xvision.co.il/sitemap.xml
 
@@ -19,6 +20,3 @@ Allow: /
 User-agent: Google-Extended
 Allow: /blog/
 Allow: /
-
-# Block raw data file from crawling
-Disallow: /blog/index.json
