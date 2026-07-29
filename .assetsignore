@@ -17,4 +17,11 @@ netlify.toml
 # Note: /analytics.js is front-end and IS referenced by pages — it stays served.
 seo
 *.log
+
+# Raw PPM scans in assets/products/ — 1,040 files, 1.19GB, and the reason the first
+# Workers build failed to upload the site (1.85GB total). Nothing references them:
+# 0 links from HTML/CSS/JS, 0 entries in sitemap.xml and feed.xml, and no browser
+# renders image/x-portable-pixmap, so they were never reachable content.
+# The 104 .jpg files in the same folder ARE used and stay served.
+*.ppm
 .wrangler
