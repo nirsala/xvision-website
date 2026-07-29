@@ -11,8 +11,9 @@ https://www.pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
 /catalog /products.html 301
 /about-us/ /אודות.html 301
 /about-us /אודות.html 301
-/contact/ / 301
-/contact /products.html 301
+# NOTE: /contact/ is a real 27KB page (in sitemap, linked from 3 pages) and must NOT
+# be redirected. The old rules here predate that page and were never active — GitHub
+# Pages ignores this file. Removing them keeps /contact/ serving 200 after migration.
 /custom-color-schemes/ / 301
 /custom-color-schemes / 301
 /blog/products.html /products.html 301

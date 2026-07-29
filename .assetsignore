@@ -1,0 +1,20 @@
+# Files NOT uploaded to Cloudflare — they cannot be served at any URL.
+# GitHub Pages currently serves these publicly; none are referenced by the site.
+
+# Build/tooling
+.git
+.github
+node_modules
+wrangler.jsonc
+cloudflare-worker.js
+.assetsignore
+.gitignore
+.gitattributes
+.claude
+netlify.toml
+
+# SEO automation scripts + their logs (server-side only, never part of the public site)
+# Note: /analytics.js is front-end and IS referenced by pages — it stays served.
+seo
+*.log
+.wrangler

@@ -1,0 +1,14 @@
+// Cloudflare Workers (static assets) config for xvision.co.il
+// Goal: serve the site EXACTLY like GitHub Pages does today — .html URLs stay .html (200, no redirect).
+// html_handling "none" disables Cloudflare's forced pretty-URL redirects; cloudflare-worker.js
+// fills the one gap that leaves (serving index.html for "/" and for directory paths like /about-us/).
+{
+  "name": "xvision-website",
+  "compatibility_date": "2026-07-15",
+  "main": "cloudflare-worker.js",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  }
+}
