@@ -1,6 +1,18 @@
-# Redirect pixel-keshet.co.il to xvision.co.il
-https://pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
-https://www.pixel-keshet.co.il/* https://xvision.co.il/:splat 301!
+# pixel-keshet.co.il / pixel-led.co.il -> xvision.co.il
+#
+# The two rules that used to live here used absolute source URLs. Cloudflare rejects
+# the ENTIRE _redirects file for that ("Only relative URLs are allowed", code 100324),
+# which failed every deploy. They never worked on GitHub Pages either, since it ignores
+# this file. A _redirects rule can only match paths on the site's own hostnames, so
+# cross-domain forwarding cannot be expressed here at all.
+#
+# Handle it with a Cloudflare Redirect Rule instead (Rules -> Redirect Rules):
+#   When:  http.host in {"pixel-keshet.co.il" "www.pixel-keshet.co.il"
+#                        "pixel-led.co.il" "www.pixel-led.co.il"}
+#   Then:  dynamic -> concat("https://xvision.co.il", http.request.uri.path)
+#          status 301, preserve query string
+# That also fixes the current behaviour, where those domains flatten every path to the
+# homepage - which Google treats as a soft 404.
 
 # Fix 404s from Google Search Console
 /מסכי-בריכה/ /pool.html 301
