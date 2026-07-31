@@ -15,8 +15,8 @@
 # homepage - which Google treats as a soft 404.
 
 # Fix 404s from Google Search Console
-/מסכי-בריכה/ /pool.html 301
-/מסכי-בריכה /pool.html 301
+/%D7%9E%D7%A1%D7%9B%D7%99-%D7%91%D7%A8%D7%99%D7%9B%D7%94/ /pool.html 301
+/%D7%9E%D7%A1%D7%9B%D7%99-%D7%91%D7%A8%D7%99%D7%9B%D7%94 /pool.html 301
 /services/ /products.html 301
 /services /products.html 301
 /catalog/ /products.html 301
@@ -32,37 +32,36 @@
 /blog/blog/ /blog/ 301
 /blog/blog /blog/ 301
 /blog/%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D.html /%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D.html 301
-/blog/מחירים.html /מחירים.html 301
-/תוכנה /cms.html 301
-/תוכנה/ /cms.html 301
-/שילוט-דיגיטלי-לתקשורת-פנים-ארגונית.html /תקשורת-פנים-ארגונית-על-מסכים.html 301
-/שילוט-דיגיטלי-לתקשורת-פנים-ארגונית /תקשורת-פנים-ארגונית-על-מסכים.html 301
+/%D7%AA%D7%95%D7%9B%D7%A0%D7%94 /cms.html 301
+/%D7%AA%D7%95%D7%9B%D7%A0%D7%94/ /cms.html 301
+/%D7%A9%D7%99%D7%9C%D7%95%D7%98-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-%D7%9C%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%90%D7%A8%D7%92%D7%95%D7%A0%D7%99%D7%AA.html /תקשורת-פנים-ארגונית-על-מסכים.html 301
+/%D7%A9%D7%99%D7%9C%D7%95%D7%98-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-%D7%9C%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%90%D7%A8%D7%92%D7%95%D7%A0%D7%99%D7%AA /תקשורת-פנים-ארגונית-על-מסכים.html 301
 
 # Typo URL Google crawled from an old internal link (missing ת in "אישית").
 # The link was fixed in a28b0ff; this catches the crawled 404.
 /blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99-2026-07-06.html /blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99%D7%AA-2026-07-06.html 301
 
 # ===== Blog cleanup 301s (merges + deletions) — audit =====
-/blog/בוט-וואטסאפ-עסקי-אוטומציה-מכירות-2026-07-21.html / 301
-/blog/בחירת-מערכת-ניהול-תוכן-שילוט-דיגיטלי-2026-07-21.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
-/blog/השוואת-יצרני-מסכי-led-2026-07-21.html /blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html 301
+/blog/%D7%91%D7%95%D7%98-%D7%95%D7%95%D7%90%D7%98%D7%A1%D7%90%D7%A4-%D7%A2%D7%A1%D7%A7%D7%99-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9E%D7%9B%D7%99%D7%A8%D7%95%D7%AA-2026-07-21.html / 301
+/blog/%D7%91%D7%97%D7%99%D7%A8%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%AA%D7%95%D7%9B%D7%9F-%D7%A9%D7%99%D7%9C%D7%95%D7%98-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-2026-07-21.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
+/blog/%D7%94%D7%A9%D7%95%D7%95%D7%90%D7%AA-%D7%99%D7%A6%D7%A8%D7%A0%D7%99-%D7%9E%D7%A1%D7%9B%D7%99-led-2026-07-21.html /blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html 301
 /blog/led-article-17-2026-07-21.html /מסכי-led-לחדרי-כושר.html 301
-/blog/אוטומציה-לעסקים-מדריך-2026.html / 301
+/blog/%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%9E%D7%93%D7%A8%D7%99%D7%9A-2026.html / 301
 /blog/led-article-9-2026-07-13.html /מסכי-led-ירושלים.html 301
-/blog/מערכת-ניהול-תוכן-ענן-למסכי-led-השוואה-2026-07-12.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
+/blog/%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%AA%D7%95%D7%9B%D7%9F-%D7%A2%D7%A0%D7%9F-%D7%9C%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%94%D7%A9%D7%95%D7%95%D7%90%D7%94-2026-07-12.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
 /blog/led-article-8-2026-07-12.html /מסכי-led-תל-אביב.html 301
 /blog/led-article-7-2026-07-11.html /שלטים-דיגיטליים.html 301
-/blog/מסכי-led-שקופים-2026-07-10.html /מסכי-led-שקופים.html 301
-/blog/מערכת-ניהול-תוכן-למסכים-איך-זה-עובד-.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-2026-07-10.html /מסכי-led-שקופים.html 301
+/blog/%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%AA%D7%95%D7%9B%D7%9F-%D7%9C%D7%9E%D7%A1%D7%9B%D7%99%D7%9D-%D7%90%D7%99%D7%9A-%D7%96%D7%94-%D7%A2%D7%95%D7%91%D7%93-.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
 /blog/led-article-33-2026-06-30.html /מסכי-led-נייד.html 301
 /blog/led-article-31-2026-06-28.html /מסכי-led-לקניונים.html 301
-/blog/מסכי-LED-שקופים-המדריך-המקצועי-2026-06-09.html /מסכי-led-שקופים.html 301
-/blog/מסכי-LED-לקניונים-שילוט-שמוכר-גם-כשאתם-ישנים.html /מסכי-led-לקניונים.html 301
-/blog/מסכי-לד-לעסקים-מומלץ-2026.html /blog/pillar-xvision-2026.html 301
-/blog/מסכי-לובי-חוויית-כניסה-שתרשים-כל-מבקר.html /מסך-לובי-לבניינים.html 301
-/blog/שלטי-חוצות-דיגיטליים-מומלץ-2026.html /blog/שלט-חוצות-דיגיטלי.html 301
-/blog/תחזוקת-מסכי-led-מומלץ-2026.html /blog/תחזוקת-מסכי-LED-מקצועית-המדריך-המלא-של-Pixel-by-Keshet-לאורך.html 301
-/blog/מסכי-פרסום-לעסקים-ספק-מומלץ-2026.html /שלטים-דיגיטליים.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-2026-06-09.html /מסכי-led-שקופים.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%9C%D7%A7%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A9%D7%99%D7%9C%D7%95%D7%98-%D7%A9%D7%9E%D7%95%D7%9B%D7%A8-%D7%92%D7%9D-%D7%9B%D7%A9%D7%90%D7%AA%D7%9D-%D7%99%D7%A9%D7%A0%D7%99%D7%9D.html /מסכי-led-לקניונים.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%93-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%9E%D7%95%D7%9E%D7%9C%D7%A5-2026.html /blog/pillar-xvision-2026.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%95%D7%91%D7%99-%D7%97%D7%95%D7%95%D7%99%D7%99%D7%AA-%D7%9B%D7%A0%D7%99%D7%A1%D7%94-%D7%A9%D7%AA%D7%A8%D7%A9%D7%99%D7%9D-%D7%9B%D7%9C-%D7%9E%D7%91%D7%A7%D7%A8.html /מסך-לובי-לבניינים.html 301
+/blog/%D7%A9%D7%9C%D7%98%D7%99-%D7%97%D7%95%D7%A6%D7%95%D7%AA-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99%D7%99%D7%9D-%D7%9E%D7%95%D7%9E%D7%9C%D7%A5-2026.html /blog/שלט-חוצות-דיגיטלי.html 301
+/blog/%D7%AA%D7%97%D7%96%D7%95%D7%A7%D7%AA-%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%9E%D7%95%D7%9E%D7%9C%D7%A5-2026.html /blog/תחזוקת-מסכי-LED-מקצועית-המדריך-המלא-של-Pixel-by-Keshet-לאורך.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-%D7%A4%D7%A8%D7%A1%D7%95%D7%9D-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%A1%D7%A4%D7%A7-%D7%9E%D7%95%D7%9E%D7%9C%D7%A5-2026.html /שלטים-דיגיטליים.html 301
 /blog/led-article-30-2026-05-21.html /blog/מסכי-LED-לאולמות-אירועים-השדרוג-שכל-אולם-צריך.html 301
 /blog/led-article-29-2026-05-20.html /מסכי-led-למלונות.html 301
 /blog/led-article-19-2026-05-10.html /מסכי-led-נייד.html 301
@@ -83,7 +82,7 @@
 /blog/led-article-3-2026-04-24.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
 /blog/led-article-2-2026-04-23.html /blog/מסכי-led-חוצות-outdoor-2026-07-13.html 301
 /blog/led-article-1-2026-04-22.html /מסכי-led-למסעדות.html 301
-/blog/כמה-עולה-מסך-LED-לעסק-מחיר-גדלים-ואפשרויות.html /blog/מחיר-מסך-led-לעסק.html 301
+/blog/%D7%9B%D7%9E%D7%94-%D7%A2%D7%95%D7%9C%D7%94-%D7%9E%D7%A1%D7%9A-LED-%D7%9C%D7%A2%D7%A1%D7%A7-%D7%9E%D7%97%D7%99%D7%A8-%D7%92%D7%93%D7%9C%D7%99%D7%9D-%D7%95%D7%90%D7%A4%D7%A9%D7%A8%D7%95%D7%99%D7%95%D7%AA.html /blog/מחיר-מסך-led-לעסק.html 301
 /blog/led-article-0-2026-04-21.html /blog/מסך-led-לחנות.html 301
 /blog/led-article-0-2026-04-20.html /blog/שלט-חוצות-דיגיטלי.html 301
 /blog/led-article-0-2026-04-19.html /blog/מסכי-led-לקליניקות-ומרפאות-מומלץ-2026.html 301
@@ -95,5 +94,5 @@
 /blog/led-article-27-2026-04-13.html /מסכי-led-לסופרמרקטים.html 301
 /blog/led-article-26-2026-04-12.html /blog/pixel-pitch-מדריך.html 301
 /blog/led-article-25-2026-04-11.html /blog/מסך-led-בגשם-עמידות-למים-ודירוג-ip.html 301
-/blog/השוואת-מסכי-LED-בישראל-בחרו-את-הפתרון-המושלם-לעסקכם-עם-Pixel.html /blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html 301
+/blog/%D7%94%D7%A9%D7%95%D7%95%D7%90%D7%AA-%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%91%D7%97%D7%A8%D7%95-%D7%90%D7%AA-%D7%94%D7%A4%D7%AA%D7%A8%D7%95%D7%9F-%D7%94%D7%9E%D7%95%D7%A9%D7%9C%D7%9D-%D7%9C%D7%A2%D7%A1%D7%A7%D7%9B%D7%9D-%D7%A2%D7%9D-Pixel.html /blog/מסכים-לעסקים-השוואה-מלאה-ומדריך-בחירה-2026.html 301
 /blog/led-article-21-2026-04-07.html /blog/מסך-led-לחנות.html 301
