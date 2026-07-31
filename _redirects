@@ -40,7 +40,7 @@
 
 # Typo URL Google crawled from an old internal link (missing ת in "אישית").
 # The link was fixed in a28b0ff; this catches the crawled 404.
-/blog/מסכי-led-ai-מותאם-אישי-2026-07-06.html /blog/מסכי-led-ai-מותאם-אישית-2026-07-06.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99-2026-07-06.html /blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99%D7%AA-2026-07-06.html 301
 
 # ===== Blog cleanup 301s (merges + deletions) — audit =====
 /blog/בוט-וואטסאפ-עסקי-אוטומציה-מכירות-2026-07-21.html / 301
