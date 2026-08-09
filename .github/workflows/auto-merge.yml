@@ -1,0 +1,40 @@
+name: Auto-merge content branches
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-merge-main
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      # Squash-merge so main gets one clean commit with our own authorship,
+      # then drop the work branch.
+      - name: Squash-merge into main
+        run: |
+          set -e
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          git config user.name  "nirsala"
+          git config user.email "nirsala@gmail.com"
+          git fetch origin "$BRANCH"
+          git merge --squash "origin/$BRANCH" || { echo "merge conflict — leaving branch for manual review"; exit 0; }
+          if git diff --cached --quiet; then
+            echo "nothing to merge"
+          else
+            git commit -m "content update"
+            git push origin main
+          fi
+          git push origin --delete "$BRANCH" || true
