@@ -76,9 +76,16 @@ function collect() {
     add(f, PRIORITY[f] || DEFAULT_ROOT_PRIORITY);
   }
 
-  // עמודי index של תיקיות מתפרסמים ככתובת ספרייה (blog/, en/) ולא כ-index.html,
-  // אחרת הם נושרים מהמפה למרות שהם דפים אמיתיים.
-  for (const dir of ['blog', 'en']) {
+  // עמודי index של תיקיות מתפרסמים ככתובת ספרייה (blog/, contact/) ולא כ-index.html,
+  // אחרת הם נושרים מהמפה למרות שהם דפים אמיתיים. הרשימה נגזרת מהדיסק ולא מקובעת
+  // בקוד, כדי שתיקייה חדשה לא תיפול מהמפה בשקט. shouldInclude עדיין מסנן לפי איכות.
+  const PAGE_DIR_EXCLUDE = new Set(['assets', 'seo']);
+  const pageDirs = fs.readdirSync(ROOT, { withFileTypes: true })
+    .filter(d => d.isDirectory() && !d.name.startsWith('.') && !PAGE_DIR_EXCLUDE.has(d.name))
+    .map(d => d.name)
+    .sort();
+
+  for (const dir of pageDirs) {
     const indexPath = path.join(ROOT, dir, 'index.html');
     if (fs.existsSync(indexPath) && shouldInclude(indexPath)) {
       const loc = `${BASE}/${dir}/`;
