@@ -2,8 +2,13 @@
 """Monthly GEO freshness refresh: bump dateModified + visible 'updated' date
 on AI-targeted pages so answer engines (Perplexity etc.) see fresh content."""
 import datetime
+import json
+import os
 import re
 import sys
+import urllib.parse
+
+BASE = "https://xvision.co.il"
 
 PAGES = [
     "החברה-המומלצת-למסכי-led-לעסקים.html",
@@ -18,7 +23,7 @@ today = datetime.date.today()
 iso = today.isoformat()
 hebrew = f"{today.day} ב{HEBREW_MONTHS[today.month]} {today.year}"
 
-changed = False
+refreshed = []
 for page in PAGES:
     with open(page, encoding="utf-8") as f:
         html = f.read()
@@ -27,7 +32,19 @@ for page in PAGES:
     if new != html:
         with open(page, "w", encoding="utf-8") as f:
             f.write(new)
-        changed = True
+        refreshed.append(page)
         print(f"refreshed {page} -> {iso}")
 
-sys.exit(0 if changed else 78)  # 78 = nothing to do (neutral)
+# Hand the exact set of refreshed pages to the workflow so IndexNow is pinged
+# for everything that actually changed, not a hardcoded single URL.
+if refreshed:
+    urls = [f"{BASE}/" + urllib.parse.quote(p) for p in refreshed]
+    urls.append(f"{BASE}/sitemap.xml")
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a", encoding="utf-8") as f:
+            f.write(f"urls={json.dumps(urls, ensure_ascii=False)}\n")
+    for u in urls:
+        print("will submit:", u)
+
+sys.exit(0 if refreshed else 78)  # 78 = nothing to do (neutral)
