@@ -3,3 +3,6 @@ node_modules/
 *.log
 .DS_Store
 .claude/
+
+# יומן השיפורים של סוכן ה-SEO היומי — נשמר בגיט כדי שההיסטוריה תשרוד בין ריצות
+!seo/improved.log
