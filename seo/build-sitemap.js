@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 const cfg = require('./config');
 
 const ROOT = cfg.site.dir;
@@ -17,6 +18,56 @@ const BASE = cfg.site.url;
 
 // דפים שלעולם לא נכנסים למפה
 const EXCLUDE = new Set(['404.html']);
+
+// ── lastmod: תאריך הקומיט האחרון של הקובץ, לא mtime ──────────────
+// mtime של קובץ בקלון טרי הוא תאריך ה-checkout, כך שכל ריצה ב-CI
+// סימנה את כל 166 הכתובות כאילו השתנו היום. זה אות שווא לגוגל ומחייב
+// תיקון ידני אחרי כל בנייה. תאריך הקומיט האחרון הוא הנתון האמיתי.
+// מפה אחת מ-git log לכל הקבצים; נפילה חזרה ל-mtime אם git לא זמין.
+const gitDates = (() => {
+  const map = new Map();
+  try {
+    const out = execFileSync(
+      'git',
+      // core.quotepath=false — אחרת git מחזיר נתיבים בעברית כ-escape
+      // אוקטלי ("\327\236...") והחיפוש לפי שם הקובץ האמיתי לא מוצא כלום.
+      ['-c', 'core.quotepath=false', 'log', '--name-only', '--format=%x00%cs', '--diff-filter=d'],
+      { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }
+    );
+    let date = null;
+    for (const line of out.split('\n')) {
+      if (line.startsWith('\0')) { date = line.slice(1).trim(); continue; }
+      const file = line.trim();
+      if (file && date && !map.has(file)) map.set(file, date);
+    }
+  } catch {
+    // git לא זמין (למשל בנייה מחוץ לריפו) — נשתמש ב-mtime
+  }
+
+  // קבצים שנערכו ועוד לא נכנסו לקומיט: תאריך הקומיט האחרון שלהם ישן,
+  // אבל התוכן כן השתנה היום. מסמנים אותם בתאריך של היום כדי שהמפה
+  // תהיה נכונה גם כשבונים אותה לפני ה-commit.
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const dirty = execFileSync('git',
+      ['-c', 'core.quotepath=false', 'status', '--porcelain', '--untracked-files=all'],
+      { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
+    for (const line of dirty.split('\n')) {
+      const file = line.slice(3).trim();
+      if (file && !file.includes(' -> ')) map.set(file, today);
+    }
+  } catch {
+    // אין git — נשארים עם מה שיש
+  }
+
+  return map;
+})();
+
+function lastmodFor(relPath) {
+  const fromGit = gitDates.get(relPath);
+  if (fromGit) return fromGit;
+  return fs.statSync(path.join(ROOT, relPath)).mtime.toISOString().split('T')[0];
+}
 
 // עדיפויות — כל מה שלא מופיע כאן מקבל את ברירת המחדל לפי התיקייה
 const PRIORITY = {
@@ -62,9 +113,7 @@ function collect() {
       : `${BASE}/${relPath.split('/').map(encodeURIComponent).join('/')}`;
     if (seen.has(loc)) return;
     seen.add(loc);
-    const stat = fs.statSync(path.join(ROOT, relPath));
-    const lastmod = stat.mtime.toISOString().split('T')[0];
-    urls.push({ loc, lastmod, priority });
+    urls.push({ loc, lastmod: lastmodFor(relPath), priority });
   };
 
   // דף הבית תמיד ראשון
@@ -93,7 +142,7 @@ function collect() {
         seen.add(loc);
         urls.push({
           loc,
-          lastmod: fs.statSync(indexPath).mtime.toISOString().split('T')[0],
+          lastmod: lastmodFor(`${dir}/index.html`),
           priority: '0.8',
         });
       }
