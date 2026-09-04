@@ -63,9 +63,28 @@ const gitDates = (() => {
   return map;
 })();
 
-function lastmodFor(relPath) {
+// ── רשת ביטחון אחרונה: התאריכים שכבר פורסמו במפה הקודמת ──────────
+// אם ה-git log לא זמין (קלון רדוד, בנייה מחוץ לריפו), הנפילה ל-mtime
+// מסמנת את כל הקבצים כאילו נערכו היום — בדיוק אות השווא שהבנייה הזו
+// נועדה למנוע. במקרה כזה עדיף לשמר את התאריך שכבר פורסם לגוגל.
+const publishedDates = (() => {
+  const map = new Map();
+  try {
+    const xml = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) {
+      map.set(m[1], m[2]);
+    }
+  } catch {
+    // אין מפה קודמת — בנייה ראשונה
+  }
+  return map;
+})();
+
+function lastmodFor(relPath, loc) {
   const fromGit = gitDates.get(relPath);
   if (fromGit) return fromGit;
+  const published = publishedDates.get(loc);
+  if (published) return published;
   return fs.statSync(path.join(ROOT, relPath)).mtime.toISOString().split('T')[0];
 }
 
@@ -113,7 +132,7 @@ function collect() {
       : `${BASE}/${relPath.split('/').map(encodeURIComponent).join('/')}`;
     if (seen.has(loc)) return;
     seen.add(loc);
-    urls.push({ loc, lastmod: lastmodFor(relPath), priority });
+    urls.push({ loc, lastmod: lastmodFor(relPath, loc), priority });
   };
 
   // דף הבית תמיד ראשון
@@ -142,7 +161,7 @@ function collect() {
         seen.add(loc);
         urls.push({
           loc,
-          lastmod: lastmodFor(`${dir}/index.html`),
+          lastmod: lastmodFor(`${dir}/index.html`, loc),
           priority: '0.8',
         });
       }
