@@ -31,8 +31,13 @@ const gitDates = (() => {
       'git',
       // core.quotepath=false — אחרת git מחזיר נתיבים בעברית כ-escape
       // אוקטלי ("\327\236...") והחיפוש לפי שם הקובץ האמיתי לא מוצא כלום.
-      ['-c', 'core.quotepath=false', 'log', '--name-only', '--format=%x00%cs', '--diff-filter=d'],
-      { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }
+      // --date=short-local + TZ=UTC — בלי זה תאריך הקומיט מוצג באזור הזמן
+      // של המכונה הבונה, וריצה ב-CI באזור זמן מערבי מחזירה את היום הקודם
+      // לכל קומיט שנעשה בבוקר בישראל. התוצאה: עשרות lastmod מתהפכים הלוך
+      // ושוב בין ריצות בלי ששום קובץ נגע. UTC נותן תוצאה זהה בכל מכונה.
+      ['-c', 'core.quotepath=false', 'log', '--name-only', '--format=%x00%cd',
+       '--date=short-local', '--diff-filter=d'],
+      { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, env: { ...process.env, TZ: 'UTC' } }
     );
     let date = null;
     for (const line of out.split('\n')) {
