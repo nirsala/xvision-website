@@ -27,6 +27,12 @@ p strong{color:var(--white)}
 
 .meta{font-size:.8rem;color:var(--muted);margin-bottom:36px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 
+/* TABLES */
+table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:.95rem}
+table th{background:rgba(255,255,255,.06);color:rgba(255,255,255,.6);text-align:right;font-weight:700;font-size:.85rem;padding:10px 14px;border-bottom:1px solid var(--line)}
+table td{padding:10px 14px;color:rgba(255,255,255,.8);border-bottom:1px solid rgba(255,255,255,.05);text-align:right}
+table td:first-child{color:var(--white);font-weight:700}
+
 /* CTA BOX */
 section.cta{background:var(--card);border:1px solid rgba(215,29,67,.3);border-radius:12px;padding:28px 32px;margin-top:48px}
 section.cta h2{border-bottom:none;margin:0 0 12px;padding:0;color:var(--white)}
@@ -44,4 +50,5 @@ footer p{margin-bottom:4px;color:var(--muted)}
   main{padding:32px 16px 60px}
   section.cta{padding:20px}
   h1{font-size:1.5rem}
+  table{display:block;overflow-x:auto;white-space:nowrap}
 }
