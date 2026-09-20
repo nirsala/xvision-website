@@ -1,0 +1,71 @@
+{
+  "_": "מקור האמת היחיד למספרים באתר. אושר ע\"י ניר סלה 20.9.2026. כל מספר בדף חייב לבוא מכאן או ממפרט יצרן שכבר קיים באתר.",
+  "updated": "2026-09-20",
+  "approved_by": "ניר סלה",
+  "rules": [
+    "כל מספר בא מהקובץ הזה — או ממפרט יצרן שכבר קיים באתר. אין מקור שלישי.",
+    "אין ייחוס למחקר חיצוני (Nielsen, Gallup, Microsoft, Digital Signage Federation) אלא אם צורף קישור למקור באותו יום.",
+    "אין 'תוצאות לקוח' מספריות בעמוד העבודות — אלא אם הלקוח אישר בכתב.",
+    "המילה Xibo אסורה לחלוטין. 'Xvision' הוא שם דומיין בלבד — בתוכן רק 'Pixel by Keshet' ו-'Pixel CMS'.",
+    "מספר שנמחק לא חוזר. מחליפים אותו בעובדה מכאן, או משאירים את המשפט בלי מספר."
+  ],
+  "company": {
+    "name_he": "Pixel by Keshet",
+    "founded": 2007,
+    "years_experience": 19,
+    "company_number": "513952069",
+    "ceo": "ניר סלה",
+    "address": "מודיעין 44, פתח תקווה",
+    "phone": "*9555",
+    "whatsapp": "+972559732343",
+    "warranty_years": 5,
+    "area_served": "כל הארץ"
+  },
+  "pricing": {
+    "led_from_ils": 5000,
+    "pixel_cms_starter_ils_month": 69,
+    "pixel_cms_business_ils_month": 149,
+    "pixel_cms_enterprise": "מותאם אישית",
+    "pixel_cms_trial_days": 14
+  },
+  "specs": {
+    "install_days": "1-3 ימי עסקים",
+    "pitch_meeting_room": "P2.5",
+    "pitch_lobby": "P4-P5",
+    "pitch_mall_range": "P2.5-P8",
+    "brightness_indoor_nits": "800-1500",
+    "brightness_window_nits": "2000-4000",
+    "brightness_outdoor_nits": "5000-6000",
+    "ingress_protection_outdoor": "IP65",
+    "transparent_screen_transparency": "65%-85%"
+  },
+  "banned": {
+    "numbers": [
+      349
+    ],
+    "words": [
+      "Xibo",
+      "Xvision (כשם מותג)"
+    ],
+    "claims": [
+      "סטטיסטיקה מיוחסת למחקר ללא קישור",
+      "תוצאות לקוח מספריות ללא אישור בכתב"
+    ]
+  },
+  "pending_approval": {
+    "_": "עובדות שרק ניר יכול לספק. עד שימולאו — אין לכתוב עליהן מספר בשום דף.",
+    "screens_installed_total": null,
+    "projects_completed": null,
+    "largest_project": null,
+    "active_screens_in_pixel_cms": null,
+    "max_sites_single_customer": null,
+    "service_sla_response": null,
+    "module_replacement_time": null,
+    "delivery_time_from_order": null,
+    "certifications": null,
+    "nameable_customers": null,
+    "cms_interface_languages": null,
+    "users_per_account": null,
+    "customer_names_in_llms_txt": "llms.txt מזכיר Fox, שופרסל, יונדאי ורולדין בהקשר האוטומציה — דורש אישור בכתב או הסרה"
+  }
+}
