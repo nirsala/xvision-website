@@ -1280,6 +1280,22 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 @media(max-width:900px){nav[role="navigation"]{padding:0 16px!important}nav[role="navigation"] ul{display:none!important}.nav-phone{display:none!important}}
 </style>
   <script src="/analytics.js" defer></script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEM6G123R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFEM6G123R');
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+    if (!a) return;
+    gtag('event', a.href.indexOf('wa.me') > -1 ? 'whatsapp_click' : 'phone_click', {
+      link_url: a.href,
+      page_path: location.pathname
+    });
+  }, true);
+</script>
 </head>
 <body>
 
@@ -2239,6 +2255,25 @@ window.addEventListener('scroll', () => {
 })
 
 // Contact form submit
+function leadSource() {
+  try {
+    let first = sessionStorage.getItem('pixel_first_touch')
+    if (!first) {
+      const q = new URLSearchParams(location.search)
+      const utm = ['utm_source', 'utm_medium', 'utm_campaign'].map(function (k) { return q.get(k) }).filter(Boolean).join(' / ')
+      let ref = 'ישיר'
+      if (document.referrer) {
+        try { ref = new URL(document.referrer).hostname } catch (e) { ref = document.referrer }
+      }
+      first = (utm || ref) + ' → ' + location.pathname
+      sessionStorage.setItem('pixel_first_touch', first)
+    }
+    return first + ' | טופס: ' + location.pathname
+  } catch (e) {
+    return location.pathname || '/'
+  }
+}
+
 document.getElementById('contact-form').addEventListener('submit', async function(e) {
   e.preventDefault()
   const form = this
@@ -2258,7 +2293,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   btn.disabled = true
 
   const data = new FormData(form)
-  if (!data.get('_source')) data.append('_source', location.pathname || '/')
+  if (!data.get('_source')) data.append('_source', leadSource())
 
   let ok = false
   try {

@@ -45,6 +45,22 @@
 .related-card a{font-size:.85rem;font-weight:600;color:#fff;text-decoration:none;line-height:1.4;display:block}
 .related-card a:hover{color:#ff3d63}
 </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEM6G123R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFEM6G123R');
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+    if (!a) return;
+    gtag('event', a.href.indexOf('wa.me') > -1 ? 'whatsapp_click' : 'phone_click', {
+      link_url: a.href,
+      page_path: location.pathname
+    });
+  }, true);
+</script>
 </head>
 <body>
   <header>

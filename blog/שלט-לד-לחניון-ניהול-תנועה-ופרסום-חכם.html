@@ -66,6 +66,22 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 {"@type":"Question","name":"כמה זמן לוקחת התקנת שלט LED בחניון?","acceptedAnswer":{"@type":"Answer","text":"לרוב 2–3 ימים לחניון ממוצע. העבודות מתבצעות בשעות הלילה או בסופ\"ש כדי לא לפגוע בתנועה, ואפשר גם להתקין קומה אחת בכל פעם."}},
 {"@type":"Question","name":"איך מחברים את המסך לחיישני התפוסה?","acceptedAnswer":{"@type":"Answer","text":"ברוב המקרים דרך API של מערכת ניהול החניון הקיימת. אם אין מערכת קיימת, Pixel by Keshet מספקת חיישנים אלחוטיים שמשתלבים עם מערכת ניהול התוכן."}},
 {"@type":"Question","name":"מה עלות התחזוקה השנתית של שלט LED בחניון?","acceptedAnswer":{"@type":"Answer","text":"חוזה תחזוקה שנתי נע בין ₪3,500 ל-₪7,000 לפי מספר המסכים וגודלם, וכולל ניקוי ובדיקה פעמיים בשנה והחלפת מודולים פגומים תוך 48 שעות."}}]}</script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEM6G123R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFEM6G123R');
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+    if (!a) return;
+    gtag('event', a.href.indexOf('wa.me') > -1 ? 'whatsapp_click' : 'phone_click', {
+      link_url: a.href,
+      page_path: location.pathname
+    });
+  }, true);
+</script>
 </head>
 <body>
 <nav role="navigation" aria-label="ניווט ראשי">
