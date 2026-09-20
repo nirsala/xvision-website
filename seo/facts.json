@@ -52,20 +52,40 @@
       "תוצאות לקוח מספריות ללא אישור בכתב"
     ]
   },
-  "pending_approval": {
-    "_": "עובדות שרק ניר יכול לספק. עד שימולאו — אין לכתוב עליהן מספר בשום דף.",
-    "screens_installed_total": null,
-    "projects_completed": null,
-    "largest_project": null,
-    "active_screens_in_pixel_cms": null,
-    "max_sites_single_customer": null,
-    "service_sla_response": null,
-    "module_replacement_time": null,
-    "delivery_time_from_order": null,
-    "certifications": null,
-    "nameable_customers": null,
-    "cms_interface_languages": null,
-    "users_per_account": null,
-    "customer_names_in_llms_txt": "llms.txt מזכיר Fox, שופרסל, יונדאי ורולדין בהקשר האוטומציה — דורש אישור בכתב או הסרה"
-  }
+  "scale": {
+    "_": "טענות היקף שאושרו אישית ע\"י המנכ\"ל ניר סלה ב-20.9.2026. אלה עובדות מאושרות — אין להסיר אותן כ'טענות לא מאומתות'. מעל 1,000 מסכים על פני מעל 500 פרויקטים — כשני מסכים לפרויקט בממוצע.",
+    "screens_installed_total": "מעל 1,000 מסכים מאז 2007",
+    "projects_completed": "מעל 500 פרויקטים",
+    "largest_project": "150 מ\"ר, אור יהודה",
+    "active_screens_in_pixel_cms": "מעל 500 מסכים פעילים",
+    "max_sites_single_customer": "מעל 50 סניפים/אתרים אצל לקוח אחד"
+  },
+  "service": {
+    "sla_response_hours": 48,
+    "module_replacement_hours": 48,
+    "delivery_to_install_days": "1-3 ימים",
+    "area_served": "כל הארץ",
+    "certification": "תו תקן ישראלי"
+  },
+  "pixel_cms": {
+    "interface_languages": [
+      "עברית",
+      "אנגלית",
+      "רוסית",
+      "ערבית"
+    ],
+    "users_per_account": "ללא הגבלה"
+  },
+  "nameable_customers": [
+    "כלמוביל",
+    "מיננה",
+    "מיצובישי",
+    "יונדאי",
+    "אוניברסיטת תל אביב",
+    "Fox",
+    "שופרסל",
+    "רולדין",
+    "עיריות",
+    "מכללות"
+  ]
 }
