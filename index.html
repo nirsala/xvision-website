@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>מסכי לד לעסקים ושילוט דיגיטלי — מ-₪5,000 | Pixel</title>
+<title>מסכי לד לעסקים ושילוט דיגיטלי | Pixel by Keshet</title>
 <meta name="description" content="מסכי לד ושילוט דיגיטלי לעסקים מ-₪5,000: חנויות, מסעדות, קניונים ומשרדים. אחריות 5 שנים, התקנה ב-1–3 ימים וניהול תוכן בענן. הצעת מחיר תוך 24 שעות *9555"/>
 <meta name="keywords" content="מסכי לד, מסך לד לעסקים, מסך לד לפרסום, שילוט דיגיטלי, שלטי חוצות, שלטי חוצות דיגיטליים, מסכי פרסום, שלטים דיגיטליים, שלטי לד, שלטי לד לעסקים, שלט לעסק, שילוט לעסקים, מסכי לד לחנויות, מסכי לד גדולים, שלטים מוארים, שלט דיגיטלי"/>
 <!-- Open Graph -->
@@ -2241,29 +2241,53 @@ window.addEventListener('scroll', () => {
 // Contact form submit
 document.getElementById('contact-form').addEventListener('submit', async function(e) {
   e.preventDefault()
+  const form = this
   const btn = document.getElementById('form-submit-btn')
+
+  let errBox = document.getElementById('form-error')
+  if (!errBox) {
+    errBox = document.createElement('div')
+    errBox.id = 'form-error'
+    errBox.setAttribute('role', 'alert')
+    errBox.style.cssText = 'display:none;margin-top:12px;padding:12px 14px;border-radius:8px;background:#fdecea;color:#8a1c12;font-size:15px;line-height:1.6;text-align:right'
+    btn.parentNode.insertBefore(errBox, btn.nextSibling)
+  }
+  errBox.style.display = 'none'
+
   btn.textContent = 'שולח...'
   btn.disabled = true
 
-  const data = new FormData(this)
+  const data = new FormData(form)
+  if (!data.get('_source')) data.append('_source', location.pathname || '/')
+
+  let ok = false
   try {
-    await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', {
+    const res = await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: data
     })
-  } catch(err) {}
+    if (res.ok) {
+      const json = await res.json().catch(function () { return null })
+      ok = !json || json.success === undefined || json.success === true || json.success === 'true'
+    }
+  } catch (err) {
+    ok = false
+  }
 
-  // Show modal
-  const modal = document.getElementById('success-modal')
-  modal.style.display = 'flex'
-
-  // Reset form
-  this.reset()
   btn.textContent = 'שלח פנייה ←'
   btn.disabled = false
 
-  // Close on backdrop click
+  if (!ok) {
+    errBox.innerHTML = 'השליחה נכשלה והפנייה לא הגיעה אלינו. אפשר לפנות ישירות: <a href="https://wa.me/972559732343" style="color:#8a1c12;font-weight:700">וואטסאפ 055-973-2343</a> או <a href="tel:*9555" style="color:#8a1c12;font-weight:700">*9555</a>. הפרטים שמילאת נשמרו בטופס.'
+    errBox.style.display = 'block'
+    errBox.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    return
+  }
+
+  const modal = document.getElementById('success-modal')
+  modal.style.display = 'flex'
+  form.reset()
   modal.addEventListener('click', function(ev) {
     if(ev.target === modal) modal.style.display = 'none'
   }, {once: true})
