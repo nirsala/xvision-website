@@ -100,6 +100,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "מה זה לוח מודעות דיגיטלי?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "מסך שמוצב בלובי או במקום מרכזי בבניין ומציג הודעות ועדכונים לדיירים בצורה דיגיטלית. במקום מודעות נייר — כל התוכן מתעדכן מרחוק דרך מערכת ניהול פשוטה: הודעות, תמונות, תזכורות ותכנים נוספים באופן מיידי."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "האם צריך ידע טכני לניהול המסך?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -108,10 +116,18 @@
     },
     {
       "@type": "Question",
+      "name": "האם אפשר לשלוט בתכנים מרחוק?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "בהחלט. ניתן לנהל את כל התכנים, המוזיקה וההתראות מכל מחשב או טלפון נייד, מכל מקום."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "כמה זמן לוקחת ההתקנה?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ההתקנה הפיזית לוקחת בין שעה לשעתיים. הגדרת מערכת Pixel Lobby CMS לוקחת פחות מ-30 דקות."
+        "text": "אספקה והתקנה תוך 1–3 ימי עסקים, בכל הארץ. ההתקנה הפיזית בלובי מסתיימת באותו ביקור, והגדרת מערכת Pixel Lobby מתבצעת מיד לאחריה — כך שהמסך פעיל ומציג תוכן כבר באותו יום."
       }
     },
     {
@@ -135,7 +151,31 @@
       "name": "כמה עולה מסך לובי לבניין?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "המחיר תלוי בגודל המסך ובסוג ההתקנה. צרו קשר בטלפון 055-973-2343 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות."
+        "text": "המחיר תלוי בגודל המסך ובסוג ההתקנה. מסך לובי מותקן מתחיל ב-3,000 ₪, ומסך LED בגודל 2×1 מ׳ עולה 6,000–8,000 ₪ כולל התקנה. צרו קשר ב-*9555 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות — נתאים פתרון לגודל הבניין ולתקציב הוועד."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מה מציגים על מסך לובי בבניין?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "הודעות לדיירים, לוח אסיפות ועד בית, חדשות, מזג אוויר, ברכות לחגים ואירועים, הנחיות בטיחות ומידע שחוזר על עצמו — שעות אב הבית, טלפונים חשובים וכללי הבניין. מערכת Pixel Lobby מגיעה עם ספריית תבניות מוכנות, כך שלא צריך לעצב כלום."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "מסך אנכי או אופקי — מה מתאים ללובי שלנו?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "בלובי צר מסך אנכי מנצל את הקיר טוב יותר ונראה כמו לוח מודעות דיגיטלי. בלובי פתוח מסך אופקי מציג תמונות, סרטונים ופס חדשות בנוחות רבה יותר. המערכת תומכת בשני הכיוונים, כך שההחלטה נקבעת לפי הקיר."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "האם אפשר להשתמש בטלוויזיה ביתית במקום מסך מסחרי?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "לא מומלץ. טלוויזיה ביתית עמומה מדי ללובי מואר, לא בנויה לעבודה רציפה מהבוקר עד הלילה, ואחריות היצרן שלה נשללת בשימוש מסחרי. מסך מסחרי מגיע עם בהירות של 800–1,500 ניט, תו תקן ישראלי ואחריות 5 שנים."
       }
     }
   ]
@@ -592,6 +632,19 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 .rel-card:hover .rel-t{color:var(--blueDeep)}
 .rel-d{font-size:1rem;color:var(--ink2);line-height:1.5}
 @media(max-width:700px){section[aria-label="ראו גם — מדריכים נוספים"] div[style*=grid]{grid-template-columns:1fr!important}}
+/* guide — מדריך בחירה */
+.guide{text-align:right;max-width:820px;margin:32px auto 0}
+.guide h3{font-size:1.35rem;font-weight:800;color:var(--ink);margin:30px 0 10px}
+.guide p{font-size:1.1rem;color:var(--ink2);line-height:1.7;margin-bottom:14px}
+.guide ul{list-style:none;margin:0 0 18px}
+.guide li{font-size:1.08rem;color:var(--ink2);line-height:1.65;padding:6px 0;display:flex;gap:12px;align-items:flex-start}
+.guide li .ok{width:26px;height:26px;flex-shrink:0;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;margin-top:3px}
+.guide .tbl{overflow-x:auto;background:#fff;border-radius:20px;box-shadow:var(--shadow);margin:18px 0 24px}
+.guide table{width:100%;border-collapse:collapse;font-size:1rem}
+.guide th{background:var(--blue);color:#fff;padding:12px 16px;text-align:right;font-weight:800}
+.guide td{padding:11px 16px;border-bottom:1px solid rgba(0,0,0,.06);color:var(--ink2)}
+.guide tr:last-child td{border-bottom:none}
+.guide .story-box{background:#fff;border-radius:20px;box-shadow:var(--shadow);border-right:5px solid var(--blue);padding:22px 24px;margin:18px 0}
 </style>
   <script src="/analytics.js" defer></script>
 <!-- Google Analytics 4 -->
@@ -924,6 +977,60 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
   </div>
 </section>
 
+<!-- GUIDE (merged from blog twin) -->
+<section aria-label="מדריך בחירה — מסך לובי לבניין">
+  <div class="faqsec wow fadeInUp" style="margin-top:40px">
+    <h2 class="dl">לפני שמתקינים: <span class="hl">מה שואלים ומה עובד בפועל</span></h2>
+    <p class="sec-sub">מסך לובי הוא לא "שדרוג טכנולוגי" אלא פתרון לבעיה תקשורתית ספציפית. כדאי להבין מה הבעיה לפני שבוחרים מסך.</p>
+    <div class="guide">
+
+      <h3>מקרה מהשטח: ועד בית שנמאס לו מהטלפונים</h3>
+      <div class="story-box">
+        <p>ועד בית של בניין גדול במרכז הארץ הגיע אלינו עם בעיה פשוטה: חבר הוועד קיבל שיחות טלפון לאורך כל היום מדיירים ששאלו דברים שכבר פורסמו — מתי אסיפת הדיירים, למה המים נסגרו, מי האינסטלטור שמגיע מחר. אחרי שהותקן מסך בלובי, השיחות פחתו במידה ניכרת: הדייר עובר ליד המסך בדרך למעלית ורואה את התשובה לפני שהוא שואל. המסך לא פתר הכול, אבל הוריד מהוועד את רוב העומס של "כבר פרסמנו את זה".</p>
+      </div>
+
+      <h3>מה מסך לובי יכול לעשות — ומה לא</h3>
+      <p>מסך לובי בבניין טוב ל:</p>
+      <ul>
+        <li><span class="ok">✓</span> הודעות לדיירים שלא דורשות תגובה מיידית — עבודות מחר, ניקיון המרתף, מועד פינוי גזם</li>
+        <li><span class="ok">✓</span> לוח שנה: אסיפות, חגים, בדיקות תקופתיות של מעלית ומערכות כיבוי אש</li>
+        <li><span class="ok">✓</span> מידע שחוזר על עצמו — שעות אב הבית, מספרי טלפון חשובים, כללי הבניין</li>
+        <li><span class="ok">✓</span> תוכן ניטרלי שיוצר אווירה — שעון, מזג אוויר, חדשות ומוזיקת רקע</li>
+      </ul>
+      <p>מסך לובי פחות מתאים להודעות דחופות שדורשות פעולה מיידית או לתקשורת שמצריכה אישור קריאה — דיירים לא תמיד עוברים בלובי באותה שעה. לזה נשארת קבוצת הוואטסאפ; המסך מוריד ממנה את הרעש.</p>
+
+      <h3>מפרט טכני: מה חשוב בפועל</h3>
+      <p><strong>גודל.</strong> את הגודל קובעים לפי הקיר ולפי המרחק שממנו הדיירים רואים את המסך: לובי שבו עוברים בצד המסך מסתפק במסך קטן יותר, ואילו לובי מרווח עם פינת ישיבה מצדיק מסך גדול שנותן נוכחות. כשהלובי צר, מסך אנכי ליד המעליות מנצל את הקיר טוב יותר.</p>
+      <p><strong>בהירות.</strong> מסך לובי פנימי צריך 800–1,500 ניט; לובי עם חזית זכוכית שמציפה אור אחר הצהריים דורש את הקצה העליון של הטווח. טלוויזיה ביתית חלשה מזה בהרבה ונראית עמומה בלובי מואר — זו אחת הסיבות המרכזיות לבחור מסך מסחרי ולא טלוויזיה.</p>
+      <p><strong>שעות פעולה.</strong> מסך בלובי עובד מהבוקר עד הלילה, שבעה ימים בשבוע. מסך ביתי לא מתוכנן לעומס כזה ואחריות היצרן שלו נשללת בשימוש מסחרי. מסך מסחרי עולה יותר, אבל נושא תו תקן ישראלי ובנוי לעומס הזה. אספקה והתקנה תוך 1–3 ימי עסקים, בכל הארץ, עם אחריות 5 שנים.</p>
+
+      <h3>כמה עולה מסך LED ללובי — לפי גודל</h3>
+      <div class="tbl">
+        <table>
+          <thead>
+            <tr><th>גודל מסך</th><th>מחיר מותקן (P2.5)</th><th>מתאים ל</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1×1 מ׳</td><td>3,000–5,000 ₪</td><td>לובי צר, ליד המעליות</td></tr>
+            <tr><td>2×1 מ׳</td><td>6,000–8,000 ₪</td><td>לובי טיפוסי בבניין מגורים</td></tr>
+            <tr><td>3×2 מ׳</td><td>18,000–24,000 ₪</td><td>לובי נציגותי, מגדל מגורים או בניין משרדים</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>המחיר כולל התקנה ונגן מדיה. שימו לב לשאלת מערכת ניהול התוכן: ספקים אחרים גובים לעיתים מנוי חודשי נפרד שלא מופיע בהצעה הראשונה — בקשו לדעת מראש מה עלות הניהול השוטף. אצלנו מתחילים עם 14 יום חינם.</p>
+
+      <h3>מה מציגים? תוכן שמחזיק לאורך זמן</h3>
+      <p>הוועד הממוצע מתחיל בהתלהבות ואז מאבד קיטור. שלושה פורמטים שעובדים גם אחרי החודש הראשון:</p>
+      <ul>
+        <li><span class="ok">1</span> <span><strong>הודעה קבועה ותכנים מתחלפים:</strong> שעון ומזג אוויר רצים כל הזמן, והודעות הוועד מתחלפות ביניהן אוטומטית. לא דורש תחזוקה יומית.</span></li>
+        <li><span class="ok">2</span> <span><strong>תבנית שבועית:</strong> בתחילת השבוע מפרסמים "לוח שבוע" אחד, והמערכת מציגה אותו עד השבוע הבא.</span></li>
+        <li><span class="ok">3</span> <span><strong>הודעה חד-פעמית לאירוע:</strong> "מחר עבודות ריצוף בחדר המדרגות". עולה מהנייד בדקות ונמחקת אוטומטית בשעה שקבעתם.</span></li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
 <!-- RELATED CLUSTER -->
 <section aria-label="ראו גם — מדריכים נוספים">
   <div class="faqsec wow fadeInUp" style="margin-top:40px">
@@ -948,11 +1055,15 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
     <p class="sec-sub">כל מה שרציתם לדעת על מסך לובי לבניין</p>
     <div class="faq-list" role="list">
       <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">מה זה לוח מודעות דיגיטלי? <span class="faq-arrow">▼</span></button><div class="faq-a">מסך שמוצב בלובי או במקום מרכזי בבניין ומציג הודעות ועדכונים לדיירים בצורה דיגיטלית. במקום מודעות נייר — כל התוכן מתעדכן מרחוק דרך מערכת ניהול פשוטה: הודעות, תמונות, תזכורות ותכנים נוספים באופן מיידי.</div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם צריך ידע טכני לניהול המסך? <span class="faq-arrow">▼</span></button><div class="faq-a">ממש לא. הממשק בעברית מלאה ופשוט לשימוש כמו WhatsApp. כל ועד בית יכול לנהל את מסך הלובי עצמאית, ללא הכשרה טכנית.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם צריך ידע טכני לניהול המסך? <span class="faq-arrow">▼</span></button><div class="faq-a">ממש לא. הממשק בעברית מלאה ופשוט לשימוש כמו WhatsApp. כל ועד בית יכול לנהל עצמאית ללא הכשרה טכנית.</div></div>
       <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם אפשר לשלוט בתכנים מרחוק? <span class="faq-arrow">▼</span></button><div class="faq-a">בהחלט. ניתן לנהל את כל התכנים, המוזיקה וההתראות מכל מחשב או טלפון נייד, מכל מקום.</div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם המסך עובד ללא אינטרנט? <span class="faq-arrow">▼</span></button><div class="faq-a">כן. המוזיקה, התמונות והסרטונים שמורים מקומית על המסך ועובדים ללא חיבור. רק עדכוני חדשות והודעות חדשות מצריכים חיבור רשת.</div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">מה קורה בשבת וחגים? <span class="faq-arrow">▼</span></button><div class="faq-a">מערכת Pixel Lobby כוללת לוח שנה עברי מובנה ומציגה תאריכים, חגים ומועדים אוטומטית — ללא שום הגדרה ידנית.</div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">כמה עולה מסך לובי לבניין? <span class="faq-arrow">▼</span></button><div class="faq-a">המחיר תלוי בגודל המסך ובסוג ההתקנה. צרו קשר ב-*9555 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות — נתאים פתרון לגודל הבניין ולתקציב הוועד.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">כמה זמן לוקחת ההתקנה? <span class="faq-arrow">▼</span></button><div class="faq-a">אספקה והתקנה תוך 1–3 ימי עסקים, בכל הארץ. ההתקנה הפיזית בלובי מסתיימת באותו ביקור, והגדרת מערכת Pixel Lobby מתבצעת מיד לאחריה — כך שהמסך פעיל ומציג תוכן כבר באותו יום.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם המסך עובד ללא אינטרנט? <span class="faq-arrow">▼</span></button><div class="faq-a">כן. המוזיקה, התמונות והסרטונים שמורים מקומית ועובדים ללא חיבור. רק עדכוני חדשות חיות דורשים חיבור רשת.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">מה קורה בשבת וחגים? <span class="faq-arrow">▼</span></button><div class="faq-a">מערכת Pixel Lobby כוללת לוח שנה עברי מובנה ומציגה תאריכים, חגים ומועדים אוטומטית ללא הגדרה ידנית.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">כמה עולה מסך לובי לבניין? <span class="faq-arrow">▼</span></button><div class="faq-a">המחיר תלוי בגודל המסך ובסוג ההתקנה. מסך לובי מותקן מתחיל ב-3,000 ₪, ומסך LED בגודל 2×1 מ׳ עולה 6,000–8,000 ₪ כולל התקנה. צרו קשר ב-*9555 לקבלת הצעת מחיר מותאמת אישית ללא התחייבות — נתאים פתרון לגודל הבניין ולתקציב הוועד.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">מה מציגים על מסך לובי בבניין? <span class="faq-arrow">▼</span></button><div class="faq-a">הודעות לדיירים, לוח אסיפות ועד בית, חדשות, מזג אוויר, ברכות לחגים ואירועים, הנחיות בטיחות ומידע שחוזר על עצמו — שעות אב הבית, טלפונים חשובים וכללי הבניין. מערכת Pixel Lobby מגיעה עם ספריית תבניות מוכנות, כך שלא צריך לעצב כלום.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">מסך אנכי או אופקי — מה מתאים ללובי שלנו? <span class="faq-arrow">▼</span></button><div class="faq-a">בלובי צר מסך אנכי מנצל את הקיר טוב יותר ונראה כמו לוח מודעות דיגיטלי. בלובי פתוח מסך אופקי מציג תמונות, סרטונים ופס חדשות בנוחות רבה יותר. המערכת תומכת בשני הכיוונים, כך שההחלטה נקבעת לפי הקיר.</div></div>
+      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">האם אפשר להשתמש בטלוויזיה ביתית במקום מסך מסחרי? <span class="faq-arrow">▼</span></button><div class="faq-a">לא מומלץ. טלוויזיה ביתית עמומה מדי ללובי מואר, לא בנויה לעבודה רציפה מהבוקר עד הלילה, ואחריות היצרן שלה נשללת בשימוש מסחרי. מסך מסחרי מגיע עם בהירות של 800–1,500 ניט, תו תקן ישראלי ואחריות 5 שנים.</div></div>
     </div>
   </div>
 </section>

@@ -145,6 +145,23 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
 .btn-primary:hover{box-shadow:0 0 24px rgba(215,29,67,.4)}
 .btn-ghost{border:1px solid rgba(215,29,67,.4);color:var(--white)}
 
+/* CLIENTS */
+.clients-section{background:var(--bg2);border-bottom:1px solid var(--line);padding:56px 56px 48px}
+.clients-inner{max-width:1100px;margin:0 auto;text-align:center}
+.clients-section h2{font-size:1.6rem;font-weight:900;margin-bottom:12px}
+.clients-intro{font-size:1rem;color:rgba(255,255,255,.75);max-width:760px;margin:0 auto 36px;line-height:1.8}
+.clients-wall{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:20px 40px;margin:0 auto 32px}
+.client-logo{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:60px;padding:0 12px}
+.client-logo img{height:48px;width:auto;max-width:160px;object-fit:contain;filter:grayscale(100%) brightness(1.8) opacity(.45);transition:filter .5s ease,transform .25s;display:block}
+.client-logo:hover img{filter:grayscale(0%) brightness(1) opacity(1);transform:scale(1.06)}
+.clients-roster{font-size:14px;line-height:1.9;color:var(--muted);max-width:920px;margin:0 auto 36px}
+.clients-sectors{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:920px;margin:0 auto;text-align:right}
+.clients-sectors h3{font-size:.95rem;font-weight:900;margin-bottom:8px}
+.sector-block{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:16px 18px}
+.sector-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px}
+.sector-names{font-size:.95rem;color:rgba(255,255,255,.8);line-height:1.7}
+@media(max-width:768px){.clients-section{padding:40px 18px 36px}.clients-wall{gap:12px 20px}.client-logo img{height:36px}}
+
 /* CONTENT */
 .content{max-width:1100px;margin:0 auto;padding:64px 56px}
 .content > h2{font-size:1.6rem;font-weight:900;margin:56px 0 28px;border-right:4px solid var(--red);padding-right:14px}
@@ -244,7 +261,7 @@ footer a{color:var(--red)}
 </div>
 
 <section class="hero">
-  <div class="hero-tag">● 100+ פרויקטים מוצלחים</div>
+  <div class="hero-tag">● מעל 500 פרויקטים מאז 2007</div>
   <h1>פרויקטים של מסכי LED —<br/><em>Pixel by Keshet</em></h1>
   <p>מהרשת הקמעונאית הגדולה ועד לעסק השכונתי — ראו איך פתרונות מסכי LED של Pixel by Keshet שינו עסקים ומוסדות ברחבי ישראל.</p>
   <div class="hero-ctas">
@@ -254,6 +271,50 @@ footer a{color:var(--red)}
 </section>
 
 <main>
+
+<section id="clients" class="clients-section" aria-label="הלקוחות שלנו">
+  <div class="clients-inner">
+    <h2>הלקוחות שלנו</h2>
+    <p class="clients-intro">מעל 1,000 מסכים הותקנו על ידינו מאז 2007, בפרויקטים שמגיעים עד 150 מ"ר. מעל 500 פרויקטים — רשתות קמעונאות, יבואני רכב, עיריות, אוניברסיטאות ומכללות — כולם עם אחריות 5 שנים ושירות בכל הארץ.</p>
+    <div class="clients-wall">
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_colmobil.webp" type="image/webp"/><img src="assets/images/clients/c_colmobil.png"   alt="כלמוביל — לקוח Pixel by Keshet"            width="160" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_mitsubishi.webp" type="image/webp"/><img src="assets/images/clients/c_mitsubishi.png" alt="מיצובישי — לקוח Pixel by Keshet"           width="160" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_hyundai.webp" type="image/webp"/><img src="assets/images/clients/c_hyundai.png"    alt="יונדאי — לקוח Pixel by Keshet"             width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_jaecoo.webp" type="image/webp"/><img src="assets/images/clients/c_jaecoo.png"     alt="JAECOO — לקוח Pixel by Keshet"             width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_fox.webp" type="image/webp"/><img src="assets/images/clients/c_fox.png"        alt="פוקס — לקוח Pixel by Keshet"                width="120" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_shufersal.webp" type="image/webp"/><img src="assets/images/clients/c_shufersal.png"  alt="שופרסל — לקוח Pixel by Keshet"             width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_roladin.webp" type="image/webp"/><img src="assets/images/clients/c_roladin.png"    alt="רולדין — לקוח Pixel by Keshet"             width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><img src="assets/images/clients/minena.png"       alt="מיננה — לקוח Pixel by Keshet"              width="160" height="48" loading="lazy"/></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_japonica.webp" type="image/webp"/><img src="assets/images/clients/c_japonica.png"   alt="ג'פניקה — לקוח Pixel by Keshet"            width="160" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><img src="assets/images/clients/c_afula.jpg"      alt="גרעיני עפולה — לקוח Pixel by Keshet"       width="120" height="48" loading="lazy"/></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_doralon.webp" type="image/webp"/><img src="assets/images/clients/c_doralon.png"    alt="דור אלון — לקוח Pixel by Keshet"           width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_arcosteel.webp" type="image/webp"/><img src="assets/images/clients/c_arcosteel.png"  alt="ארקוסטיל — לקוח Pixel by Keshet"           width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_meuhedet.webp" type="image/webp"/><img src="assets/images/clients/c_meuhedet.png"   alt="קופת חולים מאוחדת — לקוח Pixel by Keshet" width="160" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_hachshara.webp" type="image/webp"/><img src="assets/images/clients/c_hachshara.png"  alt="הכשרה ביטוח — לקוח Pixel by Keshet"        width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_rafael.webp" type="image/webp"/><img src="assets/images/clients/c_rafael.png"     alt="רפאל — לקוח Pixel by Keshet"               width="120" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_hit.webp" type="image/webp"/><img src="assets/images/clients/c_hit.png"        alt="HIT מכון טכנולוגי חולון — לקוח Pixel by Keshet"                width="120" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_ptikva.webp" type="image/webp"/><img src="assets/images/clients/c_ptikva.png"     alt="עיריית פתח תקווה — לקוח Pixel by Keshet"   width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_oryehuda.webp" type="image/webp"/><img src="assets/images/clients/c_oryehuda.png"   alt="עיריית אור יהודה — לקוח Pixel by Keshet"   width="140" height="48" loading="lazy"/></picture></div>
+      <div class="client-logo"><picture><source srcset="assets/images/clients/c_kashet.webp" type="image/webp"/><img src="assets/images/clients/c_kashet.png"     alt="קשת שלטים — לקוח Pixel by Keshet"          width="140" height="48" loading="lazy"/></picture></div>
+    </div>
+    <p class="clients-roster">בין לקוחותינו: כלמוביל, מיצובישי, יונדאי, פוקס, שופרסל, רולדין, מיננה, אוניברסיטת תל אביב, ג'פניקה, מאוחדת, HIT מכון טכנולוגי חולון, רפאל, דור אלון, הכשרה חברה לביטוח, עיריית פתח תקווה, עיריית אור יהודה, ארקוסטיל ועוד.</p>
+    <div class="clients-sectors" aria-label="לקוחות לפי תחום">
+      <div class="sector-block">
+        <div class="sector-label">רכב</div>
+        <div class="sector-names">כלמוביל, מיצובישי, יונדאי</div>
+      </div>
+      <div class="sector-block">
+        <div class="sector-label">קמעונאות</div>
+        <div class="sector-names">Fox, שופרסל, רולדין, מיננה</div>
+      </div>
+      <div class="sector-block">
+        <div class="sector-label">ציבורי ואקדמיה</div>
+        <div class="sector-names">אוניברסיטת תל אביב, עיריות, מכללות</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="content">
 
   <h2>פרויקטים נבחרים</h2>
@@ -557,11 +618,6 @@ footer a{color:var(--red)}
     </article>
 
   </div>
-
-  <section class="clients-roster" aria-label="לקוחות">
-    <h2>בין לקוחותינו</h2>
-    <p style="color:var(--muted);font-size:15px;line-height:1.9;max-width:760px">בין לקוחותינו: פוקס, רולדין, מיצובישי, יונדאי, שופרסל, מאוחדת, HIT מכון טכנולוגי חולון, כלמוביל, ג'פניקה, רפאל, דור אלון, הכשרה חברה לביטוח, עיריית פתח תקווה, עיריית אור יהודה, ארקוסטיל ועוד.</p>
-  </section>
 
   <h2>מה חוזר בכל פרויקט — ומה משתנה</h2>
   <p style="color:var(--muted);font-size:15px;line-height:1.9;max-width:760px">שמונה הפרויקטים למעלה נראים שונים לגמרי, אבל נקודת ההחלטה בכולם זהה: מרחק הצפייה קובע את הפיקסל פיץ', והאור במקום קובע את הבהירות. מסך בחדר ועידות שרואים ממטרים בודדים מקבל P1.5–P2; ויטרינה או לובי מקבלים P2–P3; מסך חוצות שנצפה מעשרות מטרים מסתפק ב-P6–P8 ולכן עולה פחות למ"ר. מסך חיצוני מחייב בנוסף אטימות IP65 ובהירות של 5,000–6,000 ניט כדי להישאר קריא מול השמש — ההבדל בין מסך פנימי לחיצוני הוא לא רק מחיר, הוא מפרט אחר לגמרי. על כל המסכים אחריות 5 שנים.</p>
