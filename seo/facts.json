@@ -26,7 +26,12 @@
     "pixel_cms_starter_ils_month": 69,
     "pixel_cms_business_ils_month": 149,
     "pixel_cms_enterprise": "מותאם אישית",
-    "pixel_cms_trial_days": 14
+    "pixel_cms_trial_days": 14,
+    "led_high_ils_schema": {
+      "_": "highPrice לסכמת AggregateOffer (GSC דרש 23.9.2026)",
+      "site_wide": 84000,
+      "single_page_note": "דפי ורטיקל עם טבלת 1x1-3x2 → 24000; דף הבית/שלט חוץ/כלל האתר → 84000 (6x4 מ׳ מ-price_by_size)"
+    }
   },
   "specs": {
     "install_days": "1-3 ימי עסקים",
