@@ -2452,7 +2452,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   btn.disabled = true
 
   const data = new FormData(form)
-  if (!data.get('_source')) data.append('_source', leadSource())
+  if (!data.get('מקור_הפנייה')) data.append('מקור_הפנייה', leadSource())
 
   let ok = false
   try {
