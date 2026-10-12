@@ -1994,7 +1994,9 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
             <label class="form-label">פרטי הפרויקט</label>
             <textarea class="form-textarea" name="פרטי הפרויקט" placeholder="תארו את הצורך — סוג המסך, מיקום, גודל משוער..."></textarea>
           </div>
+          <label class="form-optin" style="display:flex;gap:10px;align-items:flex-start;margin:4px 0 14px;font-size:14px;line-height:1.6;cursor:pointer"><input type="checkbox" name="הסכמה_לדיוור" value="כן" style="width:20px;height:20px;flex:0 0 auto;margin-top:2px"/><span>אשמח לקבל עדכונים ומבצעים במייל/SMS/WhatsApp. אפשר להסיר בכל עת</span></label>
           <button type="submit" class="form-submit" id="form-submit-btn">שלח פנייה ←</button>
+          <p class="form-privacy-note" style="margin-top:12px;font-size:13px;line-height:1.6;opacity:.8">הפרטים ישמשו לחזרה אליך בנוגע לפנייה. הם נשלחים אלינו דרך שירות טפסים חיצוני. <a href="/מדיניות-פרטיות.html">מדיניות פרטיות</a></p>
         </form>
       </div>
     </div>
@@ -2200,7 +2202,7 @@ nav[role="navigation"] .nav-right{display:flex!important;align-items:center!impo
       <div class="footer-copy">© 2026 Pixel by Keshet. כל הזכויות שמורות.</div>
       <div class="footer-links">
         <a href="/terms-and-conditions/">תנאי שימוש</a>
-        <a href="accessibility.html#privacy">פרטיות</a>
+        <a href="/מדיניות-פרטיות.html">פרטיות</a>
         <a href="accessibility.html">נגישות</a>
       </div>
     </div>
@@ -2317,6 +2319,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   const data = new FormData(form)
   if (!data.get('מקור_הפנייה')) data.append('מקור_הפנייה', leadSource())
+  data.set('הסכמה_לדיוור', data.get('הסכמה_לדיוור') ? 'כן' : 'לא')
 
   let ok = false
   try {
