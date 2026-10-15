@@ -67,6 +67,42 @@
     }, true);
   }
 
+  // הודעה מוכנה בכפתורי וואטסאפ (החלטת ניר 13.10.2026): מזהה כלי AI לפי utm_source
+  // או referrer בדף הנחיתה בלבד. בלי עוגיות ובלי שמירת מידע.
+  var AI_SOURCES = [
+    [/chatgpt\.com|chat\.openai\.com/i, 'ChatGPT'],
+    [/perplexity\.ai/i, 'Perplexity'],
+    [/copilot\.microsoft\.com|bing\.com\/chat/i, 'Copilot'],
+    [/gemini\.google\.com/i, 'Gemini']
+  ];
+  function aiSource() {
+    var utm = '';
+    try { utm = new URLSearchParams(location.search).get('utm_source') || ''; } catch (e) { /* דפדפן ישן */ }
+    var hay = utm + ' ' + (document.referrer || '');
+    for (var i = 0; i < AI_SOURCES.length; i++) {
+      if (AI_SOURCES[i][0].test(hay)) return AI_SOURCES[i][1];
+    }
+    return null;
+  }
+  function pageName() {
+    var t = (document.title || '').split('|')[0].trim();
+    return t || location.pathname;
+  }
+  function prefillWhatsApp() {
+    var links = document.querySelectorAll('a[href*="wa.me/"]');
+    if (!links.length) return;
+    var ai = aiSource();
+    var origin = ai ? 'דרך ' + ai
+      : (/^dds\./i.test(location.hostname) ? 'מ-Pixel CMS' : 'מהאתר');
+    var msg = 'היי, הגעתי ' + origin + ' (' + pageName() + ')';
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      // כפתור עם נוסח ייעודי (למשל "מעוניין במסך לובי") נשאר כמו שהוא — אלא אם המבקר הגיע מכלי AI
+      if (!ai && /[?&]text=/.test(a.href)) continue;
+      a.href = a.href.split('?')[0] + '?text=' + encodeURIComponent(msg);
+    }
+  }
+
   // 2) באנר
   var CSS =
     '#pk-consent{position:fixed;inset-inline:16px;bottom:16px;z-index:2147483000;max-width:640px;margin:0 auto;' +
@@ -142,6 +178,7 @@
   window.pixelCookieSettings = openBanner;
 
   function init() {
+    prefillWhatsApp();
     build();
     addFooterLink();
     var c = readChoice();
