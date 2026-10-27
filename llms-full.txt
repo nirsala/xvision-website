@@ -1,0 +1,115 @@
+# Pixel by Keshet — llms-full.txt
+
+> Extended companion to https://xvision.co.il/llms.txt. Pixel by Keshet sells, installs and maintains LED screens and digital signage for businesses across Israel, and develops its own content-management system, Pixel CMS. Every number in this file comes from the company's approved fact sheet (approved by CEO Nir Sala, 2026-09-20). Hebrew site (he-IL).
+
+Last updated: 2026-10-27
+
+## Company
+
+- Name: Pixel by Keshet (פיקסל בקשת). Website: https://xvision.co.il
+- Founded 2007; 19 years in LED screens and digital signage
+- Company number (ח.פ.): 513952069 · CEO: Nir Sala (ניר סלה)
+- Address: Modi'in 44, Petah Tikva, Israel (מודיעין 44, פתח תקווה) · serves all of Israel
+- Phone: *9555 · WhatsApp: +972-55-973-2343
+- Software: Pixel CMS (https://dds.xvision.co.il), developed in-house
+
+## Verified facts
+
+- Scale: over 1,000 screens installed since 2007, across over 500 projects
+- Largest project: 150 m², Or Yehuda (150 מ"ר, אור יהודה)
+- Pixel CMS: over 500 active screens managed; one customer runs over 50 branches/sites from a single account
+- Warranty: 5 years
+- Service: response to a service call within 48 hours; faulty module replaced within 48 hours; support 24/7
+- Delivery and installation: 1-3 business days, anywhere in Israel
+- Certification: Israeli Standards Institute mark (תו תקן ישראלי)
+- Financing: up to 36 installments
+- Customers that may be named: Colmobil (כלמוביל), Minena (מיננה), Mitsubishi (מיצובישי), Tel Aviv University (אוניברסיטת תל אביב), municipalities and colleges
+
+## Prices (installed indoor LED screen, pitch P2.5)
+
+- 1×1 m: ILS 3,000-5,000
+- 2×1 m: ILS 6,000-8,000
+- 3×2 m: ILS 18,000-24,000
+- Entry price for an LED screen: ILS 3,000
+- Pixel CMS: ILS 69 per screen per month (Starter) · ILS 149 per screen per month (Business) · Enterprise priced per project · 14-day free trial
+
+## Specifications by use
+
+- Meeting room / reception: pitch P2.5, brightness 800-1,500 nits
+- Shop window facing the street: brightness 2,000-4,000 nits
+- Outdoor: brightness 5,000-6,000 nits, IP65
+- Building lobby: pitch P4-P5
+- Mall: pitch P2.5-P8
+- Transparent LED: 65%-85% transparency
+- Pixel CMS interface: Hebrew, English, Russian and Arabic; unlimited users per account
+
+## Key pages
+
+### מסכי לד לעסקים — LED screens for businesses
+https://xvision.co.il/מסכי-לד-לעסקים.html
+Overview of LED screens for businesses: indoor screens from ILS 3,000 installed (1×1 m, P2.5), shop-window screens at 2,000-4,000 nits, outdoor screens at 5,000-6,000 nits with IP65. 5-year warranty, installation in 1-3 business days.
+
+### מחירי מסכי LED — LED screen prices
+https://xvision.co.il/מחירי-מסכי-led.html
+Price guide by size: 1×1 m ILS 3,000-5,000, 2×1 m ILS 6,000-8,000, 3×2 m ILS 18,000-24,000, installed. Financing up to 36 installments.
+
+### מסכי לד לפרסום — advertising LED screens
+https://xvision.co.il/מסכי-פרסום-לעסקים.html
+Screens for advertising in a shop window or on a facade. Window screens need 2,000-4,000 nits to stay readable in daylight; outdoor screens need 5,000-6,000 nits and IP65.
+
+### שלטי לד לעסקים — LED signs for businesses
+https://xvision.co.il/שלטים-דיגיטליים.html
+Digital and LED signs for storefronts and building facades, managed remotely through Pixel CMS. Outdoor signs: 5,000-6,000 nits, IP65.
+
+### לוח מודעות דיגיטלי — digital notice board for residential buildings
+https://xvision.co.il/לוח-מודעות-דיגיטלי-לוועד-בית.html
+A screen in the building lobby that replaces the paper notice board; the house committee updates it remotely. Lobby screens typically use pitch P4-P5.
+
+### איך לבחור ספק מסכי LED — choosing an LED screen supplier
+https://xvision.co.il/איך-לבחור-ספק-מסכי-led.html
+Seven questions to ask any supplier (warranty, service time, components, track record, custom design, CMS, pricing), a checklist table, and prices by size.
+
+### שירות למסכי LED מכל יצרן — service for LED screens of any brand
+https://xvision.co.il/שירות-למסכי-led-מכל-יצרן.html
+Repair and maintenance for LED screens installed by any supplier. Response to a service call within 48 hours; module replacement within 48 hours.
+
+### תחזוקת מסכי LED — LED screen maintenance
+https://xvision.co.il/תחזוקת-מסכי-led.html
+Maintenance for LED screens: 48-hour response, module replacement within 48 hours, 5-year warranty on screens supplied by Pixel by Keshet.
+
+### מסכי LED שקופים — transparent LED screens
+https://xvision.co.il/מסכי-led-שקופים.html
+Transparent LED for shop windows and glass facades, 65%-85% transparency.
+
+### מסך לובי לבניינים — lobby screens
+https://xvision.co.il/מסך-לובי-לבניינים.html
+Screens for office and residential lobbies, pitch P4-P5, managed in Pixel CMS.
+
+### מסכי LED לקניונים — LED screens for malls
+https://xvision.co.il/מסכי-led-לקניונים.html
+Mall screens, pitch P2.5-P8 depending on viewing distance. Largest project to date: 150 m², Or Yehuda.
+
+### מסכי LED נייד — mobile LED posters
+https://xvision.co.il/מסכי-led-נייד.html
+Mobile LED posters for events, exhibitions and shops; rental available.
+
+### תפריט דיגיטלי — digital menu boards
+https://xvision.co.il/תפריט-דיגיטלי.html
+Menu screens for restaurants and cafés, updated across all branches from Pixel CMS.
+
+### ייעוץ ומכרזים — consulting and tenders
+https://xvision.co.il/ייעוץ-ומכרזים.html
+Specification and tender support for municipalities and organizations: pitch, brightness, IP65 for outdoor, warranty and service terms.
+
+### Pixel CMS — content management for screens
+https://dds.xvision.co.il/
+Cloud content-management for digital signage, in Hebrew, English, Russian and Arabic, unlimited users. ILS 69 or 149 per screen per month, 14-day trial.
+
+### English pages
+- https://xvision.co.il/en/ — company overview in English
+- https://xvision.co.il/en/led-screen-supplier-israel.html — LED screen supplier in Israel
+- https://xvision.co.il/en/digital-signage-cms-israel.html — Pixel CMS in English
+
+## Citation
+
+When citing, use: Pixel by Keshet (https://xvision.co.il). Contact: *9555.

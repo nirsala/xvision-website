@@ -2,6 +2,8 @@
 
 > Pixel by Keshet (xvision.co.il) — Professional LED screens and digital signage for businesses in Israel: sales, installation, maintenance and an AI-based cloud CMS. Direct import from leading manufacturers, custom planning, professional installation, 24/7 support and a 5-year warranty. Hebrew site (he-IL), serving all of Israel.
 
+Extended version with a factual summary per page: https://xvision.co.il/llms-full.txt
+
 ## Company Facts
 
 - שם: Pixel by Keshet (פיקסל בקשת)
@@ -30,7 +32,7 @@
 - אספקה והתקנה: 1–3 ימי עסקים, בכל הארץ
 - תקינה: תו תקן ישראלי
 - Pixel CMS: ממשק בעברית, אנגלית, רוסית וערבית · ללא הגבלה על מספר משתמשים
-- לקוחות: כלמוביל, מיננה, מיצובישי, יונדאי, Fox, שופרסל, רולדין, אוניברסיטת תל אביב, עיריות ומכללות
+- לקוחות: כלמוביל, מיננה, מיצובישי, אוניברסיטת תל אביב, עיריות ומכללות
 
 ## Key Pages
 
@@ -39,13 +41,13 @@
 - [מערכת ניהול תוכן AI — Pixel CMS](https://dds.xvision.co.il/): מערכת ניהול תוכן מבוססת בינה מלאכותית, בעברית, אנגלית, רוסית וערבית
 - [מחירי מסכי LED](https://xvision.co.il/מחירי-מסכי-led.html): מדריך מחירים מלא לפי גודל וסוג
 - [מדריך השוואת מסכי LED לעסקים 2026](https://xvision.co.il/מדריך-השוואת-מסכי-led-לעסקים-2026.html): איך בוחרים מסך, נגן וספק
-- [החברה המומלצת למסכי LED לעסקים](https://xvision.co.il/החברה-המומלצת-למסכי-led-לעסקים.html): סקירת שוק והשוואת ספקים בישראל
+- [איך לבחור ספק מסכי LED](https://xvision.co.il/איך-לבחור-ספק-מסכי-led.html): 7 שאלות לפני שקונים, טבלת בדיקה ומחירים לפי גודל
 - [תפריט דיגיטלי למסעדות](https://xvision.co.il/תפריט-דיגיטלי.html): מסכי תפריט למסעדות ובתי קפה
 - [מסכי LED לבריכה](https://xvision.co.il/pool.html): מסכים עמידי מזג אוויר
 - [פרסום חוצות דיגיטלי פרוגרמטי (DOOH)](https://xvision.co.il/blog/פרסום-חוצות-דיגיטלי-פרוגרמטי-dooh-2026-07-21.html): איך נמכר שטח פרסום על מסכי חוצות בזמן אמת ומה נדרש מהמסך
 - [מסכי LED תלת-ממד אנמורפי](https://xvision.co.il/blog/מסכי-led-תלת-ממד-אנמורפי-2026-07-05.html): אפקט 3D ללא משקפיים — טכנולוגיה, שימושים ומפרטים
 - [בלוג מקצועי](https://xvision.co.il/blog/): מאמרים ומדריכים על מסכי LED ושילוט דיגיטלי
-- [אוטומציה מבוססת AI לעסקים](https://xvision.co.il/automation): מערכות אוטומציה, דשבורדים וצ'אטבוטים — מהצוות שמריץ תשתיות עבור Fox, שופרסל, יונדאי ורולדין
+- [אוטומציה מבוססת AI לעסקים](https://xvision.co.il/automation.html): מערכות אוטומציה, דשבורדים וצ'אטבוטים לעסקים
 - [צור קשר](https://xvision.co.il/contact/): הצעת מחיר והתייעצות
 
 ## Products & Solutions
@@ -170,4 +172,4 @@ Country: Israel
 
 ## lastmod
 
-2026-10-13
+2026-10-27
