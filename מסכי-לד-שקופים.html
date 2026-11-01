@@ -10,7 +10,7 @@
 <meta property="og:title" content="מסכי לד שקופים לחלונות ראווה | Pixel by Keshet">
 <meta property="og:description" content="מסך לד שקוף שנצמד לזכוכית הקיימת: עד 95% שקיפות, 5,000 ניט, עובי 1.8 מ&quot;מ. נסו על צילום החנות שלכם.">
 <meta property="og:url" content="https://xvision.co.il/מסכי-לד-שקופים.html">
-<meta property="og:image" content="https://xvision.co.il/assets/transparent-led/u-fashion.webp">
+<meta property="og:image" content="https://xvision.co.il/assets/transparent-led/hero-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap">
@@ -45,7 +45,7 @@ h1,h2,h3{color:var(--ink);line-height:1.12;text-wrap:balance;margin:0}
 .row{display:flex;flex-wrap:wrap;gap:12px}
 
 /* ===== 3D CINEMA ===== */
-.cinema{position:relative;height:420vh;padding:0;background:var(--night);color:#fff}
+.cinema{position:relative;height:280vh;padding:0;background:var(--night);color:#fff}
 .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
 .thumbs{display:flex;gap:8px}
@@ -60,7 +60,7 @@ h1,h2,h3{color:var(--ink);line-height:1.12;text-wrap:balance;margin:0}
 .chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(63,210,255,.12);border:1px solid rgba(63,210,255,.35);color:#bfefff}
 .chip i{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:pulse 1.6s infinite}
 @keyframes pulse{50%{opacity:.35}}
-.cap h1{color:#fff;font-size:clamp(46px,7.4vw,100px);font-weight:900;letter-spacing:-.03em;margin:16px 0 10px}
+.cap h1,.cap h2.h1x{color:#fff;font-size:clamp(46px,7.4vw,100px);font-weight:900;letter-spacing:-.03em;margin:16px 0 10px}
 .cap h2{color:#fff;font-size:clamp(34px,5vw,64px);font-weight:900;letter-spacing:-.02em}
 .cap .big{display:block;font-size:clamp(64px,10vw,140px);font-weight:900;line-height:1;color:var(--cyan);letter-spacing:-.04em}
 .cap p{font-size:clamp(17px,1.6vw,21px);font-weight:300;color:rgba(255,255,255,.86);margin:14px 0 26px}
@@ -184,7 +184,7 @@ details p{margin:0 0 20px}
   .cap{top:auto;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:none}
   .cap:not(.on){transform:translateY(30px)}
   .stage::after{background:linear-gradient(0deg,rgba(5,7,13,.95) 0%,rgba(5,7,13,.7) 42%,rgba(5,7,13,0) 68%)}
-  .cap h1{font-size:44px}
+  .cap h1,.cap h2.h1x{font-size:44px}
 }
 @media (max-width:560px){
   section{padding-block:64px}
@@ -192,12 +192,53 @@ details p{margin:0 0 20px}
   .progress{display:none}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* ===== OPENING FILM ===== */
+.film{position:relative;height:100vh;height:100svh;min-height:560px;padding:0;overflow:hidden;background:var(--night);color:#fff;isolation:isolate}
+.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:filmZoom 18s ease-out forwards;z-index:-2}
+.film::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,7,13,.55) 0%,rgba(5,7,13,.05) 38%,rgba(5,7,13,.25) 62%,rgba(5,7,13,.92) 100%),radial-gradient(ellipse at 50% 60%,transparent 40%,rgba(5,7,13,.55) 100%)}
+.film::after{content:"";position:absolute;inset:-20% -60%;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.16) 49%,rgba(160,230,255,.10) 51%,transparent 58%);transform:translateX(-60%);animation:sheen 2.6s 1.1s cubic-bezier(.6,.1,.2,1) forwards}
+.film .in{position:absolute;inset:auto 0 0;padding:0 max(16px,env(safe-area-inset-left,0px)) clamp(56px,11vh,120px);text-align:center}
+.film h1{color:#fff;font-size:clamp(48px,9vw,128px);font-weight:900;letter-spacing:-.035em;line-height:1;margin:18px 0 14px;text-shadow:0 10px 50px rgba(0,0,0,.45)}
+.film h1 span{display:inline-block;opacity:0;filter:blur(14px);transform:translateY(.35em);animation:wordIn 1s cubic-bezier(.2,.7,.2,1) forwards}
+.film h1 span:nth-child(2){animation-delay:.18s}.film h1 span:nth-child(3){animation-delay:.36s;background:linear-gradient(90deg,#fff 0%,#9fe8ff 50%,#fff 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:wordIn 1s .36s cubic-bezier(.2,.7,.2,1) forwards,shine 4s 1.6s linear infinite}
+.film p{max-width:640px;margin:0 auto 26px;font-size:clamp(17px,1.6vw,21px);color:rgba(255,255,255,.86);opacity:0;animation:fadeUp .9s .8s ease forwards}
+.film .chip{opacity:0;animation:fadeUp .8s .1s ease forwards}
+.film .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp .9s 1.05s ease forwards}
+.film .down{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);width:24px;height:38px;border:2px solid rgba(255,255,255,.55);border-radius:14px;opacity:0;animation:fadeUp .8s 1.6s ease forwards}
+.film .down::after{content:"";position:absolute;top:7px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:wheel 1.6s infinite}
+.film .snd{position:absolute;top:calc(18px + env(safe-area-inset-top,0px));left:18px;font-size:12px;letter-spacing:.12em;color:rgba(255,255,255,.7);font-weight:700}
+@keyframes wordIn{to{opacity:1;filter:blur(0);transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes sheen{to{transform:translateX(60%)}}
+@keyframes shine{to{background-position:-200% 0}}
+@keyframes filmZoom{to{transform:scale(1)}}
+@keyframes wheel{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+@media (max-width:760px){.film .in{padding-bottom:72px}.film h1{font-size:54px}}
+@media (prefers-reduced-motion:reduce){.film video{display:none}.film{background:var(--night) url(/assets/transparent-led/hero-poster.jpg) center/cover}.film h1 span,.film p,.film .row,.film .chip,.film .down{opacity:1;filter:none;transform:none}}
 </style>
 </head>
 <body>
 
 
 <main>
+<!-- ===== OPENING FILM ===== -->
+<section class="film" id="top" aria-label="סרטון פתיחה: מסכי לד שקופים בפעולה">
+  <video id="filmVideo" autoplay muted loop playsinline preload="auto" poster="/assets/transparent-led/hero-poster.jpg" aria-hidden="true">
+    <source src="/assets/transparent-led/hero.mp4" type="video/mp4">
+  </video>
+  <div class="in">
+    <span class="chip"><i></i>חדש ב-<bdi>Pixel by Keshet</bdi></span>
+    <h1><span>מסכי</span> <span>לד</span> <span>שקופים</span></h1>
+    <p>התמונה מרחפת באוויר. הזכוכית נשארת שקופה. החלון שלכם הופך למסך.</p>
+    <div class="row">
+      <a class="btn btn-white" href="#sim">נסו על החנות שלכם</a>
+      <a class="btn btn-glass" href="https://wa.me/972559732343?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%9E%D7%A1%D7%9A%20%D7%9C%D7%93%20%D7%A9%D7%A7%D7%95%D7%A3" target="_blank" rel="noopener">הצעת מחיר תוך 24 שעות</a>
+    </div>
+  </div>
+  <a class="down" href="#cinema" aria-label="גללו למטה"></a>
+</section>
+
 <!-- ===== 3D CINEMA ===== -->
 <section class="cinema" id="cinema">
   <div class="stage" id="stage">
@@ -205,7 +246,7 @@ details p{margin:0 0 20px}
     <div class="caps">
       <div class="cap on" data-k="0">
         <span class="chip"><i></i>חדש ב-<bdi>Pixel by Keshet</bdi></span>
-        <h1>מסכי לד שקופים</h1>
+        <h2 class="h1x">היכנסו לחלון הראווה</h2>
         <p>הזכוכית נשארת שקופה. התוכן מרחף עליה. גללו כדי להיכנס לחלון הראווה.</p>
         <div class="row">
           <a class="btn btn-white" href="#sim">נסו על החנות שלכם</a>
@@ -433,7 +474,7 @@ function renderContent(cx,w,h,img,t,text){
   const sec=document.getElementById('cinema'),stage=document.getElementById('stage'),caps=[...document.querySelectorAll('.cap')],bars=[...document.querySelectorAll('.progress span')],hint=document.getElementById('hint');
   const cv=document.getElementById('cineCanvas'),ctx=cv.getContext('2d');
   const Q=[[.252,.214],[.876,.03],[.876,.912],[.252,.768]]; // glass corners in the photo (0..1)
-  let shop,whale,jelly,facade,W=0,H=0,t=0,vis=true;
+  let shop,whale,jelly,facade,W=0,H=0,t=0,vis=true,ps=0;
   const cc=document.createElement('canvas');cc.width=960;cc.height=700;const ccx=cc.getContext('2d');
   const L=document.createElement('canvas'),lx=L.getContext('2d');const Q2=[[.262,.18],[.95,.022],[.95,.915],[.262,.69]];
   function setCap(k){caps.forEach(c=>c.classList.toggle('on',+c.dataset.k===k));bars.forEach((b,i)=>b.classList.toggle('on',i===k));}
@@ -446,20 +487,20 @@ function renderContent(cx,w,h,img,t,text){
     const x=W/2-fx*dw,y=H/2-fy*dh;return{x:clamp(x,W-dw,0),y:clamp(y,H-dh,0),w:dw,h:dh};}
   function loop(){
     requestAnimationFrame(loop);if(!vis||!shop)return;
-    const p=sectionProgress(sec);const k=Math.min(3,Math.floor(p*4-.0001));setCap(Math.max(0,k));hint.style.opacity=p>.02?0:1;
+    const pr=sectionProgress(sec);ps+=(pr-ps)*(reduce?1:.14);const p=ps;const k=Math.min(3,Math.floor(p*4-.0001));setCap(Math.max(0,k));hint.style.opacity=p>.02?0:1;
     ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,W,H);
     // camera: 0-.25 wide, .25-.5 zoom in to glass, .5-.75 hold + power off, .75-1 crossfade to a second storefront with new content
-    const zin=ease(clamp((p-.2)/.3,0,1)),zoom=1.04+0.75*zin-0.05*ease(clamp((p-.55)/.2,0,1));
+    const zin=ease(clamp(p/.45,0,1)),zoom=1.04+0.75*zin-0.05*ease(clamp((p-.5)/.2,0,1));
     const fx=lerp(.5,.6,zin),fy=lerp(.5,.42,zin);
     const R=photoRect(shop,zoom+(reduce?0:.01*Math.sin(t*.3)),fx,fy);
     ctx.drawImage(shop,R.x,R.y,R.w,R.h);
-    const power=1-ease(clamp((p-.52)/.16,0,1));
+    const power=1-ease(clamp((p-.48)/.16,0,1));
     if(power>.01){const img=whale;renderContent(ccx,cc.width,cc.height,img,t,'');
       const q=Q.map(([u,v])=>[R.x+u*R.w,R.y+v*R.h]);
       ctx.save();ctx.globalCompositeOperation='screen';ctx.globalAlpha=.93*power;warp(ctx,cc,q,10);ctx.restore();
       // faint emitted glow on the floor/frame
       ctx.save();ctx.globalCompositeOperation='screen';ctx.globalAlpha=.10*power;const g=ctx.createRadialGradient(q[2][0],q[2][1],10,q[2][0],q[2][1],R.w*.5);g.addColorStop(0,'#5aa0ff');g.addColorStop(1,'transparent');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);ctx.restore();}
-    const fade=ease(clamp((p-.76)/.14,0,1));
+    const fade=ease(clamp((p-.68)/.16,0,1));
     if(fade>0&&facade){if(L.width!==cv.width||L.height!==cv.height){L.width=cv.width;L.height=cv.height;}lx.setTransform(DPR,0,0,DPR,0,0);lx.globalCompositeOperation='source-over';lx.globalAlpha=1;lx.clearRect(0,0,W,H);
       const F=photoRect(facade,1.1-.06*fade,.6,.5);lx.drawImage(facade,F.x,F.y,F.w,F.h);renderContent(ccx,cc.width,cc.height,jelly,t,'');
       const q2=Q2.map(([u,v])=>[F.x+u*F.w,F.y+v*F.h]);lx.save();lx.globalCompositeOperation='screen';lx.globalAlpha=.93;warp(lx,cc,q2,10);lx.restore();
@@ -525,5 +566,12 @@ if(!reduce&&matchMedia('(hover:hover)').matches){document.querySelectorAll('.til
 })();
 </script>
 
+<script>
+(function(){var v=document.getElementById('filmVideo');if(!v)return;
+if(window.innerWidth<900){v.querySelector('source').src='/assets/transparent-led/hero-1280.mp4';v.load();}
+var p=v.play&&v.play();if(p&&p.catch)p.catch(function(){});
+if('IntersectionObserver'in window){new IntersectionObserver(function(e){e[0].isIntersecting?v.play().catch(function(){}):v.pause();}).observe(v);}
+})();
+</script>
 </body>
 </html>
