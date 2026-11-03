@@ -51,11 +51,11 @@
 /blog/%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%AA%D7%95%D7%9B%D7%9F-%D7%A2%D7%A0%D7%9F-%D7%9C%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%94%D7%A9%D7%95%D7%95%D7%90%D7%94-2026-07-12.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
 /blog/led-article-8-2026-07-12.html /מסכי-led-תל-אביב.html 301
 /blog/led-article-7-2026-07-11.html /שלטים-דיגיטליים.html 301
-/blog/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-2026-07-10.html /מסכי-led-שקופים.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-2026-07-10.html /מסכי-לד-שקופים.html 301
 /blog/%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%AA%D7%95%D7%9B%D7%9F-%D7%9C%D7%9E%D7%A1%D7%9B%D7%99%D7%9D-%D7%90%D7%99%D7%9A-%D7%96%D7%94-%D7%A2%D7%95%D7%91%D7%93-.html /blog/תוכנה-לשילוט-דיגיטלי-מדריך-CMS-2026.html 301
 /blog/led-article-33-2026-06-30.html /מסכי-led-נייד.html 301
 /blog/led-article-31-2026-06-28.html /מסכי-led-לקניונים.html 301
-/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-2026-06-09.html /מסכי-led-שקופים.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D-%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A-%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-2026-06-09.html /מסכי-לד-שקופים.html 301
 /blog/%D7%9E%D7%A1%D7%9B%D7%99-LED-%D7%9C%D7%A7%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A9%D7%99%D7%9C%D7%95%D7%98-%D7%A9%D7%9E%D7%95%D7%9B%D7%A8-%D7%92%D7%9D-%D7%9B%D7%A9%D7%90%D7%AA%D7%9D-%D7%99%D7%A9%D7%A0%D7%99%D7%9D.html /מסכי-led-לקניונים.html 301
 /blog/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%93-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%9E%D7%95%D7%9E%D7%9C%D7%A5-2026.html /blog/pillar-xvision-2026.html 301
 /blog/%D7%9E%D7%A1%D7%9B%D7%99-%D7%9C%D7%95%D7%91%D7%99-%D7%97%D7%95%D7%95%D7%99%D7%99%D7%AA-%D7%9B%D7%A0%D7%99%D7%A1%D7%94-%D7%A9%D7%AA%D7%A8%D7%A9%D7%99%D7%9D-%D7%9B%D7%9C-%D7%9E%D7%91%D7%A7%D7%A8.html /מסך-לובי-לבניינים.html 301
@@ -100,3 +100,6 @@
 # 27.10.2026 — merged into the supplier guide (Nir via Maya/Ron 26.10: competitor names + "המומלצת" in URL)
 /החברה-המומלצת-למסכי-led-לעסקים.html /%D7%90%D7%99%D7%9A-%D7%9C%D7%91%D7%97%D7%95%D7%A8-%D7%A1%D7%A4%D7%A7-%D7%9E%D7%A1%D7%9B%D7%99-led.html 301
 /%D7%94%D7%97%D7%91%D7%A8%D7%94-%D7%94%D7%9E%D7%95%D7%9E%D7%9C%D7%A6%D7%AA-%D7%9C%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D.html /%D7%90%D7%99%D7%9A-%D7%9C%D7%91%D7%97%D7%95%D7%A8-%D7%A1%D7%A4%D7%A7-%D7%9E%D7%A1%D7%9B%D7%99-led.html 301
+# 3.11.2026 — old transparent-LED page → new series page (Nir 2.11 via Ron: "לאשר, ותבצע את סעיפים 1-4")
+/%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D.html /מסכי-לד-שקופים.html 301
+/מסכי-led-שקופים.html /מסכי-לד-שקופים.html 301
