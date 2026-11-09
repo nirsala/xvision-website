@@ -638,20 +638,44 @@ document.getElementById('care-form').addEventListener('submit', async function (
   }
   const photo = data.get('attachment')
   if (photo && !photo.size) data.delete('attachment')
+  // T093: 1) /api/lead stores the lead on our Worker first; 2) formsubmit sends the mail copy
+  // (and is the fallback if /api/lead fails). Success is shown only if at least one path confirmed.
   let ok = false
+  let stored = false
+  let mailed = false
   try {
-    const res = await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: data
-    })
+    const ctrl = new AbortController()
+    const t = setTimeout(function () { ctrl.abort() }, 8000)
+    const res = await fetch('/api/lead', { method: 'POST', headers: { 'Accept': 'application/json' }, body: data, signal: ctrl.signal })
+    clearTimeout(t)
     if (res.ok) {
-      const json = await res.json().catch(function () { return null })
-      ok = !json || json.success === undefined || json.success === true || json.success === 'true'
+      const j = await res.json().catch(function () { return null })
+      stored = !!(j && j.success === true)
+      mailed = !!(j && j.mailed === true)
     }
   } catch (err) {
-    ok = false
+    stored = false
   }
+  if (!mailed) {
+    try {
+      const ctrl2 = new AbortController()
+      const t2 = setTimeout(function () { ctrl2.abort() }, stored ? 6000 : 15000)
+      const res2 = await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data,
+        signal: ctrl2.signal
+      })
+      clearTimeout(t2)
+      if (res2.ok) {
+        const json = await res2.json().catch(function () { return null })
+        mailed = !json || json.success === undefined || json.success === true || json.success === 'true'
+      }
+    } catch (err) {
+      mailed = false
+    }
+  }
+  ok = stored || mailed
   btn.textContent = 'שלחו לבדיקת מסך חינם ←'
   btn.disabled = false
   if (!ok) {
