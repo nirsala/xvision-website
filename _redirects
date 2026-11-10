@@ -103,3 +103,9 @@
 # 3.11.2026 — old transparent-LED page → new series page (Nir 2.11 via Ron: "לאשר, ותבצע את סעיפים 1-4")
 /%D7%9E%D7%A1%D7%9B%D7%99-led-%D7%A9%D7%A7%D7%95%D7%A4%D7%99%D7%9D.html /מסכי-לד-שקופים.html 301
 /מסכי-led-שקופים.html /מסכי-לד-שקופים.html 301
+# 10.11.2026 — GSC "Not found (404)" report (Nir 9.11 via Ron: "4 הפניות 301 מדוח 404")
+/blog/led-article-17-2026-04-27.html /מסכי-led-לחדרי-כושר.html 301
+/blog/led-article-19-2026-04-29.html /מסכי-led-נייד.html 301
+/automation /automation.html 301
+/blog/מסכי-led-ai-2026-07-06-מותאם-אישי.html /blog/מסכי-led-ai-מותאם-אישית-2026-07-06.html 301
+/blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-2026-07-06-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99.html /blog/מסכי-led-ai-מותאם-אישית-2026-07-06.html 301
