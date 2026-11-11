@@ -13,6 +13,8 @@
   },
   // T093: leads are stored here before any mail is sent. Namespace "LEADS" created by Alon 5.11.2026.
   // D1 (Nir's choice) attaches as binding "LEADS_DB" once the database exists — the worker uses both.
+  // Workers Logs: keeps console.error from /api/lead (diag of KV / D1 / Resend failures) for the dashboard.
+  "observability": { "enabled": true },
   "kv_namespaces": [
     { "binding": "LEADS", "id": "d5932eade4ee4d2cb04edf598d0691e9" }
   ]

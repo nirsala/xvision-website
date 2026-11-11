@@ -89,7 +89,10 @@ async function handleLead(request, env) {
   if (!lead["שם מלא"] || !lead["טלפון"]) return json({ success: false, error: "required" }, 400);
 
   // 1) Store first. A lead that is stored is never lost, even if every mail path fails.
+  // Every failure is recorded in `diag` (returned to the browser and logged) — on 10.11 a test lead
+  // reached the mailbox but not KV, and the old silent catch{} left no trace of why.
   let stored = false;
+  const diag = { kv: !!env.LEADS, d1: !!env.LEADS_DB, resend: !!env.RESEND_API_KEY };
   if (env.LEADS_DB) {
     try {
       await env.LEADS_DB.prepare(
@@ -98,13 +101,14 @@ async function handleLead(request, env) {
       await env.LEADS_DB.prepare("INSERT INTO leads (id, at, source, data) VALUES (?1, ?2, ?3, ?4)")
         .bind(lead.id, lead.at, lead._source, JSON.stringify(lead)).run();
       stored = true;
-    } catch (e) { stored = false; }
+    } catch (e) { diag.d1_error = String(e && e.message || e).slice(0, 300); }
   }
   if (env.LEADS) {
     try {
       await env.LEADS.put("lead:" + lead.at + ":" + lead.id, JSON.stringify(lead));
+      diag.kv_ok = true;
       stored = true;
-    } catch (e) { /* keep D1 result */ }
+    } catch (e) { diag.kv_error = String(e && e.message || e).slice(0, 300); }
   }
 
   // 2) Mail — only when a provider key exists. Without it the browser also sends the formsubmit copy.
@@ -127,7 +131,8 @@ async function handleLead(request, env) {
         method: "POST",
         headers: { authorization: "Bearer " + env.RESEND_API_KEY, "content-type": "application/json" },
         body: JSON.stringify({
-          from: env.LEAD_FROM || "onboarding@resend.dev",
+          // xvision.co.il is Verified in Resend (Nir, 10.11). onboarding@resend.dev only delivers to the account owner.
+          from: env.LEAD_FROM || "Pixel by Keshet <leads@xvision.co.il>",
           to: ["nirsala@gmail.com"],
           reply_to: lead["אימייל"] || undefined,
           subject,
@@ -135,12 +140,14 @@ async function handleLead(request, env) {
         }),
       });
       mailed = r.ok;
-    } catch (e) { mailed = false; }
+      if (!r.ok) diag.mail_error = "resend " + r.status + ": " + (await r.text().catch(() => "")).slice(0, 300);
+    } catch (e) { mailed = false; diag.mail_error = String(e && e.message || e).slice(0, 300); }
   }
 
   // Neither stored nor mailed -> real failure; the browser falls back to formsubmit and, failing that, #form-error.
-  if (!stored && !mailed) return json({ success: false, stored, mailed }, 502);
-  return json({ success: true, id: lead.id, stored, mailed }, 200);
+  if (!stored || diag.mail_error) console.error("lead " + lead.id + " " + JSON.stringify(diag));
+  if (!stored && !mailed) return json({ success: false, stored, mailed, diag }, 502);
+  return json({ success: true, id: lead.id, stored, mailed, diag }, 200);
 }
 
 async function listLeads(request, env) {
@@ -154,5 +161,10 @@ async function listLeads(request, env) {
       if (v) out.push(JSON.parse(v));
     }
   }
-  return json({ count: out.length, leads: out });
+  // Bindings as the live worker sees them — answers "is KV attached?" without dashboard access.
+  return json({
+    count: out.length,
+    bindings: { kv: !!env.LEADS, d1: !!env.LEADS_DB, resend: !!env.RESEND_API_KEY, from: env.LEAD_FROM || "leads@xvision.co.il" },
+    leads: out,
+  });
 }

@@ -75,6 +75,35 @@ function extractImage(html) {
   return m ? m[1] : FALLBACK_IMG;
 }
 
+// ── תאריך עדכון: ה-lastmod שב-sitemap.xml (תאריך הקומיט האחרון, מתוקן לקלון רדוד) ──
+// הוראת ניר 10.11.2026: דף /blog/ ממוין לפי תאריך העדכון, מהחדש לישן, ולא לפי datePublished —
+// אחרת המאמרים האוטומטיים מאוגוסט נשארים בראש והפוסטים שעודכנו החודש קבורים למטה.
+// לכן build-sitemap.js רץ לפני הסקריפט הזה. נפילה: dateModified ב-JSON-LD, ואז datePublished.
+const SITEMAP = path.join(ROOT, 'sitemap.xml');
+const lastmods = (() => {
+  const map = new Map();
+  try {
+    const xml = fs.readFileSync(SITEMAP, 'utf8');
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) map.set(m[1], m[2]);
+  } catch {
+    // אין sitemap — נשתמש בנפילה
+  }
+  return map;
+})();
+
+function extractUpdated(html, file, published) {
+  const loc = 'https://xvision.co.il/blog/' + encodeURIComponent(file).replace(/%2F/g, '/');
+  const fromMap = lastmods.get(loc) || lastmods.get('https://xvision.co.il/blog/' + file);
+  if (fromMap) return fromMap.slice(0, 10);
+  const mod = html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})/);
+  return mod ? mod[1] : published;
+}
+
+// מאמרים אוטומטיים ישנים (led-article-N) — בסוף הרשימה עד הכרעת מאיה/רון (הוראת רון 10.11).
+const isAutoArticle = (f) => /^(led|cms)-article-/.test(f);
+
+const fmtDate = (d) => `${d.slice(8, 10)}.${d.slice(5, 7)}.${d.slice(0, 4)}`;
+
 function collect() {
   return fs.readdirSync(BLOG)
     .filter((f) => f.endsWith('.html') && !EXCLUDE.has(f))
@@ -84,11 +113,15 @@ function collect() {
       if (!shouldInclude(html)) return null;
       const title = extractTitle(html);
       if (!title) return null;
-      return { file: f, title, tag: extractTag(html), date: extractDate(html, f, abs), img: extractImage(html) };
+      const date = extractDate(html, f, abs);
+      return { file: f, title, tag: extractTag(html), date, updated: extractUpdated(html, f, date), img: extractImage(html) };
     })
     .filter(Boolean)
-    // חדש→ישן; שובר שוויון לפי שם כדי שהפלט יהיה דטרמיניסטי
-    .sort((a, b) => (b.date === a.date ? a.file.localeCompare(b.file) : b.date.localeCompare(a.date)));
+    // מאמרים אוטומטיים בסוף; בתוך כל קבוצה עדכון חדש→ישן; שובר שוויון לפי שם (פלט דטרמיניסטי)
+    .sort((a, b) =>
+      (isAutoArticle(a.file) - isAutoArticle(b.file)) ||
+      b.updated.localeCompare(a.updated) ||
+      a.file.localeCompare(b.file));
 }
 
 function card(a) {
@@ -98,7 +131,7 @@ function card(a) {
       <a href="${href}"><img src="${escapeAttr(a.img)}" alt="${escapeAttr(a.title)}" class="card-img" loading="lazy"/></a>
       <div class="card-body">${tag}
         <h2><a href="${href}">${escapeAttr(a.title)}</a></h2>
-        <div class="card-meta">${a.date}</div>
+        <div class="card-meta"><time datetime="${a.updated}">עודכן ${fmtDate(a.updated)}</time></div>
       </div>
     </article>`;
 }
