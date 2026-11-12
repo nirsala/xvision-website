@@ -7,7 +7,7 @@
 // This worker only runs when no asset matches, and restores the standard static-host behavior:
 //   1. "/" or "/blog/"      -> serve "<path>index.html"
 //   2. "/blog" (no ext)     -> 301 to "/blog/" when a directory index exists (GitHub Pages/Render parity)
-//   3. anything else        -> 404 (uses /404.html if the site has one)
+//   3. anything else        -> 404 (uses /404.html if the site has one; Markdown when Accept asks for it)
 
 export default {
   async fetch(request, env) {
@@ -42,6 +42,20 @@ export default {
           return Response.redirect(dest.toString(), 301);
         }
       }
+    }
+
+    // Not found + agent asked for Markdown (Accept: text/markdown, Is Agentic, Nir 10.11):
+    // a short Markdown 404 that points the agent to the right entry points. Browsers never send
+    // text/markdown, so the HTML 404 below is unchanged for people.
+    if (wantsMarkdown(request)) {
+      return new Response(markdown404(pathname), {
+        status: 404,
+        headers: {
+          "content-type": "text/markdown; charset=utf-8",
+          "cache-control": "no-store",
+          vary: "Accept",
+        },
+      });
     }
 
     // Not found — serve the site's 404 page when available, else plain 404
@@ -167,4 +181,46 @@ async function listLeads(request, env) {
     bindings: { kv: !!env.LEADS, d1: !!env.LEADS_DB, resend: !!env.RESEND_API_KEY, from: env.LEAD_FROM || "leads@xvision.co.il" },
     leads: out,
   });
+}
+
+// True only when the client explicitly ranks text/markdown at least as high as text/html.
+function wantsMarkdown(request) {
+  const accept = (request.headers.get("accept") || "").toLowerCase();
+  if (!accept.includes("text/markdown")) return false;
+  const q = (type) => {
+    for (const part of accept.split(",")) {
+      const [t, ...params] = part.trim().split(";");
+      if (t.trim() !== type) continue;
+      const qp = params.map((p) => p.trim()).find((p) => p.startsWith("q="));
+      return qp ? parseFloat(qp.slice(2)) || 0 : 1;
+    }
+    return -1;
+  };
+  return q("text/markdown") >= q("text/html");
+}
+
+function markdown404(pathname) {
+  let path = pathname;
+  try { path = decodeURIComponent(pathname); } catch (e) { /* keep raw */ }
+  return [
+    "# 404 — הדף לא נמצא",
+    "",
+    "הכתובת `" + path.replace(/`/g, "") + "` אינה קיימת ב-xvision.co.il (Pixel by Keshet — מסכי LED ושילוט דיגיטלי לעסקים).",
+    "",
+    "## לאן להמשיך",
+    "",
+    "- [דף הבית](https://xvision.co.il/)",
+    "- [מסכי לד לעסקים — מחירון ומדריך](https://xvision.co.il/מסכי-לד-לעסקים.html)",
+    "- [מחירי מסכי LED](https://xvision.co.il/מחירי-מסכי-led.html)",
+    "- [בלוג ומדריכים](https://xvision.co.il/blog/)",
+    "- [Pixel CMS — ניהול תוכן בענן](https://dds.xvision.co.il/)",
+    "- [llms.txt — תקציר האתר לסוכני AI](https://xvision.co.il/llms.txt)",
+    "- [sitemap.xml](https://xvision.co.il/sitemap.xml)",
+    "",
+    "## יצירת קשר",
+    "",
+    "- טלפון: *9555",
+    "- וואטסאפ: +972-55-973-2343",
+    "",
+  ].join("\n");
 }
