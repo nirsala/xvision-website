@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>צור קשר — Pixel by Keshet | מסכי LED ושילוט דיגיטלי</title>
-<meta name="description" content="צרו קשר עם Pixel by Keshet — ספק מסכי LED מוביל בישראל. טלפון: 055-973-2343, אימייל: info@xvision.co.il, כתובת: מודיעין 44, פתח תקווה. שעות פעילות ראשון–חמישי 08:00–18:00."/>
+<meta name="description" content="צרו קשר עם Pixel by Keshet למסכי LED לעסקים: חיוג *9555, וואטסאפ 055-973-2343 או טופס פנייה. מודיעין 44, פתח תקווה. נחזור אליכם תוך יום עסקים."/>
 <link rel="canonical" href="https://xvision.co.il/contact/"/>
 <link rel="alternate" hreflang="he" href="https://xvision.co.il/contact/"/>
 <link rel="alternate" hreflang="en" href="https://xvision.co.il/en/"/>
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://xvision.co.il/contact/"/>
 <meta property="og:title" content="צור קשר — Pixel by Keshet | מסכי LED ושילוט דיגיטלי"/>
-<meta property="og:description" content="צרו קשר עם Pixel by Keshet — ספק מסכי LED מוביל בישראל. טלפון 055-973-2343, כתובת: מודיעין 44, פתח תקווה. ייעוץ ראשוני ללא עלות."/>
+<meta property="og:description" content="צרו קשר עם Pixel by Keshet למסכי LED לעסקים: חיוג *9555, וואטסאפ 055-973-2343 או טופס פנייה. מודיעין 44, פתח תקווה. נחזור אליכם תוך יום עסקים."/>
 <meta property="og:image" content="https://xvision.co.il/assets/images/portfolio-w2.jpg"/>
 <meta property="og:locale" content="he_IL"/>
 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
@@ -234,15 +234,15 @@ footer a{color:var(--red)}
       <h2>פרטי התקשרות</h2>
       <div class="contact-cards">
 
-        <a href="tel:055-973-2343" style="display:block;text-decoration:none">
+        <a href="tel:*9555" style="display:block;text-decoration:none">
           <div class="contact-card">
             <div class="cc-icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82a19.79 19.79 0 01-3.07-8.66A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
             <div class="cc-body">
               <div class="cc-label">טלפון</div>
-              <div class="cc-value" style="direction:ltr">055-973-2343</div>
-              <div class="cc-sub">שלחו הודעה או התקשרו ישירות</div>
+              <div class="cc-value" style="direction:ltr">*9555</div>
+              <div class="cc-sub">חיוג מקוצר מכל טלפון</div>
             </div>
           </div>
         </a>
@@ -311,42 +311,48 @@ footer a{color:var(--red)}
     <!-- RIGHT: Form -->
     <div class="form-panel">
       <h2>השאירו פרטים</h2>
-      <form class="contact-form" action="#" method="POST" novalidate aria-label="טופס יצירת קשר">
+      <p class="form-direct" style="margin:0 0 14px;font-size:15px;line-height:1.6">מעדיפים לדבר עכשיו? <a href="tel:*9555" style="font-weight:700;color:inherit">*9555</a> או <a href="https://wa.me/972559732343" target="_blank" rel="noopener" style="font-weight:700;color:#25D366">וואטסאפ 055-973-2343</a></p>
+      <form class="contact-form" id="contact-form" method="POST" novalidate aria-label="טופס יצירת קשר">
+        <input type="hidden" name="_subject" value="פנייה חדשה מאתר Pixel — דף צור קשר"/>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
         <div class="form-grid-2">
           <div class="form-row">
             <label for="contact-name">שם מלא <span style="color:var(--red)">*</span></label>
-            <input type="text" id="contact-name" name="name" placeholder="ישראל ישראלי" required autocomplete="name"/>
+            <input type="text" id="contact-name" name="שם מלא" placeholder="ישראל ישראלי" required autocomplete="name"/>
           </div>
           <div class="form-row">
             <label for="contact-phone">טלפון <span style="color:var(--red)">*</span></label>
-            <input type="tel" id="contact-phone" name="phone" placeholder="05X-XXX-XXXX" required autocomplete="tel" dir="ltr"/>
+            <input type="tel" id="contact-phone" name="טלפון" placeholder="05X-XXX-XXXX" required autocomplete="tel" dir="ltr"/>
           </div>
         </div>
         <div class="form-row">
           <label for="contact-email">אימייל</label>
-          <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" dir="ltr"/>
+          <input type="email" id="contact-email" name="אימייל" placeholder="your@email.com" autocomplete="email" dir="ltr"/>
         </div>
         <div class="form-row">
           <label for="contact-subject">נושא הפנייה</label>
-          <select id="contact-subject" name="subject">
+          <select id="contact-subject" name="נושא הפנייה">
             <option value="" disabled selected>בחרו נושא</option>
-            <option value="quote">הצעת מחיר למסך LED</option>
-            <option value="indoor">מסכי LED פנימיים</option>
-            <option value="outdoor">מסכי LED חיצוניים / שלטי חוצות</option>
-            <option value="lobby">מסכי לובי לבניינים</option>
-            <option value="menu">תפריטים דיגיטליים</option>
-            <option value="rental">השכרת מסכי LED לאירועים</option>
-            <option value="maintenance">תחזוקה ושירות</option>
-            <option value="cms">מערכת Pixel CMS</option>
-            <option value="other">אחר</option>
+            <option value="הצעת מחיר למסך LED">הצעת מחיר למסך LED</option>
+            <option value="מסכי LED פנימיים">מסכי LED פנימיים</option>
+            <option value="מסכי LED חיצוניים / שלטי חוצות">מסכי LED חיצוניים / שלטי חוצות</option>
+            <option value="מסכי לובי לבניינים">מסכי לובי לבניינים</option>
+            <option value="תפריטים דיגיטליים">תפריטים דיגיטליים</option>
+            <option value="השכרת מסכי LED לאירועים">השכרת מסכי LED לאירועים</option>
+            <option value="תחזוקה ושירות">תחזוקה ושירות</option>
+            <option value="מערכת Pixel CMS">מערכת Pixel CMS</option>
+            <option value="אחר">אחר</option>
           </select>
         </div>
         <div class="form-row">
           <label for="contact-message">הודעה <span style="color:var(--red)">*</span></label>
-          <textarea id="contact-message" name="message" placeholder="ספרו לנו על הפרויקט שלכם — גודל המסך, מיקום, תקציב משוער וכל פרט שיעזור לנו לתת לכם הצעה מדויקת." required></textarea>
+          <textarea id="contact-message" name="פרטי הפרויקט" placeholder="ספרו לנו על הפרויקט שלכם — גודל המסך, מיקום, תקציב משוער וכל פרט שיעזור לנו לתת לכם הצעה מדויקת." required></textarea>
         </div>
-        <button type="submit" class="btn-submit">שלחו הודעה — נחזור תוך 24 שעות</button>
-        <p class="form-note">הפרטים שלכם מאובטחים ולא יועברו לצד שלישי. ייעוץ ראשוני ללא עלות.</p>
+        <label class="form-optin" style="display:flex;gap:10px;align-items:flex-start;margin:4px 0 14px;font-size:14px;line-height:1.6;cursor:pointer"><input type="checkbox" name="הסכמה_לדיוור" value="כן" style="width:20px;height:20px;flex:0 0 auto;margin-top:2px"/><span>אשמח לקבל עדכונים ומבצעים במייל/SMS/WhatsApp. אפשר להסיר בכל עת</span></label>
+        <button type="submit" class="btn-submit" id="form-submit-btn">שלחו הודעה — נחזור תוך 24 שעות</button>
+        <div id="form-success" role="status" style="display:none;margin-top:12px;padding:12px 14px;border-radius:8px;background:#e7f6ec;color:#14532d;font-size:15px;line-height:1.6">תודה! הפנייה התקבלה ונחזור אליכם בהקדם. לשירות מיידי: <a href="tel:*9555" style="color:#14532d;font-weight:700">*9555</a></div>
+        <p class="form-note">הפרטים ישמשו לחזרה אליכם בנוגע לפנייה. הם נשמרים אצלנו ונשלחים גם דרך שירות טפסים חיצוני. <a href="/מדיניות-פרטיות.html">מדיניות פרטיות</a></p>
       </form>
     </div>
 
@@ -357,9 +363,9 @@ footer a{color:var(--red)}
     <h2>מעדיפים לדבר ישירות?</h2>
     <p>הצוות שלנו זמין עבורכם ראשון–חמישי 08:00–18:00. מוזמנים להתקשר או לשלוח הודעת וואטסאפ.</p>
     <div class="cta-btns">
-      <a href="tel:055-973-2343" class="btn btn-primary">
+      <a href="tel:*9555" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82a19.79 19.79 0 01-3.07-8.66A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.38-.38a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        055-973-2343
+        חייגו *9555
       </a>
       <a href="https://wa.me/972559732343" target="_blank" rel="noopener" class="btn btn-wa">
         <svg viewBox="0 0 32 32" style="width:18px;height:18px;fill:#fff" aria-hidden="true"><path d="M16.004 2.667C8.64 2.667 2.667 8.64 2.667 16c0 2.347.627 4.64 1.813 6.64L2.667 29.333l6.907-1.787A13.28 13.28 0 0016.004 29.333C23.36 29.333 29.333 23.36 29.333 16S23.36 2.667 16.004 2.667z"/></svg>
@@ -373,7 +379,7 @@ footer a{color:var(--red)}
 </div>
 
 <footer>
-  <p>© 2026 Pixel by Keshet | <strong>ספק מסכי LED מוביל בישראל</strong> | <a href="/">דף הבית</a> | <a href="tel:055-973-2343">055-973-2343</a> | <a href="https://wa.me/972559732343">WhatsApp</a> | <a href="/en/">English</a></p>
+  <p>© 2026 Pixel by Keshet | <strong>ספק מסכי LED מוביל בישראל</strong> | <a href="/">דף הבית</a> | <a href="tel:*9555">*9555</a> | <a href="https://wa.me/972559732343">WhatsApp</a> | <a href="/en/">English</a></p>
   <div class="footer-social">
     <a class="sc-fb" href="https://www.facebook.com/pixelbykeshet" target="_blank" rel="noopener" aria-label="Facebook — Pixel by Keshet"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.29-.04-1.27-.12-2.4-.12-2.38 0-4 1.45-4 4.11v2.31H7.6V13h2.9v8h3z"/></svg></a>
     <a class="sc-ig" href="https://www.instagram.com/pixel_by_keshet" target="_blank" rel="noopener" aria-label="Instagram — Pixel by Keshet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
@@ -393,6 +399,86 @@ footer a{color:var(--red)}
       a.classList.add('active');
     }
   });
+})();
+</script>
+<script>
+// D-20261118-2: the /contact/ form had action="#" and no handler — submissions were lost.
+// Same flow as the home form (T093): 1) /api/lead stores the lead on our Worker (Resend mail);
+// 2) formsubmit is the backup mail path. Success only if at least one path confirmed.
+(function(){
+  var form = document.getElementById('contact-form')
+  if (!form) return
+  function leadSource() {
+    try {
+      var first = sessionStorage.getItem('pixel_first_touch')
+      if (!first) {
+        var q = new URLSearchParams(location.search)
+        var utm = ['utm_source','utm_medium','utm_campaign'].map(function(k){ return q.get(k) }).filter(Boolean).join(' / ')
+        var ref = 'ישיר'
+        if (document.referrer) { try { ref = new URL(document.referrer).hostname } catch (e) { ref = document.referrer } }
+        first = (utm || ref) + ' → ' + location.pathname
+        sessionStorage.setItem('pixel_first_touch', first)
+      }
+      return first + ' | טופס: ' + location.pathname
+    } catch (e) { return location.pathname || '/contact/' }
+  }
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault()
+    var btn = document.getElementById('form-submit-btn')
+    var okBox = document.getElementById('form-success')
+    var errBox = document.getElementById('form-error')
+    if (!errBox) {
+      errBox = document.createElement('div')
+      errBox.id = 'form-error'
+      errBox.setAttribute('role', 'alert')
+      errBox.style.cssText = 'display:none;margin-top:12px;padding:12px 14px;border-radius:8px;background:#fdecea;color:#8a1c12;font-size:15px;line-height:1.6;text-align:right'
+      btn.parentNode.insertBefore(errBox, btn.nextSibling)
+    }
+    errBox.style.display = 'none'
+    okBox.style.display = 'none'
+    if (!form.checkValidity()) { form.reportValidity(); return }
+    var label = btn.textContent
+    btn.textContent = 'שולח...'
+    btn.disabled = true
+    var data = new FormData(form)
+    data.append('מקור_הפנייה', leadSource())
+    data.set('הסכמה_לדיוור', data.get('הסכמה_לדיוור') ? 'כן' : 'לא')
+    var stored = false, mailed = false
+    try {
+      var ctrl = new AbortController()
+      var t = setTimeout(function(){ ctrl.abort() }, 8000)
+      var res = await fetch('/api/lead', { method: 'POST', headers: { 'Accept': 'application/json' }, body: data, signal: ctrl.signal })
+      clearTimeout(t)
+      if (res.ok) {
+        var j = await res.json().catch(function(){ return null })
+        stored = !!(j && j.success === true)
+        mailed = !!(j && j.mailed === true)
+      }
+    } catch (err) { stored = false }
+    if (!mailed) {
+      try {
+        var ctrl2 = new AbortController()
+        var t2 = setTimeout(function(){ ctrl2.abort() }, stored ? 6000 : 15000)
+        var res2 = await fetch('https://formsubmit.co/ajax/nirsala@gmail.com', { method: 'POST', headers: { 'Accept': 'application/json' }, body: data, signal: ctrl2.signal })
+        clearTimeout(t2)
+        if (res2.ok) {
+          var json = await res2.json().catch(function(){ return null })
+          mailed = !json || json.success === undefined || json.success === true || json.success === 'true'
+        }
+      } catch (err) { mailed = false }
+    }
+    btn.textContent = label
+    btn.disabled = false
+    if (!(stored || mailed)) {
+      errBox.innerHTML = 'השליחה נכשלה והפנייה לא הגיעה אלינו. אפשר לפנות ישירות: <a href="https://wa.me/972559732343" style="color:#8a1c12;font-weight:700">וואטסאפ 055-973-2343</a> או <a href="tel:*9555" style="color:#8a1c12;font-weight:700">*9555</a>. הפרטים שמילאתם נשמרו בטופס.'
+      errBox.style.display = 'block'
+      errBox.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      return
+    }
+    form.reset()
+    okBox.style.display = 'block'
+    if (typeof gtag === 'function') { try { gtag('event', 'generate_lead', { form: 'contact_page' }) } catch (e) {} }
+  })
 })();
 </script>
 </body>
