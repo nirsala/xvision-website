@@ -203,6 +203,16 @@ function collect() {
     }
   }
 
+  // מדריכי Pixel CMS בתוך pixel-cms/ — הועברו מ-dds.xvision.co.il (22.11.2026)
+  const pcmsDir = path.join(ROOT, 'pixel-cms');
+  if (fs.existsSync(pcmsDir)) {
+    for (const f of fs.readdirSync(pcmsDir).sort()) {
+      if (!f.endsWith('.html') || EXCLUDE.has(f) || f === 'index.html') continue;
+      if (!shouldInclude(path.join(pcmsDir, f))) continue;
+      add(`pixel-cms/${f}`, '0.8');
+    }
+  }
+
   // דפי landing באנגלית בתוך en/ — index.html כבר נוסף ככתובת ספרייה (/en/) למעלה
   const enDir = path.join(ROOT, 'en');
   if (fs.existsSync(enDir)) {

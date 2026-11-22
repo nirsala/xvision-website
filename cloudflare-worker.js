@@ -213,7 +213,7 @@ function markdown404(pathname) {
     "- [מסכי לד לעסקים — מחירון ומדריך](https://xvision.co.il/מסכי-לד-לעסקים.html)",
     "- [מחירי מסכי LED](https://xvision.co.il/מחירי-מסכי-led.html)",
     "- [בלוג ומדריכים](https://xvision.co.il/blog/)",
-    "- [Pixel CMS — ניהול תוכן בענן](https://dds.xvision.co.il/)",
+    "- [Pixel CMS — ניהול תוכן בענן](https://xvision.co.il/cms.html)",
     "- [llms.txt — תקציר האתר לסוכני AI](https://xvision.co.il/llms.txt)",
     "- [sitemap.xml](https://xvision.co.il/sitemap.xml)",
     "",

@@ -11,7 +11,7 @@ Last updated: 2026-10-27
 - Company number (ח.פ.): 513952069 · CEO: Nir Sala (ניר סלה)
 - Address: Modi'in 44, Petah Tikva, Israel (מודיעין 44, פתח תקווה) · serves all of Israel
 - Phone: *9555 · WhatsApp: +972-55-973-2343
-- Software: Pixel CMS (https://dds.xvision.co.il), developed in-house
+- Software: Pixel CMS (https://xvision.co.il/cms.html), developed in-house
 
 ## Verified facts
 
@@ -100,8 +100,23 @@ https://xvision.co.il/ייעוץ-ומכרזים.html
 Specification and tender support for municipalities and organizations: pitch, brightness, IP65 for outdoor, warranty and service terms.
 
 ### Pixel CMS — content management for screens
-https://dds.xvision.co.il/
+https://xvision.co.il/cms.html
 Cloud content-management for digital signage, in Hebrew, English, Russian and Arabic, unlimited users. ILS 69 or 149 per screen per month, 14-day trial.
+Guides (moved from dds.xvision.co.il on 2026-11-22):
+- https://xvision.co.il/pixel-cms/music.html — מוזיקה לעסקים: פלייליסטים, תזמון וניהול מרחוק
+- https://xvision.co.il/pixel-cms/אבטחת-מידע-שילוט-דיגיטלי.html — אבטחת מידע בשילוט דיגיטלי — מה לבדוק מול הספק
+- https://xvision.co.il/pixel-cms/איזה-נגן-צריך-למסך-שילוט-דיגיטלי.html — איזה נגן צריך למסך שילוט דיגיטלי? מדריך נגנים
+- https://xvision.co.il/pixel-cms/איך-לבחור-מערכת-שילוט-דיגיטלי.html — איך לבחור מערכת שילוט דיגיטלי — מדריך לפני רכישה
+- https://xvision.co.il/pixel-cms/אינטגרציות-שילוט-דיגיטלי.html — אינטגרציות לשילוט דיגיטלי — Canva, Sheets, מזג אוויר
+- https://xvision.co.il/pixel-cms/החזר-השקעה-שילוט-דיגיטלי.html — החזר השקעה בשילוט דיגיטלי: איך מחשבים ROI
+- https://xvision.co.il/pixel-cms/מה-זה-שילוט-דיגיטלי.html — מה זה שילוט דיגיטלי? הסבר, רכיבים ושימושים
+- https://xvision.co.il/pixel-cms/מילון-מונחים-שילוט-דיגיטלי.html — מילון מונחים בשילוט דיגיטלי: CMS, פיקסל פיץ׳, ניט
+- https://xvision.co.il/pixel-cms/מערכת-הכוונה-דיגיטלית.html — מערכת הכוונה דיגיטלית (Wayfinding) לבניינים
+- https://xvision.co.il/pixel-cms/ניהול-מסכים-לרשתות-סניפים.html — ניהול מסכים לרשתות סניפים ממערכת אחת
+- https://xvision.co.il/pixel-cms/ניהול-מסכים-מרחוק.html — ניהול מסכים מרחוק: עדכון, קבוצות וסנכרון
+- https://xvision.co.il/pixel-cms/סוגי-תוכן-לשילוט-דיגיטלי.html — סוגי תוכן לשילוט דיגיטלי: מה אפשר להציג
+- https://xvision.co.il/pixel-cms/עברית-במסך-שילוט-דיגיטלי.html — עברית במסך שילוט דיגיטלי: איך מציגים RTL נכון
+- https://xvision.co.il/pixel-cms/תזמון-תוכן-למסכים.html — תזמון תוכן למסכים: לוח שידורים שעובד לבד
 
 ### English pages
 - https://xvision.co.il/en/ — company overview in English
