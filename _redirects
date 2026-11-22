@@ -106,6 +106,9 @@
 # 10.11.2026 — GSC "Not found (404)" report (Nir 9.11 via Ron: "4 הפניות 301 מדוח 404")
 /blog/led-article-17-2026-04-27.html /מסכי-led-לחדרי-כושר.html 301
 /blog/led-article-19-2026-04-29.html /מסכי-led-נייד.html 301
-/automation /automation.html 301
+/automation https://ai.xvision.co.il/services/business-automation 301
 /blog/מסכי-led-ai-2026-07-06-מותאם-אישי.html /blog/מסכי-led-ai-מותאם-אישית-2026-07-06.html 301
 /blog/%D7%9E%D7%A1%D7%9B%D7%99-led-ai-2026-07-06-%D7%9E%D7%95%D7%AA%D7%90%D7%9D-%D7%90%D7%99%D7%A9%D7%99.html /blog/מסכי-led-ai-מותאם-אישית-2026-07-06.html 301
+
+# 22.11.2026 — automation.html moved to the AI site (Nir 21.11 via Ron, D-20261121-5, option A)
+/automation.html https://ai.xvision.co.il/services/business-automation 301

@@ -46,7 +46,7 @@ Extended version with a factual summary per page: https://xvision.co.il/llms-ful
 - [פרסום חוצות דיגיטלי פרוגרמטי (DOOH)](https://xvision.co.il/blog/פרסום-חוצות-דיגיטלי-פרוגרמטי-dooh-2026-07-21.html): איך נמכר שטח פרסום על מסכי חוצות בזמן אמת ומה נדרש מהמסך
 - [מסכי LED תלת-ממד אנמורפי](https://xvision.co.il/blog/מסכי-led-תלת-ממד-אנמורפי-2026-07-05.html): אפקט 3D ללא משקפיים — טכנולוגיה, שימושים ומפרטים
 - [בלוג מקצועי](https://xvision.co.il/blog/): מאמרים ומדריכים על מסכי LED ושילוט דיגיטלי
-- [אוטומציה מבוססת AI לעסקים](https://xvision.co.il/automation.html): מערכות אוטומציה, דשבורדים וצ'אטבוטים לעסקים
+- [אוטומציה מבוססת AI לעסקים](https://ai.xvision.co.il/services/business-automation): מערכות אוטומציה, דשבורדים וצ'אטבוטים לעסקים
 - [צור קשר](https://xvision.co.il/contact/): הצעת מחיר והתייעצות
 
 ## English Pages
