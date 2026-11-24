@@ -8,15 +8,35 @@ Sitemap: https://xvision.co.il/sitemap.xml
 User-agent: GPTBot
 Allow: /blog/
 Allow: /
+Disallow: /api/
 
 User-agent: ClaudeBot
 Allow: /blog/
 Allow: /
+Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /blog/
 Allow: /
+Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /blog/
 Allow: /
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+User-agent: Applebot
+Allow: /
+Disallow: /api/
