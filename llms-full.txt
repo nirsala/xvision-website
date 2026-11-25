@@ -29,7 +29,7 @@ Last updated: 2026-10-27
 - 2×1 m: ILS 6,000-8,000
 - 3×2 m: ILS 18,000-24,000
 - Entry price for an LED screen: ILS 3,000
-- Pixel CMS: ILS 69 per screen per month (Starter) · ILS 149 per screen per month (Business) · Enterprise priced per project · 14-day free trial
+- Pixel CMS: ILS 69 per screen per month (Starter) · ILS 149 per screen per month (Business) · Enterprise priced per project · 45-day free trial
 
 ## Specifications by use
 
@@ -101,7 +101,7 @@ Specification and tender support for municipalities and organizations: pitch, br
 
 ### Pixel CMS — content management for screens
 https://xvision.co.il/cms.html
-Cloud content-management for digital signage, in Hebrew, English, Russian and Arabic, unlimited users. ILS 69 or 149 per screen per month, 14-day trial.
+Cloud content-management for digital signage, in Hebrew, English, Russian and Arabic, unlimited users. ILS 69 or 149 per screen per month, 45-day trial.
 Guides (moved from dds.xvision.co.il on 2026-11-22):
 - https://xvision.co.il/pixel-cms/music.html — מוזיקה לעסקים: פלייליסטים, תזמון וניהול מרחוק
 - https://xvision.co.il/pixel-cms/אבטחת-מידע-שילוט-דיגיטלי.html — אבטחת מידע בשילוט דיגיטלי — מה לבדוק מול הספק
