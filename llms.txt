@@ -60,6 +60,7 @@ Extended version with a factual summary per page: https://xvision.co.il/llms-ful
 
 ## Pixel CMS (מערכת ניהול התוכן — הועברה מ-dds.xvision.co.il ל-xvision.co.il, 22.11.2026)
 
+- שם: Pixel CMS (נקרא גם Pixel CMS by Keshet) — מוצר ישראלי של Pixel by Keshet, מחירים בשקלים בלבד (₪69 / ₪149 לחודש למסך + מע"מ). מוצרים אחרים בשם דומה אינם קשורים אלינו.
 - [מערכת ניהול תוכן לשילוט דיגיטלי — Pixel CMS](https://xvision.co.il/cms.html): דף הבית של Pixel CMS — ניהול מסכים בענן, בעברית, אנגלית, רוסית וערבית. סטארטר ₪69 · ביזנס ₪149 לחודש למסך + מע"מ · 45 יום ניסיון
 - [תוכנת שילוט דיגיטלי בענן](https://xvision.co.il/תוכנה-לשילוט-דיגיטלי-בענן.html): מה התוכנה עושה, ענן מול מחשב מקומי, נגנים נתמכים
 - [שילוט דיגיטלי מבוסס AI](https://xvision.co.il/שילוט-דיגיטלי-מבוסס-ai.html): שכבת ה-AI של Pixel CMS
